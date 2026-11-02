@@ -1,4 +1,4 @@
-﻿# c00lgui v6.66 - panel lanzador con skins de asistentes
+﻿# c00lgui v6.7 - panel lanzador con skins de asistentes
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 # el panel mide su propio escalado de pantalla para que nada se corte
@@ -186,10 +186,13 @@ foreach ($t in $EnfosiTipos) {
     for ($i = 1; $i -le 4; $i++) { $EnfosiPoses["$t$i"] = "skins\enfosi\$($t)_falso$i.png" }
 }
 
+# letra con serifa para Silix y Pendeja (como la de Forsaken): Garamond si está (viene con Office) o Palatino Linotype (viene con Windows)
+$SxSerif = if (@((New-Object System.Drawing.Text.InstalledFontCollection).Families | ForEach-Object { $_.Name }) -contains 'Garamond') { 'Garamond' } else { 'Palatino Linotype' }
+
 $Skins = [ordered]@{
     # ================================================================ c00lgui
     'c00lgui' = @{
-        Estilo = 'hacker'; Titulo = 'c00lgui'; Sub = 'v6.66'; Alto = 312
+        Estilo = 'hacker'; Titulo = 'c00lgui'; Sub = 'v6.7'; Alto = 312
         Fondo = (C 0 0 0); Borde = (C 255 0 0); Sombra = (C 90 0 0)
         TituloColor = (C 255 0 0); SubColor = (C 140 0 0)
         BtnFondo = (C 0 0 0); BtnTexto = (C 255 255 255); BtnTextoHover = (C 255 40 40); BtnBorde = (C 255 0 0); BtnBordeAncho = 1
@@ -811,6 +814,38 @@ $Skins = [ordered]@{
         }
         Burbuja = @(424, 272, 184, 40); BurFondo = $null; InvFondo = (C 30 10 28); BurTexto = (C 255 236 244); BurFuente = 'Segoe UI'
     }
+    # ================================================================ Silix y Pendeja (OC de Fox Fandubs)
+    # Dos personajes originales de Fox Fandubs (YouTube: [FOX FANDUBS] @n.o.l.i-o2g · Discord: SFOTH KING/F○X), muy inspirados en Forsaken.
+    # BASE SIN DIÁLOGOS: todavía no se sabe cómo es su personalidad. A propósito no tienen frases, ni charlas con las demás skins,
+    # ni las demás opinan de ellas (el bocadillo solo aparece si hay algo que decir).
+    # Cada una tiene su barra de RABIA (dibujada como la vida de Forsaken). Silix al 100 %: se convierte en su tanque y dispara a los botones.
+    # La Pendeja al 100 %: se le pone la cara de rabia (FFFUUU). Ver "SILIX Y PENDEJA: LA RABIA".
+    'Silix y Pendeja' = @{
+        Estilo = 'silix'; Titulo = 'SILIX & PENDEJA'; Sub = 'oc  ·  fox fandubs'; Alto = 320
+        Fondo = (C 10 10 12); Borde = (C 140 18 22); Acento = (C 210 36 40)
+        TituloColor = (C 236 232 226); SubColor = (C 200 60 60)
+        BtnFondo = (C 22 22 26); BtnTexto = (C 236 232 226); BtnTextoHover = (C 255 90 90); BtnBorde = (C 200 200 200); BtnBordeAncho = 1
+        BtnHover = (C 58 14 16); BtnPress = (C 140 18 22); BarraBtnTexto = (C 236 232 226)
+        StatusColor = (C 236 232 226); Fuente = $SxSerif; FuenteTitulo = $SxSerif; Opacidad = 1.0; Velocidad = 1
+        Ancho = 760; Mezclar = $true; Gif = 'skins\silix\silix.png'; FondoImg = 'skins\silix\fondo.jpg'
+        PendejaImg = 'skins\silix\pendeja.png'; RabiaImg = 'skins\silix\rabia.png'
+        CaraSilixImg = 'skins\silix\cara_silix.png'; CaraPendejaImg = 'skins\silix\cara_pendeja.png'; CaraRabiaImg = 'skins\silix\cara_rabia.png'
+        # para la intro: el misil (GIF de Tenor), la ardilla, el canal de YouTube y el usuario de Discord de su creador
+        MisilImg = 'skins\silix\misil.gif'; ArdillaImg = 'skins\silix\ardilla.jpg'; CanalImg = 'skins\silix\canal.png'; DiscordImg = 'skins\silix\discord.png'
+        # Silix primero (al lado de los botones), su tanque (oculto; mira hacia los botones) y la Pendeja a su lado
+        Actores = @(
+            @{ Id = 'S'; Gif = 'skins\silix\silix.png'; Rect = @(424, 50, 150, 234); Respira = $true }
+            @{ Id = 'T'; Gif = 'skins\silix\tanque.png'; Rect = @(400, 160, 250, 118) }
+            @{ Id = 'P'; Gif = 'skins\silix\pendeja.png'; Rect = @(612, 62, 146, 222); Respira = $true }
+        )
+        Sonidos = @{
+            alarma = @('skins\silix\alarma.wav'); silbido = @('skins\silix\silbido.wav'); explosion = @('skins\silix\explosion.wav'); boom = @('skins\silix\boom.wav')
+            grito = @('skins\silix\grito.wav'); latido = @('skins\silix\latido.wav'); forsaken = @('skins\silix\forsaken.wav')
+            canon = @('skins\silix\canon.wav'); impacto = @('skins\silix\impacto.wav'); transforma = @('skins\silix\transforma.wav')
+            rabia = @('skins\silix\rabia.wav'); toque = @('skins\silix\toque.wav'); calma = @('skins\silix\calma.wav')
+        }
+        Burbuja = @(424, 278, 322, 34); BurFondo = $null; InvFondo = (C 14 14 16); BurTexto = (C 24 24 28); BurFuente = 'Segoe UI'
+    }
     # ================================================================ Nanachi (Made in Abyss)
     # Narehate de la 4ª capa del Abismo: ve el campo de fuerza, cura, dibuja y cocina fatal.
     # Personalidad: pasa de casi todo (seco, sin ganas, "me da igual")... menos de Mitty, su mejor amiga, que está a su lado.
@@ -959,6 +994,7 @@ $GruposSkins = [ordered]@{
     }
     'Amigos' = [ordered]@{
         'Ellie' = "Self insert de Ale"
+        'Silix y Pendeja' = 'OC de Fox Fandubs'
     }
 }
 $SkinsPorPagina = 9   # 3 columnas x 3 filas; un grupo con más skins ocupa varias páginas
@@ -1621,6 +1657,19 @@ function Fondo-Escena($k, $W, $H) {
             $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 120 142 156))), 0, 52, $W, 4)
             $lp = Cargar-Img $k.Lapida; if ($lp) { $g.DrawImage($lp, 344, 5, 38, 43); $lp.Dispose() }
         }
+        'silix' {
+            # la cabaña del lobby, oscura (como en Forsaken), con los bordes en sombra
+            $g.Clear((C 8 8 10))
+            Imagen-Cubrir $g $k.FondoImg 0 0 $W $H 0.6 0.5
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 95 0 0 0))), 0, 0, $W, $H)
+            Degradado $g ($W - 80) 0 80 $H (ARGB 0 0 0 0) (ARGB 170 0 0 0) 0
+            Degradado $g 0 ($H - 80) $W 80 (ARGB 0 0 0 0) (ARGB 190 0 0 0) 90
+            # panel de los botones: negro translúcido con los bordes a pincel (como los menús de Forsaken)
+            Sx-Pincel $g 8 60 394 ($H - 66) (ARGB 210 10 10 12) 3
+            # barra de arriba negra con una raya roja a pincel
+            $g.FillRectangle([System.Drawing.Brushes]::Black, 0, 0, $W, 52)
+            Sx-Pincel $g 0 49 $W 5 (C 140 18 22) 7
+        }
         'corrupta' {
             # el vacío del multiverso con un portal y píxeles corruptos; la foto de Ellie pegada como una polaroid
             $g.Clear((C 16 6 16))
@@ -1976,6 +2025,14 @@ function Pintar-Burbuja($g, $k) {
             $tinta = New-Object System.Drawing.Pen((C 22 22 26), 3); $tinta.LineJoin = 'Round'
             $g.DrawPolygon($tinta, $pts); $tinta.Dispose()
             $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 170 150 172 186))), [float]($x + 14), [float]($y - 8), 30, 12)
+        }
+        'silix' {
+            # burbuja de chat de Roblox (blanca y redonda); solo aparece si hay algo que decir
+            if ([string]::IsNullOrEmpty($script:twTexto)) { return }
+            $r = Ruta-Redonda $x $y $w $h ([Math]::Min(12, $h / 2))
+            $g.FillPath((New-Object System.Drawing.SolidBrush((ARGB 240 255 255 255))), $r); $r.Dispose()
+            $cx = $x + $w / 2
+            $g.FillPolygon((New-Object System.Drawing.SolidBrush((ARGB 240 255 255 255))), [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($cx - 7), [float]($y + 1))), (New-Object System.Drawing.PointF([float]($cx + 7), [float]($y + 1))), (New-Object System.Drawing.PointF([float]$cx, [float]($y - 7)))))
         }
         'corrupta' {
             # caja oscura con borde rosa y una copia cian desplazada (efecto glitch)
@@ -6289,6 +6346,7 @@ function Sin-Destellos {
     if ($script:wg) { $script:wg.Rayo = 0; $script:wg.Fx = 0 }
     if ($script:es) { $script:es.Fx = 0 }
     if ($script:kn) { $script:kn.Fx = 0 }
+    if ($script:sx) { $script:sx.Fogonazo = 0 }
     if ($script:el) { $script:el.Fx = 0 }
     foreach ($a in @($script:actores.Values)) { $a.Flash = 0; $a.Temblor = 0 }
 }
@@ -6337,6 +6395,7 @@ $ambTimer.Add_Tick({
     if ($k.Estilo -eq 'niebla') { Sf-Tick }
     if ($k.Estilo -eq 'knight') { Kn-Tick }
     if ($k.Estilo -eq 'corrupta') { El-Tick }
+    if ($k.Estilo -eq 'silix') { Sx-Tick }
     if ($k.Estilo -eq 'boneyard') { Dy-Tick }
 })
 
@@ -6697,6 +6756,596 @@ function El-Tick {
     if ($e.Fx -gt 0) { $e.Fx--; $cambio = $true }
     if ($e.Bloques.Count -gt 0) { for ($i = $e.Bloques.Count - 1; $i -ge 0; $i--) { $e.Bloques[$i].T--; if ($e.Bloques[$i].T -le 0) { $e.Bloques.RemoveAt($i) } }; $cambio = $true }
     if ($cambio) { $form.Invalidate((New-Object System.Drawing.Rectangle(0, [int](266 * $script:K), [int](410 * $script:K), [int](54 * $script:K)))); Invalidar-Escena }
+}
+
+# ================= SILIX Y PENDEJA (OC de Fox Fandubs): LA RABIA =================
+# Las dos tienen su barra de RABIA (0..100), dibujada como la vida de Forsaken (abajo a la izquierda).
+# Sube al hacerles clic y con las apps (a Silix un poco más); baja sola si las dejas en paz un rato.
+# Silix al 100 %: se convierte en su TANQUE (mirando hacia los botones) y les dispara; cada explosión enfada a la Pendeja.
+# La Pendeja al 100 %: se le pone la cara de rabia (FFFUUU) y tiembla todo; su grito enfada a Silix.
+# Todavía no tienen frases (a propósito): lo que pasa se ve en el panel, no en el bocadillo.
+# Números (rabia que suma cada cosa y cuánto baja por segundo) y tiempos en milisegundos:
+$SxTiempos = @{ ClicSilix = 14; ClicPendeja = 14; AppSilix = 6; AppPendeja = 3; Explosion = 6; Grito = 20; Baja = 1.5; Calma = 6000
+    Tanque = 7600; Transforma = 900; Disparo = 640; Vuelo = 200; Furia = 6000; Marca = 9000 }
+# punta del cañón dentro de la imagen del tanque y dónde está la cara en la imagen de la Pendeja (en proporción)
+$SxCanon = @{ X = 0.002; Y = 0.598 }
+$SxCara = @{ X = 0.527; Y = 0.222; Alto = 0.42 }
+$script:sx = $null; $script:sxRabia = $null; $script:sxCaras = $null
+function Sx-Reset {
+    if (-not $script:sx) {
+        $script:sx = @{ S = 0.0; P = 0.0; UltS = 0; UltP = 0; Tanque = $false; TanqueHasta = 0; ProxDisparo = 0; Retro = 0.0
+            Furia = $false; FuriaIni = 0; FuriaHasta = 0; Fogonazo = 0; Aviso = $null; AvisoCol = (C 255 255 255); AvisoT = 0; Texto = $false; Hud = ''
+            Balas = (New-Object System.Collections.ArrayList); Explos = (New-Object System.Collections.ArrayList)
+            Marcas = (New-Object System.Collections.ArrayList); Humo = (New-Object System.Collections.ArrayList) }
+    }
+}
+# Silix o su tanque, según toque
+function Sx-Actores {
+    $e = $script:sx; if (-not $e) { return }
+    $s = $script:actores['S']; $t = $script:actores['T']
+    if ($s) { $s.Visible = -not $e.Tanque }
+    if ($t) { $t.Visible = $e.Tanque; $t.OX = 0 }
+}
+# dónde se dibuja de verdad un personaje (su imagen ajustada a su recuadro, con el temblor)
+function Sx-Dibujo($id) {
+    $a = $script:actores[$id]; if (-not $a) { return $null }
+    $img = $a.Imgs[$a.Pose]; if (-not $img) { return $null }
+    $r = $a.Rect; $s = [Math]::Min($r[2] / $img.Width, $r[3] / $img.Height); $iw = $img.Width * $s; $ih = $img.Height * $s
+    return @{ X = $r[0] + ($r[2] - $iw) / 2 + $a.OX; Y = $r[1] + $r[3] - $ih + $a.OY; W = $iw; H = $ih }
+}
+function Sx-Subir($quien, $n) {
+    Sx-Reset; $e = $script:sx; $ahora = [Environment]::TickCount
+    if ($quien -eq 'S') {
+        if ($e.Tanque) { return }
+        $e.S = [Math]::Min(100.0, $e.S + $n); $e.UltS = $ahora
+        if ($e.S -ge 100) { Sx-Tanque }
+    } else {
+        if ($e.Furia) { return }
+        $e.P = [Math]::Min(100.0, $e.P + $n); $e.UltP = $ahora
+        if ($e.P -ge 100) { Sx-Furia }
+    }
+}
+# aviso grande arriba de la escena (como los avisos de Forsaken)
+function Sx-Aviso($txt, $col) { $script:sx.Aviso = $txt; $script:sx.AvisoCol = $col; $script:sx.AvisoT = [Environment]::TickCount }
+function Sx-Humo($x, $y, $n) {
+    for ($i = 0; $i -lt $n; $i++) {
+        [void]$script:sx.Humo.Add(@{ X = $x + $Rnd.Next(-24, 25); Y = $y + $Rnd.Next(-14, 15); VX = ($Rnd.NextDouble() - 0.5) * 30; VY = -10 - $Rnd.NextDouble() * 22
+            R = 8 + $Rnd.Next(10); T0 = [Environment]::TickCount; Vida = 900 + $Rnd.Next(700) })
+    }
+}
+# SILIX AL 100 %: se convierte en su tanque
+function Sx-Tanque {
+    $e = $script:sx; $ahora = [Environment]::TickCount
+    $e.Tanque = $true; $e.S = 100.0; $e.TanqueHasta = $ahora + $SxTiempos.Tanque; $e.ProxDisparo = $ahora + $SxTiempos.Transforma
+    Sx-Actores; Sonido 'transforma'
+    $d = Sx-Dibujo 'T'; if ($d) { Sx-Humo ($d.X + $d.W * 0.5) ($d.Y + $d.H * 0.5) 10 }
+    Sx-Aviso 'SILIX: MODO TANQUE' (C 190 120 255)
+    $form.Invalidate()
+}
+# un cañonazo contra un botón al azar
+function Sx-Disparar {
+    $e = $script:sx; $ahora = [Environment]::TickCount
+    $d = Sx-Dibujo 'T'; if (-not $d) { return }
+    $x0 = $d.X + $d.W * $SxCanon.X; $y0 = $d.Y + $d.H * $SxCanon.Y
+    $bs = @($script:grid.Controls)
+    if ($bs.Count) {
+        $b = $bs[$Rnd.Next($bs.Count)]
+        $x1 = ($script:grid.Left + $b.Left + $b.Width / 2) / $script:K + $Rnd.Next(-30, 31); $y1 = ($script:grid.Top + $b.Top + $b.Height / 2) / $script:K + $Rnd.Next(-10, 11)
+    } else { $x1 = $Rnd.Next(30, 380); $y1 = $Rnd.Next(80, 230) }
+    [void]$e.Balas.Add(@{ X0 = $x0; Y0 = $y0; X1 = $x1; Y1 = $y1; T0 = $ahora })
+    $e.Retro = 1.0; $e.Fogonazo = 3
+    Sx-Humo ($x0 + 8) $y0 3
+    Sonido 'canon'
+}
+# dónde va una bala en este momento (hace un pequeño arco)
+function Sx-Bala-Pos($bl, $ahora) {
+    $q = [Math]::Min(1.0, ($ahora - $bl.T0) / [double]$SxTiempos.Vuelo)
+    return @(($bl.X0 + ($bl.X1 - $bl.X0) * $q), ($bl.Y0 + ($bl.Y1 - $bl.Y0) * $q - [Math]::Sin($q * [Math]::PI) * 14))
+}
+# repinta solo un trozo (en coordenadas del panel, tamaño base) y los botones que toca: pintar el panel entero
+# y los 12 botones cada 50 ms es demasiado lento y atasca los temporizadores
+function Sx-Invalidar($x, $y, $rad) {
+    $Z = $script:K
+    $form.Invalidate((New-Object System.Drawing.Rectangle([int](($x - $rad) * $Z), [int](($y - $rad) * $Z), ([int](2 * $rad * $Z) + 2), ([int](2 * $rad * $Z) + 2))))
+    if (-not $script:grid) { return }
+    $gl = $script:grid.Left / $Z; $gt = $script:grid.Top / $Z
+    foreach ($c in $script:grid.Controls) {
+        $cx = $gl + $c.Left / $Z; $cy = $gt + $c.Top / $Z
+        if ($x + $rad -ge $cx -and $x - $rad -le $cx + $c.Width / $Z -and $y + $rad -ge $cy -and $y - $rad -le $cy + $c.Height / $Z) { $c.Invalidate() }
+    }
+}
+function Sx-Impacto($x, $y) {
+    $e = $script:sx; $ahora = [Environment]::TickCount
+    [void]$e.Explos.Add(@{ X = $x; Y = $y; T0 = $ahora; R = 26 + $Rnd.Next(14) })
+    [void]$e.Marcas.Add(@{ X = $x + $Rnd.Next(-4, 5); Y = $y + $Rnd.Next(-3, 4); R = 16 + $Rnd.Next(10); T0 = $ahora; Paso = -1 })
+    Sonido 'impacto'; Sacudir $form 4
+    Sx-Subir 'P' $SxTiempos.Explosion   # a la Pendeja no le gustan las explosiones
+}
+# LA PENDEJA AL 100 %: cara de rabia y a temblar
+function Sx-Furia {
+    $e = $script:sx; $ahora = [Environment]::TickCount
+    $e.Furia = $true; $e.P = 100.0; $e.FuriaIni = $ahora; $e.FuriaHasta = $ahora + $SxTiempos.Furia
+    $a = $script:actores['P']; if ($a) { $a.Temblor = [int]($SxTiempos.Furia / 40) }
+    Sonido 'rabia'; Sacudir $form 12
+    Sx-Aviso 'PENDEJA: FURIA' (C 255 70 60)
+    Sx-Subir 'S' $SxTiempos.Grito   # y a Silix no le gusta que grite
+    $form.Invalidate()
+}
+function Sx-Clic($id) {
+    Sx-Reset; $e = $script:sx; $a = $script:actores[$id]
+    switch ($id) {
+        'S' { if (-not $e.Tanque) { Sonido 'toque'; if ($a) { $a.Temblor = 6 }; Flotante "+$($SxTiempos.ClicSilix)" (494 + $Rnd.Next(-12, 13)) 66 (C 230 60 60) 20 $SxSerif; Sx-Subir 'S' $SxTiempos.ClicSilix } }
+        'P' { if (-not $e.Furia) { Sonido 'toque'; if ($a) { $a.Temblor = 6 }; Flotante "+$($SxTiempos.ClicPendeja)" (680 + $Rnd.Next(-12, 13)) 70 (C 230 60 60) 20 $SxSerif; Sx-Subir 'P' $SxTiempos.ClicPendeja } }
+        'T' { if ($a) { $a.Temblor = 5 } }
+    }
+    $form.Invalidate()
+}
+function Sx-App($linea) {
+    Sx-Reset
+    Sx-Subir 'S' $SxTiempos.AppSilix; Sx-Subir 'P' $SxTiempos.AppPendeja
+    if ($linea) { Decir $linea }
+    $form.Invalidate()
+}
+function Sx-Tick {
+    Sx-Reset; $e = $script:sx; $ahora = [Environment]::TickCount
+    # la rabia baja sola si las dejas en paz un rato (cada tick son 50 ms)
+    if (-not $e.Tanque -and $e.S -gt 0 -and ($ahora - $e.UltS) -gt $SxTiempos.Calma) { $e.S = [Math]::Max(0.0, $e.S - $SxTiempos.Baja / 20.0) }
+    if (-not $e.Furia -and $e.P -gt 0 -and ($ahora - $e.UltP) -gt $SxTiempos.Calma) { $e.P = [Math]::Max(0.0, $e.P - $SxTiempos.Baja / 20.0) }
+    # MODO TANQUE: dispara cada poco y la barra se va vaciando; al acabar vuelve a ser Silix
+    if ($e.Tanque) {
+        if ($ahora -lt $e.TanqueHasta -and $ahora -ge $e.ProxDisparo) { Sx-Disparar; $e.ProxDisparo = $ahora + $SxTiempos.Disparo }
+        $e.S = 100.0 * [Math]::Max(0.0, ($e.TanqueHasta - $ahora) / [double]$SxTiempos.Tanque)
+        if ($ahora -ge $e.TanqueHasta -and $e.Balas.Count -eq 0) {
+            $d = Sx-Dibujo 'T'; if ($d) { Sx-Humo ($d.X + $d.W * 0.5) ($d.Y + $d.H * 0.5) 10 }
+            $e.Tanque = $false; $e.S = 0.0; $e.UltS = $ahora
+            Sx-Actores; Sonido 'calma'; Invalidar-Escena
+        }
+    }
+    # el retroceso del cañón al disparar
+    if ($e.Retro -gt 0) { $e.Retro = [Math]::Max(0.0, $e.Retro - 0.25) }
+    $tq = $script:actores['T']; if ($tq -and $tq.Temblor -le 0) { $tq.OX = 7 * $e.Retro }
+    # las balas que llegan a su sitio explotan
+    for ($i = $e.Balas.Count - 1; $i -ge 0; $i--) {
+        $bl = $e.Balas[$i]
+        if (($ahora - $bl.T0) -ge $SxTiempos.Vuelo) { if ($bl.PX) { Sx-Invalidar $bl.PX $bl.PY 30 }; $e.Balas.RemoveAt($i); Sx-Impacto $bl.X1 $bl.Y1 }
+    }
+    # FURIA de la Pendeja: la barra se vacía mientras dura
+    if ($e.Furia) {
+        $e.P = 100.0 * [Math]::Max(0.0, ($e.FuriaHasta - $ahora) / [double]$SxTiempos.Furia)
+        if ($ahora -ge $e.FuriaHasta) { $e.Furia = $false; $e.P = 0.0; $e.UltP = $ahora; $a = $script:actores['P']; if ($a) { $a.Temblor = 0 }; Sonido 'calma'; Invalidar-Escena }
+    }
+    # explosiones, humo y quemaduras: al terminar se borra su trozo; las quemaduras se apagan el último segundo
+    for ($i = $e.Explos.Count - 1; $i -ge 0; $i--) { $ex = $e.Explos[$i]; if (($ahora - $ex.T0) -gt 750) { Sx-Invalidar $ex.X $ex.Y ($ex.R + 8); $e.Explos.RemoveAt($i) } }
+    for ($i = $e.Humo.Count - 1; $i -ge 0; $i--) { $hm = $e.Humo[$i]; if (($ahora - $hm.T0) -gt $hm.Vida) { Sx-Invalidar ($hm.X + $hm.VX * 0.5) ($hm.Y + $hm.VY * 0.8) ($hm.R * 1.6 + 30); $e.Humo.RemoveAt($i) } }
+    for ($i = $e.Marcas.Count - 1; $i -ge 0; $i--) {
+        $m = $e.Marcas[$i]; $ed = $ahora - $m.T0
+        if ($ed -gt $SxTiempos.Marca) { Sx-Invalidar $m.X $m.Y ($m.R + 4); $e.Marcas.RemoveAt($i) }
+        elseif ($ed -gt $SxTiempos.Marca - 1000) { $paso = [int][Math]::Floor($ed / 200.0); if ($paso -ne $m.Paso) { $m.Paso = $paso; Sx-Invalidar $m.X $m.Y ($m.R + 4) } }
+    }
+    if ($e.Fogonazo -gt 0) { $e.Fogonazo-- }
+    # volver a pintar solo lo que cambia: la escena si pasa algo en ella, y cada explosión, bala o nube con los botones que toca
+    if ($e.Tanque -or $e.Furia -or $e.Humo.Count -or $e.Retro -gt 0 -or ($e.Aviso -and ($ahora - $e.AvisoT) -lt 2700)) { Invalidar-Escena }
+    foreach ($ex in $e.Explos) { Sx-Invalidar $ex.X $ex.Y ($ex.R + 8) }
+    foreach ($bl in $e.Balas) { $pos = Sx-Bala-Pos $bl $ahora; if ($bl.PX) { Sx-Invalidar $bl.PX $bl.PY 30 }; Sx-Invalidar $pos[0] $pos[1] 30; $bl.PX = $pos[0]; $bl.PY = $pos[1] }
+    foreach ($hm in $e.Humo) { if ($hm.X -lt 430) { Sx-Invalidar ($hm.X + $hm.VX * 0.5) ($hm.Y + $hm.VY * 0.8) ($hm.R * 1.6 + 30) } }
+    $hud = "$([int]$e.S)|$([int]$e.P)|$($e.Tanque)|$($e.Furia)"
+    if ($hud -ne $e.Hud) { $form.Invalidate((New-Object System.Drawing.Rectangle(0, [int](266 * $script:K), [int](410 * $script:K), [int](54 * $script:K)))) }
+    $e.Hud = $hud
+    # el bocadillo solo se ve si hay algo escrito: al cambiar, se vuelve a pintar su sitio
+    $hay = -not [string]::IsNullOrEmpty($script:twTexto)
+    if ($hay -ne $e.Texto) { $e.Texto = $hay; $form.Invalidate((New-Object System.Drawing.Rectangle([int](406 * $script:K), [int](262 * $script:K), [int](354 * $script:K), [int](58 * $script:K)))) }
+}
+# rectángulo "a pincel" (bordes irregulares; siempre iguales gracias a la semilla)
+$script:sxPinceles = @{}
+function Sx-Pincel($g, $x, $y, $w, $h, $col, $semilla) {
+    # los puntos del borde se calculan la primera vez y se guardan (calcularlos en cada pintado es lento)
+    $clave = "$x|$y|$w|$h|$semilla"
+    $pts = $script:sxPinceles[$clave]
+    if (-not $pts) {
+        $rn = New-Object System.Random $semilla; $lista = New-Object System.Collections.ArrayList
+        $paso = 9; $amp = [Math]::Min(5.0, [Math]::Max(1.5, $h / 6.0))
+        for ($i = 0; $i -le $w; $i += $paso) { [void]$lista.Add((New-Object System.Drawing.PointF([float]($x + $i), [float]($y + $rn.NextDouble() * $amp)))) }
+        for ($j = 0; $j -le $h; $j += $paso) { [void]$lista.Add((New-Object System.Drawing.PointF([float]($x + $w - $rn.NextDouble() * $amp), [float]($y + $j)))) }
+        for ($i = $w; $i -ge 0; $i -= $paso) { [void]$lista.Add((New-Object System.Drawing.PointF([float]($x + $i), [float]($y + $h - $rn.NextDouble() * $amp)))) }
+        for ($j = $h; $j -ge 0; $j -= $paso) { [void]$lista.Add((New-Object System.Drawing.PointF([float]($x + $rn.NextDouble() * $amp), [float]($y + $j)))) }
+        $pts = [System.Drawing.PointF[]]$lista.ToArray(); $script:sxPinceles[$clave] = $pts
+    }
+    $br = New-Object System.Drawing.SolidBrush($col); $g.FillPolygon($br, $pts); $br.Dispose()
+}
+# letras con serifa ya creadas (crear una letra en cada pintado es lento)
+$script:sxFnt = @{}
+function Sx-Fnt($tam, $negrita) {
+    $clave = "$tam|$negrita"
+    if (-not $script:sxFnt.ContainsKey($clave)) { $script:sxFnt[$clave] = $(if ($negrita) { FntP($SxSerif, $tam, [System.Drawing.FontStyle]::Bold) } else { FntP($SxSerif, $tam) }) }
+    return $script:sxFnt[$clave]
+}
+# la venita de enfado (💢)
+function Sx-Venita($g, $cx, $cy, $r, $col) {
+    $pen = New-Object System.Drawing.Pen($col, 1.8); $pen.StartCap = 'Round'; $pen.EndCap = 'Round'
+    foreach ($sg in @(@(-1, -1), @(1, -1), @(1, 1), @(-1, 1))) {
+        $ax = $cx + $sg[0] * $r * 0.32; $ay = $cy + $sg[1] * $r * 0.32
+        $g.DrawBezier($pen, [float]($ax + $sg[0] * $r * 0.7), [float]$ay, [float]($ax + $sg[0] * $r * 0.12), [float]$ay, [float]$ax, [float]($ay + $sg[1] * $r * 0.12), [float]$ax, [float]($ay + $sg[1] * $r * 0.7))
+    }
+    $pen.Dispose()
+}
+# tarjeta de RABIA (como la vida de Forsaken): retrato redondo con aro blanco, nombre, venita, barra fina y número
+function Sx-Hud($g, $x0, $y0, $nombre, $valor, $cara, $activo, $txtActivo, $colActivo, $semilla) {
+    $g.SmoothingMode = 'AntiAlias'
+    Sx-Pincel $g $x0 $y0 190 40 (ARGB 215 16 16 20) $semilla
+    if ($cara) { $g.DrawImage($cara, [float]($x0 + 4), [float]($y0 + 3), [float]34, [float]34) }
+    $pen = New-Object System.Drawing.Pen((ARGB 235 245 245 245), 2.2); $g.DrawEllipse($pen, [float]($x0 + 3.5), [float]($y0 + 2.5), 35, 35); $pen.Dispose()
+    $pen = New-Object System.Drawing.Pen((ARGB 140 245 245 245), 1.2); $g.DrawArc($pen, [float]($x0 + 2), [float]($y0 + 1.5), 38, 37, 200, 120); $pen.Dispose()
+    $g.DrawString($nombre, (Sx-Fnt 9.5 $true), (New-Object System.Drawing.SolidBrush((C 236 232 226))), [float]($x0 + 44), [float]($y0 + 1))
+    $col = if ($activo) { $colActivo } elseif ($valor -ge 75) { (C 235 50 50) } else { (C 214 84 84) }
+    Sx-Venita $g ($x0 + 53) ($y0 + 27.5) 7 $col
+    $bx = $x0 + 64; $by = $y0 + 25; $bw = 82
+    $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 160 70 70 76))), [float]$bx, [float]$by, [float]$bw, 5)
+    $g.FillRectangle((New-Object System.Drawing.SolidBrush($col)), [float]$bx, [float]$by, [float]($bw * $valor / 100.0), 5)
+    $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 90 255 255 255))), [float]$bx, [float]$by, [float]($bw * $valor / 100.0), 1.5)
+    $g.DrawString("$([int]$valor)/100", (Sx-Fnt 9 $false), (New-Object System.Drawing.SolidBrush($col)), [float]($bx + $bw + 2), [float]($y0 + 19))
+    # desatada: un rótulo arriba a la derecha (como el "+391" de la vida de Forsaken)
+    if ($activo) { $g.DrawString($txtActivo, (Sx-Fnt 8.5 $true), (New-Object System.Drawing.SolidBrush($colActivo)), [float]($x0 + 128), [float]($y0 + 2)) }
+}
+# balas, explosiones, humo y quemaduras (coordenadas del panel en tamaño base); lo usan el panel y cada botón
+function Sx-Pintar-Efectos($g) {
+    $e = $script:sx; if (-not $e) { return }
+    $ahora = [Environment]::TickCount; $seguro = $script:aj.Epilepsia
+    $g.SmoothingMode = 'AntiAlias'
+    foreach ($m in $e.Marcas) {
+        $q = [Math]::Min(1.0, [Math]::Max(0.0, ($SxTiempos.Marca - ($ahora - $m.T0)) / 1000.0))
+        $p = New-Object System.Drawing.Drawing2D.GraphicsPath; $p.AddEllipse([float]($m.X - $m.R), [float]($m.Y - $m.R * 0.7), [float]($m.R * 2), [float]($m.R * 1.4))
+        $pb = New-Object System.Drawing.Drawing2D.PathGradientBrush($p); $pb.CenterColor = [System.Drawing.Color]::FromArgb([int](210 * $q), 12, 8, 6); $pb.SurroundColors = @([System.Drawing.Color]::FromArgb(0, 12, 8, 6))
+        $g.FillPath($pb, $p); $pb.Dispose(); $p.Dispose()
+    }
+    foreach ($bl in $e.Balas) {
+        $pos = Sx-Bala-Pos $bl $ahora; $bx = $pos[0]; $by = $pos[1]
+        $pen = New-Object System.Drawing.Pen((ARGB 130 255 210 140), 3); $g.DrawLine($pen, [float]($bx + 24), [float]($by + 2), [float]$bx, [float]$by); $pen.Dispose()
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((C 40 34 30))), [float]($bx - 5), [float]($by - 3), 10, 6)
+    }
+    foreach ($ex in $e.Explos) {
+        $q = ($ahora - $ex.T0) / 750.0; $rad = $ex.R * (0.35 + 0.65 * [Math]::Min(1.0, $q * 3))
+        $al = [int](255 * [Math]::Max(0.0, 1 - $q))
+        if ($seguro -or $q -gt 0.55) { $c1 = [System.Drawing.Color]::FromArgb([int]($al * 0.85), 70, 66, 62); $c2 = [System.Drawing.Color]::FromArgb([int]($al * 0.4), 46, 44, 42) }
+        else { $c1 = [System.Drawing.Color]::FromArgb($al, 255, 240, 170); $c2 = [System.Drawing.Color]::FromArgb([int]($al * 0.85), 255, 100, 20) }
+        $p = New-Object System.Drawing.Drawing2D.GraphicsPath; $p.AddEllipse([float]($ex.X - $rad), [float]($ex.Y - $rad), [float]($rad * 2), [float]($rad * 2))
+        $pb = New-Object System.Drawing.Drawing2D.PathGradientBrush($p); $pb.CenterColor = $c1; $pb.SurroundColors = @($c2)
+        $g.FillPath($pb, $p); $pb.Dispose(); $p.Dispose()
+    }
+    foreach ($hm in $e.Humo) {
+        $q = ($ahora - $hm.T0) / [double]$hm.Vida; if ($q -ge 1) { continue }
+        $hx = $hm.X + $hm.VX * $q; $hy = $hm.Y + $hm.VY * $q * 1.6; $hr = $hm.R * (0.6 + $q)
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([int](150 * (1 - $q)), 70, 66, 64))), [float]($hx - $hr), [float]($hy - $hr), [float]($hr * 2), [float]($hr * 2))
+    }
+}
+# lo mismo, dentro de un botón (los botones tapan el dibujo del panel)
+function Sx-Efectos-Boton($g, $b) {
+    $e = $script:sx
+    if (-not $e -or ($e.Marcas.Count + $e.Explos.Count + $e.Balas.Count + $e.Humo.Count) -eq 0) { return }
+    $Z = $script:K; $st = $g.Save()
+    $g.ScaleTransform($Z, $Z); $g.TranslateTransform([float](-($script:grid.Left + $b.Left) / $Z), [float](-($script:grid.Top + $b.Top) / $Z))
+    Sx-Pintar-Efectos $g
+    $g.Restore($st)
+}
+# todo lo que se mueve en la escena y las dos barras de RABIA
+function Sx-Pintar($g, $k, $W, $H) {
+    $e = $script:sx; $ahora = [Environment]::TickCount; $seguro = $script:aj.Epilepsia
+    $g.SmoothingMode = 'AntiAlias'
+    if ($e) {
+        # rabia alta: un brillo rojo a los pies de quien está a punto de estallar
+        foreach ($id in @('S', 'P')) {
+            $rv = if ($id -eq 'S') { $e.S } else { $e.P }
+            if (($id -eq 'S' -and $e.Tanque) -or $rv -lt 55) { continue }
+            $d = Sx-Dibujo $id; if (-not $d) { continue }
+            $pul = if ($seguro) { 0.7 } else { 0.6 + 0.4 * [Math]::Sin($ahora / 160.0) }
+            $al = [int][Math]::Min(255.0, 120 * ($rv - 55) / 45.0 * $pul)
+            $p = New-Object System.Drawing.Drawing2D.GraphicsPath; $p.AddEllipse([float]($d.X - 14), [float]($d.Y + $d.H - 24), [float]($d.W + 28), 36)
+            $pb = New-Object System.Drawing.Drawing2D.PathGradientBrush($p); $pb.CenterColor = [System.Drawing.Color]::FromArgb($al, 230, 30, 30); $pb.SurroundColors = @([System.Drawing.Color]::FromArgb(0, 230, 30, 30))
+            $g.FillPath($pb, $p); $pb.Dispose(); $p.Dispose()
+        }
+        # FURIA: la escena se tiñe de rojo (en modo seguro, sin latir)
+        if ($e.Furia) {
+            $pul = if ($seguro) { 0.5 } else { 0.5 + 0.5 * [Math]::Sin($ahora / 110.0) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([int](40 + 40 * $pul), 190, 0, 0))), 404, 56, ($W - 404), ($H - 56))
+        }
+        Sx-Pintar-Efectos $g
+        # fogonazo del cañón
+        if ($e.Tanque -and $e.Fogonazo -gt 0 -and -not $seguro) {
+            $d = Sx-Dibujo 'T'
+            if ($d) {
+                $cx = $d.X + $d.W * $SxCanon.X; $cy = $d.Y + $d.H * $SxCanon.Y
+                $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB 220 255 200 90))), [float]($cx - 20), [float]($cy - 10), 26, 20)
+                $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB 255 255 250 220))), [float]($cx - 11), [float]($cy - 5), 13, 10)
+            }
+        }
+        # FURIA: la cara de rabia encima de la suya y el FFFUUUU en rojo saliendo de su cabeza
+        if ($e.Furia) {
+            $d = Sx-Dibujo 'P'
+            if ($d) {
+                if (-not $script:sxRabia) { $script:sxRabia = Cargar-Img $k.RabiaImg }
+                $ri = $script:sxRabia
+                if ($ri) {
+                    $q = [Math]::Min(1.0, ($ahora - $e.FuriaIni) / 160.0)
+                    $rh = $d.H * $SxCara.Alto * (0.7 + 0.3 * $q); $rw = $rh * $ri.Width / $ri.Height
+                    $g.DrawImage($ri, [float]($d.X + $d.W * $SxCara.X - $rw * 0.64), [float]($d.Y + $d.H * $SxCara.Y - $rh * 0.62), [float]$rw, [float]$rh)
+                }
+                $lineas = @('FFFFFFF', 'FFFFFFF', 'FFFFFF', 'FFFUU', 'UUUU', 'UUUU', 'UUUU-')
+                if (-not $script:sxAnchos) { $script:sxAnchos = @{}; foreach ($ln in $lineas) { $script:sxAnchos[$ln] = Ancho-Texto $ln 'Impact' 17 } }
+                $n = [Math]::Min($lineas.Count, [int][Math]::Floor(($ahora - $e.FuriaIni) / 260.0) + 1)
+                for ($i = 0; $i -lt $n; $i++) {
+                    $tw = $script:sxAnchos[$lineas[$i]]
+                    $jx = if ($seguro) { 0 } else { $Rnd.Next(-2, 3) }
+                    Texto-Contorno $g $lineas[$i] 'Impact' 17 ($d.X - 4 - $tw + $i * 6 + $jx) (66 + $i * 25) (C 230 20 20) 3
+                }
+            }
+        }
+        # aviso grande arriba de la escena
+        if ($e.Aviso -and ($ahora - $e.AvisoT) -lt 2600) {
+            $q = ($ahora - $e.AvisoT) / 2600.0; $al = [int](255 * [Math]::Min(1.0, (1 - $q) * 3))
+            $tw = Ancho-Texto $e.Aviso $SxSerif 19
+            Texto-Contorno $g $e.Aviso $SxSerif 19 (582 - $tw / 2) 60 $e.AvisoCol 4 $al
+        }
+    }
+    # abajo a la izquierda: las dos barras de RABIA (ya dibujadas en una imagen; solo si esa zona se está pintando)
+    $zonaHud = New-Object System.Drawing.RectangleF(8, 268, 400, 46)
+    if ($g.IsVisible($zonaHud)) { $g.DrawImage((Sx-Hud-Imagen $k $e), $zonaHud) }
+}
+# las dos tarjetas de RABIA en una imagen guardada: se vuelve a dibujar solo cuando cambian los números
+$script:sxHudBmp = $null; $script:sxHudClave = ''
+function Sx-Hud-Imagen($k, $e) {
+    $Z = $script:K
+    $clave = if ($e) { "$([int]$e.S)|$([int]$e.P)|$($e.Tanque)|$($e.Furia)|$Z" } else { "0|0|False|False|$Z" }
+    if ($script:sxHudBmp -and $script:sxHudClave -eq $clave) { return $script:sxHudBmp }
+    if (-not $script:sxCaras) { $script:sxCaras = @{ S = (Cargar-Img $k.CaraSilixImg); P = (Cargar-Img $k.CaraPendejaImg); R = (Cargar-Img $k.CaraRabiaImg) } }
+    $cs = $script:sxCaras
+    $bw = [int][Math]::Ceiling(400 * $Z); $bh = [int][Math]::Ceiling(46 * $Z)
+    if (-not $script:sxHudBmp -or $script:sxHudBmp.Width -ne $bw -or $script:sxHudBmp.Height -ne $bh) { if ($script:sxHudBmp) { $script:sxHudBmp.Dispose() }; $script:sxHudBmp = New-Object System.Drawing.Bitmap($bw, $bh) }
+    $gh = [System.Drawing.Graphics]::FromImage($script:sxHudBmp); $gh.Clear([System.Drawing.Color]::Transparent)
+    $gh.InterpolationMode = 'HighQualityBicubic'; $gh.TextRenderingHint = 'AntiAlias'
+    $gh.ScaleTransform([float]$Z, [float]$Z); $gh.TranslateTransform(-8, -268)
+    $vs = if ($e) { $e.S } else { 0.0 }; $vp = if ($e) { $e.P } else { 0.0 }
+    Sx-Hud $gh 12 272 'Silix' $vs $cs.S ([bool]($e -and $e.Tanque)) 'TANQUE' (C 190 120 255) 11
+    Sx-Hud $gh 208 272 'Pendeja' $vp $(if ($e -and $e.Furia) { $cs.R } else { $cs.P }) ([bool]($e -and $e.Furia)) 'FURIA' (C 255 70 60) 23
+    $gh.Dispose(); $script:sxHudClave = $clave
+    return $script:sxHudBmp
+}
+
+# --- Silix y Pendeja: vídeo cutre de ALERTA (alarma, sirenas, "ALERTA DE PROYECTARSE" y cuenta atrás), un misil que se estrella,
+#     una ardilla que grita y se desintegra, el canal y el Discord de su creador con un montón de flechas y círculos rojos,
+#     y al final, como en Forsaken: la frase en negro y "This round's assistant is..." con cada una ---
+# Va sincronizada con el reloj. Momentos (en milisegundos):
+$SxIntro = @{ Silbido = 1700; Misil = 2600; Boom = 3500; Ardilla = 4800; Creador = 6200; Zoom = 8900; Glitch = 10000; Frase = 10600; Silix = 12600; Pendeja = 15300; Fin = 18000 }
+# la frase del principio de Forsaken (la de su dibujo)
+$SxFrase = 'Ojalá te caiga un misil hoy.'
+# flecha roja gigante con borde blanco: la punta en (px, py) y la cola hacia el ángulo $ang
+function Sx-Flecha($g, $px, $py, $ang, $lar, $esc) {
+    $vx = [Math]::Cos($ang); $vy = [Math]::Sin($ang); $nx = -$vy; $ny = $vx
+    $anc = 6.5 * $esc; $pun = 19 * $esc; $lar = $lar * $esc
+    $bx = $px + $vx * $pun; $by = $py + $vy * $pun; $ex = $px + $vx * $lar; $ey = $py + $vy * $lar
+    $fl = [System.Drawing.PointF[]]@(
+        (New-Object System.Drawing.PointF([float]$px, [float]$py)),
+        (New-Object System.Drawing.PointF([float]($bx + $nx * $anc * 2.2), [float]($by + $ny * $anc * 2.2))),
+        (New-Object System.Drawing.PointF([float]($bx + $nx * $anc), [float]($by + $ny * $anc))),
+        (New-Object System.Drawing.PointF([float]($ex + $nx * $anc), [float]($ey + $ny * $anc))),
+        (New-Object System.Drawing.PointF([float]($ex - $nx * $anc), [float]($ey - $ny * $anc))),
+        (New-Object System.Drawing.PointF([float]($bx - $nx * $anc), [float]($by - $ny * $anc))),
+        (New-Object System.Drawing.PointF([float]($bx - $nx * $anc * 2.2), [float]($by - $ny * $anc * 2.2))))
+    $g.FillPolygon((New-Object System.Drawing.SolidBrush((C 235 20 20))), $fl)
+    $g.DrawPolygon((New-Object System.Drawing.Pen([System.Drawing.Color]::White, 2.5)), $fl)
+}
+# círculo rojo pintado a mano (dos vueltas un poco torcidas); $q = cuánto se ha dibujado (0..1)
+function Sx-Circulo($g, $cx, $cy, $rx, $ry, $q) {
+    $pc = New-Object System.Drawing.Pen((C 235 20 20), 4.5); $pc.StartCap = 'Round'; $pc.EndCap = 'Round'
+    $g.DrawArc($pc, [float]($cx - $rx), [float]($cy - $ry), [float]($rx * 2), [float]($ry * 2), -100, [float](360 * $q))
+    if ($q -ge 1) { $g.DrawArc($pc, [float]($cx - $rx * 0.94), [float]($cy - $ry * 1.08), [float]($rx * 1.9), [float]($ry * 2.12), -70, 150) }
+    $pc.Dispose()
+}
+# sirena de policía (roja y azul) con sus rayos girando
+function Sx-Sirena($g, $cx, $cy, $ms) {
+    $col = if (([int][Math]::Floor($ms / 180.0)) % 2 -eq 0) { (C 255 30 30) } else { (C 40 90 255) }
+    $ang = $ms / 3.0
+    foreach ($d in @(0, 180)) { $g.FillPie((New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb(70, $col.R, $col.G, $col.B))), [float]($cx - 170), [float]($cy - 170), 340, 340, [float]($ang + $d), 40) }
+    $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 40 40 44))), [float]($cx - 34), [float]($cy + 14), 68, 16)
+    $g.FillPie((New-Object System.Drawing.SolidBrush($col)), [float]($cx - 28), [float]($cy - 26), 56, 80, 180, 180)
+    $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB 180 255 255 255))), [float]($cx - 14), [float]($cy - 14), 10, 16)
+}
+# el cartel de Forsaken: negro a pincel con rayos blancos en los extremos ("This round's killer is..."), aquí con "assistant"
+function Sx-Cartel($g, $W, $H, $nombre, $q) {
+    $bw = $W * 0.6; $bh = 76; $bx = $W / 2 - $bw / 2; $by = $H * 0.80 - $bh / 2
+    $al = [int](255 * $q)
+    Sx-Pincel $g $bx $by $bw $bh ([System.Drawing.Color]::FromArgb([int](235 * $q), 6, 6, 8)) 41
+    foreach ($lado in @(-1, 1)) {
+        $ex = if ($lado -lt 0) { $bx } else { $bx + $bw }
+        $pen = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb($al, 245, 245, 245), 4); $pen.LineJoin = 'Miter'
+        $pts = [System.Drawing.PointF[]]@(
+            (New-Object System.Drawing.PointF([float]($ex - $lado * 34), [float]($by + 2))),
+            (New-Object System.Drawing.PointF([float]($ex + $lado * 36), [float]($by + 5))),
+            (New-Object System.Drawing.PointF([float]($ex + $lado * 4), [float]($by + $bh * 0.32))),
+            (New-Object System.Drawing.PointF([float]($ex + $lado * 42), [float]($by + $bh * 0.48))),
+            (New-Object System.Drawing.PointF([float]($ex + $lado * 2), [float]($by + $bh * 0.66))),
+            (New-Object System.Drawing.PointF([float]($ex + $lado * 38), [float]($by + $bh - 5))),
+            (New-Object System.Drawing.PointF([float]($ex - $lado * 34), [float]($by + $bh - 2))))
+        $g.DrawLines($pen, $pts); $pen.Dispose()
+    }
+    $pl = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb($al, 245, 245, 245), 3)
+    $g.DrawLine($pl, [float]($bx + 30), [float]($by + 2), [float]($bx + $bw - 30), [float]($by + 3)); $g.DrawLine($pl, [float]($bx + 30), [float]($by + $bh - 2), [float]($bx + $bw - 30), [float]($by + $bh - 3)); $pl.Dispose()
+    $fm = New-Object System.Drawing.StringFormat; $fm.Alignment = 'Center'
+    $g.DrawString("This round's assistant is...", (FntP($SxSerif, 13)), (New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb($al, 240, 240, 240))), (New-Object System.Drawing.RectangleF([float]$bx, [float]($by + 6), [float]$bw, 22)), $fm)
+    $g.DrawString($nombre, (FntP($SxSerif, 24)), (New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb($al, 200, 24, 30))), (New-Object System.Drawing.RectangleF([float]$bx, [float]($by + 22), [float]$bw, 38)), $fm)
+    $g.DrawString('(Fox Fandubs)', (FntP($SxSerif, 8)), (New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([int]($al * 0.7), 150, 150, 150))), (New-Object System.Drawing.RectangleF([float]$bx, [float]($by + $bh - 17), [float]$bw, 14)), $fm)
+}
+function Transicion-Silix($final) {
+    $k = $script:skin
+    $script:sxiMisil = Cargar-Img $k.MisilImg; $script:sxiMisilInfo = if ($script:sxiMisil) { Gif-Info $script:sxiMisil } else { $null }
+    $script:sxiArdilla = Cargar-Img $k.ArdillaImg; $script:sxiCanal = Cargar-Img $k.CanalImg; $script:sxiDiscord = Cargar-Img $k.DiscordImg
+    $script:sxiFondo = Cargar-Img $k.FondoImg; $script:sxiSilix = Cargar-Img $k.Gif; $script:sxiPendeja = Cargar-Img $k.PendejaImg
+    # fondo borroso de la ardilla: la misma foto, en pequeñito, que luego se estira
+    $script:sxiArdillaFondo = $null
+    if ($script:sxiArdilla) { $script:sxiArdillaFondo = New-Object System.Drawing.Bitmap(30, 28); $gb = [System.Drawing.Graphics]::FromImage($script:sxiArdillaFondo); $gb.InterpolationMode = 'HighQualityBicubic'; $gb.DrawImage($script:sxiArdilla, 0, 0, 30, 28); $gb.Dispose() }
+    $script:iRecursos = @($script:sxiMisil, $script:sxiArdilla, $script:sxiArdillaFondo, $script:sxiCanal, $script:sxiDiscord, $script:sxiFondo, $script:sxiSilix, $script:sxiPendeja)
+    $script:sxiT0 = 0; $script:sxiHechos = @{}
+    # a qué apuntan los círculos y las flechas (x, y, radio x, radio y): la foto del canal, el nombre, los suscriptores,
+    # el nombre de Discord, "I LOVE MY WIFE" y la foto de Discord
+    $script:sxiCirculos = @(@(261, 110, 72, 72), @(441, 68, 112, 22), @(455, 104, 122, 11), @(403, 207, 150, 15), @(325, 229, 86, 11), @(234, 214, 24, 24))
+    # de qué lado vienen las flechas de cada uno (ángulo en grados y cuánto se abren): foto por la izquierda, nombre por arriba,
+    # suscriptores por la derecha y lo de Discord por abajo
+    $lados = @(@(180, 55), @(-90, 50), @(0, 40), @(90, 50), @(115, 30), @(165, 30))
+    $rn = New-Object System.Random 6
+    $script:sxiFlechas = New-Object System.Collections.ArrayList
+    for ($i = 0; $i -lt 18; $i++) {
+        $n = $i % $script:sxiCirculos.Count; $o = $script:sxiCirculos[$n]
+        $ang = ($lados[$n][0] + ($rn.NextDouble() * 2 - 1) * $lados[$n][1]) * [Math]::PI / 180
+        [void]$script:sxiFlechas.Add(@{ X = $o[0] + [Math]::Cos($ang) * $o[2] * 1.15; Y = $o[1] + [Math]::Sin($ang) * ($o[3] * 1.3 + 6); Ang = $ang; Lar = 60 + $rn.Next(60); T = $SxIntro.Creador + 350 + $i * 125 })
+    }
+    $script:sxiMotas = New-Object System.Collections.ArrayList
+    for ($i = 0; $i -lt 70; $i++) { [void]$script:sxiMotas.Add(@{ X = $rn.NextDouble(); Y = $rn.NextDouble(); V = 0.4 + $rn.NextDouble(); R = 1 + $rn.Next(4) }) }
+    $pintar = {
+        param($g, $W, $H, $p)
+        $g.SmoothingMode = 'AntiAlias'; $g.InterpolationMode = 'HighQualityBicubic'; $g.TextRenderingHint = 'AntiAlias'
+        $SI = $SxIntro
+        $ms = if ($script:sxiT0 -gt 0) { [Environment]::TickCount - $script:sxiT0 } else { 0 }
+        if ($ms -lt $SI.Misil) {
+            # 1) ALARMA: rojo que late, focos girando, cinta de peligro, sirenas y cuenta atrás
+            $lat = 0.5 + 0.5 * [Math]::Sin($ms / 120.0)
+            $g.Clear([System.Drawing.Color]::FromArgb(255, [int](80 + 100 * $lat), 0, [int](6 + 12 * $lat)))
+            $ang = $ms / 5.0
+            foreach ($desf in @(0, 120, 240)) { $g.FillPie((New-Object System.Drawing.SolidBrush((ARGB 55 255 230 210))), [float]($W / 2 - 800), [float]($H / 2 - 800), 1600, 1600, [float]($ang + $desf), 34) }
+            Sx-Sirena $g 74 ($H - 74) $ms; Sx-Sirena $g ($W - 74) ($H - 74) ($ms + 180)
+            $amar = New-Object System.Drawing.SolidBrush((C 255 210 0)); $neg = [System.Drawing.Brushes]::Black
+            foreach ($cy in @(0, ($H - 26))) {
+                $g.FillRectangle($amar, 0, $cy, $W, 26)
+                $desp = ($ms / 10) % 36
+                for ($xx = -36 + $desp; $xx -lt $W + 36; $xx += 36) {
+                    $g.FillPolygon($neg, [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]$xx, [float]$cy)), (New-Object System.Drawing.PointF([float]($xx + 18), [float]$cy)), (New-Object System.Drawing.PointF([float]($xx + 4), [float]($cy + 26))), (New-Object System.Drawing.PointF([float]($xx - 14), [float]($cy + 26)))))
+                }
+            }
+            $amar.Dispose()
+            if (([int][Math]::Floor($ms / 300.0)) % 2 -eq 0) {
+                $tw = Ancho-Texto 'ALERTA' 'Impact' 60
+                Texto-Contorno $g 'ALERTA' 'Impact' 60 ($W / 2 - $tw / 2) 34 (C 255 230 40) 9
+                foreach ($tx0 in @(($W / 2 - $tw / 2 - 84), ($W / 2 + $tw / 2 + 16))) {
+                    $tri = [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($tx0 + 34), 40)), (New-Object System.Drawing.PointF([float]($tx0 + 68), 100)), (New-Object System.Drawing.PointF([float]$tx0, 100)))
+                    $g.FillPolygon((New-Object System.Drawing.SolidBrush((C 255 230 40))), $tri)
+                    $g.DrawPolygon((New-Object System.Drawing.Pen([System.Drawing.Color]::Black, 5)), $tri)
+                    $g.FillRectangle([System.Drawing.Brushes]::Black, [float]($tx0 + 30), 58, 8, 22)
+                    $g.FillEllipse([System.Drawing.Brushes]::Black, [float]($tx0 + 29), 84, 10, 9)
+                }
+            }
+            $tw = Ancho-Texto 'ALERTA DE PROYECTARSE' 'Impact' 34
+            Texto-Contorno $g 'ALERTA DE PROYECTARSE' 'Impact' 34 ($W / 2 - $tw / 2) 128 (C 255 255 255) 6
+            $cuenta = [Math]::Max(1, 3 - [int][Math]::Floor($ms / ($SI.Misil / 3.0)))
+            $tw = Ancho-Texto "IMPACTO EN $cuenta..." 'Impact' 28
+            Texto-Contorno $g "IMPACTO EN $cuenta..." 'Impact' 28 ($W / 2 - $tw / 2) 180 (C 255 230 40) 6
+        } elseif ($ms -lt $SI.Ardilla) {
+            # 2) el misil estrellándose, con temblor y fogonazo al explotar, y un rótulo de noticias cutre
+            $g.Clear([System.Drawing.Color]::Black)
+            $ox = 0; $oy = 0; if ($ms -ge $SI.Boom -and $ms -lt $SI.Boom + 500) { $ox = $Rnd.Next(-12, 13); $oy = $Rnd.Next(-9, 10) }
+            if ($script:sxiMisil) {
+                Gif-Frame $script:sxiMisil $script:sxiMisilInfo ([Math]::Min(2199, $ms - $SI.Misil))
+                $st = $g.Save(); $g.TranslateTransform([float]$ox, [float]$oy)
+                [void](Dibujar-Cubriendo $g $script:sxiMisil $W $H 1.06 0.5 0.5)
+                $g.Restore($st)
+            }
+            if ($ms -ge $SI.Boom -and $ms -lt $SI.Boom + 140) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 200 255 255 255))), 0, 0, $W, $H) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 200 0 0))), 14, 12, 118, 26)
+            Texto-Contorno $g '● EN DIRECTO' 'Arial Black' 13 20 16 (C 255 255 255) 2
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 235 255 255 255))), 0, ($H - 40), $W, 40)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 200 0 0))), 0, ($H - 40), 150, 40)
+            $tick = 'MISIL SE ESTRELLA EN DIRECTO  ·  NADIE SABE DE DÓNDE HA SALIDO  ·  SE BUSCA AL RESPONSABLE  ·  '
+            $off = 160 - (($ms - $SI.Misil) / 5.0)
+            $g.SetClip((New-Object System.Drawing.RectangleF(150, [float]($H - 40), [float]($W - 150), 40)))
+            $g.DrawString(($tick + $tick), (FntP('Arial Black', 13)), (New-Object System.Drawing.SolidBrush((C 20 20 20))), [float]$off, [float]($H - 31))
+            $g.ResetClip()
+            Texto-Contorno $g 'ÚLTIMA HORA' 'Impact' 20 14 ($H - 34) (C 255 255 255) 2
+        } elseif ($ms -lt $SI.Creador) {
+            # 3) la ardilla gritando y deshaciéndose (zoom de golpe y temblor)
+            $q = ($ms - $SI.Ardilla) / [double]($SI.Creador - $SI.Ardilla)
+            $g.Clear((C 20 14 10))
+            if ($script:sxiArdillaFondo) { [void](Dibujar-Cubriendo $g $script:sxiArdillaFondo $W $H 1.0 0.5 0.5); $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 120 0 0 0))), 0, 0, $W, $H) }
+            if ($script:sxiArdilla) {
+                $ox = $Rnd.Next(-7, 8); $oy = $Rnd.Next(-5, 6)
+                $ih = $H * (1.0 + 0.3 * [Math]::Sqrt($q)); $iw = $script:sxiArdilla.Width * $ih / $script:sxiArdilla.Height
+                $g.DrawImage($script:sxiArdilla, [float]($W / 2 - $iw * 0.55 + $ox), [float]($H / 2 - $ih * 0.47 + $oy), [float]$iw, [float]$ih)
+            }
+            foreach ($m in $script:sxiMotas) {
+                $mx = $W * 0.62 - ($W * 0.7) * (($q * $m.V + $m.X * 0.3) % 1.0); $my = $H * (0.2 + 0.6 * $m.Y) - 40 * $q * $m.V
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 220 120 80 50))), [float]$mx, [float]$my, [float]$m.R, [float]$m.R)
+            }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([int](70 * (0.5 + 0.5 * [Math]::Sin($ms / 60.0))), 255, 0, 0))), 0, 0, $W, $H)
+        } elseif ($ms -lt $SI.Glitch) {
+            # 4) el canal y el Discord de su creador, con muchísimas flechas rojas y círculos rojos
+            $g.Clear((C 16 16 20))
+            $vig = New-Object System.Drawing.Drawing2D.GraphicsPath; $vig.AddEllipse([float](-$W * 0.2), [float](-$H * 0.4), [float]($W * 1.4), [float]($H * 1.8))
+            $pg = New-Object System.Drawing.Drawing2D.PathGradientBrush($vig); $pg.CenterColor = (C 70 60 70); $pg.SurroundColors = @((C 16 16 20))
+            $g.FillPath($pg, $vig); $pg.Dispose(); $vig.Dispose()
+            $zz = 1.0; $zx = 403; $zy = 207; $ox = 0; $oy = 0
+            if ($ms -ge $SI.Zoom) { $zz = 1.0 + 0.9 * [Math]::Min(1.0, ($ms - $SI.Zoom) / 160.0) }
+            if ($ms -ge $SI.Zoom -and $ms -lt $SI.Zoom + 350) { $ox = $Rnd.Next(-8, 9); $oy = $Rnd.Next(-6, 7) }
+            $st = $g.Save()
+            $g.TranslateTransform([float]($zx + $ox), [float]($zy + $oy)); $g.ScaleTransform([float]$zz, [float]$zz); $g.TranslateTransform([float](-$zx), [float](-$zy))
+            if ($script:sxiCanal) { $g.DrawImage($script:sxiCanal, [float]190, [float]40, [float]380, [float](380 * $script:sxiCanal.Height / $script:sxiCanal.Width)) }
+            if ($script:sxiDiscord) { $g.DrawImage($script:sxiDiscord, [float]215, [float]196, [float]330, [float](330 * $script:sxiDiscord.Height / $script:sxiDiscord.Width)) }
+            for ($i = 0; $i -lt $script:sxiCirculos.Count; $i++) {
+                $t0 = $SI.Creador + 200 + $i * 330
+                if ($ms -lt $t0) { continue }
+                $o = $script:sxiCirculos[$i]
+                Sx-Circulo $g $o[0] $o[1] ($o[2] * 1.12) ($o[3] * 1.25 + 6) ([Math]::Min(1.0, ($ms - $t0) / 300.0))
+            }
+            foreach ($f in $script:sxiFlechas) {
+                if ($ms -lt $f.T) { continue }
+                Sx-Flecha $g $f.X $f.Y $f.Ang $f.Lar (1.0 + 0.5 * [Math]::Max(0.0, 1 - ($ms - $f.T) / 120.0))
+            }
+            $g.Restore($st)
+            $tw = Ancho-Texto '⚠ CREADOR DETECTADO ⚠' 'Impact' 26
+            Texto-Contorno $g '⚠ CREADOR DETECTADO ⚠' 'Impact' 26 ($W / 2 - $tw / 2) 4 (C 255 230 40) 6
+            $pie = if ($ms -ge $SI.Zoom) { '¿ERES TÚ, FOX?' } else { '(100% real, no fake)' }
+            $tw = Ancho-Texto $pie 'Impact' 26
+            Texto-Contorno $g $pie 'Impact' 26 ($W / 2 - $tw / 2) ($H - 40) (C 255 255 255) 6
+            if ($ms -ge $SI.Zoom -and $ms -lt $SI.Zoom + 120) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 150 255 255 255))), 0, 0, $W, $H) }
+        } elseif ($ms -lt $SI.Frase) {
+            # 5) glitch y a negro
+            $g.Clear([System.Drawing.Color]::Black)
+            $fuerza = 1 - ($ms - $SI.Glitch) / [double]($SI.Frase - $SI.Glitch)
+            $cols = @((C 255 40 60), (C 90 230 255), (C 255 230 60), (C 255 255 255))
+            for ($i = 0; $i -lt [int](6 + 40 * $fuerza); $i++) { $cc = $cols[$Rnd.Next(4)]; $g.FillRectangle((New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([int](90 + 150 * $fuerza), $cc.R, $cc.G, $cc.B))), [float]$Rnd.Next(-40, [int]$W), [float]$Rnd.Next(0, [int]$H), [float]$Rnd.Next(30, 260), [float]$Rnd.Next(2, 14)) }
+        } elseif ($ms -lt $SI.Silix) {
+            # 6) como en Forsaken: la frase en negro, que pasa de gris a rojo
+            $g.Clear([System.Drawing.Color]::Black)
+            $q = [Math]::Min(1.0, ($ms - $SI.Frase) / 1400.0); $al = [int](255 * [Math]::Min(1.0, ($ms - $SI.Frase) / 300.0))
+            $col = [System.Drawing.Color]::FromArgb($al, [int](110 + 90 * $q), [int](110 - 86 * $q), [int](110 - 80 * $q))
+            $fm = New-Object System.Drawing.StringFormat; $fm.Alignment = 'Center'; $fm.LineAlignment = 'Center'
+            $g.DrawString($SxFrase, (FntP($SxSerif, 22)), (New-Object System.Drawing.SolidBrush($col)), (New-Object System.Drawing.RectangleF(0, 0, [float]$W, [float]$H)), $fm)
+        } else {
+            # 7) "This round's assistant is..." con cada una, en la cabaña
+            $esSilix = $ms -lt $SI.Pendeja
+            $t0 = if ($esSilix) { $SI.Silix } else { $SI.Pendeja }
+            $q = ($ms - $t0) / 2700.0
+            $g.Clear([System.Drawing.Color]::Black)
+            if ($script:sxiFondo) { [void](Dibujar-Cubriendo $g $script:sxiFondo $W $H (1.08 + 0.05 * $q) $(if ($esSilix) { 0.35 } else { 0.7 }) 0.5) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 150 0 0 0))), 0, 0, $W, $H)
+            $colN = if ($esSilix) { (ARGB 80 140 60 220) } else { (ARGB 80 230 170 30) }
+            Degradado $g 0 ([int]($H * 0.4)) $W ([int]($H * 0.6) + 1) (ARGB 0 0 0 0) $colN 90
+            $img = if ($esSilix) { $script:sxiSilix } else { $script:sxiPendeja }
+            if ($img) {
+                $ih = $H * (0.98 + 0.06 * $q); $iw = $img.Width * $ih / $img.Height
+                $ix = $W * 0.5 - $iw / 2 + (1 - [Math]::Min(1.0, $q * 3)) * 40
+                $g.DrawImage($img, [float]$ix, [float]($H * 0.04), [float]$iw, [float]$ih)
+            }
+            $qc = [Math]::Min(1.0, ($ms - $t0 - 300) / 250.0)
+            if ($qc -gt 0) { Sx-Cartel $g $W $H $(if ($esSilix) { 'Silix' } else { 'Pendeja' }) $qc }
+            if ($ms -gt $SI.Fin - 500) { $g.FillRectangle((New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([int][Math]::Min(255, ($ms - $SI.Fin + 500) / 2), 0, 0, 0))), 0, 0, $W, $H) }
+        }
+    }
+    $alTick = {
+        param($ov, $p)
+        $SI = $SxIntro
+        if ($p -eq 1) { $script:sxiT0 = [Environment]::TickCount; Sonido 'alarma' }
+        $ms = [Environment]::TickCount - $script:sxiT0
+        $evs = @(@($SI.Silbido, 'si', 'silbido'), @($SI.Boom, 'bo', 'explosion'), @($SI.Ardilla, 'ar', 'grito'), @($SI.Zoom, 'zo', 'boom'), @($SI.Frase, 'fr', 'latido'), @($SI.Silix, 's1', 'forsaken'), @($SI.Pendeja, 's2', 'forsaken'))
+        for ($i = 0; $i -lt $script:sxiCirculos.Count; $i++) { $evs += , @(($SI.Creador + 200 + $i * 330), "c$i", 'boom') }
+        foreach ($ev in $evs) { if ($ms -ge $ev[0] -and -not $script:sxiHechos.ContainsKey($ev[1])) { $script:sxiHechos[$ev[1]] = $true; Sonido $ev[2] } }
+        if ($ms -gt $SI.Fin -and $script:iPaso -lt $script:iTotal - 1) { $script:iPaso = $script:iTotal - 1 }
+    }
+    Intro-Overlay 600 $pintar $alTick $final
 }
 
 # ================= ROARING KNIGHT (Deltarune): FUENTES OSCURAS Y THE ROARING =================
@@ -7476,6 +8125,11 @@ $idleTimer.Add_Tick({
             elseif ($r -lt 60) { Actor-Pose 'D' 'lame' 1840; Sonido 'lame'; Decir (Azar $k.Lame) }
             elseif ($r -lt 66) { Dy-Wisps }
             else { Decir (Azar $k.Idle) }
+        }
+        'silix' {
+            # todavía sin frases: de vez en cuando una de las dos da un saltito
+            $a = $script:actores[$(if ($r -lt 50) { 'S' } else { 'P' })]
+            if ($a -and $a.Visible -and $a.Temblor -le 0) { $a.Salto = 12; Invalidar-Escena }
         }
         'corrupta' {
             $e = $script:el
@@ -9978,6 +10632,7 @@ function Transicion-Malkuth($final) {
             'niebla' { Decir 'Algo se ha roto. Yo no he sido: no puedo tocar nada. *Se pone transparente por si acaso.*' }
             'knight' { Decir '* Algo se ha roto. * El Knight lo ha cortado. * O igual ya venía roto.' }
             'corrupta' { Decir 'Algo se ha roto. ...vale, igual he sido yo. Un poquito. Es la corrupción, se me escapa.' }
+            'silix' { Decir 'Algo se ha roto.' }
             'boneyard' { Decir '*Algo se ha roto. Dybbuk le da un lametazo al error.* ¡Ya está! ...bueno, ahora está roto y pegajoso. Ñe-he-he.' }
             default { Decir 'Algo se ha roto. No he sido yo. Creo.' }
         }
@@ -10175,6 +10830,22 @@ function Pintar-Boton($g, $b) {
             $g.DrawPolygon($tinta, $pts); $tinta.Dispose()
             $g.DrawString($b.Text, $b.Font, (New-Object System.Drawing.SolidBrush((C 22 22 26))), (New-Object System.Drawing.RectangleF(0, 0, ($W - 3 * $Z), ($H - 3 * $Z))), $fmt)
         }
+        'silix' {
+            # botón oscuro con borde blanco a pincel y letra con serifa (como los menús de Forsaken); al pasar el ratón, rojo
+            $g.SmoothingMode = 'AntiAlias'
+            $g.Clear($(if ($enBarra) { (C 0 0 0) } else { (C 12 12 14) }))
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush($(if ($hover) { (C 58 14 16) } else { (C 26 26 30) }))), [float](2 * $Z), [float](2 * $Z), [float]($W - 4 * $Z), [float]($H - 4 * $Z))
+            $rn = New-Object System.Random ([string]$b.Text).Length
+            $mg = 2 * $Z
+            $pts = [System.Drawing.PointF[]]@(
+                (New-Object System.Drawing.PointF([float]($mg + $rn.NextDouble() * $Z), [float]($mg + $rn.NextDouble() * $Z))),
+                (New-Object System.Drawing.PointF([float]($W - $mg - $rn.NextDouble() * $Z), [float]($mg + $rn.NextDouble() * 1.5 * $Z))),
+                (New-Object System.Drawing.PointF([float]($W - $mg - $rn.NextDouble() * 1.5 * $Z), [float]($H - $mg - $rn.NextDouble() * $Z))),
+                (New-Object System.Drawing.PointF([float]($mg + $rn.NextDouble() * 1.5 * $Z), [float]($H - $mg - $rn.NextDouble() * $Z))))
+            $pen = New-Object System.Drawing.Pen($(if ($hover) { (C 230 50 50) } else { (ARGB 210 236 232 226) }), [float](1.4 * $Z))
+            $g.DrawPolygon($pen, $pts); $pen.Dispose()
+            $g.DrawString($b.Text, $b.Font, (New-Object System.Drawing.SolidBrush($(if ($hover) { (C 255 90 90) } else { (C 236 232 226) }))), $rect, $fmt)
+        }
         'corrupta' {
             # botón oscuro con borde rosa; al pasar el ratón, el texto se parte en rosa y cian
             $g.SmoothingMode = 'AntiAlias'
@@ -10336,6 +11007,8 @@ function Pintar-Boton($g, $b) {
     if ($script:telarana -and $b.Tag -is [hashtable] -and [object]::ReferenceEquals($b.Tag, $script:telarana)) { Dibujar-Telarana $g $W $H }
     # Velvet: en la trampa del abracito, todos los botones quedan cubiertos de telaraña un momento
     elseif ($k.Estilo -eq 'arana' -and $script:vv -and $script:vv.TrampaT -gt $VvTiempos.TrampaFin -and $b.Parent -eq $script:grid) { Dibujar-Telarana $g $W $H }
+    # Silix y Pendeja: las balas, explosiones y quemaduras del tanque también se ven encima de los botones
+    if ($k.Estilo -eq 'silix' -and $b.Parent -eq $script:grid) { Sx-Efectos-Boton $g $b }
 }
 
 function Hover-Color($b) {
@@ -10420,6 +11093,7 @@ function Lanzar($item) {
             'niebla' { Sf-App $linea }
             'knight' { Kn-App $linea }
             'corrupta' { El-App $linea }
+            'silix' { Sx-App $linea }
             'boneyard' { Dy-App $linea }
             'zorro' {
                 $script:antojo = [Math]::Min(100, $script:antojo + 5); $form.Invalidate()
@@ -10462,6 +11136,7 @@ function Lanzar($item) {
                 'niebla' { Decir "No tienes $($item.Nombre). Te abro la web. Internet es como yo: está en todas partes y no se puede tocar." }
                 'knight' { Decir "* No tienes $($item.Nombre). * Te abro la web. * La sombra de la Fuente llega igual." }
                 'corrupta' { Decir "No tienes $($item.Nombre). Te abro la web. Saltar entre dimensiones es lo mío." }
+                'silix' { Decir "$($item.Nombre) no está instalado: se abre la versión web." }
                 'boneyard' { Decir "No tienes $($item.Nombre). Te abro la web. *Le da un lametazo mientras carga.* Así carga más rápido. Creo." }
                 default { Decir "$($item.Nombre) no está instalado. Te abro la web. De nada." }
             }
@@ -10492,6 +11167,7 @@ function Lanzar($item) {
                 'niebla' { Actor-Pose 'F' 'cara' 1500; Decir "No encuentro $($item.Nombre). Se habrá vuelto niebla. Me pasa a mí también." }
                 'knight' { Actor-Pose 'K' 'risa' 1500; Decir "* $($item.Nombre) no está. * El Knight se lo ha llevado por la Gran Puerta. * Como a Undyne." }
                 'corrupta' { El-Rabia 8; Decir "¿$($item.Nombre)? No existe en este universo. Y eso me pone de MUY mal humor." }
+                'silix' { Sx-Subir 'S' 8; Decir "No se encuentra $($item.Nombre)." }
                 'boneyard' { Actor-Pose 'D' 'flip' 800; Decir "No encuentro $($item.Nombre). ¡Se ha escondido! ¡Como yo detrás de una lápida! Ñe-he-he." }
                 default { Decir "No encuentro $($item.Nombre). Igual nunca existió." }
             }
@@ -10592,6 +11268,7 @@ function Efecto-Entrada($prev) {
         'niebla' { Transicion-Fuzzy $msg }
         'knight' { Transicion-Knight $msg }
         'corrupta' { Transicion-Ellie $msg }
+        'silix' { Transicion-Silix $msg }
         'boneyard' { Transicion-Dybbuk $msg }
     }
 }
@@ -11314,7 +11991,7 @@ $form.Add_Paint({
             $g.DrawRectangle((New-Object System.Drawing.Pen((C 0 255 0), 1)), 410, 216, 190, 10)
             $g.DrawString("HITMARKERS: $($script:hitsTotal)    DO THE DEW: $($script:dew)", (FntP('Arial Black', 8)), (New-Object System.Drawing.SolidBrush((C 191 239 255))), 16, 280)
         }
-        { $_ -in @('culto', 'kaiju', 'zorro', 'mew', 'oeste', 'pressure', 'dod', 'teto', 'femta', 'pop', 'pizza', 'punk', 'enfosi', 'gran', 'abismo', 'historia', 'lobo', 'arana', 'clima', 'pintor', 'evil', 'niebla', 'knight', 'boneyard', 'corrupta') } {
+        { $_ -in @('culto', 'kaiju', 'zorro', 'mew', 'oeste', 'pressure', 'dod', 'teto', 'femta', 'pop', 'pizza', 'punk', 'enfosi', 'gran', 'abismo', 'historia', 'lobo', 'arana', 'clima', 'pintor', 'evil', 'niebla', 'knight', 'boneyard', 'corrupta', 'silix') } {
             # skins nuevas: fondo real + personajes grandes + efectos + bocadillo propio
             $g.SmoothingMode = 'AntiAlias'
             # el fondo se prepara siempre con el tamaño fijo de la skin (no con el de la ventana a medio montar)
@@ -11551,6 +12228,7 @@ $form.Add_Paint({
                     Texto-Contorno $g 'THE BONEYARD' 'EdmundMcMillen_INTLv4' 15 16 277 (C 150 172 186) 3
                     Texto-Contorno $g "MANÁ LAMIDO: $(if ($dyb) { $dyb.Mana } else { 0 })" 'EdmundMcMillen_INTLv4' 14 158 278 (C 232 234 226) 3
                 }
+                'silix' { Sx-Pintar $g $k $W $H }
                 'corrupta' {
                     $el2 = $script:el; $ahora = [Environment]::TickCount
                     $rab = if ($el2) { $el2.Rabia } else { 0.0 }; $glt = $el2 -and $el2.Glitch
@@ -12066,6 +12744,7 @@ function Clic-Actor($id) {
         'niebla' { if ($id -eq 'G') { Sf-Gato } else { Sf-Clic } }
         'knight' { Kn-Clic }
         'corrupta' { if ($id -eq 'N') { El-Natillas } else { El-Pinchar } }
+        'silix' { Sx-Clic $id }
         'boneyard' { Dy-Clic }
     }
 }
@@ -12263,6 +12942,8 @@ function Construir-UI {
         if ($k.Estilo -eq 'knight') { Kn-Reset } else { $script:kn = $null }
         # Ellie: guarda su rabia y sus contadores mientras sea la skin activa; sus copias de color se hacen al dibujarla
         if ($k.Estilo -eq 'corrupta') { El-Reset } else { $script:el = $null; foreach ($im in @($script:elRojo, $script:elCian)) { if ($im) { $im.Dispose() } }; $script:elRojo = $null; $script:elCian = $null }
+        # Silix y Pendeja: la rabia sigue mientras sea la skin activa; al irse, todo a cero y fuera las imágenes guardadas
+        if ($k.Estilo -eq 'silix') { Sx-Reset; Sx-Actores } else { $script:sx = $null; if ($script:sxRabia) { $script:sxRabia.Dispose(); $script:sxRabia = $null }; if ($script:sxCaras) { foreach ($im in @($script:sxCaras.Values)) { if ($im) { $im.Dispose() } }; $script:sxCaras = $null }; if ($script:sxHudBmp) { $script:sxHudBmp.Dispose(); $script:sxHudBmp = $null; $script:sxHudClave = '' } }
         # Dybbuk: guarda su vida y su maná mientras sea la skin activa
         if ($k.Estilo -eq 'boneyard') { Dy-Reset; Dy-Base } else { $script:dy = $null }
         $status.BackColor = [System.Drawing.Color]::Transparent

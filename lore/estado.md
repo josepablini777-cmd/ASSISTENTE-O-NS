@@ -36,3 +36,4 @@
 | Weathergirl | ✅ Bien | Nueva (FLAVOR FOLEY ft. Eleanor Forte); ficha, frases, opiniones cruzadas y 5 charlas escritas desde la ficha |
 | Malkuth | ✅ Bien | Ficha nueva (Library of Ruina); frases, opiniones y 5 charlas escritas desde la ficha |
 | Ellie | ✅ Bien | Self insert de Ale; solo frases propias (sin charlas ni opiniones cruzadas, a propósito) |
+| Silix y Pendeja | ⏳ Sin revisar | OC de Fox Fandubs (grupo Amigos). Base SIN diálogos a propósito, a la espera de su personalidad: sin frases, sin charlas y nadie opina de ellas |

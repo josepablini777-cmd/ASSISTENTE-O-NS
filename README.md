@@ -1,6 +1,20 @@
-# 🎃 c00lgui v6.66 HALLOWEEN – panel lanzador con skins de asistentes
+# 🎃 c00lgui v6.7 – panel lanzador con skins de asistentes
 
 Panel para Windows que abre YouTube, las apps de Office y otros programas con un clic.
+
+---
+
+## Notas del parche – v6.7
+
+**🎃 Llega la actualización de Halloween completa.** Todo lo de la v6.66 (más abajo) ya está en esta versión: Evil Scary, Soft Fuzzy Man, Dybbuk, Roaring Knight con su minijuego, Weathergirl, Painter, Malkuth, Ellie, el editor de diálogos, las skins archivadas y las skins rehechas (Angela, Velvet, Kennyoung, Tetra y Guillotina).
+
+**Skin nueva: Silix y Pendeja** (OC de Fox Fandubs, en el grupo **Amigos**)
+- Dos personajes en una sola skin, con el estilo de *Forsaken*: letra con serifa, paneles y botones pintados a pincel y la cabaña de fondo.
+- **Intro:** una alarma exagerada con sirenas y **⚠ ALERTA DE PROYECTARSE ⚠**, un misil que se estrella con rótulo de noticias, una ardilla que grita, el canal de YouTube y el Discord de su creador con un montón de flechas y círculos rojos y, como en *Forsaken*, *"This round's assistant is..."* con cada una.
+- **Barras de RABIA** (como la vida de *Forsaken*): suben al hacerles clic y al abrir apps, y bajan solas si las dejas tranquilas.
+- **Silix al 100 %:** se sube a su **tanque** y dispara a los botones (explosiones y quemaduras). Cada explosión enfada más a la Pendeja.
+- **La Pendeja al 100 %:** se le pone la **cara de rabia** y grita **FFFUUU**; su grito enfada a Silix.
+- De momento **no hablan**: no tienen frases ni charlas con las demás skins, y nadie opina de ellas. Llegarán cuando se sepa su personalidad.
 
 ---
 
@@ -197,37 +211,48 @@ Tres invitados de miedo para la noche más larga del año:
 **Para quien quiera tocar el código**
 - Al principio de la sección `SKINS` de `c00lgui.ps1` hay una guía paso a paso para añadir skins nuevas.
 - Los grupos del menú Skins se cambian en la lista `$GruposSkins` y el texto del tutorial en `$TextoTutorial`.
-Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code, Build the Larp"). Tiene veinticinco skins, cada una con su propio estilo, animaciones y diálogos:
+
+---
+
+## Las skins
+
+Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code, Build the Larp"). Tiene treinta y una skins, cada una con su propio estilo, animaciones y diálogos. Cinco están **archivadas** (🗃️): no salen en el menú Skins, pero se pueden poner desde **Ajustes → Skins archivadas**.
 
 | Skin | Estilo | Efecto al entrar |
 |---|---|---|
 | **c00lgui** | Panel hacker de c00lkidd (Roblox): negro y rojo | Glitch: la ventana tiembla y salen errores falsos |
 | **SeaDrive** | Asistente de YonKaGor, con aspecto de página web | Carga como una web: URL, barra de progreso… |
 | **Static Miku** | Miku de Flavor Foley, como un dibujo animado en una tele vieja | Estática de tele y encendido desde el centro |
-| **Guillotina** | Jefa de Mewgenics en el callejón de su cinemática, con barra de vida de jefa | Cementerio de noche: "GUILLOTINA IS COMING FOR YOU!" con el anuncio real de la radio WMEW 99.9 |
-| **Angela** | IA de Lobotomy Corporation, con la interfaz de L Corp | Inicio de jornada: "Face the Fear, Build the Future" y el día |
+| **Guillotina** | Jefa de Mewgenics en el callejón de su cinemática, con barra de vida de jefa. Habla como una depredadora lista y manipuladora | Las imágenes del callejón con el anuncio de la radio WMEW 99.9, ella bajo la farola, el cartel "Guillotina is coming for you!" y una mandíbula que se come la pantalla |
+| **Angela** | IA de Lobotomy Corporation en la sala de monitores de L Corp, con 11 caras del juego, cuota de energía diaria y brechas de contención | El logo de Lobotomy Corporation, el cartel del día con Angela en su silla y la sala de monitores, con su música |
 | **Mikaela** | Francotiradora de PURSUITCORE, estilo MLG | Mira del francotirador, disparo y hitmarker |
-| **Zodiac** | Pistolero loco de Mewgenics en un duelo al atardecer, con buitres, planta rodadora y cartuchera de 6 balas | Duelo de película del oeste: primer plano de sus ojos, "DON'T MOVE!", tres balazos y su cartel de SE BUSCA |
-| **Velvet** | Araña de Gunsaw, en la pantalla CRT del juego | Pantalla de selección de personaje que se apaga como un monitor viejo |
-| **Dune** | Criatura acuática de Gunsaw que habla como un cavernícola | Igual, con su ficha y sus estadísticas |
+| **Zodiac** 🗃️ | Pistolero loco de Mewgenics en un duelo al atardecer, con buitres, planta rodadora y cartuchera de 6 balas | Duelo de película del oeste: primer plano de sus ojos, "DON'T MOVE!", tres balazos y su cartel de SE BUSCA |
+| **Velvet** | La araña de Gunsaw en su guarida: escupe telaraña, envuelve capullos y te tiende un abracito-trampa | La pantalla de carga de Gunsaw con su ficha de especie; una telaraña cubre la pantalla y ella baja por su hilo, con *Night of the Creeps* |
+| **Dune** 🗃️ | Criatura acuática de Gunsaw que habla como un cavernícola | La pantalla de selección de personaje de Gunsaw, con su ficha y sus estadísticas, que se apaga como un monitor viejo |
 | **Cordero y Cabra** | El Cordero y la Cabra de Cult of the Lamb en el Templo del Cordero | Templo de huesos: se abre el ojo de la corona, se dibuja el círculo ritual y entran los dos |
 | **Pyrophina y Zaratana** | Las dos kaijus de Mewgenics peleándose delante del P Mart | La radio WMEW 99.9 avisa, chocan en la calle del pueblo y aparece el "VS" |
-| **Averi** | Zorrita torpe y cariñosa, con su foto en una polaroid | Su foto cae entre hojas de otoño, con un sándwich de pollo |
+| **Averi** 🗃️ | Zorrita torpe y cariñosa, con su foto en una polaroid | Su foto cae entre hojas de otoño, con un sándwich de pollo |
 | **Sebastian Solace** | El tendero de *Pressure*, detrás del mostrador de su tienda en el Hadal Blacksite | Gateas por la ventilación, se abre la rejilla y aparece él |
 | **Pursuer** | El depredador de *Die of Death* en el bosque del mapa Treehouse | La animación de presentación del juego y "AHH, FRESH MEAT!" |
 | **Kasane Teto** | Teto en la pose de *BIRDBRAIN*, bailando sobre el rosa del videoclip | Una bandada de palomas cruza la pantalla, Teto cae rebotando y dice "¡Hiii~!" con su voz real |
 | **Token** | La mascota de femtanyl con el arte oficial de sus portadas, como pegatinas sobre la ciudad roja de *ALL THE TIME* | INSERT TOKEN: cae la ficha, su logo en llamas, cortes rápidos con sus portadas y su cartel |
-| **Tetra** | El gato de *You're Just Like Pop Music* (YonKaGor) en el acuario de neón del videoclip, con estética de cinta VHS | Una cinta VHS: PLAY, escenas del videoclip y el cartel de neón de "Pop Music" |
-| **Kevin** | El lobo verde de *Don't Touch My Pizza* (Nyanwolf), viviendo dentro de un dibujo de Paint sobre un mantel de pizzería | Se abre Paint, un lápiz dibuja su pizza, "DON'T TOUCH MY PIZZA" palabra a palabra, fuego y su cartel con arcoíris, con la polka de fondo |
-| **Kennyoung** | El personaje del músico surcoreano de pop-punk, dentro del reproductor de su canal de YouTube, en un local de ensayo | Su canal carga, se le da al play y suena un riff pop-punk con cortes de sus videoclips y títulos de sus canciones |
+| **Tetra** 🗃️ | El gato de *You're Just Like Pop Music* (YonKaGor) en un acuario con bancos de tetras neón, con su lámina de fanart | El principio del videoclip oficial, con su canción |
+| **Kevin** 🗃️ | El lobo verde de *Don't Touch My Pizza* (Nyanwolf), viviendo dentro de un dibujo de Paint sobre un mantel de pizzería | Se abre Paint, un lápiz dibuja su pizza, "DON'T TOUCH MY PIZZA" palabra a palabra, fuego y su cartel con arcoíris, con la polka de fondo |
+| **Kennyoung** | El músico surcoreano de pop-punk, viviendo en escenas de sus videoclips: su ánimo decide la escena y la canción | Un tablero de pegatinas: se enciende el flexo y, al ritmo de *Ready To Say*, sus escenas se pegan en la pared hasta que se pega él |
 | **Enfosi** | El juego de Roblox de Tumore: la estatua de oro en Blibble's Field y los Glaggles que caminan hacia ella | Conoce a tus Glaggles: uno se revela como Enphosian, aparece el Ojo de Enphoso y empieza la oleada 1 |
 | **Gran** | El virólogo de Antihuman Inc. (ivycomb, *ANTIHUMAN*) en la cámara de su laboratorio de Central Tower, sobre su remolino de pintura | La de su personaje en el vídeo: rayas grises, el remolino rosa y cian, su cara y el busto con la jeringuilla, con su canción |
 | **Nanachi** | El Hueco de *Made in Abyss* en su escondite de la 4ª capa, con Mitty a su lado, la olla del estofado y sus caras del anime en un dibujo de la pared | Descenso por las capas del Abismo hasta la entrada de su escondite, entre los hilos del campo de fuerza |
 | **Evil Scary** 🎃 | La amenaza de la ronda especial de *Die of Death*: una bola negra con manos que bota hacia ti en la baseplate de noche con niebla roja | La pantalla de SPECIAL ROUND!, "IT IS EVIL AND SCARY" y la bola botando hacia la cámara hasta el susto |
 | **Soft Fuzzy Man** 🎃 | El lobo-fantasma rosa de la canción de Lemon Demon (animación de Aimkid), bailando en la colina de noche con Orange Cat dando vueltas a su lado | El principio de la animación hasta que la espiral rosa llena la pantalla; el panel sale de la niebla |
 | **Roaring Knight** | El antagonista de *Deltarune* en pixel art, sobre el fondo de combate morado; botón **FIGHT** con un minijuego de esquivar sus ataques | "\* The Roaring Knight appeared.", levanta la espada y ruge |
+| **Dybbuk** 🎃 | El jefe del Boneyard de *Mewgenics*: un gato-fantasma bromista entre las lápidas, con barra de vida de jefe | *Them Kitty Bones*, la puerta del cementerio, "¡Cucú!" detrás de las lápidas, su presentación de jefe y un lametazo que limpia la pantalla |
+| **Weathergirl** | La chica del tiempo de FLAVOR FOLEY (ft. Eleanor Forte), con el parte del tiempo de verdad de donde estés | Trozos del videoclip oficial, con su canción |
+| **Painter** | Z-779 de *Pressure*: es su propio programa de dibujo, como el Paint clásico de Windows, con su cara en una pantallita | Arranca un ordenador del Blacksite, "ABRIENDO the_p.AI.nter.exe" y el lápiz le dibuja la sonrisa |
+| **Malkuth** | La Bibliotecaria Patrona de la Planta de Historia (*Library of Ruina*), con su mesa de libros y su música | La sala de la Planta de Historia, con Malkuth plantándole cara a Angela, con su música |
+| **Ellie** | Self insert de Ale: humana corrupta que viaja por el multiverso, sobre un portal y con su selfie en una polaroid | Un vídeo cutre de alarma: "⚠ SELF INSERT DETECTADO ⚠", el usuario de Ale con círculo y flecha rojos, y glitch |
+| **Silix y Pendeja** | OC de Fox Fandubs al estilo de *Forsaken*: dos barras de RABIA, un tanque y la cara de rabia | "⚠ ALERTA DE PROYECTARSE ⚠", un misil, la ardilla que grita, el canal de su creador lleno de flechas rojas y "This round's assistant is..." |
 
-Cada skin opina de las demás. Pasa el ratón por los botones del menú **Skins** para oír lo que piensa el asistente de cada una. De vez en cuando, además, **discuten entre ellos**: el otro personaje aparece en su propia ventanita pegada al panel, con su estilo y su bocadillo. Lo que dicen tiene efectos: los disparos suenan y hacen temblar las ventanas, las Smokebomb las vuelven transparentes y los mordiscos suenan. **Haz clic derecho sobre el personaje** para empezar una discusión cuando quieras.
+Cada skin opina de las demás (menos **Ellie** y **Silix y Pendeja**: a propósito, ni tienen charlas ni nadie opina de ellas). Pasa el ratón por los botones del menú **Skins** para oír lo que piensa el asistente de cada una. De vez en cuando, además, **discuten entre ellos**: el otro personaje aparece en su propia ventanita pegada al panel, con su estilo y su bocadillo. Lo que dicen tiene efectos: los disparos suenan y hacen temblar las ventanas, las Smokebomb las vuelven transparentes y los mordiscos suenan. **Haz clic derecho sobre el personaje** para empezar una discusión cuando quieras.
 
 **Tamaño:** el panel se adapta solo al escalado de tu pantalla. Para hacerlo más grande o más pequeño, usa el botón **Ajustes**.
 
@@ -245,14 +270,14 @@ No hace falta instalar nada: funciona con PowerShell, que ya viene con Windows 1
 
 - **Botones:** abren la app. Si una app de Office no está instalada, se abre su versión web. En la página 2 también hay enlaces a **GitHub** y **Wikipedia**.
 - **`<` y `>`:** cambian de página.
-- **Skins:** elige otra skin. Se recuerda para la próxima vez. Las skins están agrupadas según de dónde viene cada personaje (**YouTube**, **Roblox**, **Videojuegos**, **Artistas**); debajo del nombre sale su creador o su juego. Con **`<`** y **`>`** pasas de un grupo a otro.
+- **Skins:** elige otra skin. Se recuerda para la próxima vez. Las skins están agrupadas según de dónde viene cada personaje (**YouTube**, **Roblox**, **Videojuegos**, **Halloween**, **Anime** y **Amigos**); debajo del nombre sale su creador o su juego. Con **`<`** y **`>`** pasas de un grupo a otro. Las skins archivadas (Zodiac, Dune, Kevin, Tetra y Averi) se ponen desde **Ajustes → Skins archivadas**.
 - **Mover la ventana:** arrástrala desde el título.
 - **Asistente:** haz clic en el personaje y te contesta.
   - **Guillotina:** cada clic le quita vida. Con 200 o menos se enfurece, como en el juego (el callejón late en rojo y golpea con la barriga). Cada app que abres es un gato engullido. Si la derrotas, vuelve buscando venganza.
-  - **Angela:** cada app que abres suma a la cuota de energía del día.
+  - **Angela:** cada app que abres suma energía a la cuota del día (el día se guarda y cada día pide más). Si hay una brecha de contención en el monitor, haz clic en él para reprimirla.
   - **Mikaela:** mantén pulsado sobre ella para cargar el Snipe y suelta para disparar (2 s: cargado, 6 s: sobrecargado).
   - **Zodiac:** gasta una bala con cada app y si mueves la ventana. Haz clic en él para recargar. A veces te reta a un **duelo**: cuando salga "DRAW!", haz clic en él antes de que dispare (si haces clic antes, eres un tramposo).
-  - **Velvet:** haz clic en ella y escupe una telaraña sobre un botón. El primer clic en ese botón rompe la telaraña.
+  - **Velvet:** cada app es un visitante que se acerca a su telaraña. A veces escupe telaraña sobre un botón (el primer clic la rompe) y, cuando tiene hambre, envuelve un **capullo**. Haz clic en ella para darle un abracito... pero si te confías demasiado, es una **trampa** y la telaraña cubre todos los botones.
   - **Dune:** le entra hambre con el tiempo y con cada app que abres. Haz clic en él para darle de comer.
   - **Cordero y Cabra:** clic en el Cordero para que bale (la Cabra lo "traduce") y en la Cabra para que grite o se ría. Cada app es un seguidor nuevo; cada 5, un ritual con tentáculos. La fe del culto baja con el tiempo.
   - **Pyrophina y Zaratana:** clic en una para que ataque a la otra. A media vida desatan la tormenta de fuego y el meteornado, como en el juego. La que gana te da su collar y Steven las vuelve a invocar.
@@ -263,14 +288,25 @@ No hace falta instalar nada: funciona con PowerShell, que ya viene con Windows 1
   - **Token:** cada app es una ficha en la recreativa. Haz clic muchas veces seguidas para llenar el HYPE: al máximo, **¡modo BREAKCORE!**
   - **Tetra:** cada app trae un mensaje de su amigo "neems". Cada cuatro clics se pone (o se quita) el **No molestar**.
   - **Kevin:** cada app que abres es un trozo de pizza que se come; cuando se acaba, llega el repartidor con otra. **No toques su pizza**: a la primera saca un cuchillo y una pistola, a la segunda te avisa de que te va a morder y a la tercera saca la motosierra y todo arde. Si aparece **queso azul**, ese sí puedes quitarlo haciendo clic en la pizza (te lo agradecerá). Haz clic en él para que baile, cante con el micro o, con suerte, se suba a un unicornio.
-  - **Kennyoung:** cada app que abres son visitas y likes para su canal, y cada 8 hay **concierto** con la banda. Haz clic en él para que toque un acorde: el **amplificador** sube y, si llega al máximo, la guitarra **explota**. El botón **SUSCRIBIRSE** del reproductor funciona (con campanita). La barra roja va pasando por sus canciones.
+  - **Kennyoung:** vive en escenas de sus videoclips y su ánimo (energía, compañía y agobio) decide la escena y la canción. Las apps le cansan, le hacen compañía y le agobian un poco; si le dejas un rato tranquilo, descansa. Haz clic en la escena: con ganas de tocar, toca la guitarra (el **AMPLI** sube y, al máximo, **¡KABOOM!**); agobiado, se calma; cansado, recupera energía; solo, se siente acompañado.
   - **Enfosi:** cada app trae un Glaggle a la estatua. Haz clic en él solo si es un Enphosian disfrazado (piel de otro color, símbolo falso, sin símbolo o sin cara). Si le pegas a un inocente es strike, y con tres viene el Ojo de Enphoso.
   - **Gran:** cada app que abres es un sujeto de prueba que recibe Fury Mix: puede salir un furry nuevo o fallar. Cada 10 sujetos manda un informe al consejo. Haz clic en él y se tapa la cara. Mientras esté puesta la skin suena su canción (se quita con el sonido en **Ajustes**).
   - **Nanachi:** cada app echa un ingrediente al estofado del Abismo; con 5 lo sirve. Haz clic en Nanachi para acariciarle (sube el medidor MULLIDO; si insistes mucho, se aparta) y en Mitty para que se ponga contenta.
+  - **Evil Scary:** se acerca a saltitos, y cada app hace ruido y le hace botar hacia ti. Haz clic en él para alejarlo (**PUNCH**); si lo haces durante la alarma **STALL** o la carga, lo bloqueas. Si llega hasta ti... susto.
+  - **Soft Fuzzy Man:** si nadie le hace caso, su **EXISTENCIA** baja y se vuelve transparente; cada app le hace caso. Haz clic en él (tu mano lo atraviesa) o en Orange Cat (se asusta y da vueltas). Cada 6 apps llega la niebla rosa.
+  - **Roaring Knight:** cada app es una Fuente Oscura y sube la barra **ROARING**; al llenarse, ruge y sale un Titán. Haz clic en él para CHECK y ACT. El botón **FIGHT** abre el minijuego: mueve el alma con las flechas o WASD (Mayús = despacio) o con el ratón y esquiva sus ataques.
+  - **Dybbuk:** haz clic para pegarle (a veces lo esquiva con un Backflip). Con 0 de vida **posee el panel**; el siguiente golpe lo mata y vuelve a los pocos segundos. A veces le da un lametazo a una app y le chupa el maná; cada 5 apps invoca fuegos fatuos.
+  - **Weathergirl:** te da el parte del tiempo de donde estés. Cada app es una palabra sin decir: con 6 llora y llega la tormenta; tres clics la consuelan y salen cielos vivos con arcoíris. Si llueve, **dale el paraguas**.
+  - **Painter:** cada app pinta un trozo de paisaje y le sube el **OVERCLOCK**; a 100° se pone a minar y lo pierde todo. Haz clic en él para enfriarlo. Si le dejas solo mucho rato, se duerme.
+  - **Malkuth:** cada app es un libro para su mesa; con los libros sube la **emoción** (y cambia la música) hasta su **Realización**. Si se agobia con fallos, prisas o muchos clics seguidos, se hunde: haz clic y hacéis juntas el ejercicio de respiración.
+  - **Ellie:** su barra **GLITCH** sube si la pinchas o si hay demasiado silencio; las apps la entretienen. Al 100 % entra en **MODO GLITCH**. Haz clic en las natillas para que se las coma y se calme.
+  - **Silix y Pendeja:** haz clic en cada una (o abre apps) y su **RABIA** sube; si las dejas en paz, baja sola. Silix al 100 % se sube a su **tanque** y dispara a los botones; la Pendeja al 100 % pone su cara de rabia y grita. Todavía no hablan.
 
 ## Ajustes
 
 El botón **Ajustes** abre una ventanita para: activar o quitar el sonido y su volumen, las discusiones con invitados, las intros, el **modo seguro para epilepsia** (sin destellos ni temblores), cuántas frases dicen solos, el tamaño del panel, la opacidad, tenerlo siempre encima, recordar dónde lo dejaste y abrirlo al encender el ordenador. Se guarda en `ajustes.txt`.
+
+Abajo tiene los botones **Editar botones**, **Tutorial**, **Guía del panda** y **Skins archivadas** (para ponerte una skin archivada, archivar otra o devolverla al menú).
 
 **Textos largos:** si una frase no cabe en el bocadillo, al terminar de escribirse vuelve al principio y baja sola. También puedes moverla con la rueda del ratón.
 
@@ -288,7 +324,7 @@ En **Ajustes → Tutorial** hay una hoja con todos los pasos explicados.
 
 Tus botones se guardan en `botones.txt` (una línea por botón: `Nombre | qué abre | web si no está instalado`), que también se puede editar con el Bloc de notas. Si lo borras, vuelven los botones de serie.
 
-Las frases de cada asistente están en la sección `SKINS` de `c00lgui.ps1`.
+Las frases de cada asistente están en la carpeta `dialogos` (un archivo por skin y `_charlas.json` con las charlas). Se pueden ver y cambiar con el **editor de diálogos**: doble clic en `editor_dialogos.vbs`.
 
 ## Cambiar los grupos del menú Skins
 
@@ -313,12 +349,12 @@ Al principio de la sección `SKINS` de `c00lgui.ps1` hay una guía paso a paso c
 - **SeaDrive:** personaje de [YonKaGor](https://www.youtube.com/@YonKaGor), de la canción *Top 10 Things To Do Before You Die*. GIF de [Tenor](https://tenor.com/view/seadrive-seadrive-yonkagor-yonkagor-seadrive-yonkagor-furry-gif-13965177036432532238).
 - **Static Miku:** personaje de [Flavor Foley](https://flavorfoley.com/FFF/st/), del videoclip *Static*. GIFs de Tenor.
 - **Guillotina:** jefa de *Mewgenics* (Edmund McMillen y Tyler Glaiel). Animaciones de la [wiki de Mewgenics](https://mewgenics.wiki.gg/wiki/Guillotina); fondos, voces y anuncio de radio sacados del juego.
-- **Angela:** personaje de *Lobotomy Corporation* (Project Moon). Sprites de la [wiki de Lobotomy Corporation](https://lobotomycorporation.wiki.gg/wiki/Angela/Gallery).
+- **Angela:** personaje de *Lobotomy Corporation* (Project Moon). Sprites de la [wiki de Lobotomy Corporation](https://lobotomycorporation.wiki.gg/wiki/Angela/Gallery); música oficial del juego.
 
 - **Mikaela:** personaje de *PURSUITCORE* (Roblox). Imágenes y sonidos de la [wiki de PURSUITCORE](https://pursuitcore.miraheze.org/wiki/Mikaela).
 - **Zodiac:** jefe de *Mewgenics*. Animaciones de la [wiki de Mewgenics](https://mewgenics.wiki.gg/wiki/Zodiac); desierto, planta rodadora y sonidos sacados del juego.
 
-- **Velvet y Dune:** personajes de *Gunsaw* (Orsoniks). Imágenes de la [wiki de Casualties: Unknown](https://scavprototype.wiki.gg/wiki/Gunsaw).
+- **Velvet y Dune:** personajes de *Gunsaw* (Orsoniks). Imágenes de la [wiki de Casualties: Unknown](https://scavprototype.wiki.gg/wiki/Gunsaw). Música de Velvet: *Night of the Creeps*, de Karl Casey (White Bat Audio, libre de derechos).
 - **El Cordero y la Cabra:** personajes de *Cult of the Lamb* (Massive Monster). Animaciones y capturas de los templos de la [wiki de Cult of the Lamb](https://cult-of-the-lamb.fandom.com/wiki/Temple); balidos y voces de la Cabra sacados del juego.
 - **Pyrophina y Zaratana:** jefas de *Mewgenics*. Animaciones de la [wiki de Mewgenics](https://mewgenics.wiki.gg/wiki/Pyrophina_vs_Zaratana); fondos (el P Mart y la calle), fuentes de letra, rugidos y anuncio de la radio WMEW 99.9 sacados del juego.
 - **Averi:** personaje de Fiddleafox. Imágenes de su [ficha oficial](https://refsheet.net/fiddleafox).
@@ -327,12 +363,22 @@ Al principio de la sección `SKINS` de `c00lgui.ps1` hay una guía paso a paso c
 - **Kasane Teto:** personaje de Twindrill, del videoclip *BIRDBRAIN* (Jamie Paige). Dibujo de [BugMangaka](https://www.deviantart.com/bugmangaka/art/BIRDBRAIN-Teto-Postcard-1295804355); fotos del videoclip sacadas de GIFs de [Tenor](https://tenor.com/search/birdbrain-teto-gifs). Voz: banco de voz UTAU oficial de Teto (© 小山乃舞世 / [Twindrill](https://kasaneteto.jp/utau/)), uso no comercial.
 
 - **Token:** mascota de [femtanyl](https://en.wikipedia.org/wiki/Femtanyl). Arte oficial: las portadas de su [Bandcamp](https://femtanyl.bandcamp.com/music), dibujadas por Noelle Stockwood. Sonidos sintetizados para el panel.
-- **Tetra:** personaje de [YonKaGor](https://www.youtube.com/@YonKaGor) (diseño de SentyPurr), del videoclip *You're Just Like Pop Music*. Ficha y escenas del vídeo de la [wiki de YonKaGor](https://kennyon.fandom.com/wiki/Tetra).
+- **Tetra:** personaje de [YonKaGor](https://www.youtube.com/@YonKaGor) (diseño de SentyPurr), del videoclip *You're Just Like Pop Music*. Ficha y escenas del vídeo de la [wiki de YonKaGor](https://kennyon.fandom.com/wiki/Tetra). Lámina: fanart de Lovavavavania (X: @Lovavavavania). Intro sacada del videoclip oficial y su instrumental oficial.
 
 - **Kevin:** el lobo de la animación *Don't Touch My Pizza* de Nyanwolf, con la canción de Zombycare ([más información](https://knowyourmeme.com/memes/dont-touch-my-pizza)). GIFs de [Tenor](https://tenor.com/search/dont-touch-my-pizza-gifs). Música: "Pixel Peeker Polka - faster", de Kevin MacLeod ([incompetech.com](https://incompetech.com)), con licencia [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). Efectos de sonido sintetizados para el panel.
-- **Kennyoung:** personaje del músico y animador [Kennyoung](https://youtube.com/@kennyoung). GIFs de sus videoclips en [Tenor](https://tenor.com/search/kennyoung-gifs) y foto de perfil de la [KennYon Wiki](https://kennyon.fandom.com/wiki/Kennyoung). El riff y los sonidos están sintetizados para el panel (no es su música).
+- **Kennyoung:** personaje del músico y animador [Kennyoung](https://youtube.com/@kennyoung). GIFs de sus videoclips en [Tenor](https://tenor.com/search/kennyoung-gifs) y foto de perfil de la [KennYon Wiki](https://kennyon.fandom.com/wiki/Kennyoung). Escenas de sus videoclips y sus canciones *Ready To Say*, *I Used To*, *Loner*, *Lethargy* y *Get Away*, de su canal de YouTube.
 - **Enfosi:** juego de Roblox de **Tumore**. Imágenes, sonido del aviso de jefe (recreación) e información de la [wiki de Miraheze](https://enfosi.miraheze.org) y la [wiki de Fandom](https://enfosi-tumore.fandom.com). Los demás sonidos están sintetizados para el panel.
 - **Gran:** personaje de [ivycomb](https://www.youtube.com/@ivycomb) (arte y coguion de LovecutV, con Stephanafro), de *ANTIHUMAN*. Intro y animaciones sacadas de los vídeos de su personaje; historia y datos de la [wiki de ivycomb](https://wiki.ivy.cm). Música: "Are You Sure He's a Pharmacist?", de ivycomb (de *Regretevator* y *ANTIHUMAN Volume 1*).
 - **Nanachi y Mitty:** personajes de *Made in Abyss* (Akihito Tsukushi). Imágenes del anime, del escondite, de las capas del Abismo y del estofado de la [wiki de Made in Abyss](https://madeinabyss.fandom.com/wiki/Nanachi); caras animadas de GIFs de [Tenor](https://tenor.com/search/nanachi-gifs). Sonidos sintetizados para el panel.
+
+- **Evil Scary:** la ronda especial de *Die of Death* (Roblox). Imágenes de la [wiki de Die of Death](https://die-of-death.fandom.com). Sonidos hechos para el panel.
+- **Soft Fuzzy Man y Orange Cat:** la canción *Soft Fuzzy Man* es de Lemon Demon (Neil Cicierega, disco *Spirit Phone*) y la animación, de [Aimkid](https://aimkidanimatorartist.fandom.com). La intro, los bailes y las caras salen de su animación.
+- **Roaring Knight:** personaje de *Deltarune* (Toby Fox). Sprites de la [wiki de Deltarune](https://deltarune.wiki). Sonidos hechos para el panel.
+- **Dybbuk:** jefe de *Mewgenics* (Edmund McMillen y Tyler Glaiel). Animaciones de la [wiki de Mewgenics](https://mewgenics.wiki.gg/wiki/Dybbuk); sonidos y música (*Them Kitty Bones*) sacados del juego.
+- **Weathergirl:** canción y videoclip de [FLAVOR FOLEY](https://flavorfoley.com/weathergirl) con Eleanor Forte (vídeo de ippo.tsk). Arte oficial de la tienda de Flavor Foley; intro sacada del [videoclip](https://www.youtube.com/watch?v=M7VSEZOQIlg) e instrumental oficial. El tiempo lo da [wttr.in](https://wttr.in).
+- **Painter (the_p.AI.nter, Z-779):** personaje de *Pressure* (Roblox, Zeal). Datos de la [wiki oficial de Pressure](https://urbanshade.org/wiki/The_p.AI.nter); voces del juego (voz de artdstuf) y música del altavoz de Z-779. El programa de dibujo y sus caras están dibujados para el panel.
+- **Malkuth:** personaje de *Library of Ruina* (Project Moon). Imágenes de la [wiki de Library of Ruina](https://libraryofruina.wiki.gg/wiki/Malkuth); música: *Malkuth Story* y *Malkuth Battle 1* y *2* (Project Moon) y *Malkuth Battle Theme 3* (Lunartique).
+- **Ellie Velázquez:** personaje original de Ale, con sus imágenes. Sonidos hechos para el panel.
+- **Silix y Pendeja:** personajes originales (OC) de **Fox Fandubs** ([FOX FANDUBS] en YouTube), inspirados en *Forsaken* (Roblox). GIF del misil de [Tenor](https://tenor.com); sonidos hechos para el panel.
 
 Proyecto de fans sin ánimo de lucro. Los personajes pertenecen a sus autores.
