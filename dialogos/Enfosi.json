@@ -84,7 +84,10 @@
     "Dybbuk": "¡Dybbuk se ha ido! Revisad la estatua... ¡Tiene babas! ¡Pero sigue en pie!",
     "Malkuth": "¡Malkuth se ha ido! ¡Ha apuntado la historia de la estatua entera! ¡Hasta los Glaggles salen con nombre!",
     "Weathergirl": "¡Weathergirl se ha ido! ¡Ha dicho que mañana despejado! ¡Día perfecto para defender la estatua!",
-    "Painter": "¡Painter se ha ido! ¡Le dibujé una estatua en su pantalla! ¡La dibujó tan bien que casi parecía viva!"
+    "Painter": "¡Painter se ha ido! ¡Le dibujé una estatua en su pantalla! ¡La dibujó tan bien que casi parecía viva!",
+    "Valencina": "Se ha ido Valencina. Ha dejado marcado a un Glaggle. Y era el falso. Claro que lo era.",
+    "Lei Heng": "Se fue Lei Heng. Hay que reponer Glaggles.",
+    "Kalo": "Se fue Kalo. Boris ha pisado un Glaggle."
   },
   "Opina": {
     "c00lgui": ["c00lgui parpadea en rojo. En Enfosi, un color raro es una imperfección. Golpéalo.", "c00lgui no tiene cara. Le falta la cara. Eso es de manual: es un falso."],
@@ -114,6 +117,9 @@
     "Dybbuk": ["Dybbuk se mete dentro de los Glaggles. ¡Así no hay forma de saber quién es un disfraz!", "Un gato que lo esquiva todo. Si defendiera la estatua, sería invencible."],
     "Malkuth": ["¡Malkuth se lo aprende todo! ¡Sería la mejor guía de la estatua!", "Le enseñé un Enphosian disfrazado. Lo catalogó como \"impostor, gracioso\". ¡Ja!"],
     "Weathergirl": ["¡Weathergirl nos avisa cuando va a llover sobre la estatua! ¡Los Glaggles odian mojarse!", "¡Le enseñé un Enphosian disfrazado de nube! ¡Lo metió en el parte!"],
-    "Painter": ["¡Painter es de los pocos que ve los Glaggles sin asustarse! ¡Hace carita feliz y todo!", "¡Dice que quiere pintar paisajes! ¡Yo le dije: \"empieza por la estatua\"! ¡Se rió con los ventiladores!"]
+    "Painter": ["¡Painter es de los pocos que ve los Glaggles sin asustarse! ¡Hace carita feliz y todo!", "¡Dice que quiere pintar paisajes! ¡Yo le dije: \"empieza por la estatua\"! ¡Se rió con los ventiladores!"],
+    "Valencina": ["Valencina distingue a un Enphosian disfrazado a la primera. Dice que en el Pulgar es lo primero que se aprende. ¿Qué es el Pulgar?"],
+    "Lei Heng": ["Lei Heng ha cortado a un Glaggle falso... y a dos de verdad. «Por si acaso», ha dicho."],
+    "Kalo": ["Kalo dice que en el Pulgar buscan al impostor cada día. Le he enseñado a los Glaggles. No le han impresionado."]
   }
 }

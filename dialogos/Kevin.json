@@ -102,7 +102,10 @@
     "Dybbuk": "¡Se fue Dybbuk! ¡LAMIÓ MI PIZZA! ¡TODA! ¡CADA TROZO! ¡NO SE LO PERDONO!",
     "Malkuth": "Se fue Malkuth. ¡No tocó mi pizza! Solo la apuntó en su libro: \"Pizza de Kevin. NO TOCAR\". ¡Por fin alguien que lo entiende!",
     "Weathergirl": "Se fue Weathergirl. ¡No ha tocado mi pizza! Solo le puso el paraguas encima para que no se mojara. ¡Respeto!",
-    "Painter": "¡Se fue Painter! ¡Me dejó un dibujo de una pizza con carita! ¡No me la voy a comer! ¡Es obra de arte! ...bueno, sí. Pero antes la enmarco."
+    "Painter": "¡Se fue Painter! ¡Me dejó un dibujo de una pizza con carita! ¡No me la voy a comer! ¡Es obra de arte! ...bueno, sí. Pero antes la enmarco.",
+    "Valencina": "¡Se fue la de la espada! ¡Mi pizza sigue entera! ¡Bieeen!",
+    "Lei Heng": "¡Se fue el de la espada! ¡Mi pizza sigue en tres trozos! Me los como.",
+    "Kalo": "¡Se fue Kalo! ¡Mi pizza a salvo!"
   },
   "Opina": {
     "c00lgui": ["c00lgui intentó hackear mi pizza. Le puse un cortafuegos. De queso.", "c00lkidd dice que es un hacker. Yo digo que no sabe pedir una pizza por internet."],
@@ -132,6 +135,9 @@
     "Dybbuk": ["Dybbuk no toca mi pizza. La LAME. ¡Eso es PEOR!", "Le tiré el cuchillo, la motosierra y el rodillo. Voltereta, voltereta, voltereta. ODIO A ESE GATO."],
     "Malkuth": ["Malkuth dice que mis dibujos tienen muchos colores. ¡Es verdad! ¡Gracias! ...pero la pizza sigue siendo mía.", "Me ofreció una patata a cambio de un trozo. NO. Pero gracias por la patata."],
     "Weathergirl": ["¡La chica del tiempo dice que hace bueno para comer pizza! ¡Siempre hace bueno para comer pizza!", "Le dibujé un arcoíris en Paint. ¡Con siete colores! ¡Y una pizza en medio!"],
-    "Painter": ["¡Painter usa un programa de dibujo como yo! ¡Somos colegas de Paint! ¡Le enseñé mis 16 colores!", "¡Me dijo que quiere pintar paisajes! ¡Yo le dije: \"empieza con un cuadrado marrón\"! ¡Con un cuadrado todo se arregla!"]
+    "Painter": ["¡Painter usa un programa de dibujo como yo! ¡Somos colegas de Paint! ¡Le enseñé mis 16 colores!", "¡Me dijo que quiere pintar paisajes! ¡Yo le dije: \"empieza con un cuadrado marrón\"! ¡Con un cuadrado todo se arregla!"],
+    "Valencina": ["¡Valencina ha mirado mi pizza! ¡Con UN OJO! ¡DON'T TOUCH MY PIZZA! ...no la ha tocado. Solo la miró. Mucho."],
+    "Lei Heng": ["¡Lei Heng ha cortado MI PIZZA en tres! ¡DON'T TOUCH MY PIZZA! ...Bueno, los trozos han quedado perfectos."],
+    "Kalo": ["Kalo no ha tocado mi pizza. Ni la ha mirado. ¡Respeto, señor!"]
   }
 }

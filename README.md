@@ -1,12 +1,43 @@
-# 🎃 c00lgui v6.7 – panel lanzador con skins de asistentes
+# c00lgui v7.0 – panel lanzador con skins de asistentes
 
 Panel para Windows que abre YouTube, las apps de Office y otros programas con un clic.
 
 ---
 
+## Notas del parche – v7.0
+
+**⚔️ EVENTO: LA RAID DEL PULGAR**
+- Botón nuevo **★ EVENTO** arriba, a la izquierda de Ajustes (en todas las skins). Abre el grupo nuevo **Evento** del menú Skins, que también se encuentra con `<` y `>`.
+- La primera vez que abres el panel sale el anuncio del evento: la pantalla **Proelium Fatale** de *Limbus Company*, el logo del **Pulgar** y los tres rivales presentados como un **desafío**.
+- Todas las intros del evento usan el **Proelium Fatale** de verdad del juego.
+
+**Skin nueva: Valencina** (*Limbus Company*, Canto IX)
+- Nursefather de la Casa de las Arañas y antigua Sottocapo del Pulgar: orgullosa, amargada y malhablada. Siempre gritándole a Lucio.
+- **Intro:** Proelium Fatale, su primer plano con el puro y su ficha de jefa con sus rangos tachados.
+- **El Ojo de Odín:** tiene 30 cargas de precognición. **Esquiva tus clics** y te contraataca con *Sezionatura di Coniglio*. Cada app es un choque que calienta su espada (**Futuro Acelerado**).
+- Con el ojo a 0 se **sobrecalienta** (todo en rojo): entonces sí le das, y con 5 golpes queda aturdida.
+- **Hora de cazar:** marca un botón como presa; si lo abres, lo despieza con *Disposal*. Clic en su vaso de **Old Parr** y se lo bebe; Lucio se lo rellena.
+
+**Skin nueva: Lei Heng** (*Limbus Company*, Canto VIII)
+- Capo IIII del Pulgar, el Tigre Alado: fanfarrón, ruidoso y con acento de pueblo.
+- **Intro:** el templo de Tiekan de lejos y de cerca, Proelium Fatale y su ficha de jefe.
+- **Lanza sus skills del juego** con cada app: su carta con icono y kanji, las monedas de Limbus y tajos con explosión sobre los botones. Recarga sus balas Tigermark.
+- Barra de vida de jefe con sus fases: al 80 % *Tanglecleaver*, al 60 % **Estrella Tiantui** y al **40 % se activa el Shin (心)** con su ataque final, *Savage Tigerslayer's Perfected Flurry of Blades*.
+
+**Skin nueva: La recepción del Pulgar — Kalo, Boris y Katriel** (*Library of Ruina*)
+- **Intro:** la sala de la recepción, la viñeta de la recepción II y los tres presentándose.
+- **Acto 1:** pelean **Boris** y **Katriel**. Clic = choque de dados como en el juego; cada app = una página de combate. Cada uno suelta su **libro** al caer.
+- **VICTORY** del Acto 1 y entra **Kalo**, el Sottocapo. Al vencerle, **VICTORY** final ("Telón para la recepción de El Pulgar II") y la recepción vuelve a empezar.
+
+**Otros cambios**
+- Se acaba Halloween: **Evil Scary** y **Dybbuk** pasan al grupo **Videojuegos** y **Soft Fuzzy Man** a **YouTube**.
+- Todas las skins opinan de las nuevas y hay 15 charlas nuevas (Lei Heng se ríe de los «tres días» de Valencina, Kalo le hace apagar el puro...).
+
+---
+
 ## Notas del parche – v6.7
 
-**🎃 Llega la actualización de Halloween completa.** Todo lo de la v6.66 (más abajo) ya está en esta versión: Evil Scary, Soft Fuzzy Man, Dybbuk, Roaring Knight con su minijuego, Weathergirl, Painter, Malkuth, Ellie, el editor de diálogos, las skins archivadas y las skins rehechas (Angela, Velvet, Kennyoung, Tetra y Guillotina).
+**Llega a la versión pública todo lo de la v6.66** (más abajo): Evil Scary, Soft Fuzzy Man, Dybbuk, Roaring Knight con su minijuego, Weathergirl, Painter, Malkuth, Ellie, el editor de diálogos, las skins archivadas y las skins rehechas (Angela, Velvet, Kennyoung, Tetra y Guillotina).
 
 **Skin nueva: Silix y Pendeja** (OC de Fox Fandubs, en el grupo **Amigos**)
 - Dos personajes en una sola skin, con el estilo de *Forsaken*: letra con serifa, paneles y botones pintados a pincel y la cabaña de fondo.
@@ -18,19 +49,7 @@ Panel para Windows que abre YouTube, las apps de Office y otros programas con un
 
 ---
 
-## 🎃🕯️ ACTUALIZACIÓN DE HALLOWEEN · v6.66 🕯️🎃
-
-> *Algo se mueve entre las calabazas...*
-
-Tres invitados de miedo para la noche más larga del año:
-
-| | Personaje | De dónde viene | Estado |
-|---|---|---|---|
-| 💀 | **Evil Scary** | *Die of Death* | ✅ Hecho |
-| 🧸 | **Soft Fuzzy Man** | Lemon Demon · Aimkid | ✅ Hecho |
-| 👻 | **Dybbuk** | *Mewgenics* | ✅ Hecho |
-
-## Notas del parche – v6.66 Halloween (avance 7)
+## Notas del parche – v6.66 (avance 7)
 
 **Skin nueva: Weathergirl** (FLAVOR FOLEY ft. Eleanor Forte, en el grupo **YouTube**)
 - Presenta el **parte del tiempo de verdad** de donde estés (temperatura, cielo y mañana); sin internet se lo inventa y lo admite.
@@ -62,7 +81,7 @@ Tres invitados de miedo para la noche más larga del año:
 - Ahora vive en un **acuario** con bancos de tetras neón, y su intro es el principio del **videoclip oficial**.
 
 - Todas las skins opinan de las nuevas y hay charlas nuevas entre ellas.
-## Notas del parche – v6.66 Halloween (avance 6)
+## Notas del parche – v6.66 (avance 6)
 
 **Skin nueva: Ellie Velázquez** (self insert de Ale, en el grupo nuevo **Amigos**)
 - Humana corrupta de 20 años que viaja por el multiverso, con su render de cuerpo entero sobre un portal y su selfie pegado como una polaroid.
@@ -72,9 +91,9 @@ Tres invitados de miedo para la noche más larga del año:
 - De vez en cuando se **teletransporta** o se vuelve **invisible**.
 - Solo tiene sus propias frases: no tiene charlas con las demás skins y las demás no opinan de ella.
 
-## Notas del parche – v6.66 Halloween (avance 5)
+## Notas del parche – v6.66 (avance 5)
 
-**Skin nueva: Dybbuk** (*Mewgenics*, en el grupo **Halloween**)
+**Skin nueva: Dybbuk** (*Mewgenics*)
 - El jefe del **Boneyard**, el cementerio de *Mewgenics*: un gato-fantasma bromista que lo esquiva todo con volteretas, da lametazos y, cuando lo "matas", **posee** a quien tenga cerca. Con sus animaciones y sonidos del juego.
 - **Intro:** suena *"Them Kitty Bones"* (la canción del Boneyard). La cámara entra por la puerta del cementerio con el cartel **CAPÍTULO 3 · THE BONEYARD**, Dybbuk se asoma detrás de las lápidas (*"¡Cucú!"*), todo se queda a oscuras (*"Ni la Muerte puede atraparme..."*), sale su **presentación de jefe** y un **lametazo gigante** limpia la pantalla.
 - **Barra de vida de jefe** (85, la del juego), como la de Guillotina. **Clic en Dybbuk** para pegarle... si no te esquiva con un **Backflip**. Con menos de la mitad de vida pone su cara de poca vida.
@@ -82,7 +101,7 @@ Tres invitados de miedo para la noche más larga del año:
 - **Cada app:** a veces le da un lametazo y le chupa el maná (contador **MANÁ LAMIDO**). Cada 5 apps invoca **fuegos fatuos**.
 - Todas las skins opinan de él y hay 5 charlas nuevas (con Guillotina, Evil Scary, Soft Fuzzy Man, Kevin y SeaDrive). Ficha de lore en `lore\personajes\Dybbuk.md`.
 
-## Notas del parche – v6.66 Halloween (avance 4)
+## Notas del parche – v6.66 (avance 4)
 
 **✍️ Editor de diálogos** (doble clic en `editor_dialogos.vbs`)
 - Todos los diálogos han salido del código a la carpeta **`dialogos`**: un archivo por skin y `_charlas.json` con las charlas entre skins. El panel los lee al arrancar.
@@ -100,7 +119,7 @@ Tres invitados de miedo para la noche más larga del año:
 - Ahora **habla**: lista, manipuladora y obsesionada con devorar. Te trata como a su presa ("¿Te doy miedo, cariño?") y estalla en MAYÚSCULAS cuando se enfada.
 - Diálogos nuevos basados en su lore de *Mewgenics*: Butch, su canción, la radio WMEW 99.9 y su decapitación.
 
-## Notas del parche – v6.66 Halloween (avance 3)
+## Notas del parche – v6.66 (avance 3)
 
 **Skin nueva: Roaring Knight** (*Deltarune*, en el grupo **Videojuegos**)
 - El antagonista de Deltarune, con sus sprites de combate en pixel art y su estela de sombras. No habla: en el bocadillo salen los textos de combate del juego (*"\* The Roaring Knight appeared."*).
@@ -114,7 +133,7 @@ Tres invitados de miedo para la noche más larga del año:
   - Tienes 160 HP y cada golpe quita 40. **Rozar** los ataques sube el **TP**. Tus victorias se guardan (**WIN**).
 - Todas las skins opinan de él y hay 9 discusiones nuevas.
 
-## Notas del parche – v6.66 Halloween (avance 2)
+## Notas del parche – v6.66 (avance 2)
 
 **Skin nueva: Soft Fuzzy Man** (la canción de Lemon Demon, con la animación de Aimkid)
 - Según la wiki de Aimkid, es el **fantasma de Dipshit**, el lobo de *My Trains*, reencarnado en un lobo-fantasma rosa de neón. Sale con **Orange Cat**, que se asusta porque no sabe que es él.
@@ -124,7 +143,7 @@ Tres invitados de miedo para la noche más larga del año:
 - **Cada 6 apps:** *"step into the mist"*, la niebla rosa lo llena todo.
 - Baila como en la ventana del vídeo, sobre la colina de noche con la casita. Todas las skins opinan de él y hay 10 discusiones nuevas.
 
-## Notas del parche – v6.66 Halloween (avance 1)
+## Notas del parche – v6.66 (avance 1)
 
 **Skin nueva: Evil Scary** (la ronda especial de *Die of Death*)
 - **Intro:** la pantalla de la ronda especial del juego: *"SPECIAL ROUND! ??? What will it be?"*, una ruleta de modos y la revelación **EVIL SCARY**. Después, *"IT IS EVIL AND SCARY"* y la bola negra botando hacia la cámara hasta el susto.
@@ -133,7 +152,7 @@ Tres invitados de miedo para la noche más larga del año:
 - Cada app que abres hace ruido y le hace botar hacia ti. A veces sale **gigante**.
 - Abajo: barra de distancia, rebotes, sustos y bloqueos.
 - No habla: en el bocadillo salen los mensajes de la partida, en mayúsculas, como en el juego.
-- Grupo nuevo en el menú Skins: **Halloween**. Todas las skins opinan de Evil Scary y hay 10 discusiones nuevas.
+- Todas las skins opinan de Evil Scary y hay 10 discusiones nuevas.
 - En **modo seguro** no sale el susto y la alarma no parpadea.
 
 ---
@@ -216,7 +235,7 @@ Tres invitados de miedo para la noche más larga del año:
 
 ## Las skins
 
-Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code, Build the Larp"). Tiene treinta y una skins, cada una con su propio estilo, animaciones y diálogos. Cinco están **archivadas** (🗃️): no salen en el menú Skins, pero se pueden poner desde **Ajustes → Skins archivadas**.
+Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code, Build the Larp"). Tiene treinta y cuatro skins, cada una con su propio estilo, animaciones y diálogos. Cinco están **archivadas** (🗃️): no salen en el menú Skins, pero se pueden poner desde **Ajustes → Skins archivadas**.
 
 | Skin | Estilo | Efecto al entrar |
 |---|---|---|
@@ -242,14 +261,17 @@ Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code,
 | **Enfosi** | El juego de Roblox de Tumore: la estatua de oro en Blibble's Field y los Glaggles que caminan hacia ella | Conoce a tus Glaggles: uno se revela como Enphosian, aparece el Ojo de Enphoso y empieza la oleada 1 |
 | **Gran** | El virólogo de Antihuman Inc. (ivycomb, *ANTIHUMAN*) en la cámara de su laboratorio de Central Tower, sobre su remolino de pintura | La de su personaje en el vídeo: rayas grises, el remolino rosa y cian, su cara y el busto con la jeringuilla, con su canción |
 | **Nanachi** | El Hueco de *Made in Abyss* en su escondite de la 4ª capa, con Mitty a su lado, la olla del estofado y sus caras del anime en un dibujo de la pared | Descenso por las capas del Abismo hasta la entrada de su escondite, entre los hilos del campo de fuerza |
-| **Evil Scary** 🎃 | La amenaza de la ronda especial de *Die of Death*: una bola negra con manos que bota hacia ti en la baseplate de noche con niebla roja | La pantalla de SPECIAL ROUND!, "IT IS EVIL AND SCARY" y la bola botando hacia la cámara hasta el susto |
-| **Soft Fuzzy Man** 🎃 | El lobo-fantasma rosa de la canción de Lemon Demon (animación de Aimkid), bailando en la colina de noche con Orange Cat dando vueltas a su lado | El principio de la animación hasta que la espiral rosa llena la pantalla; el panel sale de la niebla |
+| **Evil Scary** | La amenaza de la ronda especial de *Die of Death*: una bola negra con manos que bota hacia ti en la baseplate de noche con niebla roja | La pantalla de SPECIAL ROUND!, "IT IS EVIL AND SCARY" y la bola botando hacia la cámara hasta el susto |
+| **Soft Fuzzy Man** | El lobo-fantasma rosa de la canción de Lemon Demon (animación de Aimkid), bailando en la colina de noche con Orange Cat dando vueltas a su lado | El principio de la animación hasta que la espiral rosa llena la pantalla; el panel sale de la niebla |
 | **Roaring Knight** | El antagonista de *Deltarune* en pixel art, sobre el fondo de combate morado; botón **FIGHT** con un minijuego de esquivar sus ataques | "\* The Roaring Knight appeared.", levanta la espada y ruge |
-| **Dybbuk** 🎃 | El jefe del Boneyard de *Mewgenics*: un gato-fantasma bromista entre las lápidas, con barra de vida de jefe | *Them Kitty Bones*, la puerta del cementerio, "¡Cucú!" detrás de las lápidas, su presentación de jefe y un lametazo que limpia la pantalla |
+| **Dybbuk** | El jefe del Boneyard de *Mewgenics*: un gato-fantasma bromista entre las lápidas, con barra de vida de jefe | *Them Kitty Bones*, la puerta del cementerio, "¡Cucú!" detrás de las lápidas, su presentación de jefe y un lametazo que limpia la pantalla |
 | **Weathergirl** | La chica del tiempo de FLAVOR FOLEY (ft. Eleanor Forte), con el parte del tiempo de verdad de donde estés | Trozos del videoclip oficial, con su canción |
 | **Painter** | Z-779 de *Pressure*: es su propio programa de dibujo, como el Paint clásico de Windows, con su cara en una pantallita | Arranca un ordenador del Blacksite, "ABRIENDO the_p.AI.nter.exe" y el lápiz le dibuja la sonrisa |
 | **Malkuth** | La Bibliotecaria Patrona de la Planta de Historia (*Library of Ruina*), con su mesa de libros y su música | La sala de la Planta de Historia, con Malkuth plantándole cara a Angela, con su música |
 | **Ellie** | Self insert de Ale: humana corrupta que viaja por el multiverso, sobre un portal y con su selfie en una polaroid | Un vídeo cutre de alarma: "⚠ SELF INSERT DETECTADO ⚠", el usuario de Ale con círculo y flecha rojos, y glitch |
+| **Valencina** ⚔️ | La Nursefather del Pulgar (*Limbus Company*) en el bar del Pasillo del Pulgar, con su vaso de Old Parr | Proelium Fatale, su primer plano con el puro y su ficha de jefa |
+| **Lei Heng** ⚔️ | El Capo IIII del Pulgar (*Limbus Company*) ante el templo de Tiekan, con barra de vida de jefe y sus skills | El templo de lejos y de cerca, Proelium Fatale y su ficha de jefe |
+| **Kalo** ⚔️ | La recepción del Pulgar de *Library of Ruina*: Boris y Katriel primero, luego Kalo | La sala de la recepción, la viñeta de la recepción II y los tres presentándose |
 | **Silix y Pendeja** | OC de Fox Fandubs al estilo de *Forsaken*: dos barras de RABIA, un tanque y la cara de rabia | "⚠ ALERTA DE PROYECTARSE ⚠", un misil, la ardilla que grita, el canal de su creador lleno de flechas rojas y "This round's assistant is..." |
 
 Cada skin opina de las demás (menos **Ellie** y **Silix y Pendeja**: a propósito, ni tienen charlas ni nadie opina de ellas). Pasa el ratón por los botones del menú **Skins** para oír lo que piensa el asistente de cada una. De vez en cuando, además, **discuten entre ellos**: el otro personaje aparece en su propia ventanita pegada al panel, con su estilo y su bocadillo. Lo que dicen tiene efectos: los disparos suenan y hacen temblar las ventanas, las Smokebomb las vuelven transparentes y los mordiscos suenan. **Haz clic derecho sobre el personaje** para empezar una discusión cuando quieras.
@@ -270,7 +292,7 @@ No hace falta instalar nada: funciona con PowerShell, que ya viene con Windows 1
 
 - **Botones:** abren la app. Si una app de Office no está instalada, se abre su versión web. En la página 2 también hay enlaces a **GitHub** y **Wikipedia**.
 - **`<` y `>`:** cambian de página.
-- **Skins:** elige otra skin. Se recuerda para la próxima vez. Las skins están agrupadas según de dónde viene cada personaje (**YouTube**, **Roblox**, **Videojuegos**, **Halloween**, **Anime** y **Amigos**); debajo del nombre sale su creador o su juego. Con **`<`** y **`>`** pasas de un grupo a otro. Las skins archivadas (Zodiac, Dune, Kevin, Tetra y Averi) se ponen desde **Ajustes → Skins archivadas**.
+- **Skins:** elige otra skin. Se recuerda para la próxima vez. Las skins están agrupadas según de dónde viene cada personaje (**Evento**, **YouTube**, **Roblox**, **Videojuegos**, **Anime** y **Amigos**); debajo del nombre sale su creador o su juego. Con **`<`** y **`>`** pasas de un grupo a otro. Las skins archivadas (Zodiac, Dune, Kevin, Tetra y Averi) se ponen desde **Ajustes → Skins archivadas**.
 - **Mover la ventana:** arrástrala desde el título.
 - **Asistente:** haz clic en el personaje y te contesta.
   - **Guillotina:** cada clic le quita vida. Con 200 o menos se enfurece, como en el juego (el callejón late en rojo y golpea con la barriga). Cada app que abres es un gato engullido. Si la derrotas, vuelve buscando venganza.
@@ -300,6 +322,9 @@ No hace falta instalar nada: funciona con PowerShell, que ya viene con Windows 1
   - **Painter:** cada app pinta un trozo de paisaje y le sube el **OVERCLOCK**; a 100° se pone a minar y lo pierde todo. Haz clic en él para enfriarlo. Si le dejas solo mucho rato, se duerme.
   - **Malkuth:** cada app es un libro para su mesa; con los libros sube la **emoción** (y cambia la música) hasta su **Realización**. Si se agobia con fallos, prisas o muchos clics seguidos, se hunde: haz clic y hacéis juntas el ejercicio de respiración.
   - **Ellie:** su barra **GLITCH** sube si la pinchas o si hay demasiado silencio; las apps la entretienen. Al 100 % entra en **MODO GLITCH**. Haz clic en las natillas para que se las coma y se calme.
+  - **Valencina:** clic en ella y lo esquiva (gasta una carga del ojo) y te contraataca; a 0 cargas se sobrecalienta y ya puedes pegarle. Cada app es un choque, y a veces marca un botón como presa. Clic en su vaso para que beba.
+  - **Lei Heng:** cada app es una de sus skills contra ese botón. Clic en él para pegarle; al 40 % de vida activa el Shin. Si cae, vuelve a los pocos segundos.
+  - **Kalo:** clic en Boris o Katriel para chocar dados; las apps les pegan sin choque. Cuando caen los dos, entra Kalo. Al vencerle, vuelta a empezar.
   - **Silix y Pendeja:** haz clic en cada una (o abre apps) y su **RABIA** sube; si las dejas en paz, baja sola. Silix al 100 % se sube a su **tanque** y dispara a los botones; la Pendeja al 100 % pone su cara de rabia y grita. Todavía no hablan.
 
 ## Ajustes
@@ -379,6 +404,8 @@ Al principio de la sección `SKINS` de `c00lgui.ps1` hay una guía paso a paso c
 - **Painter (the_p.AI.nter, Z-779):** personaje de *Pressure* (Roblox, Zeal). Datos de la [wiki oficial de Pressure](https://urbanshade.org/wiki/The_p.AI.nter); voces del juego (voz de artdstuf) y música del altavoz de Z-779. El programa de dibujo y sus caras están dibujados para el panel.
 - **Malkuth:** personaje de *Library of Ruina* (Project Moon). Imágenes de la [wiki de Library of Ruina](https://libraryofruina.wiki.gg/wiki/Malkuth); música: *Malkuth Story* y *Malkuth Battle 1* y *2* (Project Moon) y *Malkuth Battle Theme 3* (Lunartique).
 - **Ellie Velázquez:** personaje original de Ale, con sus imágenes. Sonidos hechos para el panel.
+- **Valencina** y **Lei Heng:** personajes de *Limbus Company* (Project Moon). Sprites, iconos de habilidades e ilustraciones de la [Cogitopedia](https://projectmoon.miraheze.org); pantalla Proelium Fatale del juego. Sonidos hechos para el panel.
+- **Kalo, Boris y Katriel:** personajes de *Library of Ruina* (Project Moon). Sprites e ilustraciones de las recepciones del Pulgar de la [Cogitopedia](https://projectmoon.miraheze.org).
 - **Silix y Pendeja:** personajes originales (OC) de **Fox Fandubs** ([FOX FANDUBS] en YouTube), inspirados en *Forsaken* (Roblox). GIF del misil de [Tenor](https://tenor.com); sonidos hechos para el panel.
 
 Proyecto de fans sin ánimo de lucro. Los personajes pertenecen a sus autores.

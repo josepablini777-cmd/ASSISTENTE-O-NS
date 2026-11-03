@@ -82,7 +82,10 @@
     "Dybbuk": "El sujeto Dybbuk se ha ido. La jeringuilla lo atravesó tres veces. Muestra: nula.",
     "Malkuth": "La bibliotecaria se ha ido. Sujeto interesante: un cerebro en tres cuerpos distintos. Me ha negado una muestra. Otra.",
     "Weathergirl": "La presentadora se ha ido. Le pedí una muestra de lágrima. Me dio un paraguas. No es lo mismo.",
-    "Painter": "El ordenador se ha ido. Sujeto interesante: una IA que dibuja sus emociones. Me negó los registros. Otra más."
+    "Painter": "El ordenador se ha ido. Sujeto interesante: una IA que dibuja sus emociones. Me negó los registros. Otra más.",
+    "Valencina": "La portadora del ojo se ha marchado. Mis notas siguen incompletas. Lamentable.",
+    "Lei Heng": "El sujeto de la espada se ha marchado. Mis notas siguen incompletas.",
+    "Kalo": "El Sottocapo se ha marchado. Mis notas, sin la mano dorada. Lamentable."
   },
   "Opina": {
     "c00lgui": ["c00lgui no tiene cuerpo. No hay ADN que reescribir. Inútil.", "Un hacker. Cree que controla los sistemas. El sistema soy yo."],
@@ -112,6 +115,9 @@
     "Dybbuk": ["Un espíritu capaz de ocupar cuerpos. Fascinante. Ojalá tuviera venas.", "Esquiva cada prueba. Incluido el formulario de consentimiento."],
     "Malkuth": ["Malkuth sobrevivió a un experimento fallido y a una reconstrucción. Datos valiosísimos. No quiere colaborar.", "Me ha dicho que deje de trabajar tanto. Anotado como \"interferencia en el protocolo\"."],
     "Weathergirl": ["La presentadora llora cuando acumula seis cosas sin decir. Dato reproducible. Me gustaría medirlo.", "Su margen de error es alto. Su audiencia, también. No lo entiendo."],
-    "Painter": ["Painter es una conciencia atrapada en un procesador. Datos valiosísimos. Pero se pone nervioso y se calienta. Hay que tratarlo con cuidado.", "Le pedí analizar su paisaje. Me dibujó una carita enfadada. Resultado: 1 punto en cooperación."]
+    "Painter": ["Painter es una conciencia atrapada en un procesador. Datos valiosísimos. Pero se pone nervioso y se calienta. Hay que tratarlo con cuidado.", "Le pedí analizar su paisaje. Me dibujó una carita enfadada. Resultado: 1 punto en cooperación."],
+    "Valencina": ["Sujeto: Valencina. Reliquia ocular con precognición. Sobrecalentamiento tras uso intensivo. Solicito una muestra. Denegada. Con un tajo."],
+    "Lei Heng": ["Sujeto: Lei Heng. Shin y un anillo de Mang. Fascinante. Ha rechazado la toma de muestras. Con una amenaza muy gráfica."],
+    "Kalo": ["Sujeto: Kalo. Prótesis dorada en la mano derecha. Solicito examinarla. Me ha mirado. He retirado la solicitud."]
   }
 }

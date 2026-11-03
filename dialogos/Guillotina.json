@@ -82,7 +82,10 @@
     "Dybbuk": "*Olfatea el aire.* El fantasmita se ha ido. Tanta voltereta... y ni un bocado. Qué falta de respeto.",
     "Malkuth": "Mmmm. La bibliotecaria se ha ido. Ha dejado sus libros. Saben a papel viejo y a nervios. Ñam.",
     "Weathergirl": "Mmm. La chica del tiempo se ha ido. Me he comido su paraguas. Sabía a nube.",
-    "Painter": "Mmm. Se ha ido el ordenador. Me quedé con hambre de torreta. Qué crujiente es el metal, cariño."
+    "Painter": "Mmm. Se ha ido el ordenador. Me quedé con hambre de torreta. Qué crujiente es el metal, cariño.",
+    "Valencina": "La de rojo se ha ido. Qué pena. Llevaba un rato pensando a qué sabría.",
+    "Lei Heng": "Se ha ido el del abrigo. Qué pena. Olía a pólvora y a carne buena.",
+    "Kalo": "Se ha ido el viejo. Con sus perritos. Qué pena."
   },
   "Opina": {
     "c00lgui": ["Un hacker. Todo pantalla y nada de carne. Qué decepción.", "c00lkidd quiso hackearme. *Se relame.* Los niños que juegan con fuego acaban en mi barriga."],
@@ -112,6 +115,9 @@
     "Dybbuk": ["Dybbuk viene de mi mundo. Una bolita gris que no se puede masticar. Lo odio con todo mi estómago.", "Me lamió la cara y se escondió detrás de una lápida. *Gruñe.* Corre, gusano. Algún día tendrás cuerpo."],
     "Malkuth": ["Malkuth me apunta con su porrita y tiembla. Qué mona. Será el postre.", "Huele a patata. Me encanta la patata, cariño."],
     "Weathergirl": ["La chica del tiempo huele a lluvia. La lluvia no se come. Qué decepción, cariño.", "Me ha dado el pronóstico: \"chubascos de Guillotina\". Mmm. Me gusta."],
-    "Painter": ["Un ordenadorcito con carita dibujada. Qué mono. *(le brillan los ojos)* Me comería la torre entera.", "Me gusta cuando se pone nervioso y echa humo. Huele a hierro caliente, cariño."]
+    "Painter": ["Un ordenadorcito con carita dibujada. Qué mono. *(le brillan los ojos)* Me comería la torre entera.", "Me gusta cuando se pone nervioso y echa humo. Huele a hierro caliente, cariño."],
+    "Valencina": ["Valencina... una cazadora de verdad, cariño. Marca a su presa y no la suelta. Casi me da envidia. Casi."],
+    "Lei Heng": ["Lei Heng... un depredador que se ríe mientras caza. Me cae bien, cariño. Casi me lo como por cortesía."],
+    "Kalo": ["Kalo... un viejo con muchas reglas y dos perritos guardianes. Me comería primero a los perritos, cariño."]
   }
 }

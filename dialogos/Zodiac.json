@@ -79,7 +79,10 @@
     "Dybbuk": "El fantasma se fue. Seis balas, seis volteretas. Me voy a echar una siesta.",
     "Malkuth": "La bibliotecaria se fue. Le dije \"no te muevas\" y no se movió en diez minutos. Por fin alguien que me hace caso.",
     "Weathergirl": "Se fue la del tiempo. Dijo que mañana sopla viento. Me pondré el sombrero.",
-    "Painter": "Se fue el ordenador. Le conté mi paisaje: arena, horizonte y un caballo. Dibujó el caballo. Le quedó torcido y precioso."
+    "Painter": "Se fue el ordenador. Le conté mi paisaje: arena, horizonte y un caballo. Dibujó el caballo. Le quedó torcido y precioso.",
+    "Valencina": "¡Se fue la del sombrero! ¡Cobarde! ...o muy lista. Seguramente muy lista.",
+    "Lei Heng": "Se ha ido el de la espada. ¡Cobarde! ...O se ha ido a por tabaco.",
+    "Kalo": "¡Se fue el viejo del bastón! ¡Y sus guardaespaldas!"
   },
   "Opina": {
     "c00lgui": ["¿Un hacker? En mis tiempos los forajidos daban la cara.", "*Le dispara al panel rojo. Sigue funcionando. Qué raro.*"],
@@ -109,6 +112,9 @@
     "Dybbuk": ["Dybbuk es de mi mundo. Allí tampoco le daba nunca.", "\"¡No te muevas!\". Se movió. Siempre se mueve."],
     "Malkuth": ["Malkuth me ha catalogado como \"vaquero, muy dramático\". ...no le falta razón.", "Se tropieza más que un potro recién nacido. Pero siempre se levanta. Eso es tener agallas."],
     "Weathergirl": ["La chica del tiempo dice que viene tormenta. En el desierto eso es un milagro. Le debo una.", "Lloró. Yo también lloro. A solas. En el caballo."],
-    "Painter": ["Un ordenador que sueña con pintar paisajes. En el desierto eso es poesía pura. Nos entendemos.", "Le pedí que me dibujara un revólver. Me hizo una carita con sombrero. Ni tan mal."]
+    "Painter": ["Un ordenador que sueña con pintar paisajes. En el desierto eso es poesía pura. Nos entendemos.", "Le pedí que me dibujara un revólver. Me hizo una carita con sombrero. Ni tan mal."],
+    "Valencina": ["Esa mujer del sombrero rojo... vio mi bala antes de que la disparara. ¡¿CÓMO?! ¡NO TE MUEVAS, HE DICHO!"],
+    "Lei Heng": ["¡Ese de la espada con balas me ha robado la idea! ¡No te muevas, ladrón!"],
+    "Kalo": ["¡Ese viejo dice que desperdicio balas! ¡NO TE MUEVAS! ...vale, he fallado. Pero no las desperdicio."]
   }
 }

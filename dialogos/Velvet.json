@@ -131,7 +131,10 @@
     "Dybbuk": "Dybbuk se ha ido, cielo. Atravesó mi telaraña como si nada. Qué maleducado.",
     "Malkuth": "Se ha ido Malkuth, cielo. Tan trabajadora, tan dulce... y tan difícil de pillar entre tanto libro.",
     "Weathergirl": "Se ha ido la chica del tiempo, cariño. Se dejó el paraguas en mi telaraña. Ya es mío.",
-    "Painter": "Se ha ido Painter, cielo. Dejó sus cables enredados en mi telaraña. Qué suave el cable... qué suave..."
+    "Painter": "Se ha ido Painter, cielo. Dejó sus cables enredados en mi telaraña. Qué suave el cable... qué suave...",
+    "Valencina": "Valencina se ha ido... y ha cortado mi telaraña al salir. Sin mirar. Grrr.",
+    "Lei Heng": "Lei Heng se ha ido. Mi telaraña sigue cortada. Grrr.",
+    "Kalo": "Se fue Kalo. Qué señor tan educado. Me ha dado miedo."
   },
   "Opina": {
     "c00lgui": ["c00lkidd es como una mosca: hace ruido y acaba en mi telaraña.", "¿Un hacker? Qué mono. Lo guardaré para la cena."],
@@ -161,6 +164,9 @@
     "Dybbuk": ["Dybbuk no se queda pegado en mi telaraña. Es lo único del panel que se me escapa.", "Me lamió una pata, cielo. Una. De ocho. Pero lo sentí en todas."],
     "Malkuth": ["Malkuth dice que mis telarañas son bonitas, cariño. Nadie me lo había dicho antes de salir corriendo.", "Huele a papel viejo y a velas. Muy acogedora. Para una cena."],
     "Weathergirl": ["La chica del tiempo es tan dulce, cielo... Mis telarañas con gotas de lluvia quedan preciosas. Le encantarían.", "Lloró. Le ofrecí un abracito. Se fue corriendo. Qué tímida."],
-    "Painter": ["Un ordenador con una carita dibujada... qué ternura. Le ofrecí un abracito. Dijo que no tiene brazos. Le envolví igualmente.", "Calienta mucho. Es perfecto para secar la seda, cielo."]
+    "Painter": ["Un ordenador con una carita dibujada... qué ternura. Le ofrecí un abracito. Dijo que no tiene brazos. Le envolví igualmente.", "Calienta mucho. Es perfecto para secar la seda, cielo."],
+    "Valencina": ["Viene de la Casa de las Arañas y no ha querido ni un abracito. Qué fría. ...Me gusta."],
+    "Lei Heng": ["Lei Heng me ha cortado la telaraña sin mirar. Ni un abracito. Qué grosero, cielo."],
+    "Kalo": ["Kalo dice que tengo buenos modales para ser araña. ¿Eso es un cumplido, cielo?"]
   }
 }

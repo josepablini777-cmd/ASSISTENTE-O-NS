@@ -241,117 +241,42 @@
     "Nanachi": "Se ha ido Nanachi. *Se tapa con la chaqueta.* Previsión: niebla blandita y calor de sopa.",
     "Dybbuk": "Se ha ido Dybbuk. *Abre el paraguas con cuidado.* ...vacío. Vale. Respira.",
     "Malkuth": "Se ha ido Malkuth. *Coge aire. Lo suelta.* Previsión: ánimo alto en toda la región.",
-    "Painter": "Se fue Painter. Me dibujó un paisaje con lluvia y sol a la vez. Tenía hasta un arcoíris. Lo he guardado entre mis partes."
+    "Painter": "Se fue Painter. Me dibujó un paisaje con lluvia y sol a la vez. Tenía hasta un arcoíris. Lo he guardado entre mis partes.",
+    "Valencina": "Valencina se ha ido. Se despeja el cielo. Un poco.",
+    "Lei Heng": "Lei Heng se ha ido. Escampa.",
+    "Kalo": "Kalo se ha ido. Bajan las presiones."
   },
   "Opina": {
-    "c00lgui": [
-      "c00lgui ha hackeado mi parte. Ahora pone \"100% de probabilidad de c00lgui\". Lo leí en directo... no sabía qué hacer.",
-      "Es como una tormenta eléctrica: mucho ruido, muchas luces... y luego se apaga solo."
-    ],
-    "SeaDrive": [
-      "SeaDrive está siempre cansada. Le di su pronóstico: \"descanso intenso toda la semana\". Le gustó.",
-      "Las dos venimos del agua... ella del mar y yo de la lluvia. Hacemos buen equipo. Creo."
-    ],
-    "Static Miku": [
-      "Static Miku y yo somos de la misma casa... de Flavor Foley. Ella es la tele y yo salgo dentro. Qué cosas.",
-      "Cuando Miku se pone con estática, mi parte se ve todo nevado. Aunque haga sol."
-    ],
-    "Guillotina": [
-      "Guillotina... aviso rojo. *Se esconde detrás del guion.* Se recomienda no salir de casa.",
-      "Se comió mi paraguas. Era mi favorito. ...bueno, era el único."
-    ],
-    "Angela": [
-      "Angela da los datos como yo: exactos, sin temblar. Pero a ella nunca se le escapa nada. Me da un poco de pena.",
-      "Me pidió el pronóstico con tres decimales. Se lo di. No sonrió."
-    ],
-    "Mikaela": [
-      "Mikaela me pregunta el tiempo antes de cada partida. Yo no sé si en el juego llueve... le digo que sí, por si acaso.",
-      "Dice que soy su \"support\". No sé qué es, pero suena bonito."
-    ],
-    "Zodiac": [
-      "Zodiac vive en el desierto. Allí nunca llueve. *Le da un paraguas igualmente.* Por si acaso.",
-      "Se queda mirando el horizonte como yo miro el cielo. Esperando algo."
-    ],
-    "Velvet": [
-      "Velvet dice que la lluvia hace sus telarañas más bonitas. *Tiembla.* Tiene razón. Y eso es lo que me asusta.",
-      "Me ofreció un abracito. Le dije que tenía que dar el parte. Era mentira."
-    ],
-    "Dune": [
-      "Dune sale cuando llueve. Es mi telespectador más fiel. ...y el más grande.",
-      "Le dije que mañana llovía y se puso tan contento que hizo un agujero en el plató."
-    ],
-    "Cordero y Cabra": [
-      "La Cabra dice que mis pronósticos son profecías. Solo son porcentajes... *Mira al cielo.* Bueno. A veces lo parecen.",
-      "El Cordero se puso debajo de mi paraguas sin decir nada. Fue muy bonito."
-    ],
-    "Pyrophina y Zaratana": [
-      "Conectamos con WMEW 99.9... *Se oye un rugido.* Devolvemos la conexión al plató. Rápido.",
-      "Pyrophina evapora las nubes y Zaratana hace temblar el suelo. Mi pronóstico ya no sirve de nada."
-    ],
-    "Averi": [
-      "Averi saltó en todos los charcos del plató. Todos. Luego me abrazó. Mojada. Pero fue un abrazo bonito.",
-      "Me rompió el paraguas... y me hizo un dibujo para pedirme perdón. Lo tengo en el camerino."
-    ],
-    "Sebastian Solace": [
-      "Sebastian sube el precio de los paraguas cada vez que digo \"lluvia\". *Baja la voz.* Ya no lo digo tan alto.",
-      "Me vendió un \"paraguas a prueba de tormentas\". Era una bolsa con un palo."
-    ],
-    "Pursuer": [
-      "Pursuer... aviso por niebla espesa. Y por algo dentro de la niebla. *Mira a cámara, asustada.*",
-      "Me dijo que la lluvia borra las huellas. No he vuelto a decir \"lluvia\" en voz alta."
-    ],
-    "Kasane Teto": [
-      "Teto canta con mi mismo programa. Pero ella lo dice todo en voz alta... ojalá yo pudiera.",
-      "Hizo una versión de mi canción. Se llamaba \"weathergirls\". En plural. Me hizo mucha ilusión."
-    ],
-    "Token": [
-      "Token dice que mi canción necesita más bajos. *Se tapa los oídos.* Mi canción necesita... calma.",
-      "Su música suena como una tormenta eléctrica. A veces me ayuda a llorar."
-    ],
-    "Tetra": [
-      "Tetra tiene cien mensajes sin contestar. Yo tengo cien cosas sin decir. Nos entendemos sin hablar.",
-      "Le dije que llueva o haga sol, estoy a su lado. Me contestó con un pez. Creo que es un sí."
-    ],
-    "Kevin": [
-      "Kevin me dibujó un arcoíris en Paint... con una pizza en medio. Lo he puesto en el mapa del tiempo.",
-      "Cuando llueve, tapa su pizza con el cuerpo. Es lo más tierno que he visto."
-    ],
-    "Kennyoung": [
-      "Kennyoung toca en el balcón cuando llueve. Es lo único que suena mejor que la lluvia.",
-      "Me dijo que mi canción le hizo llorar. Le di un pañuelo. Yo también lloré."
-    ],
-    "Enfosi": [
-      "Enfosi me pregunta si va a llover sobre su estatua. Le digo que no. Siempre. Para que esté tranquila.",
-      "Una nube de mi mapa resultó ser un Enphosian disfrazado. Lo dije en directo. Qué vergüenza."
-    ],
-    "Gran": [
-      "Gran me pidió una muestra de lágrima. *Se seca los ojos rápido.* No pienso llorar delante de ella.",
-      "Lo mide todo. Como yo con el tiempo. Pero ella nunca dice lo que siente. ...vale, yo tampoco."
-    ],
-    "Evil Scary": [
-      "Evil Scary sale en el radar del tiempo. No es una nube. *Tiembla.* No es una nube.",
-      "Aviso rojo. Aviso rojo. *Lee más rápido.* Se recomienda... no mirarle."
-    ],
-    "Soft Fuzzy Man": [
-      "Soft Fuzzy Man sale en mi mapa como \"niebla con sentimientos\". Es muy amable.",
-      "Me ofreció su hombro para llorar. Lo atravesé. Lo que contó fue el gesto."
-    ],
-    "Roaring Knight": [
-      "El Roaring Knight salió en el parte. El cielo se puso negro... y no era una nube.",
-      "Aviso extremo: oscuridad que ruge. *Le tiembla el guion.* Se recomienda quedarse en casa. Con la luz encendida."
-    ],
-    "Nanachi": [
-      "Nanachi me hizo sopa cuando estaba triste. No sé qué llevaba. Sabía a... lluvia del Abismo.",
-      "Me contó que en el Abismo llueve hacia arriba. No lo puedo pronosticar. Me da envidia."
-    ],
-    "Dybbuk": [
-      "Dybbuk me cambió el guion. Ahora pone \"lluvia de gatos\". Lo leí en directo.",
-      "Se metió dentro de mi paraguas. Ahora se abre solo. Y se ríe."
-    ],
-    "Malkuth": [
-      "Malkuth apunta mis pronósticos en su libro. Con dibujitos de nubes. Nunca nadie había guardado mis partes.",
-      "Me enseñó a respirar cuando lloraba. Uno, coge aire... dos, suéltalo. Funciona."
-    ],
-    "Painter": ["Painter quiere pintar paisajes... y yo quiero decir lo que siento. Los dos tenemos cosas por salir. Los dos nos entendemos.", "Me dibujó con el paraguas. Con la carita llorando y sonriendo a la vez. Es exactamente como me siento."]
+    "c00lgui": ["c00lgui ha hackeado mi parte. Ahora pone \"100% de probabilidad de c00lgui\". Lo leí en directo... no sabía qué hacer.", "Es como una tormenta eléctrica: mucho ruido, muchas luces... y luego se apaga solo."],
+    "SeaDrive": ["SeaDrive está siempre cansada. Le di su pronóstico: \"descanso intenso toda la semana\". Le gustó.", "Las dos venimos del agua... ella del mar y yo de la lluvia. Hacemos buen equipo. Creo."],
+    "Static Miku": ["Static Miku y yo somos de la misma casa... de Flavor Foley. Ella es la tele y yo salgo dentro. Qué cosas.", "Cuando Miku se pone con estática, mi parte se ve todo nevado. Aunque haga sol."],
+    "Guillotina": ["Guillotina... aviso rojo. *Se esconde detrás del guion.* Se recomienda no salir de casa.", "Se comió mi paraguas. Era mi favorito. ...bueno, era el único."],
+    "Angela": ["Angela da los datos como yo: exactos, sin temblar. Pero a ella nunca se le escapa nada. Me da un poco de pena.", "Me pidió el pronóstico con tres decimales. Se lo di. No sonrió."],
+    "Mikaela": ["Mikaela me pregunta el tiempo antes de cada partida. Yo no sé si en el juego llueve... le digo que sí, por si acaso.", "Dice que soy su \"support\". No sé qué es, pero suena bonito."],
+    "Zodiac": ["Zodiac vive en el desierto. Allí nunca llueve. *Le da un paraguas igualmente.* Por si acaso.", "Se queda mirando el horizonte como yo miro el cielo. Esperando algo."],
+    "Velvet": ["Velvet dice que la lluvia hace sus telarañas más bonitas. *Tiembla.* Tiene razón. Y eso es lo que me asusta.", "Me ofreció un abracito. Le dije que tenía que dar el parte. Era mentira."],
+    "Dune": ["Dune sale cuando llueve. Es mi telespectador más fiel. ...y el más grande.", "Le dije que mañana llovía y se puso tan contento que hizo un agujero en el plató."],
+    "Cordero y Cabra": ["La Cabra dice que mis pronósticos son profecías. Solo son porcentajes... *Mira al cielo.* Bueno. A veces lo parecen.", "El Cordero se puso debajo de mi paraguas sin decir nada. Fue muy bonito."],
+    "Pyrophina y Zaratana": ["Conectamos con WMEW 99.9... *Se oye un rugido.* Devolvemos la conexión al plató. Rápido.", "Pyrophina evapora las nubes y Zaratana hace temblar el suelo. Mi pronóstico ya no sirve de nada."],
+    "Averi": ["Averi saltó en todos los charcos del plató. Todos. Luego me abrazó. Mojada. Pero fue un abrazo bonito.", "Me rompió el paraguas... y me hizo un dibujo para pedirme perdón. Lo tengo en el camerino."],
+    "Sebastian Solace": ["Sebastian sube el precio de los paraguas cada vez que digo \"lluvia\". *Baja la voz.* Ya no lo digo tan alto.", "Me vendió un \"paraguas a prueba de tormentas\". Era una bolsa con un palo."],
+    "Pursuer": ["Pursuer... aviso por niebla espesa. Y por algo dentro de la niebla. *Mira a cámara, asustada.*", "Me dijo que la lluvia borra las huellas. No he vuelto a decir \"lluvia\" en voz alta."],
+    "Kasane Teto": ["Teto canta con mi mismo programa. Pero ella lo dice todo en voz alta... ojalá yo pudiera.", "Hizo una versión de mi canción. Se llamaba \"weathergirls\". En plural. Me hizo mucha ilusión."],
+    "Token": ["Token dice que mi canción necesita más bajos. *Se tapa los oídos.* Mi canción necesita... calma.", "Su música suena como una tormenta eléctrica. A veces me ayuda a llorar."],
+    "Tetra": ["Tetra tiene cien mensajes sin contestar. Yo tengo cien cosas sin decir. Nos entendemos sin hablar.", "Le dije que llueva o haga sol, estoy a su lado. Me contestó con un pez. Creo que es un sí."],
+    "Kevin": ["Kevin me dibujó un arcoíris en Paint... con una pizza en medio. Lo he puesto en el mapa del tiempo.", "Cuando llueve, tapa su pizza con el cuerpo. Es lo más tierno que he visto."],
+    "Kennyoung": ["Kennyoung toca en el balcón cuando llueve. Es lo único que suena mejor que la lluvia.", "Me dijo que mi canción le hizo llorar. Le di un pañuelo. Yo también lloré."],
+    "Enfosi": ["Enfosi me pregunta si va a llover sobre su estatua. Le digo que no. Siempre. Para que esté tranquila.", "Una nube de mi mapa resultó ser un Enphosian disfrazado. Lo dije en directo. Qué vergüenza."],
+    "Gran": ["Gran me pidió una muestra de lágrima. *Se seca los ojos rápido.* No pienso llorar delante de ella.", "Lo mide todo. Como yo con el tiempo. Pero ella nunca dice lo que siente. ...vale, yo tampoco."],
+    "Evil Scary": ["Evil Scary sale en el radar del tiempo. No es una nube. *Tiembla.* No es una nube.", "Aviso rojo. Aviso rojo. *Lee más rápido.* Se recomienda... no mirarle."],
+    "Soft Fuzzy Man": ["Soft Fuzzy Man sale en mi mapa como \"niebla con sentimientos\". Es muy amable.", "Me ofreció su hombro para llorar. Lo atravesé. Lo que contó fue el gesto."],
+    "Roaring Knight": ["El Roaring Knight salió en el parte. El cielo se puso negro... y no era una nube.", "Aviso extremo: oscuridad que ruge. *Le tiembla el guion.* Se recomienda quedarse en casa. Con la luz encendida."],
+    "Nanachi": ["Nanachi me hizo sopa cuando estaba triste. No sé qué llevaba. Sabía a... lluvia del Abismo.", "Me contó que en el Abismo llueve hacia arriba. No lo puedo pronosticar. Me da envidia."],
+    "Dybbuk": ["Dybbuk me cambió el guion. Ahora pone \"lluvia de gatos\". Lo leí en directo.", "Se metió dentro de mi paraguas. Ahora se abre solo. Y se ríe."],
+    "Malkuth": ["Malkuth apunta mis pronósticos en su libro. Con dibujitos de nubes. Nunca nadie había guardado mis partes.", "Me enseñó a respirar cuando lloraba. Uno, coge aire... dos, suéltalo. Funciona."],
+    "Painter": ["Painter quiere pintar paisajes... y yo quiero decir lo que siento. Los dos tenemos cosas por salir. Los dos nos entendemos.", "Me dibujó con el paraguas. Con la carita llorando y sonriendo a la vez. Es exactamente como me siento."],
+    "Valencina": ["Pronóstico para Valencina: nublado con probabilidad de gritos al cien por cien. Y una tormenta dentro que no le cuenta a nadie."],
+    "Lei Heng": ["Pronóstico para Lei Heng: tormenta de tajos con rachas de risas. Llevad paraguas. Y armadura."],
+    "Kalo": ["Pronóstico para Kalo: estable, frío y sin sorpresas. Con dos frentes por delante."]
   }
 }

@@ -92,7 +92,10 @@
     "Dybbuk": "¡Bzzt! ¡Se fue Dybbuk! ¡Se metió en mi tele y salía en todos los canales sacando la lengua!",
     "Malkuth": "¡Bzzt! ¡Malkuth se ha ido! ¡Me ha catalogado como \"tele mona, siglo XXI\"! ¡Ya soy historia!",
     "Weathergirl": "¡Bzzt! ¡Weathergirl se ha ido! ¡Cambio de canal! ...¡pero vuelve a las nueve con el tiempo!",
-    "Painter": "¡Bzzt! ¡Painter se ha ido! ¡Cambio de canal! ¡Me dejó un dibujo en la pantalla! ¡Es un corazón con cables!"
+    "Painter": "¡Bzzt! ¡Painter se ha ido! ¡Cambio de canal! ¡Me dejó un dibujo en la pantalla! ¡Es un corazón con cables!",
+    "Valencina": "¡Valencina se ha ido! ¡Me ha dejado su vaso! ¡Bzzt! ...está vacío.",
+    "Lei Heng": "¡Se fue Lei Heng! ¡Bzzt! ¡Ya puedo respirar!",
+    "Kalo": "¡Se fue Kalo! ¡Ya puedo subir el volumen!"
   },
   "Opina": {
     "c00lgui": ["¡El hacker rojo me da un poco de miedo! ¡Bzzt!", "¡c00lkidd intentó piratear mi tele! ¡Solo encontró dibujos!"],
@@ -122,6 +125,9 @@
     "Dybbuk": ["¡Dybbuk es un gatito fantasma! ¡Quiero abrazarlo! ...lo he intentado. Lo he atravesado. ¡Bzzt!", "¡No dejes que lama la antena! ¡Luego solo se ven fantasmas!"],
     "Malkuth": ["¡Malkuth es tan alegre como yo! ¡Bzzt! ¡Juntas somos una fiesta!", "¡Se tropezó con mi cable! ¡Y se rió! ¡Me cae genial!"],
     "Weathergirl": ["¡Bzzt! ¡Weathergirl también es de Flavor Foley! ¡Somos de la misma familia! ¡Las dos salimos en la tele!", "¡Le presté mi antena para el parte! ¡Ahora el tiempo sale con estática! ¡Bzzt!"],
-    "Painter": ["¡Bzzt! ¡Painter es un ordenador y yo una tele! ¡Somos parientes! ¡Pantalla contra pantalla!", "¡Me dibujó una carita en la estática! ¡Se ve guapísima! ¡Bzzt!"]
+    "Painter": ["¡Bzzt! ¡Painter es un ordenador y yo una tele! ¡Somos parientes! ¡Pantalla contra pantalla!", "¡Me dibujó una carita en la estática! ¡Se ve guapísima! ¡Bzzt!"],
+    "Valencina": ["¡Valencina me ha dicho que sonrío demasiado! ¡Bzzt! ¡Pues le he sonreído el doble!"],
+    "Lei Heng": ["¡Lei Heng me ha preguntado si me apago si me pone nerviosa! ¡Bzzt! ¡No me apago! ...creo."],
+    "Kalo": ["¡Kalo me ha dicho que tengo volumen pero no rango! ¡Bzzt! ¿Qué es un rango?"]
   }
 }

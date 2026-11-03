@@ -1,4 +1,4 @@
-﻿# c00lgui v6.7 - panel lanzador con skins de asistentes
+﻿# c00lgui v7.0 - panel lanzador con skins de asistentes
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 # el panel mide su propio escalado de pantalla para que nada se corte
@@ -60,6 +60,7 @@ $script:aj = [ordered]@{
     Guia = $false   # si ya se ha visto la guía del panda
     Epilepsia = $false   # modo seguro: sin destellos, parpadeos, temblores ni intros (ver Sin-Destellos)
     KnightVictorias = 0   # victorias en el minijuego del Roaring Knight
+    EventoPulgar = $false   # si ya salió el anuncio del evento del Pulgar
     AngelaDia = 1   # día de Lobotomy Corporation en la skin de Angela (sube al completar la cuota de energía)
 }
 function Cargar-Ajustes {
@@ -192,7 +193,7 @@ $SxSerif = if (@((New-Object System.Drawing.Text.InstalledFontCollection).Famili
 $Skins = [ordered]@{
     # ================================================================ c00lgui
     'c00lgui' = @{
-        Estilo = 'hacker'; Titulo = 'c00lgui'; Sub = 'v6.7'; Alto = 312
+        Estilo = 'hacker'; Titulo = 'c00lgui'; Sub = 'v7.0'; Alto = 312
         Fondo = (C 0 0 0); Borde = (C 255 0 0); Sombra = (C 90 0 0)
         TituloColor = (C 255 0 0); SubColor = (C 140 0 0)
         BtnFondo = (C 0 0 0); BtnTexto = (C 255 255 255); BtnTextoHover = (C 255 40 40); BtnBorde = (C 255 0 0); BtnBordeAncho = 1
@@ -878,6 +879,82 @@ $Skins = [ordered]@{
         # el estofado del Abismo (receta de verdad del manga) y lo que cae en la olla con cada app
         Ingredientes = @('un pez demonio entero (machacado)', 'un huevo de picomartillo gigante', 'hierba amarilla, bien pegajosa', 'Gintoko desmigado', 'sal. Lo único normal')
     }
+    # ================================================================ Kalo (Library of Ruina)
+    # Sottocapo del Pulgar en la recepción de Library of Ruina, con sus dos Capos, Boris y Katriel. Ficha en lore\personajes\Kalo.md.
+    # Formal, frío y obsesionado con la jerarquía. Combate en dos actos: primero Boris y Katriel, luego él
+    # (ver "KALO (Library of Ruina): LA RECEPCIÓN DEL PULGAR II").
+    'Kalo' = @{
+        Estilo = 'capo'; Titulo = 'KALO'; Sub = 'sottocapo del pulgar  ·  library of ruina'; Alto = 320
+        Fondo = (C 30 12 14); Borde = (C 200 160 90); Acento = (C 214 176 100)
+        TituloColor = (C 246 226 186); SubColor = (C 214 176 100)
+        BtnFondo = (C 110 24 32); BtnTexto = (C 246 230 200); BtnTextoHover = (C 40 10 12); BtnBorde = (C 214 176 100); BtnBordeAncho = 2
+        BtnHover = (C 222 184 106); BtnPress = (C 255 140 40); BarraBtnTexto = (C 246 230 200)
+        StatusColor = (C 246 230 200); Fuente = 'Segoe UI'; FuenteTitulo = 'Palatino Linotype'; Opacidad = 1.0; Velocidad = 1
+        Ancho = 760; Mezclar = $true; Gif = 'skins\kalo\kalo.png'; FondoImg = 'skins\kalo\fondo.jpg'
+        Recepcion1 = 'skins\kalo\recepcion1.jpg'; Recepcion2 = 'skins\kalo\recepcion2.jpg'
+        # Boris y Katriel pelean primero; Kalo ('C') aparece en el Acto 2
+        Actores = @(
+            @{ Id = 'B'; Gif = 'skins\kalo\boris.png'; Rect = @(608, 70, 140, 238); Respira = $true }
+            @{ Id = 'K'; Gif = 'skins\kalo\katriel.png'; Rect = @(426, 100, 172, 174); Respira = $true }
+            @{ Id = 'C'; Gif = 'skins\kalo\kalo.png'; Rect = @(566, 70, 160, 240); Respira = $true }
+        )
+        Sonidos = @{
+            golpe = @('skins\kalo\golpe.wav'); disparo = @('skins\kalo\disparo.wav'); tajo = @('skins\kalo\tajo.wav'); dado = @('skins\kalo\dado.wav')
+            libro = @('skins\kalo\libro.wav'); victoria = @('skins\kalo\victoria.wav'); choque = @('skins\kalo\choque.wav'); baston = @('skins\kalo\baston.wav')
+        }
+        Burbuja = @(424, 278, 322, 34); BurFondo = $null; InvFondo = (C 34 14 16); BurTexto = (C 246 232 210); BurFuente = 'Segoe UI'
+    }
+    # ================================================================ Lei Heng (Limbus Company)
+    # Capo IIII del Pulgar, uno de los Diez Filos del Este, "Chachihu, el Tigre Alado" (Estrella Tiantui), del Canto VIII.
+    # Ruidoso, fanfarrón y con acento de pueblo; disfruta peleando y humillando a los de rango inferior. Ficha en lore\personajes\Lei Heng.md.
+    # Lanza sus skills del juego (carta, monedas, tajos con explosión) y al 40 % de vida activa el Shin (ver "LEI HENG: SUS SKILLS").
+    'Lei Heng' = @{
+        Estilo = 'tigre'; Titulo = 'LEI HENG'; Sub = 'capo iiii del pulgar  ·  limbus company'; Alto = 320
+        Fondo = (C 30 12 14); Borde = (C 200 160 90); Acento = (C 214 176 100)
+        TituloColor = (C 246 226 186); SubColor = (C 214 176 100)
+        BtnFondo = (C 110 24 32); BtnTexto = (C 246 230 200); BtnTextoHover = (C 40 10 12); BtnBorde = (C 214 176 100); BtnBordeAncho = 2
+        BtnHover = (C 222 184 106); BtnPress = (C 255 140 40); BarraBtnTexto = (C 246 230 200)
+        StatusColor = (C 246 230 200); Fuente = 'Segoe UI'; FuenteTitulo = 'Palatino Linotype'; Opacidad = 1.0; Velocidad = 1
+        Ancho = 760; Mezclar = $true; Gif = 'skins\leiheng\leiheng.png'; FondoImg = 'skins\leiheng\fondo.jpg'
+        IntroImg = 'skins\leiheng\intro.png'; IntroLejos = 'skins\leiheng\cg_lejos.jpg'; IntroCerca = 'skins\leiheng\cg_cerca.jpg'
+        Actores = @(
+            @{ Id = 'L'; Gif = 'skins\leiheng\leiheng.png'; Rect = @(560, 50, 176, 262); Respira = $true; Extra = @{ herido = 'skins\leiheng\herido.png' } }
+        )
+        Sonidos = @{
+            tajo = @('skins\leiheng\tajo.wav'); explosion = @('skins\leiheng\explosion.wav'); moneda = @('skins\leiheng\moneda.wav')
+            recarga = @('skins\leiheng\recarga.wav'); golpe = @('skins\leiheng\golpe.wav'); shin = @('skins\leiheng\shin.wav')
+            calor = @('skins\leiheng\calor.wav'); caido = @('skins\leiheng\caido.wav'); pf = @('skins\proelium\proelium.mp3')
+        }
+        Burbuja = @(424, 278, 322, 34); BurFondo = $null; InvFondo = (C 34 14 16); BurTexto = (C 246 232 210); BurFuente = 'Segoe UI'
+    }
+    # ================================================================ Valencina (Limbus Company)
+    # Nursefather de la Casa de las Arañas y antigua Sottocapo del Pulgar (Famiglia Bognatelli), del Canto IX. Ficha en lore\personajes\Valencina.md.
+    # Orgullosa, amargada y malhablada; maestra del Estilo Palermitano. Su reliquia, el OJO DE ODÍN, le deja ver venir los golpes:
+    # esquiva tus clics y te contraataca hasta que el ojo se sobrecalienta (ver "VALENCINA: EL OJO DE LA PRECOGNICIÓN").
+    # Sprite de combate en el panel y sprite normal en la intro (PROELIUM FATALE). Su tema de jefa va en tema.mp3 (si está).
+    'Valencina' = @{
+        Estilo = 'ojo'; Titulo = 'VALENCINA'; Sub = 'nursefather del pulgar  ·  limbus company'; Alto = 320
+        Fondo = (C 30 12 14); Borde = (C 200 160 90); Acento = (C 214 176 100)
+        TituloColor = (C 246 226 186); SubColor = (C 214 176 100)
+        BtnFondo = (C 110 24 32); BtnTexto = (C 246 230 200); BtnTextoHover = (C 40 10 12); BtnBorde = (C 214 176 100); BtnBordeAncho = 2
+        BtnHover = (C 222 184 106); BtnPress = (C 255 140 40); BarraBtnTexto = (C 246 230 200)
+        StatusColor = (C 246 230 200); Fuente = 'Segoe UI'; FuenteTitulo = 'Palatino Linotype'; Opacidad = 1.0; Velocidad = 1
+        Ancho = 760; Mezclar = $true; Gif = 'skins\valencina\valencina.png'; FondoImg = 'skins\valencina\fondo.jpg'
+        IntroImg = 'skins\valencina\intro.png'; IntroCara = 'skins\valencina\intro_cara.jpg'
+        PrecogImg = 'skins\valencina\precog.png'; ConiglioImg = 'skins\valencina\coniglio.png'; DisposalImg = 'skins\valencina\disposal.png'
+        # ella (sprite de combate) y su vaso de Old Parr con hielo (clicable)
+        Actores = @(
+            @{ Id = 'V'; Gif = 'skins\valencina\valencina.png'; Rect = @(548, 52, 206, 258); Respira = $true }
+            @{ Id = 'G'; Gif = 'skins\valencina\vaso_lleno.png'; Rect = @(452, 213, 40, 50); Extra = @{ vacio = 'skins\valencina\vaso_vacio.png' } }
+        )
+        Sonidos = @{
+            tajo = @('skins\valencina\tajo.wav'); esquiva = @('skins\valencina\esquiva.wav'); choque = @('skins\valencina\choque.wav')
+            disparo = @('skins\valencina\disparo.wav'); calor = @('skins\valencina\calor.wav'); hielo = @('skins\valencina\hielo.wav')
+            golpe = @('skins\valencina\golpe.wav'); aturdida = @('skins\valencina\aturdida.wav'); proelium = @('skins\valencina\proelium.wav')
+            caza = @('skins\valencina\caza.wav'); disposal = @('skins\valencina\disposal.wav'); pf = @('skins\proelium\proelium.mp3')
+        }
+        Burbuja = @(424, 278, 322, 34); BurFondo = $null; InvFondo = (C 34 14 16); BurTexto = (C 246 232 210); BurFuente = 'Segoe UI'
+    }
     # ================================================================ Malkuth (Library of Ruina)
     # Bibliotecaria Patrona de la Planta de Historia (antes, Sephirah del Equipo de Control de Lobotomy Corp.). Ficha en lore\personajes\Malkuth.md.
     # Alegre, trabajadora y algo torpe; cuando se acuerda de sus fallos se hunde y lo arregla con su ejercicio de respiración.
@@ -951,6 +1028,12 @@ $Skins = [ordered]@{
 # y eso último sale debajo del nombre, como el canal en YouTube.
 # El orden de aquí es el orden del menú. Una skin que no esté en ningún grupo sale sola en "Otras".
 $GruposSkins = [ordered]@{
+    # EVENTO del Pulgar: también se abre con el botón ★ EVENTO de arriba (ver "EVENTO: EL PULGAR")
+    'Evento' = [ordered]@{
+        'Valencina' = 'Limbus Company'
+        'Lei Heng'  = 'Limbus Company'
+        'Kalo'      = 'Library of Ruina'
+    }
     'YouTube' = [ordered]@{
         'SeaDrive'    = 'YonKaGor'
         'Tetra'       = 'YonKaGor'
@@ -961,6 +1044,7 @@ $GruposSkins = [ordered]@{
         'Kasane Teto' = 'Jamie Paige'
         'Kevin'       = 'Nyanwolf'
         'Gran'        = 'ivycomb'
+        'Soft Fuzzy Man' = 'Lemon Demon · Aimkid'
     }
     'Roblox' = [ordered]@{
         'c00lgui'          = 'c00lkidd'
@@ -980,11 +1064,8 @@ $GruposSkins = [ordered]@{
         'Malkuth'              = 'Library of Ruina'
         'Cordero y Cabra'      = 'Cult of the Lamb'
         'Roaring Knight'       = 'Deltarune'
-    }
-    'Halloween' = [ordered]@{
-        'Evil Scary' = 'Die of Death'
-        'Soft Fuzzy Man' = 'Lemon Demon · Aimkid'
-        'Dybbuk' = 'Mewgenics'
+        'Evil Scary'           = 'Die of Death'
+        'Dybbuk'               = 'Mewgenics'
     }
     'Anime' = [ordered]@{
         'Nanachi' = 'Made in Abyss'
@@ -1814,6 +1895,59 @@ function Fondo-Escena($k, $W, $H) {
             $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 40 28 14))), 0, 53, $W, 2)
             $em = Cargar-Img $k.Emblema; if ($em) { $g.DrawImage($em, 474, 3, 48, 47); $em.Dispose() }
         }
+        'capo' {
+            # la sala de la recepción del Pulgar, desenfocada y oscurecida a la izquierda para los botones
+            $g.Clear((C 30 12 14))
+            Imagen-Cubrir $g $k.FondoImg 0 0 $W $H 0.5 0.5
+            Degradado $g 0 0 420 $H (ARGB 230 24 8 10) (ARGB 185 24 8 10) 0
+            Degradado $g 420 0 90 $H (ARGB 185 24 8 10) (ARGB 0 24 8 10) 0
+            Degradado $g 400 200 ($W - 400) ($H - 200) (ARGB 0 16 6 6) (ARGB 190 16 6 6) 90
+            $pan = Ruta-Redonda 8 60 394 ($H - 66) 6
+            $g.FillPath((New-Object System.Drawing.SolidBrush((ARGB 185 46 12 16))), $pan)
+            $g.DrawPath((New-Object System.Drawing.Pen((C 200 160 90), 2)), $pan); $pan.Dispose()
+            Degradado $g 0 0 $W 52 (C 74 16 22) (C 26 6 8) 90
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 214 176 100))), 0, 50, $W, 2)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 10 2 4))), 0, 52, $W, 3)
+        }
+        'tigre' {
+            # la explanada del Templo de Tiekan (CG del Canto VIII), oscurecida a la izquierda para los botones
+            $g.Clear((C 30 12 14))
+            Imagen-Cubrir $g $k.FondoImg 0 0 $W $H 0.5 0.5
+            Degradado $g 0 0 420 $H (ARGB 230 24 8 10) (ARGB 185 24 8 10) 0
+            Degradado $g 420 0 90 $H (ARGB 185 24 8 10) (ARGB 0 24 8 10) 0
+            Degradado $g 400 200 ($W - 400) ($H - 200) (ARGB 0 16 6 6) (ARGB 190 16 6 6) 90
+            $pan = Ruta-Redonda 8 60 394 ($H - 66) 6
+            $g.FillPath((New-Object System.Drawing.SolidBrush((ARGB 185 46 12 16))), $pan)
+            $g.DrawPath((New-Object System.Drawing.Pen((C 200 160 90), 2)), $pan); $pan.Dispose()
+            # barra de arriba con la insignia del Pulgar (la suya apunta a la izquierda)
+            Degradado $g 0 0 $W 52 (C 74 16 22) (C 26 6 8) 90
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 214 176 100))), 0, 50, $W, 2)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 10 2 4))), 0, 52, $W, 3)
+        }
+        'ojo' {
+            # el bar del Pasillo del Pulgar (a la derecha) y la pared de la Casa de las Arañas (detrás de los botones)
+            $g.Clear((C 30 12 14))
+            Imagen-Cubrir $g $k.FondoImg 0 0 $W $H 0.5 0.5
+            Degradado $g 0 0 420 $H (ARGB 228 24 8 10) (ARGB 180 24 8 10) 0
+            Degradado $g 420 0 90 $H (ARGB 180 24 8 10) (ARGB 0 24 8 10) 0
+            Degradado $g 400 200 ($W - 400) ($H - 200) (ARGB 0 16 6 6) (ARGB 190 16 6 6) 90
+            # hilos rojos de la Casa de las Arañas cruzando la pared
+            $hilo = New-Object System.Drawing.Pen((ARGB 110 200 30 40), 1.4)
+            $g.DrawBezier($hilo, 0, 96, 140, 60, 260, 150, 410, 72); $g.DrawBezier($hilo, 0, 236, 180, 300, 300, 180, 410, 262); $hilo.Dispose()
+            # panel rojo vino con ribete dorado, como su gabardina
+            $pan = Ruta-Redonda 8 60 394 ($H - 66) 6
+            $g.FillPath((New-Object System.Drawing.SolidBrush((ARGB 185 46 12 16))), $pan)
+            $g.DrawPath((New-Object System.Drawing.Pen((C 200 160 90), 2)), $pan); $pan.Dispose()
+            # la mesita del bar para su vaso
+            $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB 110 0 0 0))), 426, 270, 96, 12)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 50 24 14))), 470, 270, 8, ($H - 270))
+            Degradado $g 428 262 92 9 (C 110 60 34) (C 54 26 14) 90
+            $g.DrawRectangle((New-Object System.Drawing.Pen((C 200 160 90), 1)), 428, 262, 92, 9)
+            # barra de arriba: rojo vino y negro con un filete dorado y la insignia del Pulgar (círculo con punta de flecha)
+            Degradado $g 0 0 $W 52 (C 74 16 22) (C 26 6 8) 90
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 214 176 100))), 0, 50, $W, 2)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 10 2 4))), 0, 52, $W, 3)
+        }
         'abismo' {
             # su escondite de la 4ª capa (del anime), oscurecido a la izquierda para los botones
             $g.Clear((C 20 36 24))
@@ -2094,6 +2228,13 @@ function Pintar-Burbuja($g, $k) {
             $g.DrawPath((New-Object System.Drawing.Pen((C 150 110 50), 1.6)), $r); $r.Dispose()
             $g.DrawLine((New-Object System.Drawing.Pen((ARGB 150 200 60 50), 1)), [float]($x + 4), [float]($y + 4), [float]($x + $w - 30), [float]($y + 4))
             $g.FillPolygon((New-Object System.Drawing.SolidBrush((C 200 50 45))), [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($x + $w - 24), [float]($y - 6))), (New-Object System.Drawing.PointF([float]($x + $w - 14), [float]($y - 6))), (New-Object System.Drawing.PointF([float]($x + $w - 14), [float]($y + 12))), (New-Object System.Drawing.PointF([float]($x + $w - 19), [float]($y + 8))), (New-Object System.Drawing.PointF([float]($x + $w - 24), [float]($y + 12)))))
+        }
+        { $_ -in @('ojo', 'tigre', 'capo') } {
+            # cuadro de diálogo de Limbus: negro rojizo translúcido, filete dorado y una franja roja a la izquierda
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 120 0 0 0))), [float]($x + 3), [float]($y + 3), [float]$w, [float]$h)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 232 24 10 12))), [float]$x, [float]$y, [float]$w, [float]$h)
+            $g.DrawRectangle((New-Object System.Drawing.Pen((C 200 160 90), 1.4)), [float]$x, [float]$y, [float]$w, [float]$h)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 170 30 36))), [float]$x, [float]$y, 4, [float]$h)
         }
         'abismo' {
             # nota de papel de explorador, con una esquina doblada
@@ -6328,6 +6469,1106 @@ function Mk-Pintar-Mesa($g, $e) {
     $g.FillEllipse((New-Object System.Drawing.SolidBrush((C 255 246 200))), [float]($vx + 13 + $os), [float]($vy - 1 - $al * 0.6), 4, [float]($al * 0.5))
 }
 
+# ================= PROELIUM FATALE: la pantalla de Limbus Company al empezar un combate difícil =================
+# El vídeo de verdad (3,9 s) en skins\proelium: 117 fotogramas JPG a 30 fps + proelium.mp3 (sonido 'pf' de cada skin).
+# Lo usan las intros de Valencina y Lei Heng. Se carga solo el fotograma que toca según el reloj.
+$ProeliumFotos = 117; $ProeliumFps = 30; $ProeliumMs = 3900
+$script:pfImg = $null; $script:pfIdx = -1
+function Proelium-Pintar($g, $W, $H, $ms) {
+    $idx = [Math]::Max(0, [Math]::Min($ProeliumFotos - 1, [int][Math]::Floor($ms * $ProeliumFps / 1000.0)))
+    if ($idx -ne $script:pfIdx) {
+        $nueva = Cargar-Img ('skins\proelium\fotos\{0:000}.jpg' -f ($idx + 1))
+        if ($nueva) { if ($script:pfImg) { $script:pfImg.Dispose() }; $script:pfImg = $nueva; $script:pfIdx = $idx }
+    }
+    $g.Clear([System.Drawing.Color]::Black)
+    if ($script:pfImg) { [void](Dibujar-Cubriendo $g $script:pfImg $W $H 1.0 0.5 0.5) }
+}
+function Proelium-Soltar { if ($script:pfImg) { $script:pfImg.Dispose(); $script:pfImg = $null }; $script:pfIdx = -1 }
+
+# ================= EVENTO: EL PULGAR (Valencina, Lei Heng y la recepción de Kalo) =================
+# Botón EVENTO arriba (a la izquierda de Ajustes, igual en todas las skins): abre el menú Skins en el grupo "Evento".
+# La primera vez que se abre el panel tras la actualización sale el anuncio: PROELIUM FATALE, el logo del Pulgar y las
+# tres skins presentadas como rivales a los que hay que derrotar. Al acabar, se abre el grupo Evento.
+# Se guarda en ajustes.txt (EventoPulgar = si) para que solo salga una vez.
+$EventoRivales = @(
+    @{ Skin = 'Valencina'; Img = 'skins\valencina\intro.png'; Rango = 'Nursefather del Pulgar'; Juego = 'Limbus Company' }
+    @{ Skin = 'Lei Heng'; Img = 'skins\leiheng\intro.png'; Rango = 'Capo IIII del Pulgar'; Juego = 'Limbus Company' }
+    @{ Skin = 'Kalo'; Img = 'skins\kalo\kalo_intro.png'; Rango = 'Sottocapo del Pulgar'; Juego = 'Library of Ruina' }
+)
+$EventoIntro = @{ Logo = 4000; Rivales = 6800; Fin = 12600 }
+# página del menú Skins donde empieza el grupo Evento
+function Pagina-Evento {
+    $ps = Paginas-Skins
+    for ($i = 0; $i -lt $ps.Count; $i++) { if ($ps[$i].Grupo -eq 'Evento') { return $i } }
+    return 0
+}
+function Abrir-Evento {
+    if (Ocupado) { return }
+    $pe = Pagina-Evento
+    if ($script:modoSkins -and $script:pagSkins -eq $pe) { $script:modoSkins = $false } else { $script:modoSkins = $true; $script:pagSkins = $pe }
+    Mostrar-Pagina
+}
+# el botón EVENTO: rojo y dorado en todas las skins, con una estrellita que brilla
+function Nuevo-Boton-Evento($x, $y) {
+    $b = New-Object System.Windows.Forms.Button
+    $b.Text = 'EVENTO'; $b.Name = 'Evento'
+    $b.Location = New-Object System.Drawing.Point($x, $y); $b.Size = New-Object System.Drawing.Size(78, 28)
+    $b.FlatStyle = 'Flat'; $b.FlatAppearance.BorderSize = 0; $b.BackColor = (C 110 14 20); $b.ForeColor = (C 250 220 150)
+    $b.Font = Fnt('Palatino Linotype', 8, [System.Drawing.FontStyle]::Bold); $b.Cursor = 'Hand'; $b.TabStop = $false
+    $b.Add_Paint({
+        $g = $_.Graphics; $g.SmoothingMode = 'AntiAlias'; $Z = $script:K
+        $hover = $this.ClientRectangle.Contains($this.PointToClient([System.Windows.Forms.Cursor]::Position))
+        $r = New-Object System.Drawing.Rectangle(0, 0, $this.Width, $this.Height)
+        $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush($r, $(if ($hover) { (C 190 40 34) } else { (C 140 20 26) }), (C 50 6 10), 90)
+        $g.FillRectangle($br, $r); $br.Dispose()
+        $g.DrawRectangle((New-Object System.Drawing.Pen((C 236 190 100), [float](1.6 * $Z))), [float](0.8 * $Z), [float](0.8 * $Z), [float]($this.Width - 1.6 * $Z), [float]($this.Height - 1.6 * $Z))
+        $fmt = New-Object System.Drawing.StringFormat; $fmt.Alignment = 'Center'; $fmt.LineAlignment = 'Center'; $fmt.FormatFlags = 'NoWrap'
+        $g.DrawString('★ EVENTO', $this.Font, (New-Object System.Drawing.SolidBrush($(if ($hover) { (C 255 246 210) } else { (C 250 214 140) }))), (New-Object System.Drawing.RectangleF(0, 0, $this.Width, $this.Height)), $fmt)
+    })
+    $b.Add_MouseEnter({ $this.Invalidate() }); $b.Add_MouseLeave({ $this.Invalidate() })
+    $b.Add_Click({ Abrir-Evento })
+    return $b
+}
+# la insignia del Pulgar: un anillo dorado con una punta de flecha
+function Evento-Insignia($g, $cx, $cy, $rad, $al) {
+    foreach ($p in @(@(14, 30), @(8, 60))) { $pn = New-Object System.Drawing.Pen((ARGB ([int]($p[1] * $al / 255)) 255 150 50), [float]$p[0]); $g.DrawEllipse($pn, [float]($cx - $rad), [float]($cy - $rad), [float](2 * $rad), [float](2 * $rad)); $pn.Dispose() }
+    $g.DrawEllipse((New-Object System.Drawing.Pen((ARGB $al 240 196 110), [float]($rad / 7))), [float]($cx - $rad), [float]($cy - $rad), [float](2 * $rad), [float](2 * $rad))
+    $pts = [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($cx - $rad * 0.42), [float]($cy - $rad * 0.55))), (New-Object System.Drawing.PointF([float]($cx + $rad * 0.55), [float]$cy)), (New-Object System.Drawing.PointF([float]($cx - $rad * 0.42), [float]($cy + $rad * 0.55))), (New-Object System.Drawing.PointF([float]($cx - $rad * 0.12), [float]$cy)))
+    $g.FillPolygon((New-Object System.Drawing.SolidBrush((ARGB $al 246 206 120))), $pts)
+}
+# el anuncio del evento (la primera vez)
+function Anuncio-Evento {
+    $script:evImgs = @($EventoRivales | ForEach-Object { Cargar-Img $_.Img })
+    $script:iRecursos = @($script:evImgs | Where-Object { $_ })
+    $script:evT0 = 0; $script:evHechos = @{}; $script:evSinVideo = [bool]$script:aj.Epilepsia
+    $pintar = {
+        param($g, $W, $H, $p)
+        $g.SmoothingMode = 'AntiAlias'; $g.InterpolationMode = 'HighQualityBilinear'; $g.TextRenderingHint = 'AntiAliasGridFit'
+        $ET = $EventoIntro
+        $ms = if ($script:evT0 -gt 0) { [Environment]::TickCount - $script:evT0 } else { 0 }
+        if ($script:evSinVideo) { $ms += $ET.Logo }
+        $g.Clear((C 6 2 3))
+        if ($ms -lt $ProeliumMs) { Proelium-Pintar $g $W $H $ms }
+        elseif ($ms -lt $ET.Rivales) {
+            # el logo del Pulgar y el nombre del evento
+            $q = ($ms - $ET.Logo) / 600.0; $al = [int](255 * [Math]::Max(0.0, [Math]::Min(1.0, $q)))
+            Degradado $g 0 0 $W $H (ARGB 0 90 8 12) (ARGB 120 90 8 12) 90
+            $rad = 46 * (1.25 - 0.25 * [Math]::Min(1.0, [Math]::Max(0.0, $q)))
+            Evento-Insignia $g ($W / 2) 92 $rad $al
+            if ($ms -gt $ET.Logo + 500) {
+                $a2 = [int](255 * [Math]::Min(1.0, ($ms - $ET.Logo - 500) / 500.0))
+                [void](Kc-Neon $g 'EL PULGAR' 50 ($W / 2) 150 $a2)
+                Kc-Adornos $g ($W / 2) 214 300 $a2 $false
+                $fs = FntP('Palatino Linotype', 11, [System.Drawing.FontStyle]::Bold); $tx = 'E V E N T O   ·   Limbus Company  &  Library of Ruina'
+                $g.DrawString($tx, $fs, (New-Object System.Drawing.SolidBrush((ARGB $a2 236 90 70))), [float](($W - $g.MeasureString($tx, $fs).Width) / 2), 240)
+            }
+        } else {
+            # las tres skins, como rivales: cartas que entran una a una con un VS
+            $q = $ms - $ET.Rivales
+            Degradado $g 0 0 $W $H (ARGB 255 40 6 10) (ARGB 255 8 2 3) 90
+            $fs = FntP('Palatino Linotype', 10, [System.Drawing.FontStyle]::Bold); $tx = 'TRES RIVALES DEL PULGAR TE ESPERAN'
+            $g.DrawString($tx, $fs, (New-Object System.Drawing.SolidBrush((C 236 196 116))), [float](($W - $g.MeasureString($tx, $fs).Width) / 2), 10)
+            for ($i = 0; $i -lt 3; $i++) {
+                $ti = $q - $i * 450; if ($ti -lt 0) { continue }
+                $qs = [Math]::Min(1.0, $ti / 450.0); $es = 1 - [Math]::Pow(1 - $qs, 3)
+                $cw = 200; $ch = 248; $cx = 50 + $i * 230; $cy = 34 + (1 - $es) * 60
+                $al = [int](255 * $es)
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.9)) 26 8 10))), [float]$cx, [float]$cy, $cw, $ch)
+                $img = $script:evImgs[$i]
+                if ($img) {
+                    $st = $g.Save(); $g.SetClip((New-Object System.Drawing.RectangleF([float]$cx, [float]$cy, $cw, [float]($ch - 54))))
+                    $ih = $ch * 1.35; $iw = $img.Width * $ih / $img.Height
+                    $cm = New-Object System.Drawing.Imaging.ColorMatrix; $cm.Matrix33 = [float]$es; $ia = New-Object System.Drawing.Imaging.ImageAttributes; $ia.SetColorMatrix($cm)
+                    $g.DrawImage($img, (New-Object System.Drawing.Rectangle([int]($cx + $cw / 2 - $iw / 2), [int]($cy + 2), [int]$iw, [int]$ih)), 0, 0, $img.Width, $img.Height, [System.Drawing.GraphicsUnit]::Pixel, $ia); $ia.Dispose()
+                    $g.Restore($st)
+                }
+                Degradado $g $cx ($cy + $ch - 110) $cw 56 (ARGB 0 26 8 10) (ARGB ([int]($al * 0.95)) 26 8 10) 90
+                $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB $al 214 170 90), 2)), [float]$cx, [float]$cy, $cw, $ch)
+                $rv = $EventoRivales[$i]
+                [void](Kc-Neon $g $rv.Skin.ToUpper() 24 ($cx + $cw / 2) ($cy + $ch - 52) $al)
+                $f2 = FntP('Palatino Linotype', 8, [System.Drawing.FontStyle]::Italic)
+                $t2 = "$($rv.Rango)  ·  $($rv.Juego)"; $g.DrawString($t2, $f2, (New-Object System.Drawing.SolidBrush((ARGB $al 236 210 160))), [float]($cx + $cw / 2 - $g.MeasureString($t2, $f2).Width / 2), [float]($cy + $ch - 20))
+                # el sello rojo de "DESAFÍO" que cae sobre la carta
+                if ($ti -gt 500) {
+                    $qd = [Math]::Min(1.0, ($ti - 500) / 200.0); $sc = 1.6 - 0.6 * $qd
+                    $st = $g.Save(); $g.TranslateTransform([float]($cx + $cw - 46), [float]($cy + 34)); $g.RotateTransform(-14); $g.ScaleTransform([float]$sc, [float]$sc)
+                    $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB ([int](230 * $qd)) 220 40 36), 2.5)), -40, -12, 80, 24)
+                    $g.DrawString('DESAFÍO', (FntP('Palatino Linotype', 10, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB ([int](230 * $qd)) 220 40 36))), -35, -10)
+                    $g.Restore($st)
+                }
+            }
+            if ($q -gt 2400) {
+                $a3 = [int](255 * [Math]::Min(1.0, ($q - 2400) / 400.0))
+                $tx = 'Derrótalos en el grupo EVENTO del menú Skins (o con el botón ★ EVENTO de arriba)'
+                $f3 = FntP('Segoe UI', 9.5, [System.Drawing.FontStyle]::Bold)
+                $g.DrawString($tx, $f3, (New-Object System.Drawing.SolidBrush((ARGB $a3 250 236 210))), [float](($W - $g.MeasureString($tx, $f3).Width) / 2), [float]($H - 26))
+            }
+            $qf = ($ms - ($ET.Fin - 500)) / 500.0
+            if ($qf -gt 0) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * [Math]::Min(1.0, $qf))) 0 0 0))), 0, 0, $W, $H) }
+        }
+    }
+    $alTick = {
+        param($ov, $p)
+        $ET = $EventoIntro
+        if ($p -eq 1) { $script:evT0 = [Environment]::TickCount }
+        $ms = [Environment]::TickCount - $script:evT0; if ($script:evSinVideo) { $ms += $ET.Logo }
+        foreach ($ev in @(@(0, 'Valencina', 'pf'), @($ET.Logo, 'Kalo', 'baston'), @($ET.Rivales, 'Lei Heng', 'explosion'), @(($ET.Rivales + 450), 'Valencina', 'tajo'), @(($ET.Rivales + 900), 'Kalo', 'disparo'))) {
+            $cl = "$($ev[0])"
+            if ($ms -ge $ev[0] -and -not $script:evHechos.ContainsKey($cl)) { $script:evHechos[$cl] = $true; if (-not ($script:evSinVideo -and $ev[2] -eq 'pf')) { Sonido-De $ev[1] $ev[2] } }
+        }
+        if ($ms -gt $ET.Fin -and $script:iPaso -lt $script:iTotal - 2) { $script:iPaso = $script:iTotal - 2 }
+        if ($p -ge $script:iTotal - 2) { Proelium-Soltar }
+    }
+    $script:iDespues = { $script:modoSkins = $true; $script:pagSkins = Pagina-Evento; Mostrar-Pagina }
+    Intro-Overlay 400 $pintar $alTick $null
+}
+
+# ================= KALO (Library of Ruina): LA RECEPCIÓN DEL PULGAR II =================
+# Un combate de Library of Ruina en dos actos (ficha en lore\personajes\Kalo.md):
+# - ACTO 1: pelean sus dos Capos, BORIS (puños americanos) y KATRIEL (fusil con bayoneta). Kalo los mira sentado.
+#   Por su pasiva "Órdenes del Jefe" llevan 1 de Protección (−1 al daño).
+# - Clic en uno = un choque de dados como en el juego: tu dado contra el suyo; si ganas le haces ese daño,
+#   si pierde tu dado te ataca él. Cada app = una página de combate sin oposición contra uno de ellos.
+# - Al caer cada uno suelta su libro ("Libro de Boris obtenido") y queda en el suelo. Con los dos caídos: VICTORY
+#   del Acto 1 ("El telón del Acto 1 cae...") y entra KALO (bastón y pistola de chispa; cada 3.er choque, dado +1).
+# - Al caer Kalo: su libro, el VICTORY final ("Telón para la recepción de El Pulgar II") y la recepción vuelve a empezar.
+$KcTiempos = @{ Victoria = 100; TrasCaer = 1500; Banner = 2800; Lunge = 380 }
+$KcEnemigos = @{
+    B = @{ Nombre = 'Boris'; Rango = 'Capo'; HP = 90; Dado = @(3, 7); Sonido = 'golpe'; Lista = 'Boris' }
+    K = @{ Nombre = 'Katriel'; Rango = 'Capo'; HP = 89; Dado = @(2, 7); Sonido = 'tajo'; Lista = 'Katriel' }
+    C = @{ Nombre = 'Kalo'; Rango = 'Sottocapo'; HP = 94; Dado = @(4, 9); Sonido = 'disparo'; Lista = 'Kalo' }
+}
+$script:kc = $null
+function Kc-Reset {
+    if (-not $script:kc) {
+        $script:kc = @{ Acto = 1; HP = @{ B = 90; K = 89; C = 94 }; Muere = @{}; Libros = 0; Suelo = (New-Object System.Collections.ArrayList)
+            Banner = $null; Ataque = $null; Choques = 0; Escena = 1; Pendiente = $null; HudClave = '' }
+    }
+}
+# quién se ve: en el Acto 1 Boris y Katriel (si siguen en pie); en el Acto 2, Kalo
+function Kc-Actores {
+    $e = $script:kc; if (-not $e) { return }
+    foreach ($id in @('B', 'K', 'C')) {
+        $a = $script:actores[$id]; if (-not $a) { continue }
+        $ver = if ($id -eq 'C') { $e.Acto -ge 2 -and $e.HP.C -gt 0 } else { $e.Acto -eq 1 -and $e.HP[$id] -gt 0 }
+        if ($e.Muere.ContainsKey($id)) { $ver = $true }
+        $a.Visible = [bool]$ver
+        if (-not $e.Muere.ContainsKey($id)) { $a.Alfa = 1.0 }
+    }
+}
+function Kc-Invalidar {
+    $Z = $script:K
+    $form.Invalidate((New-Object System.Drawing.Rectangle([int](400 * $Z), [int](34 * $Z), [int](($form.ClientSize.Width / $Z - 400) * $Z), [int](290 * $Z))))
+    $form.Invalidate((New-Object System.Drawing.Rectangle(0, [int](264 * $Z), [int](410 * $Z), [int](56 * $Z))))
+}
+function Kc-Vivos {
+    $e = $script:kc
+    if ($e.Acto -ge 2) { return @(@('C') | Where-Object { $e.HP.C -gt 0 }) }
+    return @(@('B', 'K') | Where-Object { $e.HP[$_] -gt 0 -and -not $e.Muere.ContainsKey($_) })
+}
+function Kc-Lista($id, $que) { return (Azar $script:skin["$($KcEnemigos[$id].Lista)$que"]) }
+# daño a un enemigo (con la Protección de las Órdenes del Jefe en el Acto 1)
+function Kc-Danar($id, $dmg) {
+    $e = $script:kc; $a = $script:actores[$id]
+    if ($e.Acto -eq 1) { $dmg = [Math]::Max(1, $dmg - 1) }
+    $e.HP[$id] = [Math]::Max(0, $e.HP[$id] - $dmg)
+    if ($a) { Actor-Golpe $id; $r = $a.Rect; Flotante "$dmg" ($r[0] + $r[2] / 2 - 10 + $Rnd.Next(-16, 17)) ($r[1] + 40 + $Rnd.Next(0, 30)) (C 255 236 210) 22 'Palatino Linotype' }
+    Sonido 'golpe'
+    if ($e.HP[$id] -le 0) { Kc-Cae $id } elseif ($Rnd.Next(100) -lt 40) { Decir (Kc-Lista $id 'Golpe') }
+}
+# cae: suelta su libro; con los dos Capos caídos (o Kalo) llega la victoria
+function Kc-Cae($id) {
+    $e = $script:kc; $ahora = [Environment]::TickCount; $a = $script:actores[$id]
+    $e.Muere[$id] = $ahora; $e.Libros++
+    $nom = $KcEnemigos[$id].Nombre
+    $e.Banner = @{ Txt = "Libro de $nom obtenido"; T0 = $ahora }
+    if ($a) { $r = $a.Rect; [void]$e.Suelo.Add(@{ X = $r[0] + $r[2] / 2 - 12; Y = [Math]::Min($r[1] + $r[3] - 14, 248); T0 = $ahora }) }
+    Sonido 'libro'
+    Decir-Fijo (Kc-Lista $id 'Cae') 'x'
+    if ($id -eq 'C') { $e.Pendiente = @{ Que = 'final'; T = $ahora + $KcTiempos.TrasCaer + 600 } }
+    elseif (@(Kc-Vivos).Count -eq 0) { $e.Pendiente = @{ Que = 'acto1'; T = $ahora + $KcTiempos.TrasCaer } }
+}
+# un choque de dados (tu clic contra su dado)
+function Kc-Clic($id) {
+    Kc-Reset; $e = $script:kc; $k = $script:skin
+    if ($id -notin @(Kc-Vivos) -or $e.Ataque -or $e.Pendiente) { return }
+    $en = $KcEnemigos[$id]; $e.Escena++
+    $tuyo = $Rnd.Next(2, 9)
+    $suyo = $Rnd.Next($en.Dado[0], $en.Dado[1] + 1)
+    if ($id -eq 'C') { $e.Choques++; if ($e.Choques % 3 -eq 0) { $suyo++ } }
+    Sonido 'dado'
+    $a = $script:actores[$id]; $r = $a.Rect
+    Flotante "$tuyo" ($r[0] - 6) ($r[1] + 96) (C 120 200 255) 20 'Palatino Linotype'
+    Flotante "$suyo" ($r[0] + $r[2] - 20) ($r[1] + 96) (C 255 110 90) 18 'Palatino Linotype'
+    if ($tuyo -gt $suyo) { Kc-Danar $id $tuyo }
+    elseif ($tuyo -eq $suyo) { Sonido 'choque'; Flotante 'EMPATE' ($r[0] + 20) ($r[1] + 60) (C 240 230 200) 14 'Palatino Linotype' }
+    else {
+        # gana su dado: te ataca él
+        $e.Ataque = @{ Id = $id; T0 = [Environment]::TickCount }
+        Sonido $(if ($id -eq 'K' -and $Rnd.Next(100) -lt 30) { 'disparo' } elseif ($id -eq 'C' -and $Rnd.Next(2) -eq 0) { 'baston' } else { $en.Sonido })
+        Decir (Kc-Lista $id 'Ataca')
+    }
+    Kc-Invalidar
+}
+# cada app = una página de combate sin oposición
+function Kc-App($linea) {
+    Kc-Reset; $e = $script:kc
+    $vivos = @(Kc-Vivos)
+    if ($vivos.Count -eq 0 -or $e.Pendiente) { Decir $linea; return }
+    $id = $vivos[$Rnd.Next($vivos.Count)]; $e.Escena++
+    $dmg = 5 + $Rnd.Next(0, 8)
+    Flotante 'PÁGINA DE COMBATE' 430 150 (C 255 214 120) 12 'Palatino Linotype'
+    Kc-Danar $id $dmg
+    if ($e.HP[$id] -gt 0 -and $Rnd.Next(100) -lt 50) { Decir $linea }
+    Kc-Invalidar
+}
+function Kc-Entra-Kalo {
+    $e = $script:kc; if (-not $e -or $script:skin.Estilo -ne 'capo') { return }
+    $e.Acto = 2; $e.Muere.Remove('B'); $e.Muere.Remove('K'); $e.Choques = 0
+    Kc-Actores
+    $a = $script:actores['C']; if ($a) { $a.Salto = 10 }
+    Sonido 'baston'
+    Decir-Fijo (Azar $script:skin.KaloEntra) 'x'
+    Kc-Invalidar
+}
+function Kc-Reiniciar {
+    $e = $script:kc; if (-not $e -or $script:skin.Estilo -ne 'capo') { return }
+    $e.Acto = 1; $e.HP = @{ B = 90; K = 89; C = 94 }; $e.Muere = @{}; $e.Suelo.Clear(); $e.Choques = 0; $e.Banner = $null
+    Kc-Actores
+    foreach ($id in @('B', 'K')) { $a = $script:actores[$id]; if ($a) { $a.Salto = 10 } }
+    Sonido 'baston'
+    Decir-Fijo (Azar $script:skin.Reinicio) 'x'
+    Kc-Invalidar
+}
+function Kc-Tick {
+    Kc-Reset; $e = $script:kc; $ahora = [Environment]::TickCount
+    $escena = $false
+    # su ataque: se lanza hacia ti y vuelve
+    if ($e.Ataque) {
+        $q = ($ahora - $e.Ataque.T0) / [double]$KcTiempos.Lunge; $a = $script:actores[$e.Ataque.Id]
+        if ($q -ge 1) { if ($a) { $a.OX = 0 }; $e.Ataque = $null } elseif ($a) { $a.OX = [int](-34 * [Math]::Sin($q * [Math]::PI)) }
+        $escena = $true
+    }
+    # los que caen se desvanecen
+    foreach ($id in @($e.Muere.Keys)) {
+        $a = $script:actores[$id]; $q = ($ahora - $e.Muere[$id]) / 700.0
+        if ($q -ge 1) { $e.Muere.Remove($id); if ($a) { $a.Visible = $false; $a.Alfa = 1.0 } } elseif ($a) { $a.Alfa = [Math]::Max(0.0, 1 - $q) }
+        $escena = $true
+    }
+    if ($e.Banner) { if ($ahora - $e.Banner.T0 -gt $KcTiempos.Banner) { $e.Banner = $null }; $escena = $true }
+    # pantallas de victoria (cuando no hay otra intro en marcha)
+    if ($e.Pendiente -and $ahora -ge $e.Pendiente.T -and -not $script:transicion) {
+        $que = $e.Pendiente.Que; $e.Pendiente = $null
+        if ($que -eq 'acto1') { $script:iDespues = { Kc-Entra-Kalo }; Kc-Victoria 1 }
+        else { $script:iDespues = { Kc-Reiniciar }; Kc-Victoria 2 }
+        return
+    }
+    if ($escena) { Kc-Invalidar }
+    $clave = "$($e.HP.B)|$($e.HP.K)|$($e.HP.C)|$($e.Acto)|$($e.Libros)|$($e.Escena)"
+    if ($clave -ne $e.HudClave) { $e.HudClave = $clave; Kc-Invalidar }
+}
+# el libro (icono de la pantalla de Library of Ruina): un hexágono dorado con un libro abierto
+function Kc-Icono-Libro($g, $x, $y, $tam, $al) {
+    $c = $tam / 2; $pts = [System.Drawing.PointF[]]@(for ($i = 0; $i -lt 6; $i++) { $an = [Math]::PI / 3 * $i - [Math]::PI / 6; New-Object System.Drawing.PointF([float]($x + $c + $c * [Math]::Cos($an)), [float]($y + $c + $c * [Math]::Sin($an))) })
+    $g.FillPolygon((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.8)) 30 18 8))), $pts)
+    $g.DrawPolygon((New-Object System.Drawing.Pen((ARGB $al 240 170 70), [float]([Math]::Max(1.2, $tam / 26)))), $pts)
+    $pl = New-Object System.Drawing.Pen((ARGB $al 250 200 110), [float]([Math]::Max(1, $tam / 34)))
+    $g.DrawBezier($pl, [float]($x + $c), [float]($y + $tam * 0.32), [float]($x + $c - $tam * 0.12), [float]($y + $tam * 0.26), [float]($x + $tam * 0.28), [float]($y + $tam * 0.28), [float]($x + $tam * 0.22), [float]($y + $tam * 0.32))
+    $g.DrawBezier($pl, [float]($x + $c), [float]($y + $tam * 0.32), [float]($x + $c + $tam * 0.12), [float]($y + $tam * 0.26), [float]($x + $tam * 0.72), [float]($y + $tam * 0.28), [float]($x + $tam * 0.78), [float]($y + $tam * 0.32))
+    foreach ($s in @(-1, 1)) {
+        $g.DrawLine($pl, [float]($x + $c + $s * $tam * 0.28), [float]($y + $tam * 0.32), [float]($x + $c + $s * $tam * 0.28), [float]($y + $tam * 0.66))
+        $g.DrawLine($pl, [float]($x + $c + $s * $tam * 0.28), [float]($y + $tam * 0.66), [float]($x + $c), [float]($y + $tam * 0.72))
+    }
+    $g.DrawLine($pl, [float]($x + $c), [float]($y + $tam * 0.32), [float]($x + $c), [float]($y + $tam * 0.72)); $pl.Dispose()
+}
+# letras doradas con resplandor naranja (el estilo de los carteles de Library of Ruina); devuelve el ancho
+function Kc-Neon($g, $txt, $tam, $cx, $y, $al) {
+    $gp = New-Object System.Drawing.Drawing2D.GraphicsPath
+    $gp.AddString($txt, (Familia 'Palatino Linotype'), 1, [float]$tam, (New-Object System.Drawing.PointF(0, 0)), [System.Drawing.StringFormat]::GenericTypographic)
+    $bb = $gp.GetBounds(); $mt = New-Object System.Drawing.Drawing2D.Matrix; $mt.Translate([float]($cx - $bb.Width / 2 - $bb.X), [float]($y - $bb.Y)); $gp.Transform($mt)
+    foreach ($p in @(@(16, 26), @(10, 46), @(5, 90))) { $pn = New-Object System.Drawing.Pen((ARGB ([int]($p[1] * $al / 255)) 255 140 40), [float]$p[0]); $pn.LineJoin = 'Round'; $g.DrawPath($pn, $gp); $pn.Dispose() }
+    $bb = $gp.GetBounds()
+    $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush($bb, (ARGB $al 255 236 190), (ARGB $al 214 140 60), 90)
+    $g.FillPath($br, $gp); $br.Dispose()
+    $g.DrawPath((New-Object System.Drawing.Pen((ARGB $al 110 50 14), 1.5)), $gp)
+    $w = $bb.Width; $gp.Dispose(); return $w
+}
+# adornos: rizos a los lados de la gema turquesa y una línea con volutas debajo
+function Kc-Adornos($g, $cx, $y, $ancho, $al, $gema = $true) {
+    $pa = New-Object System.Drawing.Pen((ARGB $al 230 160 80), 1.6)
+    foreach ($s in @(-1, 1)) {
+        $g.DrawBezier($pa, [float]($cx + $s * 16), [float]($y + 10), [float]($cx + $s * 60), [float]($y - 8), [float]($cx + $s * 90), [float]($y + 26), [float]($cx + $s * 130), [float]($y + 8))
+        $g.DrawBezier($pa, [float]($cx + $s * 130), [float]($y + 8), [float]($cx + $s * 150), [float]($y), [float]($cx + $s * 170), [float]($y + 16), [float]($cx + $s * ($ancho / 2)), [float]($y + 16))
+        $g.DrawEllipse($pa, [float]($cx + $s * 96 - 5), [float]($y + 4), 10, 10)
+    }
+    if (-not $gema) { $pa.Dispose(); return }
+    $gm = [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]$cx, [float]($y - 14))), (New-Object System.Drawing.PointF([float]($cx + 9), [float]($y + 4))), (New-Object System.Drawing.PointF([float]$cx, [float]($y + 22))), (New-Object System.Drawing.PointF([float]($cx - 9), [float]($y + 4))))
+    $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.3)) 60 230 210))), [float]($cx - 20), [float]($y - 14), 40, 40)
+    $g.FillPolygon((New-Object System.Drawing.SolidBrush((ARGB $al 70 220 200))), $gm); $g.DrawPolygon((New-Object System.Drawing.Pen((ARGB $al 200 255 245), 1)), $gm)
+    $pa.Dispose()
+}
+# la pantalla de VICTORY (1 = fin del Acto 1, 2 = fin de la recepción)
+function Kc-Victoria($tipo) {
+    $script:kvTipo = $tipo; $script:kvT0 = 0; $script:kvFondo = Cargar-Img $script:skin.FondoImg
+    $script:iRecursos = @($script:kvFondo)
+    $pintar = {
+        param($g, $W, $H, $p)
+        $g.SmoothingMode = 'AntiAlias'; $g.TextRenderingHint = 'AntiAliasGridFit'
+        $ms = if ($script:kvT0 -gt 0) { [Environment]::TickCount - $script:kvT0 } else { 0 }
+        $al = [int](255 * [Math]::Min(1.0, $ms / 450.0))
+        $g.Clear((C 6 4 3))
+        if ($script:kvTipo -eq 1) {
+            if ($script:kvFondo) { [void](Dibujar-Cubriendo $g $script:kvFondo $W $H 1.05 0.5 0.5) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 170 8 4 2))), 0, 0, $W, $H)
+        } else {
+            # columnas de letras doradas que caen (como los libros de la Biblioteca deshaciéndose en letras)
+            $fl = FntP('Palatino Linotype', 8, [System.Drawing.FontStyle]::Bold); $abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+            for ($c = 0; $c -lt 26; $c++) {
+                $x = if ($c -lt 13) { 14 + $c * 15 } else { $W - 14 - ($c - 13) * 15 - 10 }
+                for ($f = 0; $f -lt 22; $f++) {
+                    $yy = (($f * 15 + $ms / (40 + ($c % 5) * 9)) % ($H + 20)) - 10
+                    $ch = $abc[($c * 7 + $f * 3 + [int]($ms / 300)) % 26]
+                    $g.DrawString("$ch", $fl, (New-Object System.Drawing.SolidBrush((ARGB ([int]((60 + (($c * 13 + $f * 7) % 120)) * $al / 255)) 230 190 120))), [float]$x, [float]$yy)
+                }
+            }
+            # hojas de papel y lucecitas en las esquinas
+            for ($i = 0; $i -lt 16; $i++) {
+                $esq = $i % 4; $bx = if ($esq % 2) { $W - 60 } else { 60 }; $by = if ($esq -lt 2) { 30 } else { $H - 30 }
+                $px = $bx + [Math]::Sin($ms / 700.0 + $i) * 50; $py = $by + [Math]::Cos($ms / 900.0 + $i * 1.7) * 26
+                $st = $g.Save(); $g.TranslateTransform([float]$px, [float]$py); $g.RotateTransform([float](($ms / 12.0 + $i * 40) % 360))
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](220 * $al / 255)) 250 248 240))), -7, -4, 14, 8); $g.Restore($st)
+                $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB ([int](180 * $al / 255)) 255 210 120))), [float]($px + 20), [float]($py - 10), 5, 5)
+            }
+        }
+        # marco: dobles líneas doradas arriba y abajo
+        $pm = New-Object System.Drawing.Pen((ARGB ([int]($al * 0.7)) 200 150 80), 1)
+        foreach ($yy in @(8, 12, ($H - 12), ($H - 8))) { $g.DrawLine($pm, 10, [float]$yy, [float]($W - 10), [float]$yy) }
+        $pm.Dispose()
+        $cy = if ($script:kvTipo -eq 1) { $H * 0.30 } else { $H * 0.18 }
+        $esc = 1.0 + 0.12 * [Math]::Max(0.0, 1 - $ms / 500.0)
+        Kc-Adornos $g ($W / 2) ($cy - 22) 340 $al
+        [void](Kc-Neon $g 'VICTORY' (58 * $esc) ($W / 2) ($cy + 2) $al)
+        Kc-Adornos $g ($W / 2) ($cy + 78) 300 ([int]($al * 0.8)) $false
+        if ($script:kvTipo -eq 1) {
+            $txt = 'El telón del Acto 1 cae sobre la Planta de Obras Generales'
+            $fs = FntP('Palatino Linotype', 13, [System.Drawing.FontStyle]::Regular); $tw = $g.MeasureString($txt, $fs).Width
+            if ($ms -gt 500) { $g.DrawString($txt, $fs, (New-Object System.Drawing.SolidBrush((ARGB ([int](255 * [Math]::Min(1.0, ($ms - 500) / 400.0))) 246 240 230))), [float](($W - $tw) / 2), [float]($cy + 112)) }
+        } else {
+            # el escudo del Pulgar y el telón en turquesa
+            $sx = $W / 2; $sy = $cy + 104
+            $esc2 = [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($sx - 24), [float]$sy)), (New-Object System.Drawing.PointF([float]($sx + 24), [float]$sy)), (New-Object System.Drawing.PointF([float]($sx + 22), [float]($sy + 30))), (New-Object System.Drawing.PointF([float]$sx, [float]($sy + 52))), (New-Object System.Drawing.PointF([float]($sx - 22), [float]($sy + 30))))
+            $g.FillPolygon((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.85)) 40 20 6))), $esc2)
+            $g.DrawPolygon((New-Object System.Drawing.Pen((ARGB $al 240 170 70), 2.5)), $esc2)
+            $g.DrawLine((New-Object System.Drawing.Pen((ARGB $al 220 40 30), 5)), [float]($sx - 18), [float]($sy + 34), [float]($sx + 16), [float]($sy + 8))
+            $txt = 'Telón para la recepción de El Pulgar II'
+            $fs = FntP('Palatino Linotype', 14, [System.Drawing.FontStyle]::Regular); $tw = $g.MeasureString($txt, $fs).Width
+            if ($ms -gt 600) { $a2 = [int](255 * [Math]::Min(1.0, ($ms - 600) / 400.0)); $g.DrawString($txt, $fs, (New-Object System.Drawing.SolidBrush((ARGB ([int]($a2 * 0.4)) 40 255 240))), [float](($W - $tw) / 2 + 1), [float]($sy + 63)); $g.DrawString($txt, $fs, (New-Object System.Drawing.SolidBrush((ARGB $a2 60 230 230))), [float](($W - $tw) / 2), [float]($sy + 62)) }
+        }
+        if ($ms -gt 4000) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]([Math]::Min(255, ($ms - 4000) / 2.0))) 0 0 0))), 0, 0, $W, $H) }
+    }
+    $alTick = {
+        param($ov, $p)
+        if ($p -eq 1) { $script:kvT0 = [Environment]::TickCount; Sonido 'victoria' }
+        if ([Environment]::TickCount - $script:kvT0 -gt 4500 -and $script:iPaso -lt $script:iTotal - 1) { $script:iPaso = $script:iTotal - 1 }
+    }
+    Intro-Overlay $KcTiempos.Victoria $pintar $alTick $null
+}
+function Kc-Pintar($g, $k, $W, $H) {
+    $e = $script:kc; if (-not $e) { return }
+    $ahora = [Environment]::TickCount; $g.SmoothingMode = 'AntiAlias'
+    # los libros que han soltado, en el suelo
+    foreach ($l in $e.Suelo) { Kc-Icono-Libro $g $l.X $l.Y 24 230 }
+    # barras de vida encima de cada uno (estilo Library of Ruina)
+    foreach ($id in @(Kc-Vivos)) {
+        $a = $script:actores[$id]; if (-not $a -or -not $a.Visible) { continue }
+        $en = $KcEnemigos[$id]; $r = $a.Rect; $bx = $r[0] + $r[2] / 2 - 50 + $a.OX; $by = [Math]::Max(58, $r[1] - 10)
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 200 14 8 6))), [float]$bx, [float]$by, 100, 16)
+        $g.DrawString("$($en.Nombre)  ·  $($en.Rango)", (FntP('Palatino Linotype', 6.5, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 240 210 150))), [float]($bx + 2), [float]($by - 1))
+        $q = $e.HP[$id] / [double]$en.HP
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 60 20 16))), [float]($bx + 2), [float]($by + 10), 96, 4)
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 220 60 40))), [float]($bx + 2), [float]($by + 10), [float](96 * $q), 4)
+        $g.DrawString("$($e.HP[$id])", (FntP('Palatino Linotype', 6.5, [System.Drawing.FontStyle]::Bold)), [System.Drawing.Brushes]::White, [float]($bx + 102), [float]($by + 4))
+        if ($e.Acto -eq 1) { $g.DrawString('PROT 1', (FntP('Palatino Linotype', 6, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 160 200 255))), [float]($bx - 34), [float]($by + 3)) }
+    }
+    # "Libro de X obtenido" (como en el juego)
+    if ($e.Banner) {
+        $q = ($ahora - $e.Banner.T0) / [double]$KcTiempos.Banner; $al = [int](255 * [Math]::Min(1.0, [Math]::Min($q * 6, (1 - $q) * 4)))
+        if ($al -gt 0) {
+            $bx = 408; $by = 60
+            Degradado $g ($bx + 20) ($by + 10) 330 30 (ARGB ([int]($al * 0.9)) 120 70 20) (ARGB 0 60 30 10) 0
+            $pl = New-Object System.Drawing.Pen((ARGB $al 240 170 70), 1)
+            $g.DrawLine($pl, [float]($bx + 20), [float]($by + 9), [float]($bx + 340), [float]($by + 9)); $g.DrawLine($pl, [float]($bx + 20), [float]($by + 41), [float]($bx + 340), [float]($by + 41)); $pl.Dispose()
+            Kc-Icono-Libro $g $bx ($by - 2) 52 $al
+            $g.DrawString($e.Banner.Txt, (FntP('Palatino Linotype', 12, [System.Drawing.FontStyle]::Regular)), (New-Object System.Drawing.SolidBrush((ARGB $al 250 226 170))), [float]($bx + 58), [float]($by + 13))
+        }
+    }
+    # abajo: la recepción, el acto y los libros del Pulgar conseguidos
+    if ($g.IsVisible((New-Object System.Drawing.RectangleF(8, 264, 402, 54)))) {
+        $oro = (C 236 196 116)
+        $g.DrawString('RECEPCIÓN  ·  EL PULGAR II', (FntP('Palatino Linotype', 7.5, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush($oro)), 14, 268)
+        $acto = if ($e.Acto -ge 2) { 'ACTO 2  ·  Kalo, Sottocapo' } else { 'ACTO 1  ·  Boris y Katriel' }
+        $g.DrawString($acto, (FntP('Palatino Linotype', 8.5, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 250 236 200))), 14, 282)
+        $g.DrawString("ESCENA $($e.Escena)", (FntP('Palatino Linotype', 7, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 200 170 120))), 14, 300)
+        $g.DrawString("LIBROS DEL PULGAR: $($e.Libros)", (FntP('Palatino Linotype', 7.5, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush($oro)), 214, 268)
+        for ($i = 0; $i -lt [Math]::Min(8, $e.Libros); $i++) { Kc-Icono-Libro $g (214 + $i * 22) 283 20 230 }
+    }
+}
+
+# ================= LEI HENG (Limbus Company): SUS SKILLS, SUS FASES Y EL SHIN =================
+# Como su combate del Canto VIII (ficha en lore\personajes\Lei Heng.md):
+# - Barra de vida de jefe (4239, la del juego). Clic en él = le pegas. A veces te contraataca con una skill.
+# - Cada app que abres: lanza su siguiente skill contra ese botón. Sale su carta (icono, nombre y kanji) y tira las
+#   monedas como en Limbus: cada cara es un tajo con explosión (爆) de las balas Tigermark; cada cruz, un fallo.
+#   Rotación: Double Slash - Blast → Triple Slash - Blast → Blasting Shatterslash. Sin balas: Reloading Tiantui Star's Blade.
+# - Fases (sus pasivas del juego): al 80 % de vida, Fuerza Interior y cada 3.ª skill es Tanglecleaver (快刀亂麻);
+#   al 60 %, Estrella Tiantui (天退星): 18 balas Tigermark Salvajes y sprite herido; al 40 %, SHIN (心): un anillo de Mang
+#   (望) a su alrededor y su ataque final, Savage Tigerslayer's Perfected Flurry of Blades (超絕猛虎殺擊亂斬).
+# - Después de un ataque fuerte la espada se sobrecalienta (Overheat): unos segundos sin skills y recibe más daño.
+# - A 0 de vida cae, y a los pocos segundos recarga y vuelve con la vida llena ("Tigermark Round Reload").
+$LhTiempos = @{ Max = 4239; Balas = 6; BalasTiantui = 18; Contra = 30; Calor = 9000; Caido = 7000; Recarga = 1400; Moneda = 260; Cara = 55 }
+$LhSkills = @{
+    doble    = @{ Nombre = 'Double Slash - Blast'; Kanji = '爆'; Icono = 'sk_doble'; Monedas = 2; Base = 6; Moneda = 4; Lista = 'Doble'; Cortes = 1; Balas = 1 }
+    triple   = @{ Nombre = 'Triple Slash - Blast'; Kanji = '爆'; Icono = 'sk_triple'; Monedas = 3; Base = 5; Moneda = 4; Lista = 'Triple'; Cortes = 1; Balas = 1 }
+    blasting = @{ Nombre = 'Blasting Shatterslash'; Kanji = '爆碎斬'; Icono = 'sk_blasting'; Monedas = 3; Base = 7; Moneda = 5; Lista = 'Blasting'; Cortes = 2; Balas = 1 }
+    tangle   = @{ Nombre = 'Tanglecleaver'; Kanji = '快刀亂麻'; Icono = 'sk_tangle'; Monedas = 4; Base = 10; Moneda = 6; Lista = 'Tangle'; Cortes = 3; Balas = 2; Fuerte = $true }
+    flurry   = @{ Nombre = "Savage Tigerslayer's Perfected Flurry of Blades"; Kanji = '超絕猛虎殺擊亂斬'; Icono = 'sk_flurry'; Monedas = 6; Base = 12; Moneda = 6; Lista = 'Flurry'; Cortes = 4; Balas = 3; Fuerte = $true; Todo = $true }
+    recarga  = @{ Nombre = "Reloading Tiantui Star's Blade"; Kanji = '天退星刀'; Icono = 'sk_recarga'; Monedas = 0; Lista = 'Recarga' }
+}
+# dónde está la hoja de su espada en la escena (para el humo del sobrecalentamiento) y el centro del anillo de Mang
+$LhHoja = @{ X = 590; Y = 110 }
+$LhCentro = @{ X = 652; Y = 176 }
+$script:lh = $null; $script:lhIconos = @{}
+function Lh-Reset {
+    if (-not $script:lh) {
+        $script:lh = @{ HP = $LhTiempos.Max; Fase = 0; Balas = $LhTiempos.Balas; MaxBalas = $LhTiempos.Balas; Patron = 0; Skill = $null; SkillFin = 0
+            Cortes = (New-Object System.Collections.ArrayList); Explos = (New-Object System.Collections.ArrayList); Calor = 0; Caido = 0; Recarga = 0; Fx = 0; HudClave = '' }
+    }
+}
+function Lh-Actores {
+    $e = $script:lh; $a = $script:actores['L']; if (-not $a -or -not $e) { return }
+    $nueva = if ($e.Fase -ge 2) { 'herido' } else { 'main' }
+    $a.Base = $nueva
+    if ($a.Hasta -eq 0 -and $a.Pose -ne $nueva) { $a.Pose = $nueva; $a.Frame = 0; $a.Acc = 0; Seleccionar-Frame $a }
+}
+function Lh-Liberar { foreach ($im in @($script:lhIconos.Values)) { if ($im) { $im.Dispose() } }; $script:lhIconos = @{} }
+function Lh-Icono($n) {
+    if (-not $script:lhIconos.ContainsKey($n)) { $script:lhIconos[$n] = Cargar-Img "skins\leiheng\$n.png" }
+    return $script:lhIconos[$n]
+}
+function Lh-Invalidar {
+    $Z = $script:K
+    $form.Invalidate((New-Object System.Drawing.Rectangle([int](400 * $Z), [int](34 * $Z), [int](($form.ClientSize.Width / $Z - 400) * $Z), [int](290 * $Z))))
+}
+function Lh-Botones {
+    if (-not $script:grid) { return @() }
+    return @($script:grid.Controls | Where-Object { $_.Tag -and $_.Tag.Nombre })
+}
+# rectángulo de un botón en coordenadas de la escena (las del dibujo, sin escalar)
+function Lh-Rect-Boton($b) {
+    $Z = $script:K
+    return @((($script:grid.Left + $b.Left) / $Z), (($script:grid.Top + $b.Top) / $Z), ($b.Width / $Z), ($b.Height / $Z))
+}
+# la siguiente skill de su patrón
+function Lh-Siguiente {
+    $e = $script:lh
+    if ($e.Balas -le 0) { return 'recarga' }
+    $e.Patron++
+    if ($e.Fase -ge 1 -and ($e.Patron % 3) -eq 0) { if ($e.Fase -ge 3) { return 'flurry' } else { return 'tangle' } }
+    return @('doble', 'triple', 'blasting')[$e.Patron % 3]
+}
+# lanza una skill: la carta, las monedas y los tajos (contra un botón o, si no hay, contra uno al azar)
+function Lh-Usar($clave, $boton) {
+    $e = $script:lh; $s = $LhSkills[$clave]; $ahora = [Environment]::TickCount
+    if ($clave -eq 'recarga') {
+        $e.Skill = @{ Clave = $clave; T0 = $ahora; Caras = @(); Hechas = 0 }; $e.Recarga = $ahora + $LhTiempos.Recarga
+        $null = Sonido 'recarga'; $null = Decir-Fijo (Azar $script:skin.Recarga) 'x'
+        return
+    }
+    if (-not $boton) { $bs = Lh-Botones; if ($bs.Count) { $boton = $bs[$Rnd.Next($bs.Count)] } }
+    $prob = $LhTiempos.Cara + $(if ($e.Fase -ge 3) { 20 } elseif ($e.Fase -ge 2) { 10 } else { 0 })
+    $caras = @(for ($i = 0; $i -lt $s.Monedas; $i++) { $Rnd.Next(100) -lt $prob })
+    $e.Skill = @{ Clave = $clave; T0 = $ahora; Caras = $caras; Hechas = 0; Boton = $(if ($boton) { Lh-Rect-Boton $boton } else { $null }) }
+    $e.Balas = [Math]::Max(0, $e.Balas - $s.Balas)
+    $null = Decir-Fijo (Azar $script:skin[$s.Lista]) 'x'
+    $a = $script:actores['L']; if ($a) { $a.Salto = 10 }
+}
+# un tajo con explosión sobre un rectángulo (botón) o por todo el panel
+function Lh-Tajo($r, $todo) {
+    $e = $script:lh; $ahora = [Environment]::TickCount
+    if ($todo -or -not $r) { $r = @((14 + $Rnd.Next(0, 300)), (64 + $Rnd.Next(0, 170)), 90, 40) }
+    $cx = $r[0] + $r[2] / 2; $cy = $r[1] + $r[3] / 2; $an = ($Rnd.NextDouble() - 0.5) * 1.6; $lg = 60 + $Rnd.Next(0, 50)
+    [void]$e.Cortes.Add(@{ X1 = $cx - [Math]::Cos($an) * $lg; Y1 = $cy - [Math]::Sin($an) * $lg; X2 = $cx + [Math]::Cos($an) * $lg; Y2 = $cy + [Math]::Sin($an) * $lg; T0 = $ahora })
+    [void]$e.Explos.Add(@{ X = $cx + $Rnd.Next(-20, 21); Y = $cy + $Rnd.Next(-8, 9); T0 = $ahora + 90; R = 16 + $Rnd.Next(0, 12) })
+}
+# comprueba las fases al bajar la vida
+function Lh-Fases {
+    $e = $script:lh; $k = $script:skin; $p = $e.HP / [double]$LhTiempos.Max
+    if ($e.Fase -lt 1 -and $p -le 0.8) {
+        $e.Fase = 1; Flotante 'FUERZA INTERIOR' 520 92 (C 255 200 90) 15 'Palatino Linotype'; Decir-Fijo (Azar $k.Fase1) 'x'
+    }
+    if ($e.Fase -lt 2 -and $p -le 0.6) {
+        $e.Fase = 2; $e.MaxBalas = $LhTiempos.BalasTiantui; $e.Balas = $e.MaxBalas; Lh-Actores
+        Sonido 'recarga'; Flotante '天退星 TIANTUI STAR' 500 92 (C 255 210 110) 17 'Yu Gothic'; Decir-Fijo (Azar $k.Tiantui) 'x'
+    }
+    if ($e.Fase -lt 3 -and $p -le 0.4) {
+        $e.Fase = 3; $e.Fx = 24; Sonido 'shin'
+        Flotante '心  SHIN' 560 70 (C 255 80 60) 26 'Yu Gothic'; Decir-Fijo (Azar $k.Shin) 'x'
+    }
+}
+function Lh-Clic($id) {
+    Lh-Reset; $e = $script:lh; $k = $script:skin; $ahora = [Environment]::TickCount
+    if ($id -ne 'L' -or $e.Caido -gt 0) { return }
+    $dmg = 60 + $Rnd.Next(0, 101); if ($e.Calor -gt 0) { $dmg = [int]($dmg * 1.5) }
+    $e.HP = [Math]::Max(0, $e.HP - $dmg)
+    Actor-Golpe 'L'; Sonido 'golpe'
+    Flotante "$dmg" (600 + $Rnd.Next(-34, 35)) (80 + $Rnd.Next(0, 50)) $(if ($e.Calor -gt 0) { (C 255 140 60) } else { (C 255 236 210) }) 20 'Palatino Linotype'
+    if ($e.HP -le 0) {
+        $e.Caido = $ahora + $LhTiempos.Caido; $e.Skill = $null; $e.Calor = 0
+        Sonido 'caido'; Flotante 'DERROTADO' 560 70 (C 255 220 120) 22 'Palatino Linotype'
+        $a = $script:actores['L']; if ($a) { $a.OY = 16; $a.Alfa = 0.7 }
+        Decir-Fijo (Azar $k.Caido) 'x'; Lh-Invalidar; return
+    }
+    Lh-Fases
+    # a veces te devuelve el golpe con una skill
+    if (-not $e.Skill -and $e.Calor -eq 0 -and $Rnd.Next(100) -lt $LhTiempos.Contra) { Lh-Usar (Lh-Siguiente) $null; Flotante 'CONTRAATAQUE' 430 150 (C 255 120 60) 13 'Palatino Linotype' }
+    elseif ($Rnd.Next(100) -lt 45) { Decir (Azar $k.Golpe) }
+    Lh-Invalidar
+}
+# cada app: lanza su siguiente skill contra ese botón
+function Lh-App($linea, $item) {
+    Lh-Reset; $e = $script:lh; $k = $script:skin
+    if ($e.Caido -gt 0 -or $e.Skill) { Decir $linea; return }
+    if ($e.Calor -gt 0) { Decir (Azar $k.CalorApp); return }
+    $boton = $null
+    if ($item) { $boton = Lh-Botones | Where-Object { "$($_.Tag.Nombre)" -eq "$($item.Nombre)" } | Select-Object -First 1 }
+    Lh-Usar (Lh-Siguiente) $boton
+    Lh-Invalidar
+}
+function Lh-Tick {
+    Lh-Reset; $e = $script:lh; $k = $script:skin; $ahora = [Environment]::TickCount; $Z = $script:K
+    $escena = $false; $botones = $false; $a = $script:actores['L']
+    # la skill en marcha: cada moneda se tira a su tiempo; cara = tajos con explosión
+    if ($e.Skill) {
+        $sk = $e.Skill; $s = $LhSkills[$sk.Clave]; $q = $ahora - $sk.T0
+        if ($sk.Clave -eq 'recarga') {
+            if ($ahora -ge $e.Recarga) { $e.Balas = $e.MaxBalas; $e.Skill = $null; $e.SkillFin = $ahora; Flotante "+$($e.MaxBalas) BALAS" 470 120 (C 255 210 110) 14 'Palatino Linotype' }
+        } else {
+            while ($sk.Hechas -lt $s.Monedas -and $q -ge 450 + $sk.Hechas * $LhTiempos.Moneda) {
+                $cara = $sk.Caras[$sk.Hechas]; $sk.Hechas++
+                Sonido 'moneda'
+                if ($cara) {
+                    Sonido $(if ($sk.Hechas % 2) { 'tajo' } else { 'explosion' })
+                    for ($i = 0; $i -lt $s.Cortes; $i++) { Lh-Tajo $sk.Boton ([bool]$s.Todo) }
+                }
+            }
+            if ($sk.Hechas -ge $s.Monedas -and $q -ge 450 + $s.Monedas * $LhTiempos.Moneda + 500) {
+                $e.Skill = $null; $e.SkillFin = $ahora
+                $nCaras = @($sk.Caras | Where-Object { $_ }).Count
+                if ($nCaras -eq 0) { Decir (Azar $k.Fallo) }
+                if ($s.Fuerte) { $e.Calor = $ahora + $LhTiempos.Calor; Sonido 'calor'; Flotante 'SOBRECALENTADO' 520 96 (C 255 120 60) 15 'Palatino Linotype'; Decir-Fijo (Azar $k.Calor) 'x' }
+            }
+        }
+        $escena = $true
+    }
+    if ($e.SkillFin -gt 0) { if ($ahora - $e.SkillFin -gt 1300) { $e.SkillFin = 0 }; $escena = $true }
+    # los tajos y explosiones se borran solos
+    for ($i = $e.Cortes.Count - 1; $i -ge 0; $i--) { if ($ahora - $e.Cortes[$i].T0 -gt 500) { $e.Cortes.RemoveAt($i) } }
+    for ($i = $e.Explos.Count - 1; $i -ge 0; $i--) { if ($ahora - $e.Explos[$i].T0 -gt 800) { $e.Explos.RemoveAt($i) } }
+    if ($e.Cortes.Count -or $e.Explos.Count) { $escena = $true; $botones = $true; $e.Limpiar = 3 }
+    elseif ($e.Limpiar -gt 0) { $e.Limpiar--; $botones = $true }
+    if ($e.Calor -gt 0) { if ($ahora -ge $e.Calor) { $e.Calor = 0 }; $escena = $true }
+    # derrotado: recarga y vuelve con la vida llena
+    if ($e.Caido -gt 0 -and $ahora -ge $e.Caido) {
+        $e.Caido = 0; $e.HP = $LhTiempos.Max; $e.Fase = 0; $e.MaxBalas = $LhTiempos.Balas; $e.Balas = $e.MaxBalas; $e.Patron = 0
+        if ($a) { $a.OY = 0; $a.Alfa = 1.0; $a.Salto = 12 }
+        Lh-Actores; Sonido 'recarga'; Decir-Fijo (Azar $k.Vuelve) 'x'; $escena = $true
+    }
+    if ($e.Fx -gt 0) { $e.Fx--; $escena = $true }
+    if ($e.Fase -ge 2 -and -not $script:aj.Epilepsia) { $escena = $true }
+    if ($escena) { Lh-Invalidar }
+    if ($botones) { foreach ($b in (Lh-Botones)) { $b.Invalidate() } }
+    $clave = "$($e.HP)|$($e.Fase)|$($e.Balas)|$($e.Calor -gt 0)|$($e.Caido -gt 0)"
+    if ($clave -ne $e.HudClave) { $e.HudClave = $clave; $form.Invalidate((New-Object System.Drawing.Rectangle(0, [int](264 * $Z), [int](410 * $Z), [int](56 * $Z)))) }
+}
+# tajos y explosiones (en coordenadas del panel): se pintan en la escena y dentro de los botones
+function Lh-Pintar-Efectos($g) {
+    $e = $script:lh; if (-not $e) { return }
+    $ahora = [Environment]::TickCount
+    foreach ($c in $e.Cortes) {
+        $q = ($ahora - $c.T0) / 500.0; if ($q -lt 0 -or $q -gt 1) { continue }
+        $la = [Math]::Min(1.0, $q * 5); $al = [int](255 * (1 - $q))
+        $x2 = $c.X1 + ($c.X2 - $c.X1) * $la; $y2 = $c.Y1 + ($c.Y2 - $c.Y1) * $la
+        $p1 = New-Object System.Drawing.Pen((ARGB $al 230 40 30), [float](9 * (1 - $q) + 2)); $p1.StartCap = 'Triangle'; $p1.EndCap = 'Triangle'
+        $p2 = New-Object System.Drawing.Pen((ARGB $al 255 246 220), [float](2.5 * (1 - $q) + 0.8))
+        foreach ($pp in @($p1, $p2)) { $g.DrawLine($pp, [float]$c.X1, [float]$c.Y1, [float]$x2, [float]$y2) }
+        $p1.Dispose(); $p2.Dispose()
+    }
+    foreach ($x in $e.Explos) {
+        $q = ($ahora - $x.T0) / 800.0; if ($q -lt 0 -or $q -gt 1) { continue }
+        $r = $x.R * (0.5 + 1.2 * [Math]::Sqrt($q)); $al = [int](230 * (1 - $q))
+        if ($q -lt 0.35) { $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB $al 255 200 80))), [float]($x.X - $r), [float]($x.Y - $r), [float](2 * $r), [float](2 * $r)) }
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.7)) 255 90 30))), [float]($x.X - $r * 0.8), [float]($x.Y - $r * 0.8), [float](1.6 * $r), [float](1.6 * $r))
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.5)) 60 50 50))), [float]($x.X - $r * 0.6 + 6 * $q), [float]($x.Y - $r * 0.9 - 14 * $q), [float](1.2 * $r), [float](1.2 * $r))
+        if ($q -lt 0.3) { Texto-Contorno $g '爆' 'Yu Gothic' 18 ($x.X - 9) ($x.Y - 13) (C 255 240 200) 3 ([int](255 * (1 - $q / 0.3))) }
+    }
+}
+function Lh-Efectos-Boton($g, $b) {
+    $e = $script:lh
+    if (-not $e -or ($e.Cortes.Count + $e.Explos.Count) -eq 0) { return }
+    $Z = $script:K; $st = $g.Save()
+    $g.SmoothingMode = 'AntiAlias'
+    $g.ScaleTransform($Z, $Z); $g.TranslateTransform([float](-($script:grid.Left + $b.Left) / $Z), [float](-($script:grid.Top + $b.Top) / $Z))
+    Lh-Pintar-Efectos $g
+    $g.Restore($st)
+}
+function Lh-Pintar($g, $k, $W, $H) {
+    $e = $script:lh; if (-not $e) { return }
+    $ahora = [Environment]::TickCount; $seguro = $script:aj.Epilepsia; $a = $script:actores['L']
+    $g.SmoothingMode = 'AntiAlias'
+    $ox = if ($a) { $a.OX } else { 0 }; $oy = if ($a) { $a.OY } else { 0 }
+    $cx = $LhCentro.X + $ox; $cy = $LhCentro.Y + $oy
+    # Estrella Tiantui: chispas doradas que suben a su alrededor
+    if ($e.Fase -ge 2 -and $e.Caido -eq 0) {
+        $chis = New-Object System.Drawing.SolidBrush((ARGB 200 255 210 110))
+        for ($i = 0; $i -lt 14; $i++) {
+            $u = (($ahora / 1600.0) + $i * 0.137) % 1.0
+            $g.FillEllipse($chis, [float]($cx - 70 + (($i * 47) % 140) + 5 * [Math]::Sin($ahora / 300.0 + $i)), [float]($cy + 120 - 220 * $u), 2.5, 2.5)
+        }
+        $chis.Dispose()
+    }
+    # SHIN: aura roja y un anillo de Mang (望) girando a su alrededor
+    if ($e.Fase -ge 3 -and $e.Caido -eq 0) {
+        $lat = if ($seguro) { 0.5 } else { 0.5 + 0.5 * [Math]::Sin($ahora / 300.0) }
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB ([int](30 + 25 * $lat)) 220 30 20))), [float]($cx - 110), [float]($cy - 140), 220, 290)
+        $ang = if ($seguro) { 0.0 } else { ($ahora / 18.0) % 360 }
+        $pa = New-Object System.Drawing.Pen((ARGB 210 255 200 90), 3); $pa.DashStyle = 'Dash'
+        $st = $g.Save(); $g.TranslateTransform([float]$cx, [float]($cy - 40)); $g.RotateTransform([float]$ang)
+        $g.DrawEllipse($pa, -95, -26, 190, 52); $g.Restore($st); $pa.Dispose()
+        Texto-Contorno $g '望' 'Yu Gothic' 16 ($cx + 84) ($cy - 70) (C 255 214 120) 3
+        if ($e.Fx -gt 0) {
+            $q = 1 - $e.Fx / 24.0; $tam = 60 + 140 * $q; $al = [int](220 * (1 - $q))
+            Texto-Contorno $g '心' 'Yu Gothic' $tam ($cx - $tam / 2) ($cy - $tam * 0.75) (C 255 80 50) 6 $al
+        }
+    }
+    # espada sobrecalentada: humo que sube de la hoja
+    if ($e.Calor -gt 0) {
+        for ($i = 0; $i -lt 6; $i++) {
+            $u = (($ahora / 1400.0) + $i / 6.0) % 1.0; $r = 6 + 14 * $u
+            $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB ([int](120 * (1 - $u))) 90 86 86))), [float]($LhHoja.X + $ox - $r + 8 * [Math]::Sin($u * 6 + $i)), [float]($LhHoja.Y + $oy - 40 * $u - $r), [float](2 * $r), [float](2 * $r))
+        }
+    }
+    Lh-Pintar-Efectos $g
+    # la carta de la skill: icono, nombre, kanji y las monedas
+    $sk = $e.Skill
+    if ($sk -or $e.SkillFin -gt 0) {
+        if (-not $sk) { $sk = $e.UltSkill } else { $e.UltSkill = $sk }
+        if ($sk) {
+            $s = $LhSkills[$sk.Clave]; $q = [Math]::Min(1.0, ($ahora - $sk.T0) / 250.0); $al = if ($e.Skill) { 255 } else { [int](255 * [Math]::Max(0.0, 1 - ($ahora - $e.SkillFin) / 1300.0)) }
+            $bx = 410 + (1 - $q) * 40; $by = 58
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.86)) 18 6 8))), [float]$bx, [float]$by, 340, 60)
+            $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB $al 214 176 100), 1.2)), [float]$bx, [float]$by, 340, 60)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB $al 170 30 36))), [float]$bx, [float]$by, 4, 60)
+            $ico = Lh-Icono $s.Icono
+            if ($ico) {
+                $cm = New-Object System.Drawing.Imaging.ColorMatrix; $cm.Matrix33 = [float]($al / 255.0); $ia = New-Object System.Drawing.Imaging.ImageAttributes; $ia.SetColorMatrix($cm)
+                $g.DrawImage($ico, (New-Object System.Drawing.Rectangle([int]($bx + 9), [int]($by + 5), 44, 44)), 0, 0, $ico.Width, $ico.Height, [System.Drawing.GraphicsUnit]::Pixel, $ia); $ia.Dispose()
+            }
+            $fn = FntP('Palatino Linotype', $(if ($s.Nombre.Length -gt 30) { 7 } else { 9 }), [System.Drawing.FontStyle]::Bold)
+            $g.DrawString($s.Nombre, $fn, (New-Object System.Drawing.SolidBrush((ARGB $al 246 230 200))), [float]($bx + 60), [float]($by + 6))
+            $g.DrawString($s.Kanji, (FntP('Yu Gothic', 10, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB $al 230 80 60))), [float]($bx + 60), [float]($by + 26))
+            # monedas: doradas (cara) o grises (cruz) según van saliendo
+            for ($i = 0; $i -lt $s.Monedas; $i++) {
+                $mx = $bx + 330 - ($s.Monedas - $i) * 19; $my = $by + 26
+                $col = if ($i -ge $sk.Hechas) { (ARGB ([int]($al * 0.5)) 120 110 100) } elseif ($sk.Caras[$i]) { (ARGB $al 240 196 80) } else { (ARGB $al 90 86 86) }
+                $g.FillEllipse((New-Object System.Drawing.SolidBrush($col)), [float]$mx, [float]$my, 15, 15)
+                $g.DrawEllipse((New-Object System.Drawing.Pen((ARGB $al 40 20 10), 1.2)), [float]$mx, [float]$my, 15, 15)
+            }
+            if ($sk.Clave -ne 'recarga' -and $sk.Hechas -gt 0) {
+                $pot = $s.Base + $s.Moneda * @($sk.Caras[0..($sk.Hechas - 1)] | Where-Object { $_ }).Count
+                $g.DrawString("POTENCIA $pot", (FntP('Palatino Linotype', 7, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB $al 255 200 110))), [float]($bx + 220), [float]($by + 46))
+            }
+        }
+    }
+    # abajo: la barra de vida de jefe con las marcas de sus fases y las balas Tigermark
+    if ($g.IsVisible((New-Object System.Drawing.RectangleF(8, 264, 402, 54)))) {
+        $oro = (C 236 196 116)
+        $f1 = FntP('Palatino Linotype', 7.5, [System.Drawing.FontStyle]::Bold)
+        $g.DrawString('LEI HENG  ·  CAPO IIII DEL PULGAR', $f1, (New-Object System.Drawing.SolidBrush($oro)), 14, 268)
+        $estado = if ($e.Caido -gt 0) { 'DERROTADO' } elseif ($e.Calor -gt 0) { 'SOBRECALENTADO' } elseif ($e.Fase -ge 3) { '心 SHIN' } elseif ($e.Fase -ge 2) { '天退星 TIANTUI' } elseif ($e.Fase -ge 1) { 'FUERZA INTERIOR' } else { '' }
+        if ($estado) { $fe = FntP('Yu Gothic', 7.5, [System.Drawing.FontStyle]::Bold); $g.DrawString($estado, $fe, (New-Object System.Drawing.SolidBrush((C 255 110 80))), [float](396 - $g.MeasureString($estado, $fe).Width), 267) }
+        $bx = 14; $by = 284; $bw = 382
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 24 8 10))), $bx, $by, $bw, 11)
+        $q = $e.HP / [double]$LhTiempos.Max
+        $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle($bx, $by, $bw, 11)), (C 120 10 16), (C 230 50 40), 0)
+        if ($q -gt 0) { $g.FillRectangle($br, [float]($bx + 1), [float]($by + 1), [float](($bw - 2) * $q), 9) }; $br.Dispose()
+        foreach ($m in @(0.8, 0.6, 0.4)) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 255 220 140))), [float]($bx + $bw * $m), [float]($by - 2), 1.5, 15) }
+        $g.DrawRectangle((New-Object System.Drawing.Pen($oro, 1.2)), $bx, $by, $bw, 11)
+        $g.DrawString("$($e.HP) / $($LhTiempos.Max)", (FntP('Palatino Linotype', 6.5, [System.Drawing.FontStyle]::Bold)), [System.Drawing.Brushes]::White, [float]($bx + 4), [float]($by - 1))
+        $g.DrawString('BALAS TIGERMARK', (FntP('Palatino Linotype', 7, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 255 170 70))), 14, 300)
+        $lleno = New-Object System.Drawing.SolidBrush((C 240 180 70)); $vacio = New-Object System.Drawing.SolidBrush((ARGB 90 160 120 70))
+        $paso = if ($e.MaxBalas -gt 6) { 13 } else { 18 }
+        for ($i = 0; $i -lt $e.MaxBalas; $i++) { $g.FillRectangle($(if ($i -lt $e.Balas) { $lleno } else { $vacio }), [float](126 + $i * $paso), 303, [float]($paso - 5), 8) }
+        $lleno.Dispose(); $vacio.Dispose()
+    }
+}
+
+# ================= VALENCINA (Limbus Company): EL OJO DE LA PRECOGNICIÓN =================
+# Como en su combate del Canto IX (ficha en lore\personajes\Valencina.md):
+# - Empieza con 30 cargas del OJO DE LA PRECOGNICIÓN (la reliquia Ojo de Odín, herencia de la Famiglia Bognatelli).
+# - Tu clic en ella es un ataque sin oposición: mientras le quede ojo se activa "Precognición": lo ESQUIVA (pierde 1 carga)
+#   y te contraataca con "Sezionatura di Coniglio". Si la acribillas (3 clics en poco más de un segundo) puede fallar
+#   la esquiva: pierde 3 cargas ("¡Mierda!").
+# - Cada app es un choque: gana FUTURO ACELERADO (la espada se calienta), como mucho cargas/3 por turno. Si ya no puede
+#   ganar más, el choque le cuesta 1 carga (pasiva "Sobrecargado"). Si pasas un rato sin abrir nada, se enfría.
+# - A 0 cargas: OJO SOBRECALENTADO (todo se tiñe de rojo). Durante 25 s tus clics sí le dan; con 5 golpes queda ATURDIDA
+#   y se levanta furiosa con Shin ("¡Soy Valencina della Famiglia Bognatelli!"). Si no, el ojo se enfría solo. Vuelve a 30.
+# - HORA DE CAZAR: cada 8 apps marca un botón como presa (la mira roja de "Game Target"); si lo abres, lo despieza con "Disposal".
+# - El vaso de Old Parr con hielo: clic y se lo bebe (el hielo le enfría el ojo: +4 cargas, o −8 s de sobrecalentamiento).
+#   Lucio se lo rellena al rato. Con 3 copas seguidas se le suelta la lengua (*hic*).
+$VlTiempos = @{ Ojo = 30; Rafaga = 3; RafagaMs = 1300; Calor = 25000; GolpesAturdir = 5; Aturdida = 4200; CazaCada = 8
+    Rellenar = 18000; Hielo = 4; CalorHielo = 8000; AcelBaja = 30000; Copas = 3; CopasMs = 120000; MiradaMs = 12000; Esquiva = 700 }
+# sitio de su ojo tapado (debajo del pelo) y de la hoja de la espada en la escena, con el sprite de combate en su sitio
+$VlOjo = @{ X = 645; Y = 116 }
+$VlEspada = @(747, 134, 556, 290)
+$script:vl = $null; $script:vlMusica = $null; $script:vlSinMusica = $false; $script:vlIconos = @{}
+function Vl-Reset {
+    if (-not $script:vl) {
+        $ahora = [Environment]::TickCount
+        $script:vl = @{ Ojo = $VlTiempos.Ojo; Acel = 0; Calor = 0; Golpes = 0; Aturdida = 0; Apps = 0; Presa = ''; UltApp = $ahora
+            Clics = (New-Object System.Collections.ArrayList); Vaso = $true; RellenoT = 0; Copas = (New-Object System.Collections.ArrayList)
+            Ev = $null; Tajo = 0; Disp = $null; Fx = 0; Mira = $false; MiradaT = $ahora; HudClave = '' }
+    }
+}
+# el vaso: lleno o vacío según toque
+function Vl-Actores {
+    $e = $script:vl; $a = $script:actores['G']; if (-not $a -or -not $e) { return }
+    $nueva = if ($e.Vaso) { 'main' } else { 'vacio' }
+    $a.Base = $nueva
+    if ($a.Hasta -eq 0 -and $a.Pose -ne $nueva) { $a.Pose = $nueva; $a.Frame = 0; $a.Acc = 0; Seleccionar-Frame $a }
+}
+function Vl-Liberar {
+    foreach ($im in @($script:vlIconos.Values)) { if ($im) { $im.Dispose() } }
+    $script:vlIconos = @{}; $script:vlSinMusica = $false
+    Vl-Musica-Off
+}
+function Vl-Icono($clave) {
+    if (-not $script:vlIconos.ContainsKey($clave)) { $script:vlIconos[$clave] = Cargar-Img $script:skin[$clave] }
+    return $script:vlIconos[$clave]
+}
+# su tema de jefa (Canto IX Boss 1 Battle Theme 2): suena si está skins\valencina\tema.mp3
+function Vl-Volumen { return [Math]::Max(0.0, [Math]::Min(1.0, 0.55 * $script:aj.Volumen / 100.0)) }
+function Vl-Musica-On {
+    if (-not $script:aj.Sonido -or $script:vlMusica -or $script:vlSinMusica) { return }
+    $ruta = Ruta 'skins\valencina\tema.mp3'
+    if (-not (Test-Path $ruta)) { $script:vlSinMusica = $true; return }
+    try {
+        $mp = New-Object System.Windows.Media.MediaPlayer
+        $mp.Open([Uri]$ruta); $mp.Volume = (Vl-Volumen); $mp.Play(); $script:vlMusica = $mp
+    } catch { $script:vlMusica = $null }
+}
+function Vl-Musica-Off { if ($script:vlMusica) { try { $script:vlMusica.Stop(); $script:vlMusica.Close() } catch {}; $script:vlMusica = $null } }
+# repinta la escena entera (ella llega hasta abajo del todo)
+function Vl-Invalidar {
+    $Z = $script:K
+    $form.Invalidate((New-Object System.Drawing.Rectangle([int](400 * $Z), [int](34 * $Z), [int](($form.ClientSize.Width / $Z - 400) * $Z), [int](290 * $Z))))
+}
+function Vl-Botones {
+    if (-not $script:grid) { return @() }
+    return @($script:grid.Controls | Where-Object { $_.Tag -and $_.Tag.Nombre })
+}
+# suma o quita cargas del ojo; a 0 se sobrecalienta (devuelve $true si acaba de pasar)
+function Vl-Ojo($d) {
+    $e = $script:vl
+    if ($e.Calor -gt 0) { return $false }
+    $e.Ojo = [int][Math]::Max(0, [Math]::Min($VlTiempos.Ojo, $e.Ojo + $d))
+    $tope = [int][Math]::Floor($e.Ojo / 3); if ($e.Acel -gt $tope) { $e.Acel = $tope }
+    if ($e.Ojo -le 0) { $null = Vl-Calor; return $true }
+    return $false
+}
+function Vl-Calor {
+    $e = $script:vl
+    $e.Calor = [Environment]::TickCount + $VlTiempos.Calor; $e.Golpes = 0; $e.Acel = 0; $e.Fx = 14
+    $null = Sonido 'calor'
+    $null = Flotante 'SOBRECALENTADO' 540 96 (C 255 80 60) 18 'Palatino Linotype'
+    $null = Decir-Fijo (Azar $script:skin.Calor) 'x'
+    $null = Vl-Invalidar
+}
+function Vl-Clic($id) {
+    Vl-Reset; $e = $script:vl; $k = $script:skin; $ahora = [Environment]::TickCount
+    if ($id -eq 'G') { Vl-Beber; return }
+    if ($id -ne 'V') { return }
+    $e.MiradaT = $ahora
+    if ($e.Aturdida -gt 0) { return }
+    if ($e.Calor -gt 0) {
+        # sobrecalentada ya no ve venir nada: el golpe entra
+        $e.Golpes++; Actor-Golpe 'V'; Sonido 'golpe'
+        Flotante "$(12 + $Rnd.Next(0, 19))" (600 + $Rnd.Next(-30, 31)) (90 + $Rnd.Next(0, 40)) (C 255 230 200) 20 'Palatino Linotype'
+        if ($e.Golpes -ge $VlTiempos.GolpesAturdir) {
+            $e.Aturdida = $ahora + $VlTiempos.Aturdida; $e.Calor = 0
+            Sonido 'aturdida'; Flotante 'ATURDIDA' 580 80 (C 255 220 120) 22 'Palatino Linotype'
+            $a = $script:actores['V']; if ($a) { $a.OY = 14; $a.Alfa = 0.75 }
+            Decir-Fijo (Azar $k.Aturdida) 'x'
+        } else { Decir (Azar $k.Golpe) }
+        Vl-Invalidar; return
+    }
+    if ($e.Ev) { return }
+    # ¿la estás acribillando? con 3 clics seguidos puede fallar la esquiva
+    [void]$e.Clics.Add($ahora)
+    while ($e.Clics.Count -gt 0 -and ($ahora - $e.Clics[0]) -gt $VlTiempos.RafagaMs) { $e.Clics.RemoveAt(0) }
+    if ($e.Clics.Count -ge $VlTiempos.Rafaga -and $Rnd.Next(100) -lt 50) {
+        $e.Clics.Clear(); Actor-Golpe 'V'; Sonido 'golpe'
+        Flotante 'FALLO DE ESQUIVA' 540 96 (C 255 120 90) 15 'Palatino Linotype'
+        if (-not (Vl-Ojo -3)) { Decir-Fijo (Azar $k.Falla) 'x' 0 }
+        Vl-Invalidar; return
+    }
+    # Precognición: lo esquiva y contraataca con Sezionatura di Coniglio
+    $dir = if ($Rnd.Next(100) -lt 70) { -1 } else { 1 }
+    $e.Ev = @{ T0 = $ahora; Dir = $dir; Tajo = $false }
+    Sonido 'esquiva'
+    Flotante 'ESQUIVA' (580 + $dir * 40) 66 (C 250 220 150) 16 'Palatino Linotype'
+    if (-not (Vl-Ojo -1)) { if ($Rnd.Next(100) -lt 40) { Decir (Azar $k.Contra) } else { Decir (Azar $k.Esquiva) } }
+    Vl-Invalidar
+}
+# el vaso de Old Parr con hielo
+function Vl-Beber {
+    $e = $script:vl; $k = $script:skin; $ahora = [Environment]::TickCount
+    if (-not $e.Vaso) { Decir (Azar $k.VasoVacio); return }
+    $e.Vaso = $false; $e.RellenoT = $ahora + $VlTiempos.Rellenar; Vl-Actores
+    Sonido 'hielo'
+    [void]$e.Copas.Add($ahora)
+    while ($e.Copas.Count -gt 0 -and ($ahora - $e.Copas[0]) -gt $VlTiempos.CopasMs) { $e.Copas.RemoveAt(0) }
+    if ($e.Calor -gt 0) { $e.Calor = [Math]::Max($ahora + 1500, $e.Calor - $VlTiempos.CalorHielo); Flotante '-8 s DE CALOR' 430 186 (C 160 220 255) 14 'Palatino Linotype' }
+    elseif ($e.Aturdida -eq 0 -and $e.Ojo -lt $VlTiempos.Ojo) { $null = Vl-Ojo $VlTiempos.Hielo; Flotante "+$($VlTiempos.Hielo) OJO" 430 186 (C 160 220 255) 14 'Palatino Linotype' }
+    Decir (Azar $k.Beber)
+    Vl-Invalidar
+}
+# una app abierta = un choque (o la presa, si es la que tiene marcada)
+function Vl-App($linea, $item) {
+    Vl-Reset; $e = $script:vl; $k = $script:skin; $ahora = [Environment]::TickCount
+    $e.UltApp = $ahora; $e.Apps++
+    $nom = if ($item) { "$($item.Nombre)" } else { '' }
+    if ($e.Presa -and $nom -eq $e.Presa) { Vl-Disposal $nom; return }
+    $dicho = $false
+    if ($e.Calor -eq 0 -and $e.Aturdida -eq 0) {
+        $tope = [int][Math]::Floor($e.Ojo / 3)
+        if ($e.Acel -lt $tope) {
+            $e.Acel++; Sonido 'choque'
+            Flotante "FUTURO ACELERADO $($e.Acel)" 430 120 (C 255 170 60) 13 'Palatino Linotype'
+            if ($e.Acel -eq $tope -and $e.Acel -ge 3) { Sonido 'disparo'; Decir-Fijo (Azar $k.Acelera) 'x'; $dicho = $true }
+        } else {
+            Flotante '-1 OJO' 430 120 (C 255 110 80) 14 'Palatino Linotype'
+            if (Vl-Ojo -1) { $dicho = $true }
+            elseif ($Rnd.Next(100) -lt 40) { Decir (Azar $k.Sobrecarga); $dicho = $true }
+        }
+    }
+    if (-not $dicho -and -not $e.Presa -and $e.Calor -eq 0 -and ($e.Apps % $VlTiempos.CazaCada) -eq 0) { $dicho = Vl-Caza }
+    if (-not $dicho) { Decir $linea }
+    Vl-Invalidar
+}
+# HORA DE CAZAR: marca un botón al azar como presa
+function Vl-Caza {
+    $e = $script:vl; $bs = Vl-Botones
+    if ($bs.Count -eq 0) { return $false }
+    $b = $bs[$Rnd.Next($bs.Count)]; $e.Presa = "$($b.Tag.Nombre)"
+    $null = Sonido 'caza'
+    $null = Decir-Fijo ((Azar $script:skin.Caza) -f $e.Presa) 'x'
+    foreach ($c in $bs) { $null = $c.Invalidate() }
+    return $true
+}
+function Vl-Disposal($nom) {
+    $e = $script:vl; $e.Presa = ''; $e.Disp = @{ T0 = [Environment]::TickCount; Nombre = $nom }
+    Sonido 'disposal'
+    Flotante 'DISPOSAL' 440 110 (C 255 60 50) 22 'Palatino Linotype'
+    Decir-Fijo (Azar $script:skin.Disposal) 'x'
+    foreach ($c in (Vl-Botones)) { $c.Invalidate() }
+    Vl-Invalidar
+}
+function Vl-Tick {
+    Vl-Reset; $e = $script:vl; $k = $script:skin; $ahora = [Environment]::TickCount; $Z = $script:K
+    # su música: se repite al acabar, sigue el volumen (más baja con el ojo sobrecalentado) y se calla sin sonido
+    if (-not $script:aj.Sonido) { Vl-Musica-Off }
+    elseif (-not $script:vlMusica) { Vl-Musica-On }
+    else {
+        try {
+            $mp = $script:vlMusica; $vol = (Vl-Volumen) * $(if ($e.Calor -gt 0) { 0.6 } else { 1.0 })
+            if ([Math]::Abs($mp.Volume - $vol) -gt 0.01) { $mp.Volume = $vol }
+            if ($mp.NaturalDuration.HasTimeSpan -and $mp.Position -ge ($mp.NaturalDuration.TimeSpan - [TimeSpan]::FromMilliseconds(120))) { $mp.Position = [TimeSpan]::Zero; $mp.Play() }
+        } catch {}
+    }
+    $escena = $false; $a = $script:actores['V']
+    # la esquiva: se aparta de golpe, se queda un instante y vuelve; a los 140 ms, el contraataque
+    if ($e.Ev) {
+        $q = $ahora - $e.Ev.T0
+        if (-not $e.Ev.Tajo -and $q -ge 140) { $e.Ev.Tajo = $true; $e.Tajo = $ahora; Sonido 'tajo'; Flotante 'SEZIONATURA DI CONIGLIO' 416 150 (C 255 170 60) 12 'Palatino Linotype' }
+        $dx = if ($q -lt 110) { $q / 110.0 } elseif ($q -lt 380) { 1.0 } elseif ($q -lt $VlTiempos.Esquiva) { 1.0 - ($q - 380) / ($VlTiempos.Esquiva - 380.0) } else { 0.0 }
+        $lejos = if ($e.Ev.Dir -lt 0) { 86 } else { 24 }
+        if ($a) { $a.OX = [int]($e.Ev.Dir * $lejos * (1 - [Math]::Pow(1 - $dx, 3))) }
+        if ($q -ge $VlTiempos.Esquiva) { $e.Ev = $null; if ($a) { $a.OX = 0 } }
+        $escena = $true
+    }
+    if ($e.Tajo -gt 0) { if ($ahora - $e.Tajo -gt 420) { $e.Tajo = 0 }; $escena = $true }
+    if ($e.Disp) {
+        $fin = ($ahora - $e.Disp.T0) -gt 1000
+        foreach ($c in (Vl-Botones)) { if ($fin -or "$($c.Tag.Nombre)" -eq $e.Disp.Nombre) { $c.Invalidate() } }
+        if ($fin) { $e.Disp = $null }
+        $escena = $true
+    }
+    # sobrecalentada: si nadie la aturde, el ojo se enfría solo y vuelve a 30
+    if ($e.Calor -gt 0 -and $ahora -ge $e.Calor) { $e.Calor = 0; $e.Ojo = $VlTiempos.Ojo; $e.Golpes = 0; Decir-Fijo (Azar $k.Enfria) 'x'; $escena = $true }
+    # aturdida: se levanta furiosa, con Shin y el ojo frío
+    if ($e.Aturdida -gt 0 -and $ahora -ge $e.Aturdida) {
+        $e.Aturdida = 0; $e.Ojo = $VlTiempos.Ojo; $e.Golpes = 0
+        if ($a) { $a.OY = 0; $a.Alfa = 1.0; $a.Salto = 10 }
+        Sonido 'choque'; Flotante '心 SHIN' 590 70 (C 255 90 70) 22 'Yu Gothic'
+        Decir-Fijo (Azar $k.Levanta) 'x'; $escena = $true
+    }
+    # Lucio le rellena el vaso
+    if (-not $e.Vaso -and $ahora -ge $e.RellenoT) { $e.Vaso = $true; Vl-Actores; Sonido 'hielo'; Decir-Fijo (Azar $k.Lucio) 'x'; $escena = $true }
+    # el Futuro Acelerado se enfría si pasas un rato sin abrir nada
+    if ($e.Acel -gt 0 -and ($ahora - $e.UltApp) -gt $VlTiempos.AcelBaja) { $e.Acel--; $e.UltApp = $ahora }
+    # con el ratón encima, su ojo tapado brilla: ya sabe lo que vas a hacer
+    $mira = $false
+    if ($a -and $e.Calor -eq 0 -and $e.Aturdida -eq 0 -and -not (Ocupado)) {
+        $pt = $form.PointToClient([System.Windows.Forms.Cursor]::Position); $mx = $pt.X / $Z; $my = $pt.Y / $Z; $r = $a.Rect
+        $mira = ($mx -ge $r[0] + 40 -and $mx -le $r[0] + $r[2] - 20 -and $my -ge $r[1] -and $my -le $r[1] + $r[3])
+    }
+    if ($mira -ne $e.Mira) { $e.Mira = $mira; $escena = $true }
+    if ($mira -and ($ahora - $e.MiradaT) -gt $VlTiempos.MiradaMs) { $e.MiradaT = $ahora; if ($Rnd.Next(100) -lt 40) { Decir (Azar $k.Mirada) } }
+    if ($e.Fx -gt 0) { $e.Fx--; $escena = $true }
+    if ($e.Calor -gt 0 -and -not $script:aj.Epilepsia) { $escena = $true }
+    if ($e.Acel -gt 0 -and -not $script:aj.Epilepsia -and ($ahora % 200) -lt 50) { $escena = $true }
+    if ($escena) { Vl-Invalidar }
+    # la barra de abajo (ojo, futuro acelerado, presa): solo cuando cambia algo
+    $seg = if ($e.Calor -gt 0) { [int][Math]::Ceiling(($e.Calor - $ahora) / 1000.0) } else { 0 }
+    $clave = "$($e.Ojo)|$($e.Acel)|$($e.Presa)|$($e.Golpes)|$seg|$($e.Aturdida -gt 0)"
+    if ($clave -ne $e.HudClave) { $e.HudClave = $clave; $form.Invalidate((New-Object System.Drawing.Rectangle(0, [int](264 * $Z), [int](410 * $Z), [int](56 * $Z)))) }
+}
+# la presa marcada (mira roja) y los tajos de Disposal, dentro de cada botón (coordenadas del botón, en píxeles)
+function Vl-Efectos-Boton($g, $b) {
+    $e = $script:vl; if (-not $e -or -not $b.Tag) { return }
+    $nom = "$($b.Tag.Nombre)"; $bw = $b.Width; $bh = $b.Height; $Z = $script:K
+    $g.SmoothingMode = 'AntiAlias'
+    if ($e.Presa -and $nom -eq $e.Presa) {
+        $roja = New-Object System.Drawing.Pen((C 230 30 30), [float](2 * $Z))
+        $g.DrawRectangle($roja, [float](1.5 * $Z), [float](1.5 * $Z), [float]($bw - 4 * $Z), [float]($bh - 4 * $Z))
+        $cx = $bw - 16 * $Z; $cy = $bh / 2; $rr = 8 * $Z
+        $g.DrawEllipse($roja, [float]($cx - $rr), [float]($cy - $rr), [float](2 * $rr), [float](2 * $rr))
+        foreach ($v in @(@(-1, 0), @(1, 0), @(0, -1), @(0, 1))) { $g.DrawLine($roja, [float]($cx + $v[0] * $rr * 0.4), [float]($cy + $v[1] * $rr * 0.4), [float]($cx + $v[0] * $rr * 1.5), [float]($cy + $v[1] * $rr * 1.5)) }
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((C 230 30 30))), [float]($cx - 1.5 * $Z), [float]($cy - 1.5 * $Z), [float](3 * $Z), [float](3 * $Z))
+        $roja.Dispose()
+    }
+    if ($e.Disp -and $nom -eq $e.Disp.Nombre) {
+        $q = ([Environment]::TickCount - $e.Disp.T0) / 1000.0
+        for ($i = 0; $i -lt 3; $i++) {
+            $qi = ($q - $i * 0.16) / 0.22; if ($qi -le 0) { continue }
+            $alf = [int](255 * [Math]::Max(0.0, 1.0 - ($q - $i * 0.16) / 0.8)); if ($alf -le 0) { continue }
+            $len = [Math]::Min(1.0, $qi); $y0 = $bh * (0.15 + 0.32 * $i); $y1 = $y0 + $bh * 0.35 * $(if ($i % 2) { -1 } else { 1 })
+            $p1 = New-Object System.Drawing.Pen((ARGB $alf 255 60 40), [float](5 * $Z)); $p2 = New-Object System.Drawing.Pen((ARGB $alf 255 240 200), [float](1.5 * $Z))
+            foreach ($pp in @($p1, $p2)) { $g.DrawLine($pp, 0, [float]$y0, [float]($bw * $len), [float]($y0 + ($y1 - $y0) * $len)) }
+            $p1.Dispose(); $p2.Dispose()
+        }
+    }
+}
+# todo lo que se mueve en la escena y la barra del ojo
+function Vl-Pintar($g, $k, $W, $H) {
+    $e = $script:vl; if (-not $e) { return }
+    $ahora = [Environment]::TickCount; $seguro = $script:aj.Epilepsia; $a = $script:actores['V']
+    $g.SmoothingMode = 'AntiAlias'
+    $ox = if ($a) { $a.OX } else { 0 }; $oy = if ($a) { $a.OY } else { 0 }
+    # estela dorada de la esquiva
+    if ($e.Ev -and $a -and $a.Imgs['main']) {
+        $img = $a.Imgs['main']; $r = $a.Rect; $s = [Math]::Min($r[2] / $img.Width, $r[3] / $img.Height); $iw = $img.Width * $s; $ih = $img.Height * $s
+        foreach ($f in @(0.35, 0.7)) {
+            $cm = New-Object System.Drawing.Imaging.ColorMatrix; $cm.Matrix33 = [float](0.3 * (1 - $f) + 0.08)
+            $cm.Matrix40 = 0.35; $cm.Matrix41 = 0.22; $cm.Matrix42 = 0.0
+            $ia = New-Object System.Drawing.Imaging.ImageAttributes; $ia.SetColorMatrix($cm)
+            $gx = $r[0] + ($r[2] - $iw) / 2 + $ox * $f; $gy = $r[1] + $r[3] - $ih
+            $g.DrawImage($img, (New-Object System.Drawing.Rectangle([int]$gx, [int]$gy, [int]$iw, [int]$ih)), 0, 0, $img.Width, $img.Height, [System.Drawing.GraphicsUnit]::Pixel, $ia)
+            $ia.Dispose()
+        }
+    }
+    # la espada se calienta con el Futuro Acelerado (Estilo Palermitano: cuanto más dura el duelo, más fiero)
+    if ($e.Acel -gt 0 -and $a -and $e.Aturdida -eq 0) {
+        $q = [Math]::Min(1.0, $e.Acel / 10.0); $lat = if ($seguro) { 1.0 } else { 0.8 + 0.2 * [Math]::Sin($ahora / 160.0) }
+        $x1 = $VlEspada[0] + $ox; $y1 = $VlEspada[1] + $oy; $x2 = $VlEspada[2] + $ox; $y2 = $VlEspada[3] + $oy
+        $p1 = New-Object System.Drawing.Pen((ARGB ([int](60 + 60 * $q * $lat)) 255 110 20), [float](6 + 10 * $q)); $p1.StartCap = 'Round'; $p1.EndCap = 'Round'
+        $p2 = New-Object System.Drawing.Pen((ARGB ([int](110 + 120 * $q * $lat)) 255 200 110), [float](1.5 + 1.5 * $q))
+        foreach ($pp in @($p1, $p2)) { $g.DrawLine($pp, [float]$x1, [float]$y1, [float]$x2, [float]$y2) }
+        $p1.Dispose(); $p2.Dispose()
+        $chis = New-Object System.Drawing.SolidBrush((ARGB 220 255 190 90))
+        for ($i = 0; $i -lt [int](2 + 7 * $q); $i++) {
+            $u = (($ahora / 1100.0) + $i * 0.173) % 1.0; $v = (($ahora / 700.0) + $i * 0.41) % 1.0
+            $g.FillEllipse($chis, [float]($x1 + ($x2 - $x1) * $u + 4 * [Math]::Sin($i * 3.1)), [float]($y1 + ($y2 - $y1) * $u - 22 * $v), 2.5, 2.5)
+        }
+        $chis.Dispose()
+    }
+    # el contraataque: un tajo naranja en arco hacia los botones
+    if ($e.Tajo -gt 0) {
+        $q = ($ahora - $e.Tajo) / 420.0
+        if ($q -lt 1) {
+            $alf = [int](255 * (1 - $q)); $barr = [float](40 + 120 * [Math]::Min(1.0, $q * 2.5))
+            $p1 = New-Object System.Drawing.Pen((ARGB $alf 255 120 30), [float](16 * (1 - $q) + 3)); $p1.StartCap = 'Round'; $p1.EndCap = 'Triangle'
+            $p2 = New-Object System.Drawing.Pen((ARGB $alf 255 236 190), [float](4 * (1 - $q) + 1))
+            foreach ($pp in @($p1, $p2)) { $g.DrawArc($pp, [float](420 + $ox), 50, 300, 210, [float]150, $barr) }
+            $p1.Dispose(); $p2.Dispose()
+        }
+    }
+    # ojo sobrecalentado: todo rojo (en modo seguro, sin latir)
+    if ($e.Calor -gt 0) {
+        $pul = if ($seguro) { 0.5 } else { 0.5 + 0.5 * [Math]::Sin($ahora / 260.0) }
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](46 + 40 * $pul)) 200 16 16))), 404, 56, ($W - 404), ($H - 56))
+        Degradado $g 404 56 70 ($H - 56) (ARGB 150 110 0 0) (ARGB 0 110 0 0) 0
+        Degradado $g ($W - 70) 56 70 ($H - 56) (ARGB 0 110 0 0) (ARGB 150 110 0 0) 0
+    }
+    # su ojo tapado brilla cuando te ve venir (y al rojo vivo si está sobrecalentado)
+    if ($a -and ($e.Mira -or $e.Ev -or $e.Calor -gt 0) -and $e.Aturdida -eq 0) {
+        $cx = $VlOjo.X + $ox; $cy = $VlOjo.Y + $oy
+        $col = if ($e.Calor -gt 0) { @(255, 40, 30) } else { @(255, 180, 70) }
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB 70 $col[0] $col[1] $col[2]))), [float]($cx - 12), [float]($cy - 12), 24, 24)
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB 230 $col[0] $col[1] $col[2]))), [float]($cx - 3), [float]($cy - 2), 6, 4)
+        $pb = New-Object System.Drawing.Pen((ARGB 200 255 240 200), 1.2)
+        $g.DrawLine($pb, [float]($cx - 10), [float]$cy, [float]($cx + 10), [float]$cy); $g.DrawLine($pb, [float]$cx, [float]($cy - 7), [float]$cx, [float]($cy + 7)); $pb.Dispose()
+    }
+    # aturdida: estrellitas sobre el sombrero
+    if ($e.Aturdida -gt 0 -and $a) {
+        for ($i = 0; $i -lt 3; $i++) {
+            $an = $ahora / 300.0 + $i * 2.09; $sx = 650 + [Math]::Cos($an) * 30; $sy = 66 + [Math]::Sin($an) * 8
+            Texto-Contorno $g '✦' 'Segoe UI Symbol' 14 $sx $sy (C 255 220 120) 3
+        }
+    }
+    # abajo: el OJO DE LA PRECOGNICIÓN (30 cargas), el FUTURO ACELERADO y la presa
+    if ($g.IsVisible((New-Object System.Drawing.RectangleF(8, 264, 402, 54)))) {
+        $roja = $e.Calor -gt 0
+        $oro = (C 236 196 116); $rojo = (C 240 60 46)
+        $ico = Vl-Icono 'PrecogImg'
+        if ($ico) { $g.DrawImage($ico, 14, 271, 30, 30); $g.DrawRectangle((New-Object System.Drawing.Pen($(if ($roja) { $rojo } else { $oro }), 1.5)), 14, 271, 30, 30) }
+        $f1 = FntP('Palatino Linotype', 7.5, [System.Drawing.FontStyle]::Bold)
+        $seg = if ($roja) { [int][Math]::Ceiling(($e.Calor - $ahora) / 1000.0) } else { 0 }
+        $tit = if ($roja) { "OJO DE LA PRECOGNICIÓN  ·  SOBRECALENTADO  $seg s" } elseif ($e.Aturdida -gt 0) { 'OJO DE LA PRECOGNICIÓN  ·  ATURDIDA' } else { 'OJO DE LA PRECOGNICIÓN' }
+        $g.DrawString($tit, $f1, (New-Object System.Drawing.SolidBrush($(if ($roja) { $rojo } else { $oro }))), 50, 268)
+        $lleno = New-Object System.Drawing.SolidBrush($(if ($roja) { $rojo } else { (C 240 190 90) })); $vacio = New-Object System.Drawing.SolidBrush((ARGB 110 90 60 40))
+        for ($i = 0; $i -lt $VlTiempos.Ojo; $i++) {
+            $px = 54 + $i * 10.2; $py = 291
+            $pts = [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]$px, [float]($py - 4.5))), (New-Object System.Drawing.PointF([float]($px + 3.6), [float]$py)), (New-Object System.Drawing.PointF([float]$px, [float]($py + 4.5))), (New-Object System.Drawing.PointF([float]($px - 3.6), [float]$py)))
+            $g.FillPolygon($(if ($i -lt $e.Ojo -or $roja) { $lleno } else { $vacio }), $pts)
+        }
+        $lleno.Dispose(); $vacio.Dispose()
+        Texto-Contorno $g "$($e.Ojo)" 'Palatino Linotype' 17 364 277 $(if ($roja) { $rojo } else { $oro }) 3
+        $f2 = FntP('Palatino Linotype', 7.5, [System.Drawing.FontStyle]::Bold)
+        $tope = [int][Math]::Floor($e.Ojo / 3)
+        $g.DrawString("FUTURO ACELERADO  $($e.Acel)/$tope", $f2, (New-Object System.Drawing.SolidBrush((C 255 170 70))), 50, 299)
+        if ($roja -or $e.Aturdida -gt 0) {
+            $g.DrawString('ATURDIMIENTO', $f2, (New-Object System.Drawing.SolidBrush((C 255 220 120))), 196, 299)
+            for ($i = 0; $i -lt $VlTiempos.GolpesAturdir; $i++) {
+                $hecho = $e.Aturdida -gt 0 -or $i -lt $e.Golpes
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush($(if ($hecho) { (C 255 220 120) } else { (ARGB 90 255 220 120) }))), [float](290 + $i * 14), 302, 11, 7)
+            }
+        } elseif ($e.Presa) {
+            $g.DrawString("⌖ PRESA: $($e.Presa)", $f2, (New-Object System.Drawing.SolidBrush((C 255 90 80))), 196, 299)
+        }
+    }
+}
+
 # ================= ANIMACIÓN DE FONDO (planta rodadora, agua de Dune) =================
 $script:fase = 0.0; $script:tumbX = -300; $script:salto = 0
 $ambTimer = New-Object System.Windows.Forms.Timer
@@ -6341,6 +7582,8 @@ function Sin-Destellos {
     if ($script:gr) { $script:gr.Fx = 0 }
     if ($script:nn) { $script:nn.Fx = 0 }
     if ($script:mk) { $script:mk.Fx = 0 }
+    if ($script:vl) { $script:vl.Fx = 0 }
+    if ($script:lh) { $script:lh.Fx = 0 }
     if ($script:ag) { $script:ag.Rojo = 0; $script:ag.Golpe = 0; $script:ag.FiltroT = 0 }
     if ($script:vv) { $script:vv.Fx = 0 }
     if ($script:wg) { $script:wg.Rayo = 0; $script:wg.Fx = 0 }
@@ -6354,6 +7597,8 @@ $ambTimer.Add_Tick({
     Sin-Destellos
     $k = $script:skin; $Z = $script:K
     if ((Ocupado) -or -not $k) { return }
+    # la primera vez (y después de la guía del panda): el anuncio del evento del Pulgar
+    if (-not $script:aj.EventoPulgar -and $script:aj.Guia -and -not $script:modoSkins) { $script:aj.EventoPulgar = $true; Guardar-Ajustes; Anuncio-Evento; return }
     $script:fase += 0.14
     if ($k.Estilo -eq 'oeste') {
         # planta rodadora cruzando la escena, buitres, polvo, agujeros de bala que se borran, fogonazo y duelo
@@ -6387,6 +7632,9 @@ $ambTimer.Add_Tick({
     if ($k.Estilo -eq 'gran') { Gran-Tick }
     if ($k.Estilo -eq 'abismo') { Nn-Tick }
     if ($k.Estilo -eq 'historia') { Mk-Tick }
+    if ($k.Estilo -eq 'ojo') { Vl-Tick }
+    if ($k.Estilo -eq 'tigre') { Lh-Tick }
+    if ($k.Estilo -eq 'capo') { Kc-Tick }
     if ($k.Estilo -eq 'lobo') { Ag-Tick }
     if ($k.Estilo -eq 'arana') { Vv-Tick }
     if ($k.Estilo -eq 'clima') { Wg-Tick }
@@ -7781,6 +9029,9 @@ function Abrir-Invitado($nombre) {
         'gran' { }   # llega en silencio: su único sonido es su canción
         'abismo' { Sonido-De $nombre 'brillo' }
         'historia' { Sonido-De $nombre 'pagina' }
+        'ojo' { Sonido-De $nombre 'choque' }
+        'tigre' { Sonido-De $nombre 'explosion' }
+        'capo' { Sonido-De $nombre 'baston' }
         'lobo' { Sonido-De $nombre 'pebox' }
         'arana' { Sonido-De $nombre 'siseo' }
         'clima' { Sonido-De $nombre 'gota' }
@@ -7832,6 +9083,9 @@ function Pintar-Invitado($g) {
         'clima' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 106 122 168), (C 70 84 128), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 38 48 92) }
         'arana' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 40 14 34), (C 10 4 8), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); Vv-Red $g ($W / 2) 32 150 (ARGB 60 230 225 235) 9 10 170 5; $cab = (C 10 4 8) }
         'historia' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 120 86 40), (C 46 32 16), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $lom = New-Object System.Drawing.SolidBrush((ARGB 50 0 0 0)); for ($x = 6; $x -lt $W; $x += 22) { $g.FillRectangle($lom, $x, 34, 14, 108) }; $lom.Dispose(); $cab = (C 72 50 22) }
+        'capo' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 74 18 24), (C 20 6 8), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 26 6 8) }
+        'tigre' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 74 18 24), (C 20 6 8), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 26 6 8) }
+        'ojo' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 74 18 24), (C 20 6 8), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 26 6 8) }
         'enfosi' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 120 180 240), (C 200 230 255), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $cab = (C 252 200 55) }
         'teto' { $ray = New-Object System.Drawing.Pen((C 252 232 236), 8); for ($x = -$H; $x -lt $W; $x += 26) { $g.DrawLine($ray, $x, 32, ($x + $H), ($H + 32)) }; $ray.Dispose(); $cab = (C 214 40 64) }
         'pizza' { $roja = New-Object System.Drawing.SolidBrush((ARGB 90 220 40 40)); for ($x = 0; $x -lt $W; $x += 28) { $g.FillRectangle($roja, $x, 30, 14, $H) }; for ($y = 30; $y -lt $H; $y += 28) { $g.FillRectangle($roja, 0, $y, $W, 14) }; $roja.Dispose(); $cab = (C 70 200 40) }
@@ -7879,6 +9133,9 @@ function Pintar-Invitado($g) {
             'clima' { $pl = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(200, $fx * 14), 235, 240, 255), 1.2); for ($i = 0; $i -lt 16; $i++) { $xx = 8 + $i * 15; $yy = 34 + ((14 - $fx) * 12 + $i * 23) % 120; $g.DrawLine($pl, $xx, $yy, ($xx - 3), ($yy + 12)) }; $pl.Dispose() }
             'arana' { Vv-Red $g 0 32 ((14 - $fx) * 22) ([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 240, 235, 240)) 6 0 90 4 }
             'historia' { $hj = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 250, 242, 222)); for ($i = 0; $i -lt 4; $i++) { $g.FillRectangle($hj, (24 + $i * 50), (34 + (14 - $fx) * 11 + ($i % 2) * 16), 14, 18) }; $hj.Dispose() }
+            'capo' { $pt = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 240, 170, 70), 3); $g.DrawRectangle($pt, 12, 40, ($W - 24), ($H - 56)); $pt.Dispose() }
+            'tigre' { $pt = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 230, 40, 30), 5); $g.DrawLine($pt, 10, 40, ($W - 10), ($H - 20)); $pt.Dispose() }
+            'ojo' { $pt = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 255, 140, 40), 5); $g.DrawArc($pt, 20, 40, ($W - 40), ($H - 60), 200, [float]((14 - $fx) * 9)); $pt.Dispose() }
             'enfosi' { $g.FillRectangle((New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([Math]::Min(200, $fx * 14), 255, 214, 60))), 0, 0, $W, $H) }
             'teto' { for ($i = 0; $i -lt 3; $i++) { Texto-Contorno $g '♪' 'Segoe UI Symbol' 20 (40 + $i * 60) (130 - (14 - $fx) * 7) (@((C 214 40 64), (C 246 170 30), (C 255 255 255))[$i]) 3 ([Math]::Min(255, $fx * 18)) } }
             'pizza' { for ($i = 0; $i -lt 4; $i++) { Dibujar-Trozo $g (30 + $i * 52) (40 + (14 - $fx) * 9 + ($i % 2) * 14) 20 ($fx * 25 + $i * 70) } }
@@ -8124,6 +9381,25 @@ $idleTimer.Add_Tick({
             elseif ($r -lt 50) { Actor-Pose 'D' 'flip' 800; Sonido 'flip'; Decir (Azar $k.Idle) }
             elseif ($r -lt 60) { Actor-Pose 'D' 'lame' 1840; Sonido 'lame'; Decir (Azar $k.Lame) }
             elseif ($r -lt 66) { Dy-Wisps }
+            else { Decir (Azar $k.Idle) }
+        }
+        'capo' {
+            $e = $script:kc
+            if ($e -and ($e.Pendiente -or $e.Ataque)) { }
+            elseif ($e -and $e.Acto -eq 1 -and $r -lt 30) { Decir (Azar $(if ($r -lt 15) { $k.BorisAtaca } else { $k.KatrielAtaca })) }
+            else { Decir (Azar $k.Idle) }
+        }
+        'tigre' {
+            $e = $script:lh
+            if ($e -and ($e.Caido -gt 0 -or $e.Skill)) { }
+            elseif ($e -and $e.Calor -gt 0) { Decir (Azar $k.Calor) }
+            else { Decir (Azar $k.Idle) }
+        }
+        'ojo' {
+            $e = $script:vl
+            if ($e -and ($e.Calor -gt 0 -or $e.Aturdida -gt 0 -or $e.Ev)) { }
+            elseif ($e -and $e.Copas.Count -ge $VlTiempos.Copas) { Decir (Azar $k.Borracha) }
+            elseif ($e -and -not $e.Vaso -and $r -lt 25) { Decir (Azar $k.VasoVacio) }
             else { Decir (Azar $k.Idle) }
         }
         'silix' {
@@ -10605,6 +11881,299 @@ function Transicion-Malkuth($final) {
     Intro-Overlay 400 $pintar $alTick $final
 }
 
+# --- intro de Valencina: PROELIUM FATALE, la pantalla que sale en Limbus Company al empezar un combate difícil ---
+# El vídeo de verdad de Proelium Fatale (skins\proelium); después su primer plano con el puro
+# (animación del 3.er aniversario) y su ficha de jefa con el sprite normal: THE THUMB NURSEFATHER · VALENCINA, con sus
+# rasgos del juego (Le Sette Famiglie y Sottocapo, tachados). Va por el reloj; su música empieza con la ficha y sigue.
+$VlIntro = @{ Cara = 4100; Ficha = 6700; Frase = 8500; Fin = 11200 }
+$VlRasgos = @(@('El Pulgar', $false), @('La Casa de las Arañas', $false), @('Le Sette Famiglie', $true), @('Sottocapo', $true), @('Guerra del Humo', $false), @('Héroe de Guerra', $false))
+function Transicion-Valencina($final) {
+    $k = $script:skin
+    $script:viSprite = Cargar-Img $k.IntroImg; $script:viCara = Cargar-Img $k.IntroCara; $script:viFondo = Cargar-Img $k.FondoImg
+    $script:iRecursos = @($script:viSprite, $script:viCara, $script:viFondo)
+    $script:viT0 = 0; $script:viHechos = @{}
+    $pintar = {
+        param($g, $W, $H, $p)
+        $g.SmoothingMode = 'AntiAlias'; $g.InterpolationMode = 'HighQualityBilinear'
+        $VT = $VlIntro
+        $ms = if ($script:viT0 -gt 0) { [Environment]::TickCount - $script:viT0 } else { 0 }
+        $g.Clear((C 6 2 3))
+        if ($ms -lt $VT.Cara) {
+            # 1) PROELIUM FATALE: el vídeo de verdad de Limbus Company; luego un instante a negro
+            if ($ms -lt $ProeliumMs) { Proelium-Pintar $g $W $H $ms }
+        } elseif ($ms -lt $VT.Ficha) {
+            # 2) su primer plano con el puro; el Ojo de Odín, debajo del pelo
+            $q = ($ms - $VT.Cara) / [double]($VT.Ficha - $VT.Cara)
+            if ($script:viCara) { [void](Dibujar-Cubriendo $g $script:viCara $W $H (1.06 + 0.06 * $q) 0.35 0.45) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 60 120 0 10))), 0, 0, $W, $H)
+            $g.FillRectangle([System.Drawing.Brushes]::Black, 0, 0, $W, 30); $g.FillRectangle([System.Drawing.Brushes]::Black, 0, ($H - 30), $W, 30)
+            $al = [int](255 * [Math]::Min(1.0, ($ms - $VT.Cara - 300) / 500.0))
+            if ($al -gt 0) { $g.DrawString('OJO DE ODÍN  ·  RELIQUIA DE LA FAMIGLIA BOGNATELLI', (FntP('Palatino Linotype', 8.5, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB $al 214 176 100))), 16, 9) }
+            $txt = '«Te leo como un libro abierto.»'; $n = [Math]::Min($txt.Length, [int](($ms - $VT.Cara - 700) / 50))
+            if ($n -gt 0) {
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 150 0 0 0))), 0, ($H - 84), $W, 54)
+                Texto-Color $g $txt.Substring(0, $n) 'Palatino Linotype' 21 30 ($H - 74) (C 246 232 210) (C 60 8 12) 4
+            }
+        } else {
+            # 3) su ficha de jefa: fondo del bar, franjas rojas, ella entra desde la derecha y sale su nombre
+            $q = $ms - $VT.Ficha
+            if ($script:viFondo) { [void](Dibujar-Cubriendo $g $script:viFondo $W $H (1.15 + $q / 30000.0) 0.85 0.5) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 175 14 4 6))), 0, 0, $W, $H)
+            $franja = New-Object System.Drawing.SolidBrush((ARGB 120 150 16 24))
+            foreach ($fx in @(-60, 110, 300)) {
+                $x0 = $fx + $q / 25.0
+                $g.FillPolygon($franja, [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($x0 + 120), 0)), (New-Object System.Drawing.PointF([float]($x0 + 150), 0)), (New-Object System.Drawing.PointF([float]($x0 + 30), [float]$H)), (New-Object System.Drawing.PointF([float]$x0, [float]$H))))
+            }
+            $franja.Dispose()
+            Degradado $g 0 0 ($W * 0.6) $H (ARGB 200 10 2 4) (ARGB 0 10 2 4) 0
+            if ($script:viSprite) {
+                $qs = [Math]::Min(1.0, $q / 600.0); $es = 1 - [Math]::Pow(1 - $qs, 3)
+                $nh = $H * 1.12; $nw = $script:viSprite.Width * $nh / $script:viSprite.Height
+                $g.DrawImage($script:viSprite, [float]($W * 0.74 - $nw / 2 + (1 - $es) * $W * 0.5), [float]($H - $nh * 0.96 + [Math]::Sin($q / 500.0) * 2), [float]$nw, [float]$nh)
+            }
+            if ($q -ge 250) {
+                $qn = [Math]::Min(1.0, ($q - 250) / 450.0); $en = 1 - [Math]::Pow(1 - $qn, 3)
+                $g.DrawString('THE THUMB NURSEFATHER', (FntP('Palatino Linotype', 10, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 214 176 100))), [float](34 - (1 - $en) * 300), 46)
+                Texto-Color $g 'VALENCINA' 'Palatino Linotype' 60 (30 - (1 - $en) * 360) 62 (C 242 218 160) (C 90 8 12) 9
+                $g.DrawString('LV. 77', (FntP('Palatino Linotype', 9, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 236 90 70))), [float](36 - (1 - $en) * 300), 136)
+            }
+            for ($i = 0; $i -lt $VlRasgos.Count; $i++) {
+                $ti = $q - 800 - $i * 160; if ($ti -lt 0) { continue }
+                $al = [int](255 * [Math]::Min(1.0, $ti / 250.0)); $rx = 36 + (1 - [Math]::Min(1.0, $ti / 250.0)) * -30; $ry = 160 + $i * 19
+                $fr = FntP('Palatino Linotype', 9, [System.Drawing.FontStyle]::Bold); $tx = "◆  $($VlRasgos[$i][0])"
+                $g.DrawString($tx, $fr, (New-Object System.Drawing.SolidBrush((ARGB $al 240 226 200))), [float]$rx, [float]$ry)
+                if ($VlRasgos[$i][1] -and $ti -gt 300) {
+                    $lw = $g.MeasureString($tx, $fr).Width * [Math]::Min(1.0, ($ti - 300) / 200.0)
+                    $g.DrawLine((New-Object System.Drawing.Pen((C 220 40 40), 2)), [float]($rx + 2), [float]($ry + 8), [float]($rx + $lw), [float]($ry + 8))
+                }
+            }
+            if ($ms -ge $VT.Frase) {
+                $txt = '«¡Lucio! ¿Has acabado de limpiar la morralla...? Ja. Lo suponía. Idiota.»'
+                $n = [Math]::Min($txt.Length, [int](($ms - $VT.Frase) / 38))
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 190 0 0 0))), 0, ($H - 44), $W, 44)
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 170 30 36))), 0, ($H - 44), 5, 44)
+                $g.DrawString($txt.Substring(0, $n), (FntP('Segoe UI', 11, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 246 232 210))), 16, [float]($H - 34))
+            }
+            # al final, un tajo de lado a lado (Sezionatura di Coniglio) y se abre el panel
+            $qf = ($ms - ($VT.Fin - 600)) / 600.0
+            if ($qf -gt 0 -and $qf -lt 1) {
+                $alt = [int](255 * (1 - $qf)); $la = [Math]::Min(1.0, $qf * 3)
+                $p1 = New-Object System.Drawing.Pen((ARGB $alt 255 120 30), 14); $p2 = New-Object System.Drawing.Pen((ARGB $alt 255 250 230), 3)
+                foreach ($pp in @($p1, $p2)) { $g.DrawLine($pp, 0, [float]($H * 0.85), [float]($W * $la), [float]($H * 0.85 - $H * 0.7 * $la)) }
+                $p1.Dispose(); $p2.Dispose()
+            }
+        }
+        # brasas naranjas que suben por toda la pantalla
+        $tt = $ms / 1000.0
+        for ($i = 0; $i -lt 22; $i++) {
+            $px = ($i * 151 + 30) % $W + [Math]::Sin($tt * 1.3 + $i) * 10; $py = $H - (($tt * (26 + ($i % 6) * 9) + $i * 53) % ($H + 20))
+            $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB (70 + ($i % 4) * 40) 255 (120 + ($i % 3) * 40) 40))), [float]$px, [float]$py, [float](1.5 + $i % 3), [float](1.5 + $i % 3))
+        }
+    }
+    $alTick = {
+        param($ov, $p)
+        $VT = $VlIntro
+        if ($p -eq 1) { $script:viT0 = [Environment]::TickCount; Vl-Reset }
+        $ms = [Environment]::TickCount - $script:viT0
+        foreach ($ev in @(@(0, 'pf'), @($VT.Cara, 'choque'), @($VT.Ficha, 'disparo'), @(($VT.Fin - 600), 'tajo'))) {
+            $cl = "$($ev[0])"
+            if ($ms -ge $ev[0] -and -not $script:viHechos.ContainsKey($cl)) { $script:viHechos[$cl] = $true; Sonido $ev[1] }
+        }
+        if ($ms -ge $VT.Ficha -and -not $script:viHechos.ContainsKey('musica')) { $script:viHechos['musica'] = $true; Vl-Musica-On }
+        if ($ms -gt $VT.Fin -and $script:iPaso -lt $script:iTotal - 7) { $script:iPaso = $script:iTotal - 7 }
+        if ($p -gt $script:iTotal - 7) { Proelium-Soltar; $ov.Top -= [int]($ov.Height / 5) }
+    }
+    Intro-Overlay 400 $pintar $alTick $final
+}
+
+# --- intro de Kalo: la recepción del Pulgar de Library of Ruina. La sala de la recepción (Kalo sentado, Boris y
+#     Katriel de pie) con "LA RECEPCIÓN DEL PULGAR" en letras doradas, la viñeta de la recepción II con su frase, y los
+#     tres presentándose uno a uno (Boris, Kalo y Katriel) con su rango ---
+$KcIntro = @{ Vineta = 3300; Trio = 6600; Fin = 11200 }
+function Transicion-Kalo($final) {
+    $k = $script:skin
+    $script:kiR1 = Cargar-Img $k.Recepcion1; $script:kiR2 = Cargar-Img $k.Recepcion2; $script:kiFondo = Cargar-Img $k.FondoImg
+    $script:kiB = Cargar-Img 'skins\kalo\boris_intro.png'; $script:kiC = Cargar-Img 'skins\kalo\kalo_intro.png'; $script:kiK = Cargar-Img 'skins\kalo\katriel_intro.png'
+    $script:iRecursos = @($script:kiR1, $script:kiR2, $script:kiFondo, $script:kiB, $script:kiC, $script:kiK)
+    $script:kiT0 = 0; $script:kiHechos = @{}
+    $pintar = {
+        param($g, $W, $H, $p)
+        $g.SmoothingMode = 'AntiAlias'; $g.InterpolationMode = 'HighQualityBilinear'
+        $KT = $KcIntro
+        $ms = if ($script:kiT0 -gt 0) { [Environment]::TickCount - $script:kiT0 } else { 0 }
+        $g.Clear((C 8 5 3))
+        if ($ms -lt $KT.Vineta) {
+            # 1) la sala de la recepción, con zoom lento hacia Kalo
+            $q = $ms / [double]$KT.Vineta
+            if ($script:kiR1) { [void](Dibujar-Cubriendo $g $script:kiR1 $W $H (1.15 + 0.25 * $q) 0.55 0.45) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 110 10 5 2))), 0, 0, $W, $H)
+            $al = [int](255 * [Math]::Min(1.0, [Math]::Max(0.0, ($ms - 400) / 600.0)))
+            if ($al -gt 0) {
+                Kc-Adornos $g ($W / 2) ($H - 112) 380 $al
+                [void](Kc-Neon $g 'LA RECEPCIÓN DEL PULGAR' 34 ($W / 2) ($H - 88) $al)
+                $fs = FntP('Palatino Linotype', 9, [System.Drawing.FontStyle]::Italic); $sub = 'Star of the City  ·  Library of Ruina'
+                $g.DrawString($sub, $fs, (New-Object System.Drawing.SolidBrush((ARGB $al 236 220 190))), [float](($W - $g.MeasureString($sub, $fs).Width) / 2), [float]($H - 40))
+            }
+        } elseif ($ms -lt $KT.Trio) {
+            # 2) la viñeta de la recepción II, recorrida de izquierda a derecha, con la regla de Kalo
+            $q = ($ms - $KT.Vineta) / [double]($KT.Trio - $KT.Vineta)
+            if ($script:kiR2) { [void](Dibujar-Cubriendo $g $script:kiR2 $W $H 1.25 (0.2 + 0.6 * $q) 0.45) }
+            if ($ms - $KT.Vineta -lt 200) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * (1 - ($ms - $KT.Vineta) / 200.0))) 255 255 255))), 0, 0, $W, $H) }
+            $txt = '«Recuerde su sitio y respete nuestras reglas.»'; $n = [Math]::Min($txt.Length, [int](($ms - $KT.Vineta - 500) / 50))
+            if ($n -gt 0) {
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 170 0 0 0))), 0, ($H - 60), $W, 60)
+                Texto-Color $g $txt.Substring(0, $n) 'Palatino Linotype' 21 30 ($H - 48) (C 250 236 210) (C 60 30 10) 4
+            }
+        } else {
+            # 3) los tres: Boris, Kalo y Katriel, uno a uno, con su nombre y su rango
+            $q = $ms - $KT.Trio
+            if ($script:kiFondo) { [void](Dibujar-Cubriendo $g $script:kiFondo $W $H 1.1 0.5 0.5) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 150 12 6 4))), 0, 0, $W, $H)
+            $trio = @(@($script:kiB, 0.2, 'BORIS', 'Capo', 0), @($script:kiK, 0.8, 'KATRIEL', 'Capo', 500), @($script:kiC, 0.5, 'KALO', 'Sottocapo', 1100))
+            foreach ($t3 in $trio) {
+                $img = $t3[0]; $ti = $q - $t3[4]; if (-not $img -or $ti -lt 0) { continue }
+                $qs = [Math]::Min(1.0, $ti / 500.0); $es = 1 - [Math]::Pow(1 - $qs, 3)
+                $alto = if ($t3[2] -eq 'KALO') { $H * 1.05 } else { $H * 0.92 }
+                $ancho = $img.Width * $alto / $img.Height
+                $cm = New-Object System.Drawing.Imaging.ColorMatrix; $cm.Matrix33 = [float]$es; $ia = New-Object System.Drawing.Imaging.ImageAttributes; $ia.SetColorMatrix($cm)
+                $x0 = $W * $t3[1] - $ancho / 2; $y0 = $H - $alto + (1 - $es) * 30
+                $g.DrawImage($img, (New-Object System.Drawing.Rectangle([int]$x0, [int]$y0, [int]$ancho, [int]$alto)), 0, 0, $img.Width, $img.Height, [System.Drawing.GraphicsUnit]::Pixel, $ia); $ia.Dispose()
+                if ($ti -gt 250) {
+                    $al = [int](255 * [Math]::Min(1.0, ($ti - 250) / 300.0)); $cx = $W * $t3[1]; $ny = $H - 70
+                    $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.7)) 0 0 0))), [float]($cx - 80), [float]($ny - 4), 160, 44)
+                    [void](Kc-Neon $g $t3[2] 24 $cx $ny $al)
+                    $fr = FntP('Palatino Linotype', 8.5, [System.Drawing.FontStyle]::Italic); $tw = $g.MeasureString($t3[3], $fr).Width
+                    $g.DrawString($t3[3], $fr, (New-Object System.Drawing.SolidBrush((ARGB $al 236 210 160))), [float]($cx - $tw / 2), [float]($ny + 24))
+                }
+            }
+            $qf = ($ms - ($KT.Fin - 500)) / 500.0
+            if ($qf -gt 0) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * [Math]::Min(1.0, $qf))) 0 0 0))), 0, 0, $W, $H) }
+        }
+        # motas doradas
+        $tt = $ms / 1000.0
+        for ($i = 0; $i -lt 22; $i++) {
+            $px = ($i * 137 + 40) % $W + [Math]::Sin($tt + $i) * 8; $py = $H - (($tt * (16 + ($i % 7) * 4) + $i * 61) % ($H + 20))
+            $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB (60 + ($i % 5) * 25) 255 200 120))), [float]$px, [float]$py, [float](2 + $i % 3), [float](2 + $i % 3))
+        }
+    }
+    $alTick = {
+        param($ov, $p)
+        $KT = $KcIntro
+        if ($p -eq 1) { $script:kiT0 = [Environment]::TickCount; Kc-Reset }
+        $ms = [Environment]::TickCount - $script:kiT0
+        foreach ($ev in @(@(300, 'baston'), @($KT.Vineta, 'libro'), @($KT.Trio, 'golpe'), @(($KT.Trio + 500), 'tajo'), @(($KT.Trio + 1100), 'baston'))) {
+            $cl = "$($ev[0])"
+            if ($ms -ge $ev[0] -and -not $script:kiHechos.ContainsKey($cl)) { $script:kiHechos[$cl] = $true; Sonido $ev[1] }
+        }
+        if ($ms -gt $KT.Fin -and $script:iPaso -lt $script:iTotal - 7) { $script:iPaso = $script:iTotal - 7 }
+        if ($p -gt $script:iTotal - 7) { $ov.Top -= [int]($ov.Height / 5) }
+    }
+    Intro-Overlay 400 $pintar $alTick $final
+}
+
+# --- intro de Lei Heng: el CG del Templo de Tiekan visto de lejos (solo se le distingue a él, sentado), el mismo CG de
+#     cerca (sentado entre los guardias caídos, con el puro), PROELIUM FATALE (el vídeo de verdad) y su ficha de jefe ---
+$LhIntro = @{ Cerca = 2900; Video = 5700; Ficha = 9700; Frase = 11400; Fin = 13800 }
+$LhRasgos = @('El Pulgar · Capo IIII', 'Los Diez Filos del Este', 'Estrella Tiantui (天退星)', 'Shin (心) · un anillo de Mang (望)')
+function Transicion-LeiHeng($final) {
+    $k = $script:skin
+    $script:liLejos = Cargar-Img $k.IntroLejos; $script:liCerca = Cargar-Img $k.IntroCerca; $script:liSprite = Cargar-Img $k.IntroImg
+    $script:iRecursos = @($script:liLejos, $script:liCerca, $script:liSprite)
+    $script:liT0 = 0; $script:liHechos = @{}
+    $pintar = {
+        param($g, $W, $H, $p)
+        $g.SmoothingMode = 'AntiAlias'; $g.InterpolationMode = 'HighQualityBilinear'
+        $LT = $LhIntro
+        $ms = if ($script:liT0 -gt 0) { [Environment]::TickCount - $script:liT0 } else { 0 }
+        $g.Clear((C 6 4 4))
+        if ($ms -lt $LT.Cerca) {
+            # 1) de lejos: la explanada del templo; la cámara se acerca despacio a la figura sentada
+            $q = $ms / [double]$LT.Cerca
+            if ($script:liLejos) { [void](Dibujar-Cubriendo $g $script:liLejos $W $H (1.0 + 0.9 * $q * $q) 0.5 0.62) }
+            Degradado $g 0 0 $W 60 (ARGB 160 0 0 0) (ARGB 0 0 0 0) 90
+            $al = [int](255 * [Math]::Min(1.0, [Math]::Max(0.0, ($ms - 500) / 600.0)))
+            if ($al -gt 0) { $g.DrawString('HONGYUAN  ·  ANTE EL TEMPLO DE TIEKAN', (FntP('Palatino Linotype', 9, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB $al 236 220 190))), 18, 14) }
+        } elseif ($ms -lt $LT.Video) {
+            # 2) de cerca: sentado entre los guardias caídos, con el puro y la espada
+            $q = ($ms - $LT.Cerca) / [double]($LT.Video - $LT.Cerca)
+            if ($script:liCerca) { [void](Dibujar-Cubriendo $g $script:liCerca $W $H (1.08 + 0.08 * $q) 0.5 0.42) }
+            if ($ms - $LT.Cerca -lt 220) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * (1 - ($ms - $LT.Cerca) / 220.0))) 255 255 255))), 0, 0, $W, $H) }
+            $txt = '«Venga, chavales... ¿bailamos?»'; $n = [Math]::Min($txt.Length, [int](($ms - $LT.Cerca - 600) / 55))
+            if ($n -gt 0) {
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 160 0 0 0))), 0, ($H - 60), $W, 60)
+                Texto-Color $g $txt.Substring(0, $n) 'Palatino Linotype' 22 30 ($H - 48) (C 246 232 210) (C 70 8 12) 4
+            }
+            if ($ms -gt $LT.Video - 300) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * ($ms - $LT.Video + 300) / 300.0)) 0 0 0))), 0, 0, $W, $H) }
+        } elseif ($ms -lt $LT.Ficha) {
+            # 3) PROELIUM FATALE (el vídeo de verdad)
+            Proelium-Pintar $g $W $H ($ms - $LT.Video)
+        } else {
+            # 4) su ficha de jefe: el templo detrás, franjas rojas y él entrando desde la derecha
+            $q = $ms - $LT.Ficha
+            if ($script:liCerca) { [void](Dibujar-Cubriendo $g $script:liCerca $W $H (1.25 + $q / 30000.0) 0.5 0.3) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 190 14 4 6))), 0, 0, $W, $H)
+            $franja = New-Object System.Drawing.SolidBrush((ARGB 120 150 16 24))
+            foreach ($fx in @(-60, 110, 300)) {
+                $x0 = $fx + $q / 25.0
+                $g.FillPolygon($franja, [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($x0 + 120), 0)), (New-Object System.Drawing.PointF([float]($x0 + 150), 0)), (New-Object System.Drawing.PointF([float]($x0 + 30), [float]$H)), (New-Object System.Drawing.PointF([float]$x0, [float]$H))))
+            }
+            $franja.Dispose()
+            Degradado $g 0 0 ($W * 0.6) $H (ARGB 200 10 2 4) (ARGB 0 10 2 4) 0
+            if ($script:liSprite) {
+                $qs = [Math]::Min(1.0, $q / 600.0); $es = 1 - [Math]::Pow(1 - $qs, 3)
+                $nh = $H * 1.12; $nw = $script:liSprite.Width * $nh / $script:liSprite.Height
+                $g.DrawImage($script:liSprite, [float]($W * 0.74 - $nw / 2 + (1 - $es) * $W * 0.5), [float]($H - $nh * 0.96 + [Math]::Sin($q / 500.0) * 2), [float]$nw, [float]$nh)
+            }
+            if ($q -ge 250) {
+                $qn = [Math]::Min(1.0, ($q - 250) / 450.0); $en = 1 - [Math]::Pow(1 - $qn, 3); $dx = (1 - $en) * 340
+                $g.DrawString('THE THUMB  ·  CAPO IIII', (FntP('Palatino Linotype', 10, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 214 176 100))), [float](34 - $dx), 44)
+                Texto-Color $g 'LEI HENG' 'Palatino Linotype' 60 (30 - $dx) 60 (C 242 218 160) (C 90 8 12) 9
+                $g.DrawString('雷橫  ·  揷翅虎, el Tigre Alado', (FntP('Yu Gothic', 9.5, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 236 90 70))), [float](36 - $dx), 134)
+            }
+            for ($i = 0; $i -lt $LhRasgos.Count; $i++) {
+                $ti = $q - 800 - $i * 170; if ($ti -lt 0) { continue }
+                $al = [int](255 * [Math]::Min(1.0, $ti / 250.0)); $rx = 36 - (1 - [Math]::Min(1.0, $ti / 250.0)) * 30
+                $g.DrawString("◆  $($LhRasgos[$i])", (FntP('Yu Gothic', 8.5, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB $al 240 226 200))), [float]$rx, [float](162 + $i * 20))
+            }
+            if ($ms -ge $LT.Frase) {
+                $txt = '«Antes de abrir la boquita, pensad bien si estáis a mi altura, ¿me explico?»'
+                $n = [Math]::Min($txt.Length, [int](($ms - $LT.Frase) / 34))
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 190 0 0 0))), 0, ($H - 44), $W, 44)
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 170 30 36))), 0, ($H - 44), 5, 44)
+                $g.DrawString($txt.Substring(0, $n), (FntP('Segoe UI', 11, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 246 232 210))), 16, [float]($H - 34))
+            }
+            $qf = ($ms - ($LT.Fin - 600)) / 600.0
+            if ($qf -gt 0 -and $qf -lt 1) {
+                $alt = [int](255 * (1 - $qf)); $la = [Math]::Min(1.0, $qf * 3)
+                $p1 = New-Object System.Drawing.Pen((ARGB $alt 230 40 30), 14); $p2 = New-Object System.Drawing.Pen((ARGB $alt 255 250 230), 3)
+                foreach ($pp in @($p1, $p2)) { $g.DrawLine($pp, 0, [float]($H * 0.85), [float]($W * $la), [float]($H * 0.85 - $H * 0.7 * $la)) }
+                $p1.Dispose(); $p2.Dispose()
+            }
+        }
+        # pétalos de cerezo que caen (menos durante el vídeo)
+        if ($ms -lt $LT.Video -or $ms -ge $LT.Ficha) {
+            $tt = $ms / 1000.0
+            for ($i = 0; $i -lt 20; $i++) {
+                $px = ($i * 149 + 20) % $W + [Math]::Sin($tt * 1.1 + $i) * 18; $py = (($tt * (30 + ($i % 5) * 8) + $i * 47) % ($H + 20)) - 10
+                $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB 190 246 200 210))), [float]$px, [float]$py, 4, 2.5)
+            }
+        }
+    }
+    $alTick = {
+        param($ov, $p)
+        $LT = $LhIntro
+        if ($p -eq 1) { $script:liT0 = [Environment]::TickCount; Lh-Reset }
+        $ms = [Environment]::TickCount - $script:liT0
+        foreach ($ev in @(@($LT.Cerca, 'tajo'), @($LT.Video, 'pf'), @($LT.Ficha, 'recarga'), @(($LT.Fin - 600), 'explosion'))) {
+            $cl = "$($ev[0])"
+            if ($ms -ge $ev[0] -and -not $script:liHechos.ContainsKey($cl)) { $script:liHechos[$cl] = $true; Sonido $ev[1] }
+        }
+        if ($ms -gt $LT.Fin -and $script:iPaso -lt $script:iTotal - 7) { $script:iPaso = $script:iTotal - 7 }
+        if ($p -gt $script:iTotal - 7) { Proelium-Soltar; $ov.Top -= [int]($ov.Height / 5) }
+    }
+    Intro-Overlay 460 $pintar $alTick $final
+}
+
 [System.Windows.Forms.Application]::add_ThreadException({
     try {
         switch ($script:skin.Estilo) {
@@ -10633,6 +12202,9 @@ function Transicion-Malkuth($final) {
             'knight' { Decir '* Algo se ha roto. * El Knight lo ha cortado. * O igual ya venía roto.' }
             'corrupta' { Decir 'Algo se ha roto. ...vale, igual he sido yo. Un poquito. Es la corrupción, se me escapa.' }
             'silix' { Decir 'Algo se ha roto.' }
+            'capo' { Decir 'Algo se ha roto. Katriel, anótelo. Boris, encuentre al responsable.' }
+            'tigre' { Decir 'Ea... algo se ha roto. ¡Ja! No he sido yo. Esta vez.' }
+            'ojo' { Decir 'Tsk. Algo se ha roto. ¡LUCIO! ...Ah, que no está. Cojonudo.' }
             'boneyard' { Decir '*Algo se ha roto. Dybbuk le da un lametazo al error.* ¡Ya está! ...bueno, ahora está roto y pegajoso. Ñe-he-he.' }
             default { Decir 'Algo se ha roto. No he sido yo. Creo.' }
         }
@@ -10947,6 +12519,20 @@ function Pintar-Boton($g, $b) {
             }
             $g.DrawString($b.Text, $b.Font, (New-Object System.Drawing.SolidBrush($(if ($hover) { (C 50 32 14) } else { (C 250 236 200) }))), $rect, $fmt)
         }
+        { $_ -in @('ojo', 'tigre', 'capo') } {
+            # botón de su gabardina: rojo vino con ribete dorado y dos botones dorados; al pasar el ratón, oro
+            $g.SmoothingMode = 'AntiAlias'
+            $g.Clear($(if ($enBarra) { (C 74 16 22) } else { (C 34 10 12) }))
+            $rr = Ruta-Redonda (1.5 * $Z) (1.5 * $Z) ($W - 4 * $Z) ($H - 4 * $Z) ([Math]::Min($H - 4 * $Z, 3 * $Z))
+            $g.FillPath((New-Object System.Drawing.SolidBrush($(if ($hover) { (C 222 184 106) } elseif ($enBarra) { (C 96 22 30) } else { (C 110 24 32) }))), $rr)
+            $g.DrawPath((New-Object System.Drawing.Pen((C 214 176 100), [float](1.6 * $Z))), $rr); $rr.Dispose()
+            if (-not $enBarra) {
+                $bo = New-Object System.Drawing.SolidBrush($(if ($hover) { (C 110 24 32) } else { (C 214 176 100) }))
+                foreach ($by in @(($H / 2 - 6 * $Z), ($H / 2 + 2 * $Z))) { $g.FillEllipse($bo, [float](7 * $Z), [float]$by, [float](4 * $Z), [float](4 * $Z)) }
+                $bo.Dispose()
+            }
+            $g.DrawString($b.Text, $b.Font, (New-Object System.Drawing.SolidBrush($(if ($hover) { (C 40 10 12) } else { (C 246 230 200) }))), $rect, $fmt)
+        }
         'enfosi' {
             $g.SmoothingMode = 'AntiAlias'
             $g.Clear($(if ($enBarra) { (C 252 200 55) } else { (C 34 38 54) }))
@@ -11009,6 +12595,8 @@ function Pintar-Boton($g, $b) {
     elseif ($k.Estilo -eq 'arana' -and $script:vv -and $script:vv.TrampaT -gt $VvTiempos.TrampaFin -and $b.Parent -eq $script:grid) { Dibujar-Telarana $g $W $H }
     # Silix y Pendeja: las balas, explosiones y quemaduras del tanque también se ven encima de los botones
     if ($k.Estilo -eq 'silix' -and $b.Parent -eq $script:grid) { Sx-Efectos-Boton $g $b }
+    if ($k.Estilo -eq 'ojo' -and $b.Parent -eq $script:grid) { Vl-Efectos-Boton $g $b }
+    if ($k.Estilo -eq 'tigre' -and $b.Parent -eq $script:grid) { Lh-Efectos-Boton $g $b }
 }
 
 function Hover-Color($b) {
@@ -11094,6 +12682,9 @@ function Lanzar($item) {
             'knight' { Kn-App $linea }
             'corrupta' { El-App $linea }
             'silix' { Sx-App $linea }
+            'ojo' { Vl-App $linea $item }
+            'tigre' { Lh-App $linea $item }
+            'capo' { Kc-App $linea }
             'boneyard' { Dy-App $linea }
             'zorro' {
                 $script:antojo = [Math]::Min(100, $script:antojo + 5); $form.Invalidate()
@@ -11137,6 +12728,9 @@ function Lanzar($item) {
                 'knight' { Decir "* No tienes $($item.Nombre). * Te abro la web. * La sombra de la Fuente llega igual." }
                 'corrupta' { Decir "No tienes $($item.Nombre). Te abro la web. Saltar entre dimensiones es lo mío." }
                 'silix' { Decir "$($item.Nombre) no está instalado: se abre la versión web." }
+                'capo' { Decir "No dispone de $($item.Nombre). Se le abrirá la versión web. Con su permiso." }
+                'tigre' { Decir "¿No tienes $($item.Nombre)? Ea, pues la web. Pa' algo está." }
+                'ojo' { Decir "¿No tienes $($item.Nombre)? Patético. Te abro la web, y da gracias." }
                 'boneyard' { Decir "No tienes $($item.Nombre). Te abro la web. *Le da un lametazo mientras carga.* Así carga más rápido. Creo." }
                 default { Decir "$($item.Nombre) no está instalado. Te abro la web. De nada." }
             }
@@ -11168,6 +12762,9 @@ function Lanzar($item) {
                 'knight' { Actor-Pose 'K' 'risa' 1500; Decir "* $($item.Nombre) no está. * El Knight se lo ha llevado por la Gran Puerta. * Como a Undyne." }
                 'corrupta' { El-Rabia 8; Decir "¿$($item.Nombre)? No existe en este universo. Y eso me pone de MUY mal humor." }
                 'silix' { Sx-Subir 'S' 8; Decir "No se encuentra $($item.Nombre)." }
+                'capo' { Decir "$($item.Nombre) no se encuentra. Alguien no ha cumplido una orden. Katriel, averígüelo." }
+                'tigre' { Decir "¿$($item.Nombre)? Aquí no hay na' de eso, chaval." }
+                'ojo' { Decir "¿$($item.Nombre)? No está. Alguien no ha hecho su trabajo. ¡LUCIO!" }
                 'boneyard' { Actor-Pose 'D' 'flip' 800; Decir "No encuentro $($item.Nombre). ¡Se ha escondido! ¡Como yo detrás de una lápida! Ñe-he-he." }
                 default { Decir "No encuentro $($item.Nombre). Igual nunca existió." }
             }
@@ -11269,6 +12866,9 @@ function Efecto-Entrada($prev) {
         'knight' { Transicion-Knight $msg }
         'corrupta' { Transicion-Ellie $msg }
         'silix' { Transicion-Silix $msg }
+        'ojo' { Transicion-Valencina $msg }
+        'tigre' { Transicion-LeiHeng $msg }
+        'capo' { Transicion-Kalo $msg }
         'boneyard' { Transicion-Dybbuk $msg }
     }
 }
@@ -11991,7 +13591,7 @@ $form.Add_Paint({
             $g.DrawRectangle((New-Object System.Drawing.Pen((C 0 255 0), 1)), 410, 216, 190, 10)
             $g.DrawString("HITMARKERS: $($script:hitsTotal)    DO THE DEW: $($script:dew)", (FntP('Arial Black', 8)), (New-Object System.Drawing.SolidBrush((C 191 239 255))), 16, 280)
         }
-        { $_ -in @('culto', 'kaiju', 'zorro', 'mew', 'oeste', 'pressure', 'dod', 'teto', 'femta', 'pop', 'pizza', 'punk', 'enfosi', 'gran', 'abismo', 'historia', 'lobo', 'arana', 'clima', 'pintor', 'evil', 'niebla', 'knight', 'boneyard', 'corrupta', 'silix') } {
+        { $_ -in @('culto', 'kaiju', 'zorro', 'mew', 'oeste', 'pressure', 'dod', 'teto', 'femta', 'pop', 'pizza', 'punk', 'enfosi', 'gran', 'abismo', 'historia', 'lobo', 'arana', 'clima', 'pintor', 'evil', 'niebla', 'knight', 'boneyard', 'corrupta', 'silix', 'ojo', 'tigre', 'capo') } {
             # skins nuevas: fondo real + personajes grandes + efectos + bocadillo propio
             $g.SmoothingMode = 'AntiAlias'
             # el fondo se prepara siempre con el tamaño fijo de la skin (no con el de la ventana a medio montar)
@@ -12229,6 +13829,9 @@ $form.Add_Paint({
                     Texto-Contorno $g "MANÁ LAMIDO: $(if ($dyb) { $dyb.Mana } else { 0 })" 'EdmundMcMillen_INTLv4' 14 158 278 (C 232 234 226) 3
                 }
                 'silix' { Sx-Pintar $g $k $W $H }
+                'ojo' { Vl-Pintar $g $k $W $H }
+                'tigre' { Lh-Pintar $g $k $W $H }
+                'capo' { Kc-Pintar $g $k $W $H }
                 'corrupta' {
                     $el2 = $script:el; $ahora = [Environment]::TickCount
                     $rab = if ($el2) { $el2.Rabia } else { 0.0 }; $glt = $el2 -and $el2.Glitch
@@ -12745,6 +14348,9 @@ function Clic-Actor($id) {
         'knight' { Kn-Clic }
         'corrupta' { if ($id -eq 'N') { El-Natillas } else { El-Pinchar } }
         'silix' { Sx-Clic $id }
+        'ojo' { Vl-Clic $id }
+        'tigre' { Lh-Clic $id }
+        'capo' { Kc-Clic $id }
         'boneyard' { Dy-Clic }
     }
 }
@@ -12805,6 +14411,7 @@ function Construir-UI {
     $actTimer.Stop(); $kRevTimer.Stop()
     if ($k.Estilo -ne 'gran') { Gran-Musica-Off }
     if ($k.Estilo -ne 'historia') { Mk-Musica-Off }
+    if ($k.Estilo -ne 'ojo') { Vl-Musica-Off }
     if ($k.Estilo -ne 'lobo') { Ag-Musica-Off }
     if ($k.Estilo -ne 'arana') { Vv-Musica-Off }
     if ($k.Estilo -ne 'clima') { Wg-Musica-Off; if ($script:wgPortada) { $script:wgPortada.Dispose(); $script:wgPortada = $null } }
@@ -12853,6 +14460,9 @@ function Construir-UI {
     $form.Controls.AddRange(@($titulo, $sub))
     $xSub = if ($k.TituloImg) { 166 } else { $xTit + [int]($titulo.PreferredWidth / $script:K) + 2 }
     $sub.Location = New-Object System.Drawing.Point($xSub, 26)
+    # si el subtítulo llegaría hasta el botón EVENTO, se corta con puntos suspensivos
+    $maxSub = ($W - 314) - $xSub
+    if ($maxSub -gt 20 -and $sub.PreferredWidth / $script:K -gt $maxSub) { $sub.AutoSize = $false; $sub.AutoEllipsis = $true; $sub.Size = New-Object System.Drawing.Size([int]$maxSub, 18) }
     foreach ($c in @($titulo, $sub)) { $c.Add_MouseDown($mDown); $c.Add_MouseMove($mMove); $c.Add_MouseUp($mUp) }
 
     $script:bi = 0
@@ -12867,6 +14477,9 @@ function Construir-UI {
     $bAjustes = Nuevo-Boton 'Ajustes' ($W - 226) 12 72 28; $bAjustes.ForeColor = $k.BarraBtnTexto
     $bAjustes.Add_Click({ Mostrar-Ajustes })
     $form.Controls.Add($bAjustes)
+    # ★ EVENTO, a la izquierda de Ajustes (igual en todas las skins)
+    $bEvento = Nuevo-Boton-Evento ($W - 310) 12
+    $form.Controls.Add($bEvento)
     if ($k.Estilo -in @('hacker', 'mlg', 'gunsaw')) { Hover-Color $bAjustes }
 
     $script:grid = New-Object System.Windows.Forms.Panel
@@ -12943,6 +14556,12 @@ function Construir-UI {
         # Ellie: guarda su rabia y sus contadores mientras sea la skin activa; sus copias de color se hacen al dibujarla
         if ($k.Estilo -eq 'corrupta') { El-Reset } else { $script:el = $null; foreach ($im in @($script:elRojo, $script:elCian)) { if ($im) { $im.Dispose() } }; $script:elRojo = $null; $script:elCian = $null }
         # Silix y Pendeja: la rabia sigue mientras sea la skin activa; al irse, todo a cero y fuera las imágenes guardadas
+        # Valencina: guarda su ojo, su vaso y su presa mientras sea la skin activa
+        # Lei Heng: guarda su vida, su fase y sus balas mientras sea la skin activa
+        # Kalo: guarda el acto, la vida de los tres y los libros mientras sea la skin activa
+        if ($k.Estilo -eq 'capo') { Kc-Reset; Kc-Actores } else { $script:kc = $null }
+        if ($k.Estilo -eq 'tigre') { Lh-Reset; Lh-Actores } elseif ($script:lh -or $script:lhIconos.Count) { $script:lh = $null; Lh-Liberar }
+        if ($k.Estilo -eq 'ojo') { Vl-Reset; Vl-Actores } elseif ($script:vl -or $script:vlIconos.Count) { $script:vl = $null; Vl-Liberar }
         if ($k.Estilo -eq 'silix') { Sx-Reset; Sx-Actores } else { $script:sx = $null; if ($script:sxRabia) { $script:sxRabia.Dispose(); $script:sxRabia = $null }; if ($script:sxCaras) { foreach ($im in @($script:sxCaras.Values)) { if ($im) { $im.Dispose() } }; $script:sxCaras = $null }; if ($script:sxHudBmp) { $script:sxHudBmp.Dispose(); $script:sxHudBmp = $null; $script:sxHudClave = '' } }
         # Dybbuk: guarda su vida y su maná mientras sea la skin activa
         if ($k.Estilo -eq 'boneyard') { Dy-Reset; Dy-Base } else { $script:dy = $null }

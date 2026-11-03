@@ -78,7 +78,10 @@
     "Dybbuk": "WMEW 99.9: El fantasma del Boneyard ha abandonado la zona. Se ruega no mirar detrás de las lápidas.",
     "Malkuth": "WMEW 99.9: La Bibliotecaria Patrona de la Planta de Historia ha abandonado el escritorio. Sus libros siguen intactos. De momento.",
     "Weathergirl": "WMEW 99.9: La presentadora del tiempo abandona el estudio. Los kaijus siguen. El tiempo, también.",
-    "Painter": "WMEW 99.9: El ordenador del Blacksite ha dejado la emisión. Sus ventiladores siguen sonando en las calles."
+    "Painter": "WMEW 99.9: El ordenador del Blacksite ha dejado la emisión. Sus ventiladores siguen sonando en las calles.",
+    "Valencina": "¡La de la espada se ha ido! ¡Volvemos a pelearnos tranquilas!",
+    "Lei Heng": "¡Se fue el de los petardos! ¡Ahora volvemos a pelearnos solas!",
+    "Kalo": "¡Se fue el viejo! ¡A pelear sin orden!"
   },
   "Opina": {
     "c00lgui": ["WMEW 99.9: Pyrophina cree que el panel rojo es un juguete. Lo muerde.", "Zaratana: Grrrr, burp. *Se ha comido un cable de c00lgui.*"],
@@ -108,6 +111,9 @@
     "Dybbuk": ["WMEW 99.9: Avistado un gato fantasma en el cementerio. Esquiva todo lo que le lanzan. Hasta kaijus.", "Pyrophina: *Le escupe fuego.* · Dybbuk: *Voltereta.* · WMEW 99.9: Sigue sin un rasguño."],
     "Malkuth": ["WMEW 99.9: Malkuth está escribiendo la historia de la pelea de kaijus. Capítulo uno: \"¿Por qué?\".", "Pyrophina: ¡AAARGH! *Casi quema un libro.* · WMEW 99.9: Malkuth la ha regañado. Pyrophina ha pedido perdón. Histórico."],
     "Weathergirl": ["WMEW 99.9: Pasamos la conexión a la chica del tiempo. Previsión: kaijus con probabilidad de fuego del 100%.", "Pyrophina: ¡GRAAAH! · WMEW 99.9: Pyrophina ha evaporado la lluvia del parte. La presentadora ha llorado. Ha vuelto a llover."],
-    "Painter": ["WMEW 99.9: Un ordenador de los 80 ha dibujado a Pyrophina. Quedó tan bien que ha dejado de rugir un segundo.", "Zaratana: ¡GRAAAAH! (le pide que dibuje a Pyrophina con peluca)"]
+    "Painter": ["WMEW 99.9: Un ordenador de los 80 ha dibujado a Pyrophina. Quedó tan bien que ha dejado de rugir un segundo.", "Zaratana: ¡GRAAAAH! (le pide que dibuje a Pyrophina con peluca)"],
+    "Valencina": ["¡Valencina nos ha llamado «bestias sin técnica»! ¡GRAAAH! ...¿Qué es técnica?"],
+    "Lei Heng": ["¡Lei Heng quiere meterse en medio de nuestra pelea! ¡GRAAAH! ...Bueno, vale, que entre."],
+    "Kalo": ["¡El viejo dice que peleamos sin orden! ¡GRAAAH! ...¿Qué es orden?"]
   }
 }

@@ -1,0 +1,213 @@
+{
+  "Hola": [
+    "*puff* ¿Tú eres el nuevo? Valencina della Famiglia Bognatelli. Apréndete el nombre, porque no pienso repetirlo.",
+    "Mira quién se digna a aparecer. Siéntate. Y no toques mi vaso.",
+    "Otro aprendiz. Cojonudo. Justo lo que me faltaba: más morralla a mi cargo.",
+    "Escucha bien, que solo lo digo una vez: aquí todo se hace EXACTAMENTE como yo diga. ¿Capisce?",
+    "*Te mira de arriba abajo con su único ojo.* ...Bah. Los he visto peores. Pocos, pero los he visto."
+  ],
+  "Yo": [
+    "Esa soy yo. Una heroína de guerra. Que no se te olvide.",
+    "¿Me eliges a mí? Vaya. Por fin alguien con criterio en esta pocilga."
+  ],
+  "Frases": [
+    "Abierto. Y no me mires esperando un aplauso.",
+    "Ahí lo tienes. ¿Ves qué fácil es cuando sigues las instrucciones al pie de la letra?",
+    "Hecho. Lucio habría tardado el doble. Y lo habría hecho peor.",
+    "*puff* Abierto. Siguiente.",
+    "¿Eso es todo? En la Guerra del Humo yo abría frentes más rápido que tú abres programas.",
+    "Recto, limpio y sin florituras. Así se hace. Ni se te ocurra improvisar.",
+    "Abierto. No te emociones, no es ningún mérito.",
+    "Bien. Ahora repítelo igual. Igual, he dicho. Ni un milímetro distinto."
+  ],
+  "Idle": [
+    "*puff* ...Tres días. Tres putos días fui Sottocapo. ¿Qué miras? Abre algo.",
+    "Yoshihide hacía esto con un brazo atado a la espalda a los catorce. CATORCE. Tú tienes dos brazos, y aun así...",
+    "El Estilo Palermitano no perdona: una presa, una marca, y no se suelta hasta el golpe de gracia. Apúntatelo.",
+    "¡Lucio! ...¿Dónde se ha metido ese inútil? Siempre desaparece cuando más falta hace.",
+    "En la guerra hacían cola para que Valencina de la Famiglia Bognatelli les salvara el culo. Y ahora mírame. Haciendo de niñera de un ordenador.",
+    "Old Parr con hielo. Lo único en esta Ciudad que nunca me ha decepcionado.",
+    "No me hagas esperar. Llevo décadas esperando. Ni un minuto más.",
+    "Ticket... *Lo dice mirando el fondo del vaso.* ...Nada. No he dicho nada. Abre algo de una vez.",
+    "Esa panda de mandos de medio pelo que ahora me miran por encima del hombro... Antes me lamían las botas con un gesto de mi mano.",
+    "Si vas a tramar algo, que no se te note en la cara. Lección gratis. La próxima te la cobro."
+  ],
+  "Clic": [
+    "¿Qué?",
+    "Como vuelvas a tocarme sin motivo, te parto los dedos. Uno por uno.",
+    "Habla. Rápido."
+  ],
+  "Esquiva": [
+    "En mis tiempos no te habrías atrevido ni a mirarme a los ojos.",
+    "¿Qué pasa, te cuesta darme?",
+    "A este paso no me rozas ni el faldón de la gabardina.",
+    "Te leo como un libro abierto.",
+    "¿Qué te dije? Mientras tenga este ojo, puedo contigo.",
+    "Lento. Previsible. Aburrido.",
+    "Ya había visto ese clic antes de que se te ocurriera.",
+    "*Ni se le mueve el sombrero.* ¿Eso era un ataque?"
+  ],
+  "Contra": [
+    "Sezionatura di Coniglio. Para que aprendas.",
+    "¿Te sientes valiente hoy? Pues para esta, imbécil.",
+    "Iguala mi odio.",
+    "¡Lárgate!",
+    "Primero los brazos y las piernas. Así la presa no se olvida de su sitio."
+  ],
+  "Falla": [
+    "¡Mierda!",
+    "Qué coñ—",
+    "¡Joder! Ha sido suerte. Pura suerte.",
+    "*Se lleva la mano al ojo.* ...Se está calentando demasiado."
+  ],
+  "Calor": [
+    "...Tsk. ¿Ya sobrecalentado?",
+    "El ojo me arde, la cuenca me duele y lo veo todo rojo... Maldita sea.",
+    "No... ahora no. ¡Ahora NO!"
+  ],
+  "Golpe": [
+    "¡Hngh!",
+    "¿Te crees muy listo, eh?",
+    "¡Eso no ha sido nada!",
+    "Disfrútalo mientras dure, gusano.",
+    "¡Me las vas a pagar todas juntas!"
+  ],
+  "Aturdida": [
+    "...Mi postura...",
+    "No... no puede ser..."
+  ],
+  "Levanta": [
+    "¡Que te jodan! ¡Soy Valencina della Famiglia Bognatelli...! ¡Me niego a pudrirme en este puto vertedero!",
+    "¡No pienso quedarme en el suelo! ¡No después de arrastrarme décadas como un perro para subir de rango!"
+  ],
+  "Enfria": [
+    "Ya se ha enfriado. Has perdido tu oportunidad. No habrá otra.",
+    "*Parpadea despacio.* Vuelvo a verlo todo. Y te veo venir a ti. Lento.",
+    "¿Ves? Ni sobrecalentada has sido capaz de tumbarme."
+  ],
+  "Acelera": [
+    "Cuanto más chocamos, más se calienta mi espada... y antes llega el futuro que he visto.",
+    "¿Notas el calor? Es el Estilo Palermitano. Y esto solo acaba de empezar.",
+    "Más rápido. MÁS. ¡Así es como se pelea!"
+  ],
+  "Sobrecarga": [
+    "*Se lleva la mano al ojo.* ...Tsk. No me exijas tanto.",
+    "El ojo empieza a calentarse. Ni se te ocurra alegrarte.",
+    "Demasiados choques seguidos. Hasta una reliquia tiene un límite."
+  ],
+  "Caza": [
+    "Hora de cazar. Tu presa es {0}. No la sueltes.",
+    "¿Ves {0}? Esa es la marca. Un solo objetivo hasta el final.",
+    "{0}. Esa presa es mía. Ábrela y verás cómo se despieza algo como es debido."
+  ],
+  "Disposal": [
+    "¡Sí, os odio a todos! ¡A la Famiglia, a ti y a Ticket también!",
+    "¡Y la caza llega a su fin!",
+    "¡Os haré picadillo a todos! ¡Jajajajaja!"
+  ],
+  "Beber": [
+    "*Se bebe el Old Parr de un trago.* ...Mejor. El hielo le sienta bien al ojo.",
+    "*puff* Ah... Este sí que es un buen consejero.",
+    "*Hace tintinear el hielo.* Ni una gota más. ...Bueno, una.",
+    "Por la Famiglia. *Bebe.* Que se pudran."
+  ],
+  "VasoVacio": [
+    "¡LUCIO! ¡El vaso! ¿Estás sordo o qué?",
+    "Está vacío. Como tu cabeza. ¿Dónde está Lucio cuando se le necesita?"
+  ],
+  "Lucio": [
+    "*Lucio le rellena el vaso.* «Old Parr con hielo, maestra.» —Tarde. Como siempre.",
+    "*Lucio deja el vaso lleno sin hacer ruido.* —...Al menos esto lo haces bien.",
+    "*Lucio:* «Lo de siempre, maestra.» —Y la próxima vez, sin que te lo pida, inútil."
+  ],
+  "Borracha": [
+    "*hic* ...¿Sabes cuánta gente salvé en la guerra? Ni yo lo sé. *hic*",
+    "Tú... tú no eres tan inútil como Lucio. *hic* No se lo digas.",
+    "*hic* Ticket ya habría vuelto... seguro. Solo necesita... un empujón. *hic*"
+  ],
+  "Mirada": [
+    "Ni lo intentes. Ya he visto cómo acaba.",
+    "Quita esa mano de ahí. Te veo venir desde hace rato.",
+    "*Su ojo tapado brilla un instante.* ...Previsible."
+  ],
+  "PorApp": {
+    "Word": ["¿Un informe? Escribe esto: «Valencina, heroína de guerra». Lo demás es relleno."],
+    "Excel": ["Tablas. En la guerra yo llevaba la cuenta de las bajas enemigas de cabeza. Y eran muchas."],
+    "PowerPoint": ["¿Diapositivas? Si quieres impresionar a alguien, hazlo en persona. Y a la cara."],
+    "Outlook": ["Correo. Más órdenes de gente que no sabe ni sostener una espada."],
+    "Teams": ["¿Una reunión? Que hable el que más rango tenga. ...Y no, no eres tú."],
+    "YouTube": ["Vídeos. Mira algo útil, aunque sea por una vez. Duelos, por ejemplo."],
+    "Calculadora": ["¿No sabes sumar de cabeza? En el Pulgar te habrían dado una paliza por eso."],
+    "CMD": ["Pantalla negra y órdenes secas. Por fin algo que obedece sin rechistar."],
+    "Bloc de notas": ["Apúntalo todo. Quién entra, quién sale, qué órdenes lleva. Nunca sabes cuándo te va a hacer falta."],
+    "Explorador": ["¿Buscas algo? Elige la puerta que más importe y no mires atrás."],
+    "Wikipedia": ["¿Vas a buscar mi nombre? Busca «Guerra del Humo». Ahí salgo yo. En las partes buenas."],
+    "GitHub": ["Código. Copiar lo que funciona, igual, sin cambiar nada. Por fin alguien que lo entiende."]
+  },
+  "Opina": {
+    "c00lgui": ["Un crío gritando en rojo que se cree peligroso. En el Pulgar le habríamos quitado las tonterías en una tarde.", "Me ha llamado «noob». A mí. Que alguien le explique quién soy antes de que se lo explique yo."],
+    "SeaDrive": ["SeaDrive hace su trabajo sin lloriquear. Eso es más de lo que puedo decir de casi todos."],
+    "Static Miku": ["Demasiado ruido y demasiada sonrisa. Me levanta dolor de cabeza. Y eso que no he bebido. Aún."],
+    "Guillotina": ["Le gusta jugar con la comida antes de comérsela. Eso lo respeto. Pero se le nota todo en la cara.", "Una cazadora que avisa de que viene a por ti. Aficionada."],
+    "Angela": ["Esa IA mira a todo el mundo como si fueran números. Yo por lo menos miro a la cara a quien voy a despiezar.", "Fría, orgullosa y sola. ...No me mires así. No nos parecemos en nada."],
+    "Mikaela": ["Francotiradora. Disparar desde lejos es de cobardes. Pero apunta bien, eso hay que reconocérselo."],
+    "Zodiac": ["Un pistolero con más ruido que puntería. Cuántos como él vi caer en la guerra."],
+    "Velvet": ["¿Una araña? En la Casa de las Arañas las hay peores. Y llevan traje."],
+    "Dune": ["No sabe ni hablar. Bueno, Lucio tampoco, y sigue vivo."],
+    "Cordero y Cabra": ["Un culto. Gente que obedece sin preguntar. ...No está mal, la verdad."],
+    "Pyrophina y Zaratana": ["Dos bestias peleándose sin técnica. Puro desperdicio de fuerza."],
+    "Averi": ["Demasiado dulce. Aquí dentro no duraría ni un día."],
+    "Sebastian Solace": ["Un tendero que te cobra hasta el aire. Me cae bien. Es honrado en su avaricia."],
+    "Pursuer": ["Un cazador. Por fin alguien que entiende lo de no soltar a la presa. Pero no tiene estilo."],
+    "Kasane Teto": ["Canta, salta y grita. Si fuera mi aprendiz la tendría practicando posturas hasta que se le pasaran las ganas."],
+    "Token": ["Mucha velocidad y ningún control. El Estilo Palermitano también acelera, pero sabe adónde va."],
+    "Tetra": ["Un gato que no quiere que le molesten. Eso lo entiendo mejor que nadie."],
+    "Kevin": ["Defiende su pizza con un cuchillo. Bien. Lo que es tuyo se defiende."],
+    "Kennyoung": ["Un músico que se agobia. En la guerra no había tiempo para agobiarse. Ni para nada."],
+    "Enfosi": ["Encontrar al falso entre los de verdad... Eso me lo sé. En el Pulgar es lo primero que se aprende."],
+    "Gran": ["Un científico que juega a ser dios con sus sujetos de prueba. La Ciudad está llena de esos. Y de sus restos."],
+    "Nanachi": ["Bichito peludo y gruñón. Si sobrevivió ahí abajo, algo tendrá. Algo."],
+    "Evil Scary": ["Una bola que bota hacia ti. ¿Eso da miedo? Que venga. Le corto las manos primero."],
+    "Soft Fuzzy Man": ["Un fantasma que necesita que le hagan caso para existir. ...Patético. *Bebe.* Patético, he dicho."],
+    "Roaring Knight": ["Ese caballero no habla, solo ruge y corta. Por fin alguien serio en este panel.", "Me gustaría cruzar espadas con él. Mi ojo contra su espada. Ya sé quién gana."],
+    "Dybbuk": ["Esquiva todo dando volteretas. Yo esquivo sin moverme del sitio. Hay clases."],
+    "Weathergirl": ["¿Llora porque no dice lo que siente? Pues que lo diga. O que se lo trague, como todo el mundo."],
+    "Painter": ["Una máquina que dibuja soles y flores. En la guerra las máquinas hacían otras cosas."],
+    "Malkuth": ["Esa bibliotecaria sonríe demasiado. Los que sonríen tanto suelen tener algo que esconder.", "Dice que respira hondo cuando se agobia. Yo bebo. Cada uno tiene su método."],
+    "Lei Heng": ["Lei Heng. Capo IIII. Un payaso con espada que se ríe de todo. ...Y me supera en rango. Eso es lo que más me jode.", "Le he visto pelear. Es bueno. No se lo digas o te despiezo."],
+    "Kalo": ["Kalo. Un Sottocapo de verdad. De los que duran. ...No me mires así.", "Siempre tan correcto. Siempre tan por encima. Lo odio. Lo respeto. Las dos cosas."]
+  },
+  "AlVenirDe": {
+    "c00lgui": "¿Se ha ido el crío del rojo? Por fin. Ya me estaba dando dolor de cabeza.",
+    "SeaDrive": "SeaDrive se ha ido sin despedirse. Bien. Las despedidas son una pérdida de tiempo.",
+    "Static Miku": "Se ha apagado la tele. Silencio, por fin. *puff*",
+    "Guillotina": "La gata se ha ido. Me ha mirado como si fuera comida. Que lo intente.",
+    "Angela": "La IA se ha largado. Ni un «gracias». Típico de los que se creen por encima de todos.",
+    "Mikaela": "La francotiradora se ha ido. Desde lejos, como siempre.",
+    "Zodiac": "El pistolero se ha largado. Ni una bala ha acertado.",
+    "Velvet": "La araña se ha ido. Ha dejado telarañas por todas partes. ¡LUCIO, LIMPIA ESTO!",
+    "Dune": "Se ha ido el bicho del agua. Lo ha dejado todo mojado.",
+    "Cordero y Cabra": "Se ha ido el culto. Se han llevado hasta los cirios.",
+    "Pyrophina y Zaratana": "Se han ido las dos bestias. Esto está lleno de ceniza.",
+    "Averi": "Se ha ido la zorrita. Ha dejado un sándwich. ...No me lo voy a comer. Lucio, cómetelo tú.",
+    "Sebastian Solace": "El tendero se ha ido. Me ha cobrado por respirar en su tienda.",
+    "Pursuer": "El cazador se ha ido. Tenía la mirada de alguien que no suelta a su presa. Me gusta.",
+    "Kasane Teto": "Se ha ido la de los pájaros. Hay plumas hasta en mi vaso.",
+    "Token": "Se ha ido el del ruido. Me pitan los oídos.",
+    "Tetra": "Se ha ido el gato. Ha dejado el «no molestar» puesto. Lo voy a usar.",
+    "Kevin": "Se ha ido el de la pizza. Huele a queso quemado.",
+    "Kennyoung": "Se ha ido el de la guitarra. Al menos no ha llorado delante de mí.",
+    "Enfosi": "Se ha ido lo de los Glaggles. Uno era falso. Lo supe al instante.",
+    "Gran": "El científico se ha ido. Ha dejado jeringuillas. Ni se te ocurra tocarlas.",
+    "Nanachi": "Se ha ido el bichito peludo. Olía a estofado raro.",
+    "Evil Scary": "Se ha ido la bola. ¿Y eso era lo que daba miedo?",
+    "Soft Fuzzy Man": "Se ha ido el fantasma rosa. ¿Seguro que se ha ido? Con ese nunca se sabe.",
+    "Roaring Knight": "Se ha ido el caballero. Me quedé con ganas de cruzar espadas con él.",
+    "Dybbuk": "Se ha ido el fantasma de las volteretas. Que no vuelva a lamer mi vaso.",
+    "Weathergirl": "Se ha ido la del tiempo. Ha dicho que mañana llueve. Mejor, así no sale nadie.",
+    "Painter": "Se ha ido la máquina que dibuja. Me ha dibujado con un sombrero torcido. Lo pagará.",
+    "Malkuth": "Se ha ido la bibliotecaria. Sonriendo. Siempre sonriendo.",
+    "Lei Heng": "Se ha ido el payaso. Por fin. Si vuelve a decir «tres días», le meto la espada por donde le quepa.",
+    "Kalo": "Kalo se ha ido. Por fin puedo respirar sin que me mida el rango."
+  }
+}

@@ -99,7 +99,10 @@
     "Dybbuk": "* Dybbuk se ha ido. * El Knight lanzó cien espadas. * Cien volteretas.",
     "Malkuth": "* Malkuth se ha ido. * Apuntaba al Knight con su porra. * Le temblaba el brazo. * No la bajó.",
     "Weathergirl": "* La presentadora ha cortado la emisión. * El cielo sigue negro. * Eso no lo ha hecho ella.",
-    "Painter": "* Se ha ido el ordenador. * Su pantalla se ha oscurecido. * No ha sido el Knight. * O sí."
+    "Painter": "* Se ha ido el ordenador. * Su pantalla se ha oscurecido. * No ha sido el Knight. * O sí.",
+    "Valencina": "* Valencina se ha ido.\n* El aire todavía huele a pólvora y a whisky.",
+    "Lei Heng": "* Lei Heng se ha ido.\n* El aire todavía huele a pólvora.",
+    "Kalo": "* Kalo se ha ido.\n* La sala queda en silencio."
   },
   "Opina": {
     "c00lgui": ["* c00lgui hackea servidores. * El Knight crea mundos enteros.", "* c00lkidd quiso un panel de admin para el Knight. * El Knight ya es el admin de los Mundos Oscuros."],
@@ -129,6 +132,9 @@
     "Dybbuk": ["* Dybbuk esquiva el Black Knife. * El Knight lo mira. * Sonríe con los dientes.", "* Dybbuk le saca la lengua al Knight. * Nadie había hecho eso antes. * Nadie."],
     "Malkuth": ["* Malkuth quiere escribir la historia del Knight. * El Knight se ríe. * Hay páginas que nadie debería leer.", "* Malkuth no huye. * Para el Knight, eso es una mala costumbre."],
     "Weathergirl": ["* La chica del tiempo anuncia lluvia. * El Knight trae la Fuente. * Hoy llueve oscuridad.", "* Se esconde detrás del guion. * El Knight lee el guion. * Pone su nombre."],
-    "Painter": ["* El Knight observa al ordenador. * Dibuja caras que sonríen. * El Knight sonríe de vuelta. * Con los dientes.", "* No salió en sus cámaras. * Eso lo hizo el Knight. * El ordenador lo sabe. * Y dibuja otra carita igual."]
+    "Painter": ["* El Knight observa al ordenador. * Dibuja caras que sonríen. * El Knight sonríe de vuelta. * Con los dientes.", "* No salió en sus cámaras. * Eso lo hizo el Knight. * El ordenador lo sabe. * Y dibuja otra carita igual."],
+    "Valencina": ["* Valencina te mira con un solo ojo.\n* Parece que ya sabe lo que vas a hacer."],
+    "Lei Heng": ["* Lei Heng te invita a bailar.\n* El Roaring Knight levanta la espada. Acepta."],
+    "Kalo": ["* Kalo golpea el suelo con el bastón.\n* Boris y Katriel se colocan delante."]
   }
 }

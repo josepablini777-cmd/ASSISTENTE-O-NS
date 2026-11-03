@@ -77,7 +77,10 @@
     "Dybbuk": "El fantasma se fue. No olía a nada. No se puede cazar lo que no huele.",
     "Malkuth": "La bibliotecaria se fue. Me apuntó con un palo. Temblaba. Pero no corrió. Interesante.",
     "Weathergirl": "Se fue. Dijo que mañana hay niebla. Bien.",
-    "Painter": "Se fue el ordenador. No me tuvo miedo. Me dibujó. Soy una cara con dientes. Le salió muy bien."
+    "Painter": "Se fue el ordenador. No me tuvo miedo. Me dibujó. Soy una cara con dientes. Le salió muy bien.",
+    "Valencina": "La cazadora se ha ido. El bosque vuelve a ser mío.",
+    "Lei Heng": "Se fue el hombre que ríe. El bosque vuelve a ser mío.",
+    "Kalo": "Se fue el viejo. Y sus cachorros."
   },
   "Opina": {
     "c00lgui": ["*Huele a c00lkidd.* Carne de plástico.", "El hacker se esconde detrás de la pantalla. Lo encontraré."],
@@ -107,6 +110,9 @@
     "Dybbuk": ["Dybbuk no es carne. Ni fresca ni vieja. Es aire burlón.", "Le lancé la espada. Dio una voltereta. Me sacó la lengua. LO CAZARÉ."],
     "Malkuth": ["Malkuth no huye. La gente que no huye... me confunde.", "Huele a papel y a miedo. Sobre todo a papel."],
     "Weathergirl": ["La chica de la lluvia. La lluvia borra las huellas. Me cae bien.", "No huye. Se esconde detrás del guion. Eso también es huir."],
-    "Painter": ["Un ordenador que no huye. Me confunde. Pero me cae bien.", "Me dibujó una cara con dientes. La miré mucho rato. Era yo. No me gustó. Pero me gustó."]
+    "Painter": ["Un ordenador que no huye. Me confunde. Pero me cae bien.", "Me dibujó una cara con dientes. La miré mucho rato. Era yo. No me gustó. Pero me gustó."],
+    "Valencina": ["Ella también caza. Marca una presa y no la suelta. Respeto... pero esa presa era MÍA. FRESH MEAT."],
+    "Lei Heng": ["Ese hombre caza riendo. La locura se le ve en los ojos. Algún día... FRESH MEAT."],
+    "Kalo": ["Ese viejo tiene dos cachorros que le protegen. Primero ellos... luego él. FRESH MEAT."]
   }
 }

@@ -147,7 +147,10 @@
     "Nanachi": "Se fue Nanachi. Le he prestado un libro de cocina para su estofado. Me ha dicho que \"me da igual\". ¡Pero se lo ha llevado!",
     "Dybbuk": "Se fue Dybbuk. Ha lamido la portada de tres libros. *Los limpia con un pañuelo.* La historia también hay que cuidarla.",
     "Weathergirl": "¡Se fue Weathergirl! ¡He catalogado su parte en Ciencias Naturales! ¡Con un paraguas dibujado!",
-    "Painter": "¡Se fue Painter! ¡Lo he catalogado en Ciencias y Artes! ¡Con un dibujito de ordenador! ¡Y un paisaje en la portada!"
+    "Painter": "¡Se fue Painter! ¡Lo he catalogado en Ciencias y Artes! ¡Con un dibujito de ordenador! ¡Y un paisaje en la portada!",
+    "Valencina": "Valencina se ha ido. Le he dejado una vela con forma de patata en la mesa. ¡Seguro que le gusta! ...¿Verdad?",
+    "Lei Heng": "Lei Heng se ha ido. ¡Le he dejado una vela con forma de patata! Seguro que la corta en dos. Bueno.",
+    "Kalo": "Kalo se ha ido. Le he dejado una vela con forma de patata. ¡Se la ha llevado!"
   },
   "Opina": {
     "c00lgui": ["c00lgui grita mucho en rojo. Pero creo que en el fondo solo quiere que alguien le haga caso. Lo entiendo.", "Me ha llamado \"noob de la biblioteca\". ¡Llevo tres vidas trabajando! Noob, dice."],
@@ -177,6 +180,9 @@
     "Nanachi": ["¡Nanachi es tan mullido! Y cuida de Mitty con un cariño... *se emociona un poco.* Perdón.", "Nanachi dice que todo le da igual. Pero lo cuida todo. Es como Roland. Me cae genial."],
     "Dybbuk": ["Dybbuk quiere poseer mi cuerpo. ¡Ni hablar! Me ha costado tres vidas tener este.", "Esquiva todo con volteretas. Yo me tropiezo hasta con la alfombra. ¡No es justo!"],
     "Weathergirl": ["¡Weathergirl da el parte con datos y porcentajes! ¡Lo apunto todo! ¡Con dibujitos de nubes!", "¡Lloró y le enseñé el ejercicio de respiración! Uno, coge aiiire... ¡Ya está mejor!"],
-    "Painter": ["¡Painter quiere pintar paisajes y le sale ruido! ¡Yo quería ser arquitecta y me salían libros! ¡Lo entiendo muchísimo!", "¡Le enseñé el ejercicio de respiración! Uno, coge aiiire... ¡No tiene pulmones! ¡Pero los ventiladores bajaron!"]
+    "Painter": ["¡Painter quiere pintar paisajes y le sale ruido! ¡Yo quería ser arquitecta y me salían libros! ¡Lo entiendo muchísimo!", "¡Le enseñé el ejercicio de respiración! Uno, coge aiiire... ¡No tiene pulmones! ¡Pero los ventiladores bajaron!"],
+    "Valencina": ["Valencina... está muy enfadada con todo el mundo. Creo que en el fondo está enfadada consigo misma. Eso lo conozco. *Respira hondo.*", "Le he enseñado mi ejercicio de respiración. Me ha dicho que ella bebe. ...Cada una tiene su método, supongo."],
+    "Lei Heng": ["Lei Heng dice que le pegaría un tajo y seguiría sonriendo. *Respira hondo.* ...Creo que es un cumplido.", "Es muy fuerte, eso sí. Pero pelear por pelear... no lleva a ningún sitio. Lo sé bien."],
+    "Kalo": ["¡Kalo es muy educado! Aunque cuando habla de rangos me recuerda a cuando yo exigía demasiado. *Respira.*"]
   }
 }

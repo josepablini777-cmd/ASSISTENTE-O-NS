@@ -1113,6 +1113,111 @@
       ["Painter", "*(dibuja una carita enfadada y luego otra triste)* El miedo es mío. Los ventiladores también. ...¿vienes a perseguirme?"],
       ["Pursuer", "No. Solo quería ver el paisaje que dibujas. Alguien dijo que sale un árbol."],
       ["Painter", "*(dibuja un árbol despacio, con la mano temblorosa)* ...ya está. Es el único que sé. *(la carita sonríe un poquito)* Gracias por no correr."]
+    ],
+    [
+      ["Valencina", "Tú. La bibliotecaria que sonríe. ¿De qué te ríes?"],
+      ["Malkuth", "¡De nada! Bueno... me alegro de verte. ¿Quieres hacer el ejercicio de respiración conmigo?"],
+      ["Valencina", "Yo no respiro. Bebo. *Agita el vaso.* ¡LUCIO!"],
+      ["Malkuth", "...Vale. Uno, coge aire... y dos, ¿me pasas un vaso a mí también?"],
+      ["Valencina", "...Ja. Al final vas a ser menos idiota de lo que pareces."]
+    ],
+    [
+      ["Angela", "Valencina. Antigua Sottocapo del Pulgar. Duración en el cargo: tres días."],
+      ["Valencina", "Repite eso y te despiezo el monitor, cacharro."],
+      ["Angela", "Dato verificado. No era una opinión."],
+      ["Valencina", "Mira, máquina: tú y yo sabemos lo que es que te miren por encima del hombro. Así que cierra el pico."],
+      ["Angela", "...Solicitud aceptada. Por esta vez."]
+    ],
+    [
+      ["Guillotina", "Mmm... una cazadora. ¿Te doy miedo, cariño?"],
+      ["Valencina", "Te vi venir antes de que abrieras la boca. Y la tienes muy grande."],
+      ["Guillotina", "Para comerte mejor."],
+      ["Valencina", "Sezionatura di Coniglio. Primero los dientes. ¿Seguimos hablando?"],
+      ["Guillotina", "...Me caes bien. Es la primera vez que lo digo."]
+    ],
+    [
+      ["Sebastian Solace", "¡Bienvenida! Linterna, pilas, botiquín... ¿Qué le pongo, señora?"],
+      ["Valencina", "Old Parr. Con hielo. Y no me llames señora."],
+      ["Sebastian Solace", "Eso no lo vendo. Pero puedo conseguirlo. Por el triple."],
+      ["Valencina", "*Pone la espada en el mostrador.* Por el precio normal."],
+      ["Sebastian Solace", "...El precio normal es gratis. Oferta de hoy. Solo para usted."]
+    ],
+    [
+      ["Roaring Knight", "* El Roaring Knight levanta la espada."],
+      ["Valencina", "Por fin alguien que no habla. Vamos, caballero. Mi ojo contra tu espada."],
+      ["Roaring Knight", "* El Roaring Knight ataca."],
+      ["Valencina", "Te leo como un libro abierto. ...Hmph. Rápido. Más que la morralla de aquí."],
+      ["Roaring Knight", "* El Roaring Knight ruge.\n* Parece respetarte."]
+    ],
+    [
+      ["Lei Heng", "¡Valencina! ¿Qué tal ser Sottocapo? Ah, no, espera... ¡que eso duró tres días! ¡Ja, ja, ja!"],
+      ["Valencina", "Repítelo y te despiezo aquí mismo, Capo."],
+      ["Lei Heng", "Ea, ea, que es broma. Tú y yo somos del mismo Pulgar, mujer."],
+      ["Valencina", "Tú eres del Pulgar. Yo soy de la Famiglia Bognatelli. No es lo mismo."],
+      ["Lei Heng", "*puff* Tienes razón. Yo sigo teniendo rango. ¡Ja, ja!"]
+    ],
+    [
+      ["Guillotina", "Mmm... ¿te doy miedo, cariño?"],
+      ["Lei Heng", "¿Miedo? ¡Ja! Me das hambre de pelea, gatita. ¿Bailamos?"],
+      ["Guillotina", "Yo no bailo. Yo como."],
+      ["Lei Heng", "Pues cómete esto. *Saca la espada.* Con petardo incluido."],
+      ["Guillotina", "...Me caes bien. No te acerques más."]
+    ],
+    [
+      ["Roaring Knight", "* El Roaring Knight aparece."],
+      ["Lei Heng", "¡Por fin alguien que no habla! Venga, caballero... ¿bailamos?"],
+      ["Roaring Knight", "* El Roaring Knight levanta la espada."],
+      ["Lei Heng", "¡Ja, ja, ja! ¡Eso es un sí! ¡Tigermark cargada!"],
+      ["Roaring Knight", "* El Roaring Knight ruge.\n* Parece que se lo está pasando bien."]
+    ],
+    [
+      ["Kennyoung", "Hola... ¿te gusta la música?"],
+      ["Lei Heng", "Me gusta el ruido de una espada que explota. ¿Cuenta?"],
+      ["Kennyoung", "...Más o menos. ¿Quieres oír una canción?"],
+      ["Lei Heng", "Venga, toca. Si me aburro, te corto una cuerda. ¡Ja, ja!"],
+      ["Kennyoung", "Vale. Voy a tocar muy bien. Muy, muy bien."]
+    ],
+    [
+      ["Malkuth", "¡Hola! ¿Eres nuevo? ¡Bienvenido a la planta!"],
+      ["Lei Heng", "Ea, qué recibimiento. ¿Siempre sonríes tanto, bibliotecaria?"],
+      ["Malkuth", "¡Siempre que puedo! ¿Quieres hacer el ejercicio de respiración conmigo?"],
+      ["Lei Heng", "*puff* Yo respiro humo. Pero mira, por ti... uno, coge aire..."],
+      ["Malkuth", "¡Y dos, suéltalo! ...¡Ay, que me has echado el humo en la cara!"]
+    ],
+    [
+      ["Lei Heng", "¡Señor Kalo! ¡Qué alegría verle!"],
+      ["Kalo", "Lei Heng. Un Capo saluda a un Sottocapo con una reverencia, no con un grito."],
+      ["Lei Heng", "*Reverencia exagerada.* ¿Así mejor, señor?"],
+      ["Kalo", "Mejor. Y apague el puro en mi presencia."],
+      ["Lei Heng", "...Sí, señor. *Lo apaga.* Ea."]
+    ],
+    [
+      ["Valencina", "Kalo."],
+      ["Kalo", "Señora Valencina. Ya no es Sottocapo, pero sigue siendo una Bognatelli. Siéntese."],
+      ["Valencina", "No necesito su lástima."],
+      ["Kalo", "No es lástima. Es protocolo. El rango se pierde. Las formas, no."],
+      ["Valencina", "...*Se sienta.* Tsk."]
+    ],
+    [
+      ["Malkuth", "¡Bienvenidos a la planta! ¡Os he preparado sitio!"],
+      ["Kalo", "Muy amable, Patrona. Boris, Katriel: siéntense después de ella."],
+      ["Malkuth", "¡No hace falta tanto protocolo!"],
+      ["Kalo", "Siempre hace falta. Es lo que nos separa de las bestias."],
+      ["Malkuth", "...Vale. ¡Pues sentaos después de mí! *Se sienta muy recta.*"]
+    ],
+    [
+      ["Angela", "Visitantes del Pulgar. Identifíquense."],
+      ["Kalo", "Kalo, Sottocapo. Mis Capos, Boris y Katriel. ¿Y usted, señora?"],
+      ["Angela", "La directora de esta Biblioteca."],
+      ["Kalo", "Entonces le corresponde a usted el primer saludo. *Espera.*"],
+      ["Angela", "...Bienvenidos. *Lo dice con los dientes apretados.*"]
+    ],
+    [
+      ["Sebastian Solace", "¡Bienvenidos! ¿Linternas, pilas, botiquines?"],
+      ["Kalo", "Munición, si tiene. Katriel, apunte el precio."],
+      ["Sebastian Solace", "Munición del Pulgar... eso es caro. Muy caro."],
+      ["Kalo", "Lo sé. Por eso pelean con los puños y la bayoneta. Su mejor precio, por favor."],
+      ["Sebastian Solace", "...Precio de amigo. Solo porque ha dicho «por favor»."]
     ]
   ]
 }

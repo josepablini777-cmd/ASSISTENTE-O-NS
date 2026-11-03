@@ -80,7 +80,10 @@
     "Dybbuk": "¡Dybbuk se ha ido! ...¿o no? Siento que se ha metido en mi cabeza. ¡Más de lo normal!",
     "Malkuth": "¡Malkuth se ha ido! ¡Me apuntó en su libro! ¡Ahora soy historia! ...¿eso es bueno? ¡Es bueno!",
     "Weathergirl": "¡Weathergirl se ha ido! ¡Me dijo que mañana llueve! ...¿o era pasado? ¡Llevaré baguette por si acaso!",
-    "Painter": "¡Painter se ha ido! ¡Me dibujó una baguette con caritas! ¡Es la mejor baguette de mi vida! ¡Se la he enseñado a todas!"
+    "Painter": "¡Painter se ha ido! ¡Me dibujó una baguette con caritas! ¡Es la mejor baguette de mi vida! ¡Se la he enseñado a todas!",
+    "Valencina": "¡Se fue Valencina! ¡Ya puedo bailar torcida otra vez!",
+    "Lei Heng": "¡Se fue Lei Heng! ¡Los pájaros ya pueden volver!",
+    "Kalo": "¡Se fue Kalo! ¡Ya puedo ser indisciplinada!"
   },
   "Opina": {
     "c00lgui": ["c00lgui habla todo en minúsculas. Yo hablo todo en ¡HIII!", "Le pedí a c00lgui que me hackeara más memoria. Me dio un pan. ¡Gracias!"],
@@ -110,6 +113,9 @@
     "Dybbuk": ["¡Dybbuk dice que me ha poseído tres veces! ¡No me acuerdo de ninguna! ¡Qué suerte!", "Mi baguette está pegajosa. ¿Por qué está pegajosa? ...¡DYBBUK!"],
     "Malkuth": ["¡Malkuth tiene una libreta para no olvidar nada! ¡Yo necesito una! ...¿qué necesitaba?", "¡Me dio una patata! ¡La metí en una baguette! ¡Invento nuevo!"],
     "Weathergirl": ["¡Weathergirl también es una voz de Synthesizer V! ¡Como yo! ¡Somos primas! ¡Creo!", "¡Hice una versión de su canción! ¡Weathergirls! ¡En plural! ¡Con baguette!"],
-    "Painter": ["¡Painter es un ordenador que dibuja! ¡Yo canto! ¡Somos un dúo artístico! ¡Painter y Teto!", "¡Le pedí un dibujo de pan! ¡Me dibujó un paisaje con pan por las colinas! ¡Lloré de felicidad!"]
+    "Painter": ["¡Painter es un ordenador que dibuja! ¡Yo canto! ¡Somos un dúo artístico! ¡Painter y Teto!", "¡Le pedí un dibujo de pan! ¡Me dibujó un paisaje con pan por las colinas! ¡Lloré de felicidad!"],
+    "Valencina": ["¡Valencina me ha corregido la postura! ¡Diecisiete veces! ¡Hiii~! ...me duelen las piernas."],
+    "Lei Heng": ["¡Lei Heng me ha preguntado si sé bailar! ¡Hiii~! ¡Claro que sé! ...Pero no creo que se refiriera a eso."],
+    "Kalo": ["¡Kalo me ha dicho que con disciplina podría ser algo! ¡Hiii~! ...¿algo qué?"]
   }
 }

@@ -83,7 +83,10 @@
     "Dybbuk": "Se fue Dybbuk. 0 hitmarkers. Otra vez. Necesito un descanso.",
     "Malkuth": "Malkuth se ha ido. Se tropezó delante de mi mira. Casi le hago un no scope sin querer. GG. Casi.",
     "Weathergirl": "Se fue Weathergirl. Me ha dicho que hoy hace buen tiempo para jugar. Siempre hace buen tiempo para jugar.",
-    "Painter": "Se fue Painter. Me dejó una torreta apuntando a la pared. Cortesía de la casa. GG."
+    "Painter": "Se fue Painter. Me dejó una torreta apuntando a la pared. Cortesía de la casa. GG.",
+    "Valencina": "Se fue Valencina. Ni un solo hitmarker. GG, supongo.",
+    "Lei Heng": "Se fue Lei Heng. Su espada explotaba. Respeto. MLG.",
+    "Kalo": "Se fue Kalo. Puedo volver a disparar sin que nadie me cobre."
   },
   "Opina": {
     "c00lgui": ["¿c00lkidd? Un script kiddie. Le haría headshot desde el otro lado del mapa.", "Su panel es rojo y negro. Clásico de 2006. Respeto."],
@@ -113,6 +116,9 @@
     "Dybbuk": ["Dybbuk esquiva hasta los no scope. Eso es hacer trampas. Creo.", "Le di un headshot. Dio una voltereta. El headshot se lo llevó la lápida."],
     "Malkuth": ["Malkuth anima al equipo como una capitana de verdad. La quiero de support.", "Va con una porra. Una porra. Respeto el estilo melee."],
     "Weathergirl": ["Weathergirl me dice si va a llover antes de la partida. Info del mapa. La quiero en mi equipo.", "Lloró en directo y nadie le hizo clip. Respeto. Eso es ser buena gente."],
-    "Painter": ["Painter maneja las torretas. Yo manejo la mira. En un 1v1 de torretas ganó él. Qué humillación. Me encanta.", "Es la única IA que me trata de igual. Le dije \"GG\" y dibujó una carita feliz. Es mi mejor support."]
+    "Painter": ["Painter maneja las torretas. Yo manejo la mira. En un 1v1 de torretas ganó él. Qué humillación. Me encanta.", "Es la única IA que me trata de igual. Le dije \"GG\" y dibujó una carita feliz. Es mi mejor support."],
+    "Valencina": ["Valencina esquiva hasta las balas. LITERALMENTE. 360 no-scope y nada. ¿Hacks? ¿Es eso un hack de ojo?"],
+    "Lei Heng": ["Lei Heng tiene una ESPADA CON BALAS. ¿Se puede hacer 360 no-scope con una espada? Le he preguntado. Me ha mirado raro."],
+    "Kalo": ["Kalo me ha preguntado cuánto cuesta cada bala que disparo. ¿QUE CUÁNTO CUESTA? ¡Lo que cuesta es el MLG!"]
   }
 }

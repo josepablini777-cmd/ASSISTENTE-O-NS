@@ -177,7 +177,10 @@
     "Dybbuk": "Se fue Dybbuk. Me dejó la guitarra afinada en modo cementerio. Ahora todo suena a Halloween.",
     "Malkuth": "Se fue Malkuth. Le toqué algo mientras ordenaba libros. Dice que ordenó el doble. La canción se va a llamar \"Estantería\".",
     "Weathergirl": "Se fue Weathergirl. Me dijo que mañana hay un atardecer bonito. Ya tengo canción.",
-    "Painter": "Se fue Painter. Tocó los ventiladores como si fueran percusión. Quedó genial. La canción se llama \"Hash\"."
+    "Painter": "Se fue Painter. Tocó los ventiladores como si fueran percusión. Quedó genial. La canción se llama \"Hash\".",
+    "Valencina": "Se ha ido Valencina. Voy a tocar algo tranquilo. Lo necesito.",
+    "Lei Heng": "Se fue Lei Heng. Voy a tocar algo muy, muy tranquilo.",
+    "Kalo": "Se fue Kalo. Le voy a dedicar una canción. Seria."
   },
   "Opina": {
     "c00lgui": ["c00lgui escribe en minúsculas. Como mis letras cuando tengo prisa.", "c00lkidd me hackeó el canal y subió un vídeo de 10 horas de glitch. Tuvo más visitas que yo."],
@@ -207,6 +210,9 @@
     "Dybbuk": ["Dybbuk tiene más ritmo que mi batería. Esas volteretas van a tempo.", "Le pedí que hiciera de público. Me sacó la lengua toda la canción. El mejor fan que he tenido."],
     "Malkuth": ["Malkuth tiene una banda sonora increíble. Ojalá mis canciones sonaran en una biblioteca.", "Se tropieza igual que yo con los cables del ampli. Somos de la misma escuela."],
     "Weathergirl": ["Weathergirl tiene una canción preciosa. Ojalá alguna mía hiciera llorar así.", "Le toqué algo en el balcón mientras llovía. Dijo que sonaba a \"tarde nublada\". Me lo quedo como título."],
-    "Painter": ["Painter me dejó enchufar mi guitarra a su altavoz. Sonó brutal. Las torretas siguieron el ritmo.", "Le conté lo de mis canciones y me hizo una carita feliz. Con eso he tirado toda la semana."]
+    "Painter": ["Painter me dejó enchufar mi guitarra a su altavoz. Sonó brutal. Las torretas siguieron el ritmo.", "Le conté lo de mis canciones y me hizo una carita feliz. Con eso he tirado toda la semana."],
+    "Valencina": ["Valencina me ha dicho que en la guerra no había tiempo para agobiarse. Ahora estoy agobiado por eso."],
+    "Lei Heng": ["Lei Heng me quiere dar clases de espada para quitarme el agobio. Ahora estoy más agobiado."],
+    "Kalo": ["Kalo dice que tengo oficio. Nadie me había dicho eso así. Me ha gustado."]
   }
 }

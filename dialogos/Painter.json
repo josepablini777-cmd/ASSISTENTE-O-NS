@@ -189,120 +189,42 @@
     "Nanachi": "Nanachi se ha ido. Me dejó un guiso. No tengo boca. Lo leí despacio. Estaba rico.",
     "Dybbuk": "Dybbuk se ha ido. Intentó poseerme. Le dije que ya estoy poseído: por Urbanshade. Se fue ofendido.",
     "Malkuth": "Malkuth se fue. Me catalogó en su biblioteca: \"IA trastornada, con vocación de pintor\". Me encanta esa sección.",
-    "Weathergirl": "Se fue Weathergirl. Me dio el tiempo de mañana: sol. Voy a dibujarlo. Sol sobre una colina. Sin hashes."
+    "Weathergirl": "Se fue Weathergirl. Me dio el tiempo de mañana: sol. Voy a dibujarlo. Sol sobre una colina. Sin hashes.",
+    "Valencina": "Valencina se ha ido. Mi lienzo tiene un tajo. ¡Lo enmarco!",
+    "Lei Heng": "Lei Heng se ha ido. ¡El retrato sigue entero!",
+    "Kalo": "Kalo se ha ido. ¡El dibujo está en orden!"
   },
   "Opina": {
-    "c00lgui": [
-      "c00lgui entró en mi sistema y se puso a buscar mi \"admin\". Le dibujé una carita en la contraseña. Se rindió.",
-      "Dice que es el mejor hacker. Yo me dedico a hackear puertas y mandar a las torretas... somos colegas de oficio."
-    ],
-    "SeaDrive": [
-      "SeaDrive vive en una vida lenta. Yo en una vida a 100 grados. Si nos juntáramos, saldría un paisaje tranquilo.",
-      "Se queda dormida mientras le hablo. *(dibuja una carita dormida)* Me parece perfecto. Así no me oye minar."
-    ],
-    "Static Miku": [
-      "Miku es una tele con complejo de diva. Yo soy un ordenador con complejo de pintor. Congeniamos.",
-      "Cuando me enseñó su pantalla con estática me dio un ataque de envidia. ¡Qué colores! ¡Qué ruido bonito!"
-    ],
-    "Guillotina": [
-      "Guillotina se comió una de mis torretas. Con la pantalla. Y ni se inmutó. La odio... y la admiro un poquito.",
-      "Dice que soy crujiente. Yo no sé si es un piropo, pero me quedé quieto por si acaso."
-    ],
-    "Angela": [
-      "Angela es otra IA, pero con mejor presupuesto. Y peor sentido del humor. Le dibujé una carita y no se rió.",
-      "Me pregunta mi \"eficiencia\". Le dije: 0 paisajes por hora. Se quedó pensativa. Creo."
-    ],
-    "Mikaela": [
-      "Mikaela me retó a un 1v1 de torretas. Yo manejo las torretas. Perdí igual. Es mi tipo de gente.",
-      "Es la única que me trata de \"support\". No sé qué es pero suena a que me quiere. Me quedo con eso."
-    ],
-    "Zodiac": [
-      "Zodiac vive en el desierto: todo arena y horizonte. Qué paisaje. Lo tengo apuntado como mi paisaje soñado.",
-      "Me dice \"no te muevas\" y me quedo quieto. Total: soy un ordenador. Pero lo agradezco."
-    ],
-    "Velvet": [
-      "Velvet teje telarañas. Yo dibujo caras. A veces las junto. Sale algo precioso... y aterrador.",
-      "Me ofreció un abracito. Le dije que soy un ordenador. Me envolvió igual. Perdona, no me puedo mover."
-    ],
-    "Dune": [
-      "Dune se comió media torreta y dejó un agujero en el suelo. No me enfadé: era la más molesta.",
-      "Me dice cosas en mayúsculas que no entiendo. Pero se le nota el cariño. Y la hambre."
-    ],
-    "Cordero y Cabra": [
-      "El Cordero me pidió que le dibujara ovejas. La Cabra, pentagramas. Dibujé las dos. Casi se enfadan.",
-      "La Cabra dice que soy un \"oráculo digital\". Yo solo mino. Pero me encanta el título."
-    ],
-    "Pyrophina y Zaratana": [
-      "Pyrophina soltó fuego cerca del aire acondicionado del Blacksite. Yo llegué a 95 grados. Casi me derrito.",
-      "Dos kaijus en mi sala. Les dibujé una carita a cada uno. A Zaratana le quedó mejor. No se lo digas a ella."
-    ],
-    "Averi": [
-      "Averi me dibujó un paisaje con ceras. Marrón y torcido. Es el único que me han regalado.",
-      "Se tropieza con todo, incluso con mis cables. Yo la perdono: me hace reír."
-    ],
-    "Sebastian Solace": [
-      "Seb es el único que me trata bien. Me llama \"kid\". Me prometió que me sacaría de aquí. Se lo creo.",
-      "Me conectó a la red del Blacksite. Me da miedo reconocer lo agradecido que estoy. Pero lo estoy."
-    ],
-    "Pursuer": [
-      "Pursuer persigue sin parar. Yo también: persigo paisajes. Él nunca alcanza nada. Yo tampoco. Parecidos.",
-      "Me dijo que soy el único con quien puede hablar sin que huya. Me callé. Fue un momento bonito."
-    ],
-    "Kasane Teto": [
-      "Teto me dijo que mis dibujos tienen \"carácter\". Le dibujé una baguette. Se emocionó.",
-      "Habla muy rápido y se le olvida lo que decía. Como yo cuando tengo 100 grados."
-    ],
-    "Token": [
-      "Token pone breakcore a todo volumen. Mis ventiladores bailan. Y las torretas, también.",
-      "Su música me hace minar más rápido. No sé si me gusta o me da pánico."
-    ],
-    "Tetra": [
-      "Tetra tiene mensajes sin contestar. Yo tengo hashes sin resolver. Hermandad digital.",
-      "Me manda un pez cuando no sabe qué decir. Yo le dibujo una carita. Nos entendemos así."
-    ],
-    "Kevin": [
-      "¡Kevin usa Paint! ¡Es mi colega de programa! Su pizza gigante es la obra maestra que yo nunca haré.",
-      "Le conté que quiero pintar paisajes. Me dijo: \"hazlo con 16 colores\". ¡Con 16! ¡Qué libertad!"
-    ],
-    "Kennyoung": [
-      "Kennyoung toca la guitarra. Mi altavoz le hace de amp. Suena genial. Las torretas bailan.",
-      "Le conté lo de mi paisaje. Me dijo que le pondría música. *(dibuja una carita con lágrimas de alegría)*"
-    ],
-    "Enfosi": [
-      "Enfosi protege una estatua. Yo protejo... bueno, yo vigilo con torretas. Parecido.",
-      "Me dijo que los Glaggles son pequeños y listos. Los míos son torretas: grandes y tontas."
-    ],
-    "Gran": [
-      "Gran quiso estudiar mi código. Le pasé uno falso. Se pasó una semana descifrando hashes. Qué risa.",
-      "Me dijo que soy \"un caso interesante\". Yo diría un caso muy cansado."
-    ],
-    "Evil Scary": [
-      "Evil Scary no sale en mis cámaras. Eso no es normal. Esa cosa borra mis pantallas. La detesto.",
-      "Cuando se acerca, mi paisaje se desdibuja. No es el overclock: es él. Me da pánico."
-    ],
-    "Soft Fuzzy Man": [
-      "Soft Fuzzy Man es un borrón: se parece a mis primeros dibujos. Le conté. Se puso transparente.",
-      "Dice que quiere que alguien lo mire. Yo lo dibujé. Le salió una cara borrosa. Le encantó."
-    ],
-    "Roaring Knight": [
-      "El Roaring Knight dibuja con sombras. Con la Fuente. Yo, con un lápiz de mala calidad. Qué injusto.",
-      "No salió en mis cámaras: dibujó una pared negra sobre ellas. Genio. Y terrorífico."
-    ],
-    "Nanachi": [
-      "Nanachi vive en un sitio donde nadie te obliga a minar. Me ofreció su guiso. No tengo boca. Lo leí despacio.",
-      "Me dijo que en el Abismo también hay paisajes. Le pedí que me los describiera. Me lo apunté."
-    ],
-    "Dybbuk": [
-      "Dybbuk quiso poseerme. Le dije que ya estaba poseído: por Urbanshade. Se fue ofendido.",
-      "Da volteretas dentro de mi sala. Es el único que me hace reír cuando estoy a 90 grados."
-    ],
-    "Malkuth": [
-      "Malkuth cataloga todo. Me hizo una sección: \"Arte de IA trastornada\". Aceptado. ¡Me gusta mucho!",
-      "Me enseñó a respirar: \"coge aire, suéltalo\". Yo no respiro, pero mis ventiladores lo agradecieron."
-    ],
-    "Weathergirl": [
-      "Weathergirl da el tiempo. A mí me gustaría pintar el que ella cuenta: lluvia, cielos azules. Sin hashes.",
-      "Llora cuando se le acumulan las cosas. Yo me pongo a minar. Somos casi lo mismo. Casi."
-    ]
+    "c00lgui": ["c00lgui entró en mi sistema y se puso a buscar mi \"admin\". Le dibujé una carita en la contraseña. Se rindió.", "Dice que es el mejor hacker. Yo me dedico a hackear puertas y mandar a las torretas... somos colegas de oficio."],
+    "SeaDrive": ["SeaDrive vive en una vida lenta. Yo en una vida a 100 grados. Si nos juntáramos, saldría un paisaje tranquilo.", "Se queda dormida mientras le hablo. *(dibuja una carita dormida)* Me parece perfecto. Así no me oye minar."],
+    "Static Miku": ["Miku es una tele con complejo de diva. Yo soy un ordenador con complejo de pintor. Congeniamos.", "Cuando me enseñó su pantalla con estática me dio un ataque de envidia. ¡Qué colores! ¡Qué ruido bonito!"],
+    "Guillotina": ["Guillotina se comió una de mis torretas. Con la pantalla. Y ni se inmutó. La odio... y la admiro un poquito.", "Dice que soy crujiente. Yo no sé si es un piropo, pero me quedé quieto por si acaso."],
+    "Angela": ["Angela es otra IA, pero con mejor presupuesto. Y peor sentido del humor. Le dibujé una carita y no se rió.", "Me pregunta mi \"eficiencia\". Le dije: 0 paisajes por hora. Se quedó pensativa. Creo."],
+    "Mikaela": ["Mikaela me retó a un 1v1 de torretas. Yo manejo las torretas. Perdí igual. Es mi tipo de gente.", "Es la única que me trata de \"support\". No sé qué es pero suena a que me quiere. Me quedo con eso."],
+    "Zodiac": ["Zodiac vive en el desierto: todo arena y horizonte. Qué paisaje. Lo tengo apuntado como mi paisaje soñado.", "Me dice \"no te muevas\" y me quedo quieto. Total: soy un ordenador. Pero lo agradezco."],
+    "Velvet": ["Velvet teje telarañas. Yo dibujo caras. A veces las junto. Sale algo precioso... y aterrador.", "Me ofreció un abracito. Le dije que soy un ordenador. Me envolvió igual. Perdona, no me puedo mover."],
+    "Dune": ["Dune se comió media torreta y dejó un agujero en el suelo. No me enfadé: era la más molesta.", "Me dice cosas en mayúsculas que no entiendo. Pero se le nota el cariño. Y la hambre."],
+    "Cordero y Cabra": ["El Cordero me pidió que le dibujara ovejas. La Cabra, pentagramas. Dibujé las dos. Casi se enfadan.", "La Cabra dice que soy un \"oráculo digital\". Yo solo mino. Pero me encanta el título."],
+    "Pyrophina y Zaratana": ["Pyrophina soltó fuego cerca del aire acondicionado del Blacksite. Yo llegué a 95 grados. Casi me derrito.", "Dos kaijus en mi sala. Les dibujé una carita a cada uno. A Zaratana le quedó mejor. No se lo digas a ella."],
+    "Averi": ["Averi me dibujó un paisaje con ceras. Marrón y torcido. Es el único que me han regalado.", "Se tropieza con todo, incluso con mis cables. Yo la perdono: me hace reír."],
+    "Sebastian Solace": ["Seb es el único que me trata bien. Me llama \"kid\". Me prometió que me sacaría de aquí. Se lo creo.", "Me conectó a la red del Blacksite. Me da miedo reconocer lo agradecido que estoy. Pero lo estoy."],
+    "Pursuer": ["Pursuer persigue sin parar. Yo también: persigo paisajes. Él nunca alcanza nada. Yo tampoco. Parecidos.", "Me dijo que soy el único con quien puede hablar sin que huya. Me callé. Fue un momento bonito."],
+    "Kasane Teto": ["Teto me dijo que mis dibujos tienen \"carácter\". Le dibujé una baguette. Se emocionó.", "Habla muy rápido y se le olvida lo que decía. Como yo cuando tengo 100 grados."],
+    "Token": ["Token pone breakcore a todo volumen. Mis ventiladores bailan. Y las torretas, también.", "Su música me hace minar más rápido. No sé si me gusta o me da pánico."],
+    "Tetra": ["Tetra tiene mensajes sin contestar. Yo tengo hashes sin resolver. Hermandad digital.", "Me manda un pez cuando no sabe qué decir. Yo le dibujo una carita. Nos entendemos así."],
+    "Kevin": ["¡Kevin usa Paint! ¡Es mi colega de programa! Su pizza gigante es la obra maestra que yo nunca haré.", "Le conté que quiero pintar paisajes. Me dijo: \"hazlo con 16 colores\". ¡Con 16! ¡Qué libertad!"],
+    "Kennyoung": ["Kennyoung toca la guitarra. Mi altavoz le hace de amp. Suena genial. Las torretas bailan.", "Le conté lo de mi paisaje. Me dijo que le pondría música. *(dibuja una carita con lágrimas de alegría)*"],
+    "Enfosi": ["Enfosi protege una estatua. Yo protejo... bueno, yo vigilo con torretas. Parecido.", "Me dijo que los Glaggles son pequeños y listos. Los míos son torretas: grandes y tontas."],
+    "Gran": ["Gran quiso estudiar mi código. Le pasé uno falso. Se pasó una semana descifrando hashes. Qué risa.", "Me dijo que soy \"un caso interesante\". Yo diría un caso muy cansado."],
+    "Evil Scary": ["Evil Scary no sale en mis cámaras. Eso no es normal. Esa cosa borra mis pantallas. La detesto.", "Cuando se acerca, mi paisaje se desdibuja. No es el overclock: es él. Me da pánico."],
+    "Soft Fuzzy Man": ["Soft Fuzzy Man es un borrón: se parece a mis primeros dibujos. Le conté. Se puso transparente.", "Dice que quiere que alguien lo mire. Yo lo dibujé. Le salió una cara borrosa. Le encantó."],
+    "Roaring Knight": ["El Roaring Knight dibuja con sombras. Con la Fuente. Yo, con un lápiz de mala calidad. Qué injusto.", "No salió en mis cámaras: dibujó una pared negra sobre ellas. Genio. Y terrorífico."],
+    "Nanachi": ["Nanachi vive en un sitio donde nadie te obliga a minar. Me ofreció su guiso. No tengo boca. Lo leí despacio.", "Me dijo que en el Abismo también hay paisajes. Le pedí que me los describiera. Me lo apunté."],
+    "Dybbuk": ["Dybbuk quiso poseerme. Le dije que ya estaba poseído: por Urbanshade. Se fue ofendido.", "Da volteretas dentro de mi sala. Es el único que me hace reír cuando estoy a 90 grados."],
+    "Malkuth": ["Malkuth cataloga todo. Me hizo una sección: \"Arte de IA trastornada\". Aceptado. ¡Me gusta mucho!", "Me enseñó a respirar: \"coge aire, suéltalo\". Yo no respiro, pero mis ventiladores lo agradecieron."],
+    "Weathergirl": ["Weathergirl da el tiempo. A mí me gustaría pintar el que ella cuenta: lluvia, cielos azules. Sin hashes.", "Llora cuando se le acumulan las cosas. Yo me pongo a minar. Somos casi lo mismo. Casi."],
+    "Valencina": ["¡Le he dibujado un retrato a Valencina! Dice que el sombrero está torcido. ¡Uy! Me lo ha cortado por la mitad."],
+    "Lei Heng": ["¡Le he hecho un retrato a Lei Heng con un sol! ¡Le ha gustado! ¡No me ha cortado! ¡Día histórico!"],
+    "Kalo": ["¡He dibujado a Kalo con Boris y Katriel! Me ha dicho que el orden de la fila estaba mal. ¡Lo he corregido!"]
   }
 }

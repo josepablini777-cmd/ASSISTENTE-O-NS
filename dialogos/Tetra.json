@@ -81,7 +81,10 @@
     "Dybbuk": "Dybbuk se ha ido. Me poseyó un rato. No noté la diferencia, la verdad.",
     "Malkuth": "Malkuth se ha ido. Me dijo que respirara hondo. Lo hice. Sigo sin contestar los mensajes, pero respiro mejor.",
     "Weathergirl": "Se fue Weathergirl. Me ha dejado el pronóstico en un mensaje. Lo he leído. Todavía no he contestado.",
-    "Painter": "Se fue Painter. Me mandó un dibujo con una carita. No contesté. Sí lo he guardado."
+    "Painter": "Se fue Painter. Me mandó un dibujo con una carita. No contesté. Sí lo he guardado.",
+    "Valencina": "Se fue Valencina. Y con ella mi cartel de «no molestar». neems dice que da igual.",
+    "Lei Heng": "Se fue Lei Heng. neems dice que respire. Respiro.",
+    "Kalo": "Se fue Kalo. Mi cartel sigue puesto. Bien."
   },
   "Opina": {
     "c00lgui": ["c00lgui escribe en minúsculas. Yo también. Por pereza.", "c00lgui me hackeó el Discord. Me puso el estado en \"jugando\". Era verdad."],
@@ -111,6 +114,9 @@
     "Dybbuk": ["Dybbuk dice que poseerme es aburrido. Pues ya está. Así me deja en paz.", "Da volteretas todo el rato. Solo de verlo me canso."],
     "Malkuth": ["Malkuth tiene demasiada energía. Pero no me obliga a hablar. Eso está bien.", "Le pregunté cómo hace para estar siempre contenta. Me dijo \"no lo estoy, pero respiro\". Mood."],
     "Weathergirl": ["Weathergirl tampoco dice lo que piensa. Lo cuenta como si fuera el tiempo. Mood.", "Me dijo \"llueva o haga sol, estoy a tu lado\". Le contesté. Eso es mucho para mí."],
-    "Painter": ["Painter habla demasiado. Pero me deja en paz cuando quiero. Y dibuja caritas. Eso me gusta.", "Me dijo que le va a dibujar un pez. Aún lo espero. Con ganas."]
+    "Painter": ["Painter habla demasiado. Pero me deja en paz cuando quiero. Y dibuja caritas. Eso me gusta.", "Me dijo que le va a dibujar un pez. Aún lo espero. Con ganas."],
+    "Valencina": ["Valencina me pidió prestado el «no molestar». No me lo ha devuelto."],
+    "Lei Heng": ["Lei Heng ha venido a molestarme a propósito. Ha dicho «pa' ver qué cara pones». Esta. Pongo esta."],
+    "Kalo": ["Kalo es el único que ha respetado mi «no molestar». Le doy las gracias. neems también."]
   }
 }

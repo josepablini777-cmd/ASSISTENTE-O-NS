@@ -82,7 +82,10 @@
     "Nanachi": "Se fue Nanachi. Le lamí la olla del estofado. Sabía a... no sé. A algo vivo.",
     "Malkuth": "¡Se fue Malkuth! Le lamí un libro. ¡Gritó! ¡Pero luego me dio las gracias por \"quitarle el polvo\"! Ñe-he-he.",
     "Weathergirl": "¡Se fue la chica del tiempo! ¡Le cambié el guion! ¡Ahora mañana llueven gatos! ¡Ñe-he-he!",
-    "Painter": "¡Se fue el ordenador! ¡Le cambié la carita! ¡Ahora sonríe con colmillos! ¡Ñe-he-he! ...lo ha arreglado. Maldito."
+    "Painter": "¡Se fue el ordenador! ¡Le cambié la carita! ¡Ahora sonríe con colmillos! ¡Ñe-he-he! ...lo ha arreglado. Maldito.",
+    "Valencina": "¡Se fue la del ojo! ¡Ahora puedo esquivar a gusto, sin que me copien!",
+    "Lei Heng": "¡Se fue el de la espada! ¡Volteretas libres otra vez!",
+    "Kalo": "¡Se fue el viejo! ¡Vuelven las bromas!"
   },
   "Opina": {
     "c00lgui": ["c00lgui quiere hackear el panel. Yo ya lo he poseído. Ñe-he-he.", "Mucho código rojo, muchas amenazas. Y ni un cuerpo que probarme. Qué aburrido."],
@@ -112,7 +115,10 @@
     "Nanachi": ["Nanachi cocina un estofado asqueroso. Le di un lametón. Me gustó. No se lo digas.", "Tiene unas orejas mullidísimas. Las lamí. Me miró con una cara... Ñe-he-he."],
     "Malkuth": ["¡Malkuth tiene un cuerpo nuevecito! ¡Recién estrenado! ¿Me lo prestas? ...dice que le ha costado tres vidas. Rácana.", "¡Se tropieza solita! ¡Ni tengo que ponerle la zancadilla! Ñe-he-he."],
     "Weathergirl": ["¡La chica del tiempo tiene un cuerpo mojadito! ¿Me lo prestas para salir en la tele? ¡Ñe-he-he!", "¡Me metí en su paraguas! ¡Lo abrí del revés! ¡Gritó! ¡Lo cerré! ¡Volvió a gritar!"],
-    "Painter": ["¡El ordenador está poseído por la empresa! ¡Yo lo estoy por mi gusto! ¡Ñe-he-he! ¡Somos colegas!", "¡Entré en su pantalla y dibujé un bigote! ¡Lo borró! ¡Lo dibujé otra vez! ¡Lo borró! ¡Ahora somos amigos!"]
+    "Painter": ["¡El ordenador está poseído por la empresa! ¡Yo lo estoy por mi gusto! ¡Ñe-he-he! ¡Somos colegas!", "¡Entré en su pantalla y dibujé un bigote! ¡Lo borró! ¡Lo dibujé otra vez! ¡Lo borró! ¡Ahora somos amigos!"],
+    "Valencina": ["¡Valencina esquiva mejor que yo! ¡Y sin volteretas! ¡Trampa! ...Le he lamido el vaso. No se ha enterado. Creo."],
+    "Lei Heng": ["¡Lei Heng me ha cortado en plena voltereta! ¡Trampa! ...Le he lamido el puro. Venganza."],
+    "Kalo": ["¡He gastado una broma a Kalo! Me ha mirado tres segundos. Ya no gasto bromas."]
   },
   "Esquiva": [
     "*Voltereta hacia atrás.* ¡No me tocas! ¡No me tocas! Ñe-he-he.",

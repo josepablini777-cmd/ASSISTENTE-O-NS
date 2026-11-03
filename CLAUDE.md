@@ -206,6 +206,42 @@ PowerShell no basta para recortar fondos o editar imágenes. Lo que ha funcionad
 - Intro `Transicion-Ellie` (tiempos en `$ElIntro`): alarma, el usuario de Ale (`skins\ellie\user.png`) con círculo y flecha, glitch. Sus sonidos están sintetizados con ffmpeg.
 - **A propósito no tiene charlas ni opiniones cruzadas** (ni ella de las demás ni las demás de ella). `Opinion-Azar` solo elige skins con opinión escrita, así no salen bocadillos vacíos. No añadirle charlas sin que el usuario lo pida.
 
+## Valencina (Limbus Company)
+
+- Estilo `ojo`, grupo **Videojuegos** ('Limbus Company'). Ficha en `lore\personajes\Valencina.md` (datos de la Cogitopedia, https://projectmoon.miraheze.org, una wiki sin Cloudflare: su API se lee con curl).
+- Actores: 'V' = sprite de combate (`valencina.png`) y 'G' = su vaso de Old Parr (`vaso_lleno.png`, pose `vacio`). Intro con el sprite normal (`intro.png`).
+- Estado en `$script:vl` (`Ojo, Acel, Calor, Golpes, Aturdida, Apps, Presa, Vaso, RellenoT, Copas, Ev, Tajo, Disp, Mira`), números en `$VlTiempos`, sitio del ojo tapado en `$VlOjo` y de la espada en `$VlEspada`. Funciones: `Vl-Reset, Vl-Actores, Vl-Liberar, Vl-Ojo, Vl-Calor, Vl-Clic, Vl-Beber, Vl-App, Vl-Caza, Vl-Disposal, Vl-Tick, Vl-Pintar, Vl-Efectos-Boton, Vl-Invalidar`.
+- Mecánica (copiada de su combate): 30 cargas del OJO DE LA PRECOGNICIÓN; clic = ataque sin oposición → esquiva y contraataca (−1); ráfaga de 3 clics → puede fallar (−3); cada app = choque → FUTURO ACELERADO (máx. ojo/3; si no puede ganar, −1). A 0: SOBRECALENTADO 25 s (los clics le dan; 5 golpes → ATURDIDA y se levanta con Shin). Cada 8 apps marca una presa (mira roja en el botón, `Vl-Efectos-Boton`); si la abres, Disposal. El vaso: +4 al ojo (o −8 s de calor); Lucio lo rellena a los 18 s.
+- Intro `Transicion-Valencina` (`$VlIntro`, ~11,4 s, por el reloj): PROELIUM FATALE (recreado: no hay capturas en la wiki) → tajo que parte el título → primer plano con el puro (`intro_cara.jpg`, animación del 3.er aniversario) → su ficha de jefa con los rasgos del juego tachados.
+- Música: `skins\valencina\tema.mp3` = "Limbus Company OST - Canto IX Boss 1 Battle Theme 2". **No se pudo bajar** (YouTube pide iniciar sesión); el código la pone sola si el archivo existe (`Vl-Musica-On`).
+- OJO: `sed -i` de Git Bash deja el archivo con saltos LF; después de usarlo, volver a poner CRLF.
+
+## Proelium Fatale (intros de Limbus Company)
+
+- El vídeo de verdad (3,9 s) está en `skins\proelium`: `fotos\001..117.jpg` (30 fps, 960×540) + `proelium.mp3`. `Proelium-Pintar $g $W $H $ms` pinta el fotograma que toca; `Proelium-Soltar` libera la imagen al acabar. Cada skin que lo use pone en sus `Sonidos` la clave `pf` = `skins\proelium\proelium.mp3` y la lanza con `Sonido 'pf'` en el ms 0 del vídeo.
+
+## Lei Heng (Limbus Company)
+
+- Estilo `tigre`, grupo **Videojuegos** ('Limbus Company'). Ficha en `lore\personajes\Lei Heng.md`. Actor 'L' = sprite de combate (`leiheng.png`, pose `herido` = el mismo con sangre, desde la fase 2). Comparte con Valencina el bocadillo y los botones (`{ $_ -in @('ojo', 'tigre') }`).
+- Estado en `$script:lh` (`HP, Fase, Balas, MaxBalas, Patron, Skill, SkillFin, Cortes, Explos, Calor, Caido, Recarga, Fx`), números en `$LhTiempos`, skills en `$LhSkills` (nombre, kanji, icono, monedas, potencia, cortes, balas). Funciones `Lh-Reset, Lh-Actores, Lh-Siguiente, Lh-Usar, Lh-Tajo, Lh-Fases, Lh-Clic, Lh-App, Lh-Tick, Lh-Pintar-Efectos, Lh-Efectos-Boton, Lh-Pintar`.
+- Mecánica: cada app lanza su siguiente skill contra ese botón (carta + monedas; cara = tajo con explosión 爆). Clic = le pegas (30 % contraataca). Fases por vida (pasivas del juego): 80 % Fuerza Interior (cada 3.ª skill Tanglecleaver), 60 % Estrella Tiantui (18 balas, herido), 40 % **SHIN** (anillo de Mang, 心, Savage Tigerslayer's Perfected Flurry of Blades). Tras un ataque fuerte, la espada se sobrecalienta 9 s. A 0 cae y vuelve a los 7 s con la vida llena. Sin balas: Reloading Tiantui Star's Blade.
+- Intro `Transicion-LeiHeng` (`$LhIntro`, ~13,8 s): CG lejano (`cg_lejos.jpg`, zoom hacia él) → CG cercano (`cg_cerca.jpg`) → Proelium Fatale → ficha de jefe. Idea del usuario.
+- Sin música propia (YouTube pide iniciar sesión).
+
+## EVENTO del Pulgar (Valencina, Lei Heng y Kalo)
+
+- Grupo **Evento** en `$GruposSkins` (el primero del menú; esas tres skins ya no están en Videojuegos). Botón **★ EVENTO** en la barra de arriba (`Nuevo-Boton-Evento`, a la izquierda de Ajustes, con su propio dibujo rojo y dorado igual en todas las skins); `Abrir-Evento` abre/cierra el menú Skins en ese grupo (`Pagina-Evento`). Si el subtítulo de una skin llegaría al botón, se corta con "...".
+- Anuncio de la primera vez (`Anuncio-Evento`, `$EventoIntro`): Proelium Fatale → logo del Pulgar ("EL PULGAR", `Evento-Insignia`) → las tres skins como cartas con sello "DESAFÍO" (`$EventoRivales`) → abre el grupo Evento. Lo lanza el `ambTimer` cuando `EventoPulgar` = no en `ajustes.txt` (y ya se vio la guía del panda); en modo seguro se salta el vídeo.
+- Para un evento nuevo: otro grupo en `$GruposSkins`, cambiar `$EventoRivales`/textos y otra clave en `$script:aj`.
+
+## Kalo (Library of Ruina) con Boris y Katriel
+
+- Estilo `capo`, grupo **Videojuegos** ('Library of Ruina'). Ficha en `lore\personajes\Kalo.md`. Actores 'B' (Boris), 'K' (Katriel) y 'C' (Kalo); `Kc-Actores` decide quién se ve según el acto.
+- Estado en `$script:kc` (`Acto, HP{B,K,C}, Muere, Libros, Suelo, Banner, Ataque, Choques, Escena, Pendiente`), datos de cada uno en `$KcEnemigos`. Funciones `Kc-Reset, Kc-Actores, Kc-Vivos, Kc-Danar, Kc-Cae, Kc-Clic, Kc-App, Kc-Entra-Kalo, Kc-Reiniciar, Kc-Tick, Kc-Victoria, Kc-Pintar` y para dibujar `Kc-Icono-Libro, Kc-Neon, Kc-Adornos`.
+- Mecánica: clic = choque de dados (tu dado 2-8 contra el suyo; si pierdes, te ataca). App = página sin oposición. Acto 1 con Protección (−1). Al caer cada uno: "Libro de X obtenido" y su libro en el suelo. Acto 1 acabado → `Kc-Victoria 1` y, con `$script:iDespues`, `Kc-Entra-Kalo`. Kalo caído → `Kc-Victoria 2` y `Kc-Reiniciar`.
+- Las pantallas de VICTORY usan `Intro-Overlay` (así tapan también los botones); se copiaron de las capturas del juego que pasó el usuario.
+- Las frases de los Capos van en su JSON con el nombre delante ("Boris: ..."), listas `BorisAtaca/Golpe/Cae`, `KatrielAtaca/Golpe/Cae`, `KaloAtaca/Golpe/Cae`, `Entran`, `KaloEntra`, `Reinicio`.
+
 ## Silix y Pendeja (OC de Fox Fandubs)
 
 - Estilo `silix`, grupo **Amigos**. Dos personajes en una skin, muy inspirados en Forsaken. Su creador: YouTube [FOX FANDUBS] @n.o.l.i-o2g, Discord SFOTH KING/F○X.

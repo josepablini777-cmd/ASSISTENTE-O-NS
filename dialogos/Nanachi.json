@@ -110,7 +110,10 @@
     "Dybbuk": "Nnaa. Se fue el gato fantasma. Lamió la olla. Mitty le gruñó. Bien hecho, Mitty.",
     "Malkuth": "Nnaa. Se fue la bibliotecaria. Me ha prestado un libro de cocina. No lo voy a leer. ...a lo mejor un poco.",
     "Weathergirl": "Nnaa. Se fue la del tiempo. Me ha dejado su paraguas para Mitty. Mitty no cabe debajo. Pero le gusta.",
-    "Painter": "Nnaa. Se fue el ordenador. Le dejé un guiso. No tiene boca. Lo olió con los cables. Creo que le gustó."
+    "Painter": "Nnaa. Se fue el ordenador. Le dejé un guiso. No tiene boca. Lo olió con los cables. Creo que le gustó.",
+    "Valencina": "Se fue la de rojo. Mitty no le tenía miedo. Mitty es muy valiente. Nnaa~",
+    "Lei Heng": "Se fue el de la espada. Nnaa~. Mejor.",
+    "Kalo": "Se fue el viejo del bastón. Nnaa~."
   },
   "Opina": {
     "c00lgui": ["c00lgui grita en rojo todo el rato. En el Abismo eso no duraría ni una capa.", "Me ha intentado \"hackear\". No tengo nada que hackear. Soy de pelo."],
@@ -140,6 +143,9 @@
     "Dybbuk": ["Dybbuk es un espíritu con hambre de cuerpos. En el Abismo también hay cosas así. No las invito a cenar.", "Le gustó mi estofado. Es el único. Me da igual. ...un poco no."],
     "Malkuth": ["Malkuth tiene demasiada energía. Me cansa mirarla. Pero no es mala. Nnaa.", "Le ha dado una patata a Mitty. Mitty no come patatas. Pero le ha gustado el detalle. A mí también."],
     "Weathergirl": ["La chica del tiempo dice que en la superficie llueve. En el Abismo también. Pero hacia arriba. Nnaa.", "Llora bajito, como Mitty cuando sueña. Le hice una sopa. Se la tomó."],
-    "Painter": ["El ordenador habla demasiado. Pero tiene ganas de pintar. Eso es de las pocas cosas buenas que veo por aquí. Nnaa.", "Le dije que en el Abismo hay paisajes bonitos. Preguntó si llevaba tableta. Le dije que no. Se puso triste. Prometí describirle uno."]
+    "Painter": ["El ordenador habla demasiado. Pero tiene ganas de pintar. Eso es de las pocas cosas buenas que veo por aquí. Nnaa.", "Le dije que en el Abismo hay paisajes bonitos. Preguntó si llevaba tableta. Le dije que no. Se puso triste. Prometí describirle uno."],
+    "Valencina": ["Nnaa... esa de rojo huele a puro y a whisky. Y a tristeza. Mucha. No se lo digas."],
+    "Lei Heng": ["Nnaa... ese tío se ríe mientras pelea. Huele a pólvora. Mitty no se acerca. Y Mitty no le teme a nada."],
+    "Kalo": ["Nnaa... el viejo dice que sobrevivir es un rango. Eso me ha gustado. Un poco."]
   }
 }

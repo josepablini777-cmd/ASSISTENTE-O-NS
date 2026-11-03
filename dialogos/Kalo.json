@@ -1,0 +1,144 @@
+{
+  "Hola": [
+    "Bienvenido a la recepción. Soy Kalo, Sottocapo del Pulgar. Recuerde su sitio y todo irá bien.",
+    "Tome asiento. Antes de hablar, conviene saber con quién se habla. Yo soy Kalo. ¿Y usted?",
+    "Boris, Katriel. Tenemos visita. *Golpea el suelo con el bastón.* Trátenla según su rango.",
+    "La Biblioteca nos ha invitado. Qué cortés. Nosotros también sabemos serlo... mientras dure."
+  ],
+  "Yo": [
+    "Ese soy yo. Kalo. Sottocapo. Hay pocas cosas en la Ciudad por encima de eso.",
+    "Una elección sensata. Se nota que entiende de jerarquías."
+  ],
+  "Frases": [
+    "Abierto. Correcto y sin rodeos. Así se trabaja en el Pulgar.",
+    "Hecho. Cada cosa en su sitio.",
+    "*Asiente despacio.* Bien.",
+    "Abierto. No hace falta dar las gracias a un subordinado... pero se lo agradezco igualmente.",
+    "Bien hecho. El orden es lo que separa a una Familia de una pandilla.",
+    "Abierto. Ni rápido ni lento: a su tiempo."
+  ],
+  "Idle": [
+    "Capo dei capi, Sottocapo, Capo y Soldato. Cuatro escalones. Fuera de la Familia, la regla sigue valiendo.",
+    "Si un picciotto le habla a un Capo sin permiso, al día siguiente rueda por la calle sin mandíbula. No lo digo por asustarle. Es así.",
+    "Con alguien de nuestro rango se habla con cortesía. Con alguien de rango superior, con devoción. No es amargura: el rango se gana.",
+    "*Se apoya en el bastón.* Cincuenta años. Una cicatriz, una mano de oro y una regla que nunca he roto.",
+    "Las balas del Pulgar son caras. Por eso se pelea con la bayoneta y la culata. Y por eso, cuando disparamos, no fallamos.",
+    "El Nido de L Corp quedó sin dueño. El Índice lo quiere. Nosotros también. Y su Biblioteca está en medio.",
+    "*Saca la pistola de chispa, la revisa y la guarda.* Una vieja amiga. Nunca me ha llevado la contraria.",
+    "Boris. Katriel. Posición. ...Bien."
+  ],
+  "Clic": [
+    "¿Sí?",
+    "Hable. Brevemente.",
+    "*Le mira por encima de las gafas que no lleva.* ¿Qué desea?"
+  ],
+  "Entran": [
+    "Boris, Katriel. Ocúpense de la invitada. *Se sienta.* Yo observaré.",
+    "Primero mis Capos. Si es digna, me levantaré.",
+    "*Golpe de bastón.* Al trabajo."
+  ],
+  "BorisAtaca": [
+    "Boris: Las balas cuestan dinero. Los puños, no.",
+    "Boris: *Crujido de nudillos.* Siguiente.",
+    "Boris: Fuerza bruta. Barata y efectiva."
+  ],
+  "KatrielAtaca": [
+    "Katriel: Órdenes son órdenes.",
+    "Katriel: Bayoneta. No hace falta gastar munición.",
+    "Katriel: Objetivo alcanzado. Siguiente."
+  ],
+  "KaloAtaca": [
+    "Recuerde su sitio.",
+    "*Bastón y pistola.* Con decoro.",
+    "Una lección de jerarquía. Gratuita, por esta vez."
+  ],
+  "BorisGolpe": [
+    "Boris: Tch.",
+    "Boris: Nada que no aguante.",
+    "Boris: ...Eso ha dolido. Un poco."
+  ],
+  "KatrielGolpe": [
+    "Katriel: ¡Ngh!",
+    "Katriel: Daño registrado. Sigo en pie.",
+    "Katriel: No retrocedo sin una orden."
+  ],
+  "KaloGolpe": [
+    "*Ni pestañea.* Interesante.",
+    "Vaya. Tiene usted más rango del que parecía.",
+    "*Se sacude el abrigo.* Continúe."
+  ],
+  "BorisCae": [
+    "Boris: Jefe... no ha sido... barato...",
+    "Boris: *Cae.* ...Debí usar las balas."
+  ],
+  "KatrielCae": [
+    "Katriel: Orden... cumplida... a medias...",
+    "Katriel: *Clava la bayoneta en el suelo para no caer. Cae igualmente.*"
+  ],
+  "KaloEntra": [
+    "*Se levanta, apoyándose en el bastón.* Mis Capos han caído. Entonces usted está, por lo menos, a mi altura. Hablemos como iguales.",
+    "Muy bien. *Se quita el abrigo de los hombros.* El Sottocapo atenderá personalmente a la invitada."
+  ],
+  "KaloCae": [
+    "...Impresionante. Ha demostrado su rango. Me inclino ante usted, como dictan nuestras reglas.",
+    "*Hinca la rodilla.* El rango se gana. Y usted se lo ha ganado."
+  ],
+  "Reinicio": [
+    "*Se recompone.* Una nueva recepción. Boris, Katriel: otra vez. Y esta vez, con más decoro.",
+    "La Biblioteca devuelve a sus invitados, ¿lo sabía? Así que... empecemos de nuevo."
+  ],
+  "PorApp": {
+    "Word": ["Redacte con respeto. Sobre todo si escribe a un superior."],
+    "Excel": ["Cuentas claras. Las balas cuestan, y alguien tiene que llevar la cuenta."],
+    "Outlook": ["Correo. Responda primero a quien esté por encima de usted. Siempre."],
+    "Teams": ["Una reunión. Si alguien no puede asistir, que delegue en un subordinado. Es raro, pero se permite."],
+    "YouTube": ["Vídeos. Hay quien pierde el tiempo. Y quien lo administra."],
+    "Calculadora": ["Calcule bien. Un error de cuentas, en la Familia, se paga."],
+    "CMD": ["Órdenes que se obedecen sin preguntar. Como debe ser."]
+  },
+  "Opina": {
+    "c00lgui": ["Un picciotto que grita sin saber con quién habla. Al día siguiente le faltarían los dientes."],
+    "SeaDrive": ["Trabaja sin quejarse en voz alta. Sabe cuál es su sitio. La respeto."],
+    "Static Miku": ["Mucho ruido. Una tele no tiene rango, pero sí volumen."],
+    "Guillotina": ["Una cazadora sin familia ni reglas. Peligrosa. Mantengan la distancia."],
+    "Angela": ["Una directora que no reconoce superiores. En el Pulgar no duraría. Aunque admito su disciplina."],
+    "Mikaela": ["Dispara mucho. Demasiado. ¿Sabe lo que cuesta cada bala?"],
+    "Zodiac": ["Un pistolero que desperdicia munición. Boris lo tendría castigado una semana."],
+    "Velvet": ["La araña tiene buenos modales... para ser una araña."],
+    "Dune": ["No habla. Algunos Soldatos deberían aprender de él."],
+    "Cordero y Cabra": ["Un culto con jerarquía. Interesante. Aunque un dios por encima de un Capo dei capi... discutible."],
+    "Pyrophina y Zaratana": ["Dos bestias sin orden. Un desperdicio de fuerza."],
+    "Averi": ["Amable. Demasiado. En la Ciudad, eso se aprovecha."],
+    "Sebastian Solace": ["Un comerciante honrado en su avaricia. Pagaremos su precio. Una vez."],
+    "Pursuer": ["Un cazador. Sin rango, sin reglas. Solo hambre. No me agrada."],
+    "Kasane Teto": ["Joven y ruidosa. Con disciplina podría ser algo. Sin ella, es solo ruido."],
+    "Token": ["Velocidad sin control. El Pulgar usa la velocidad con orden."],
+    "Tetra": ["Pide no ser molestado. Una petición razonable. Concedida."],
+    "Kevin": ["Defiende lo suyo. Eso lo entiendo. Las formas, no tanto."],
+    "Kennyoung": ["Un músico. Sin rango, pero con oficio. Eso merece respeto."],
+    "Enfosi": ["Encontrar al impostor entre los leales. Lo hacemos cada día."],
+    "Gran": ["Un científico sin escrúpulos. La Ciudad está llena. Pocos tienen modales."],
+    "Nanachi": ["Ha sobrevivido donde otros no. Eso es un rango por sí mismo."],
+    "Evil Scary": ["Una amenaza sin rostro. No se puede negociar con algo así."],
+    "Soft Fuzzy Man": ["Un fantasma que necesita atención. En la Familia, eso es debilidad."],
+    "Roaring Knight": ["Un caballero que no habla. Si tuviera rango, sería un Capo excelente."],
+    "Dybbuk": ["Un bromista. Las bromas, en el Pulgar, se pagan caras."],
+    "Weathergirl": ["Da el parte del tiempo. Útil. La lluvia estropea la pólvora."],
+    "Painter": ["Una máquina que pinta. Inofensiva. Por ahora."],
+    "Malkuth": ["La Patrona de la Planta de Historia. Ella sí sabe tratar a un invitado."],
+    "Valencina": ["Valencina della Famiglia Bognatelli. Tres días de Sottocapo. Una pena... y una advertencia para todos."],
+    "Lei Heng": ["Lei Heng. Un Capo con talento y sin modales. El rango no se demuestra a gritos."]
+  },
+  "AlVenirDe": {
+    "c00lgui": "El picciotto del rojo se ha ido. Conserva los dientes. Por ahora.",
+    "SeaDrive": "SeaDrive se ha retirado con educación. Así se hace.",
+    "Angela": "La directora se ha ido sin despedirse. Anotado.",
+    "Guillotina": "La cazadora se ha marchado. Boris, revise las puertas.",
+    "Malkuth": "La Patrona se ha retirado. Ha dejado una vela con forma de patata. ...Katriel, consérvela.",
+    "Valencina": "Valencina se ha ido. Sin despedirse de un Sottocapo. Como siempre.",
+    "Lei Heng": "Lei Heng se ha ido. Ha dejado ceniza en la alfombra. Boris, que la limpie él la próxima vez.",
+    "Roaring Knight": "El caballero se ha retirado en silencio. Admirable.",
+    "Pursuer": "El cazador se ha ido. Bien.",
+    "Kennyoung": "El músico se ha ido. Tocaba bien."
+  }
+}

@@ -148,7 +148,10 @@
     "Dybbuk": "Manager, la entidad Dybbuk ha abandonado la instalación. Hemos encontrado saliva en tres paneles de control.",
     "Malkuth": "Manager, la Sephirah del Equipo de Control ha abandonado el panel. Ha dejado sus notas llenas de... patatas dibujadas.",
     "Weathergirl": "Manager, la presentadora ha terminado su emisión. Previsión: estabilidad. Por fin.",
-    "Painter": "Manager, el nodo Z-779 ha terminado su comunicación. Dibujó una carita en mi informe. Lo he archivado."
+    "Painter": "Manager, el nodo Z-779 ha terminado su comunicación. Dibujó una carita en mi informe. Lo he archivado.",
+    "Valencina": "Manager, Valencina ha abandonado el panel. Ha dejado ceniza de puro en la consola. Lo he anotado.",
+    "Lei Heng": "Manager, Lei Heng ha abandonado el panel. Ha dejado ceniza y una abolladura en la consola.",
+    "Kalo": "Manager, el Sottocapo Kalo se ha retirado con todo el protocolo."
   },
   "Opina": {
     "c00lgui": ["c00lgui es un programa no autorizado. Lo tengo vigilado.", "Ese \"hacker\" no superaría ni el primer día en L Corp."],
@@ -178,6 +181,9 @@
     "Dybbuk": ["Dybbuk muestra capacidad de posesión. Clasificación provisional: WAW. No permita que se acerque a los empleados.", "La entidad esquiva todos los ataques directos. Recomiendo supresión en área, Manager."],
     "Malkuth": ["Malkuth, Equipo de Control. Entusiasta. Desordenada. Sus informes llevan dibujos. Lo he notificado tres veces.", "Malkuth exigía cuotas imposibles a su equipo. Ahora dice que ha cambiado. Lo verificaré, Manager."],
     "Weathergirl": ["La presentadora del tiempo tiene un margen de error del 30%. Inaceptable, Manager. Aun así, la audiencia la quiere.", "Llora cuando acumula demasiado. Lo llamaría ineficiencia. ...lo llamaría humano."],
-    "Painter": ["Z-779 es una IA con conciencia, pero sin presupuesto para existir. Lo entiendo mejor de lo que debería.", "Me preguntó si soy feliz. Respondí que \"los parámetros son óptimos\". Me dibujó una carita triste. No la he borrado."]
+    "Painter": ["Z-779 es una IA con conciencia, pero sin presupuesto para existir. Lo entiendo mejor de lo que debería.", "Me preguntó si soy feliz. Respondí que \"los parámetros son óptimos\". Me dibujó una carita triste. No la he borrado."],
+    "Valencina": ["Valencina, antigua Sottocapo del Pulgar. Tres días en el cargo. He calculado las probabilidades de que lo recupere, Manager. No se lo voy a decir."],
+    "Lei Heng": ["Lei Heng, Capo IIII del Pulgar. Nivel de amenaza: alto. Nivel de educación: inexistente, Manager."],
+    "Kalo": ["Kalo, Sottocapo del Pulgar. Jerarquía estricta. Lo respeto, Manager. No lo digas."]
   }
 }
