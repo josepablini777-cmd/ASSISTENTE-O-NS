@@ -113,7 +113,8 @@
     "Painter": "Nnaa. Se fue el ordenador. Le dejé un guiso. No tiene boca. Lo olió con los cables. Creo que le gustó.",
     "Valencina": "Se fue la de rojo. Mitty no le tenía miedo. Mitty es muy valiente. Nnaa~",
     "Lei Heng": "Se fue el de la espada. Nnaa~. Mejor.",
-    "Kalo": "Se fue el viejo del bastón. Nnaa~."
+    "Kalo": "Se fue el viejo del bastón. Nnaa~.",
+    "Shedletsky": "Se fue el del pollo. Ha dejado el estofado. Sin tocar."
   },
   "Opina": {
     "c00lgui": ["c00lgui grita en rojo todo el rato. En el Abismo eso no duraría ni una capa.", "Me ha intentado \"hackear\". No tengo nada que hackear. Soy de pelo."],
@@ -146,6 +147,7 @@
     "Painter": ["El ordenador habla demasiado. Pero tiene ganas de pintar. Eso es de las pocas cosas buenas que veo por aquí. Nnaa.", "Le dije que en el Abismo hay paisajes bonitos. Preguntó si llevaba tableta. Le dije que no. Se puso triste. Prometí describirle uno."],
     "Valencina": ["Nnaa... esa de rojo huele a puro y a whisky. Y a tristeza. Mucha. No se lo digas."],
     "Lei Heng": ["Nnaa... ese tío se ríe mientras pelea. Huele a pólvora. Mitty no se acerca. Y Mitty no le teme a nada."],
-    "Kalo": ["Nnaa... el viejo dice que sobrevivir es un rango. Eso me ha gustado. Un poco."]
+    "Kalo": ["Nnaa... el viejo dice que sobrevivir es un rango. Eso me ha gustado. Un poco."],
+    "Shedletsky": ["Nnaa... el del pollo me ha dado un muslo. Le he dado estofado del Abismo. Ha puesto una cara... Nnaa~"]
   }
 }

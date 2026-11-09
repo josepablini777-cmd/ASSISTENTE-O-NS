@@ -244,7 +244,8 @@
     "Painter": "Se fue Painter. Me dibujó un paisaje con lluvia y sol a la vez. Tenía hasta un arcoíris. Lo he guardado entre mis partes.",
     "Valencina": "Valencina se ha ido. Se despeja el cielo. Un poco.",
     "Lei Heng": "Lei Heng se ha ido. Escampa.",
-    "Kalo": "Kalo se ha ido. Bajan las presiones."
+    "Kalo": "Kalo se ha ido. Bajan las presiones.",
+    "Shedletsky": "Shedletsky se ha ido. Despejado."
   },
   "Opina": {
     "c00lgui": ["c00lgui ha hackeado mi parte. Ahora pone \"100% de probabilidad de c00lgui\". Lo leí en directo... no sabía qué hacer.", "Es como una tormenta eléctrica: mucho ruido, muchas luces... y luego se apaga solo."],
@@ -277,6 +278,7 @@
     "Painter": ["Painter quiere pintar paisajes... y yo quiero decir lo que siento. Los dos tenemos cosas por salir. Los dos nos entendemos.", "Me dibujó con el paraguas. Con la carita llorando y sonriendo a la vez. Es exactamente como me siento."],
     "Valencina": ["Pronóstico para Valencina: nublado con probabilidad de gritos al cien por cien. Y una tormenta dentro que no le cuenta a nadie."],
     "Lei Heng": ["Pronóstico para Lei Heng: tormenta de tajos con rachas de risas. Llevad paraguas. Y armadura."],
-    "Kalo": ["Pronóstico para Kalo: estable, frío y sin sorpresas. Con dos frentes por delante."]
+    "Kalo": ["Pronóstico para Kalo: estable, frío y sin sorpresas. Con dos frentes por delante."],
+    "Shedletsky": ["Pronóstico para las Alturas de Shedletsky: viento fuerte, plataformas resbaladizas y lluvia de pollo frito."]
   }
 }

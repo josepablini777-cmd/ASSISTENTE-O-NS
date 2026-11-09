@@ -85,7 +85,8 @@
     "Painter": "El ordenador se ha ido. Sujeto interesante: una IA que dibuja sus emociones. Me negó los registros. Otra más.",
     "Valencina": "La portadora del ojo se ha marchado. Mis notas siguen incompletas. Lamentable.",
     "Lei Heng": "El sujeto de la espada se ha marchado. Mis notas siguen incompletas.",
-    "Kalo": "El Sottocapo se ha marchado. Mis notas, sin la mano dorada. Lamentable."
+    "Kalo": "El Sottocapo se ha marchado. Mis notas, sin la mano dorada. Lamentable.",
+    "Shedletsky": "El sujeto Shedletsky se ha marchado. Mis datos sobre el pollo, incompletos."
   },
   "Opina": {
     "c00lgui": ["c00lgui no tiene cuerpo. No hay ADN que reescribir. Inútil.", "Un hacker. Cree que controla los sistemas. El sistema soy yo."],
@@ -118,6 +119,7 @@
     "Painter": ["Painter es una conciencia atrapada en un procesador. Datos valiosísimos. Pero se pone nervioso y se calienta. Hay que tratarlo con cuidado.", "Le pedí analizar su paisaje. Me dibujó una carita enfadada. Resultado: 1 punto en cooperación."],
     "Valencina": ["Sujeto: Valencina. Reliquia ocular con precognición. Sobrecalentamiento tras uso intensivo. Solicito una muestra. Denegada. Con un tajo."],
     "Lei Heng": ["Sujeto: Lei Heng. Shin y un anillo de Mang. Fascinante. Ha rechazado la toma de muestras. Con una amenaza muy gráfica."],
-    "Kalo": ["Sujeto: Kalo. Prótesis dorada en la mano derecha. Solicito examinarla. Me ha mirado. He retirado la solicitud."]
+    "Kalo": ["Sujeto: Kalo. Prótesis dorada en la mano derecha. Solicito examinarla. Me ha mirado. He retirado la solicitud."],
+    "Shedletsky": ["Sujeto: John Shedletsky. Antiguo admin. Consumo de pollo frito: alarmante. Solicito análisis de sangre. Ha dicho «Blame John» y se ha ido."]
   }
 }

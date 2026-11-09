@@ -228,11 +228,13 @@ PowerShell no basta para recortar fondos o editar imágenes. Lo que ha funcionad
 - Intro `Transicion-LeiHeng` (`$LhIntro`, ~13,8 s): CG lejano (`cg_lejos.jpg`, zoom hacia él) → CG cercano (`cg_cerca.jpg`) → Proelium Fatale → ficha de jefe. Idea del usuario.
 - Sin música propia (YouTube pide iniciar sesión).
 
-## EVENTO del Pulgar (Valencina, Lei Heng y Kalo)
+## Shedletsky (Roblox)
 
-- Grupo **Evento** en `$GruposSkins` (el primero del menú; esas tres skins ya no están en Videojuegos). Botón **★ EVENTO** en la barra de arriba (`Nuevo-Boton-Evento`, a la izquierda de Ajustes, con su propio dibujo rojo y dorado igual en todas las skins); `Abrir-Evento` abre/cierra el menú Skins en ese grupo (`Pagina-Evento`). Si el subtítulo de una skin llegaría al botón, se corta con "...".
-- Anuncio de la primera vez (`Anuncio-Evento`, `$EventoIntro`): Proelium Fatale → logo del Pulgar ("EL PULGAR", `Evento-Insignia`) → las tres skins como cartas con sello "DESAFÍO" (`$EventoRivales`) → abre el grupo Evento. Lo lanza el `ambTimer` cuando `EventoPulgar` = no en `ajustes.txt` (y ya se vio la guía del panda); en modo seguro se salta el vídeo.
-- Para un evento nuevo: otro grupo en `$GruposSkins`, cambiar `$EventoRivales`/textos y otra clave en `$script:aj`.
+- Estilo `sfoth`, grupo **Roblox**. Ficha en `lore\personajes\Shedletsky.md`. Actores 'S' (él: poses `main` = espada en alto, `tajo`, `come`) y 'P' (el muslo de pollo, clicable). Renders y mapa que pasó el usuario; los GIF de la wiki de FORSAKEN están tras una protección anti-bots y no se usan.
+- Estado en `$script:sh` (`HP, KOs, WOs, Noob, Malo, Pollo, Cura, SlashT, Muerto, Escudo, Piezas, Blame, Logro, Kill`), números en `$ShTiempos`. Funciones `Sh-Reset, Sh-Actores, Sh-Musica-On/Off, Sh-Romper, Sh-Bloxian (dibuja un R6 clásico a bloques: noob o 1x1x1x1), Sh-App, Sh-Aparece-Malo, Sh-Clic, Sh-Blame, Sh-Muere, Sh-Tick, Sh-Pintar`.
+- Mecánica: cada app = un retador que corre a por él (85 % KO, si no −30). Cada 5 KOs, 1x1x1x1: clic en él = SLASH (aturde 3 s; tres veces = logro y se va). Pollo: +5 y +25 en 10 s, 2 por vida. A 0: se rompe en piezas, WO y reaparece con campo de fuerza. Fallos (app que no está, errores) = sello BLAME JOHN.
+- Música: `skins\shedletsky\musica.mp3` = "Dueling Winds (Remix)" (Phighting!), en bucle.
+- OJO: en la intro, `$st` (estado del Graphics) y `$ST` (tiempos) serían la misma variable: se usa `$gs`.
 
 ## Kalo (Library of Ruina) con Boris y Katriel
 

@@ -156,7 +156,8 @@
     "Painter": ["Una máquina que pinta. Le he pedido un retrato. Me ha pintado con un sol. No está mal."],
     "Malkuth": ["Esa bibliotecaria tan alegre... me da que le pegaría un buen tajo y seguiría sonriendo. Respeto eso."],
     "Valencina": ["¡Valencina! La Sottocapo de los tres días. ¡Ja, ja, ja! Perdona, perdona... no, en serio, ¡tres días!", "Buena espada, eso sí. El Estilo Palermitano es cosa seria. Lástima de cabeza."],
-    "Kalo": ["¡Señor Kalo! Ea, ea, aquí me tiene, todo modales. ¿Ve? Sé comportarme. ...Un ratito."]
+    "Kalo": ["¡Señor Kalo! Ea, ea, aquí me tiene, todo modales. ¿Ve? Sé comportarme. ...Un ratito."],
+    "Shedletsky": ["¡Ea! ¡El chaval de la espada y el pollo! Le he propuesto un bailecito. Ha dicho que en sus Alturas. ¡Ja, ja! ¡Hecho!"]
   },
   "AlVenirDe": {
     "c00lgui": "¿Se ha ido el crío del rojo? Ea, ahora se oye uno pensar.",
@@ -184,6 +185,7 @@
     "Painter": "Se fue la máquina que pinta. Me ha dejado un dibujo con mi espada. Bonito.",
     "Malkuth": "Se fue la bibliotecaria. Sonriendo, la tía. Qué aguante.",
     "Valencina": "¡Se ha ido la de los tres días! ¡Ja, ja! ...Lucio se ha dejado el vaso.",
-    "Kalo": "Se fue el señor Kalo. ¡Ufff! Ya puedo volver a hablar normal, chaval."
+    "Kalo": "Se fue el señor Kalo. ¡Ufff! Ya puedo volver a hablar normal, chaval.",
+    "Shedletsky": "Se fue el del pollo. Me debe un baile en sus Alturas."
   }
 }

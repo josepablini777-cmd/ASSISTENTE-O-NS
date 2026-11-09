@@ -1,4 +1,4 @@
-﻿# c00lgui v7.0 - panel lanzador con skins de asistentes
+﻿# c00lgui v7.1 - panel lanzador con skins de asistentes
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 # el panel mide su propio escalado de pantalla para que nada se corte
@@ -60,7 +60,6 @@ $script:aj = [ordered]@{
     Guia = $false   # si ya se ha visto la guía del panda
     Epilepsia = $false   # modo seguro: sin destellos, parpadeos, temblores ni intros (ver Sin-Destellos)
     KnightVictorias = 0   # victorias en el minijuego del Roaring Knight
-    EventoPulgar = $false   # si ya salió el anuncio del evento del Pulgar
     AngelaDia = 1   # día de Lobotomy Corporation en la skin de Angela (sube al completar la cuota de energía)
 }
 function Cargar-Ajustes {
@@ -193,7 +192,7 @@ $SxSerif = if (@((New-Object System.Drawing.Text.InstalledFontCollection).Famili
 $Skins = [ordered]@{
     # ================================================================ c00lgui
     'c00lgui' = @{
-        Estilo = 'hacker'; Titulo = 'c00lgui'; Sub = 'v7.0'; Alto = 312
+        Estilo = 'hacker'; Titulo = 'c00lgui'; Sub = 'v7.1'; Alto = 312
         Fondo = (C 0 0 0); Borde = (C 255 0 0); Sombra = (C 90 0 0)
         TituloColor = (C 255 0 0); SubColor = (C 140 0 0)
         BtnFondo = (C 0 0 0); BtnTexto = (C 255 255 255); BtnTextoHover = (C 255 40 40); BtnBorde = (C 255 0 0); BtnBordeAncho = 1
@@ -879,6 +878,30 @@ $Skins = [ordered]@{
         # el estofado del Abismo (receta de verdad del manga) y lo que cae en la olla con cada app
         Ingredientes = @('un pez demonio entero (machacado)', 'un huevo de picomartillo gigante', 'hierba amarilla, bien pegajosa', 'Gintoko desmigado', 'sal. Lo único normal')
     }
+    # ================================================================ Shedletsky (Roblox)
+    # John Shedletsky: admin y Director Creativo de Roblox, creador de Sword Fights on the Heights (alias Telamon).
+    # Aspecto y kit de FORSAKEN (espada que aturde y pollo frito). Ficha en lore\personajes\Shedletsky.md.
+    # Mecánica en "SHEDLETSKY (Roblox): SWORD FIGHTS ON THE HEIGHTS". Música: Dueling Winds (Remix), de Phighting!.
+    'Shedletsky' = @{
+        Estilo = 'sfoth'; Titulo = 'SHEDLETSKY'; Sub = 'sword fights on the heights  ·  roblox'; Alto = 320
+        Fondo = (C 40 40 44); Borde = (C 90 90 90); Acento = (C 70 160 255)
+        TituloColor = (C 255 255 255); SubColor = (C 200 214 230)
+        BtnFondo = (C 225 225 225); BtnTexto = (C 20 20 20); BtnTextoHover = (C 0 0 0); BtnBorde = (C 90 90 90); BtnBordeAncho = 1
+        BtnHover = (C 255 255 255); BtnPress = (C 170 200 240); BarraBtnTexto = (C 20 20 20)
+        StatusColor = (C 255 255 255); Fuente = 'Arial'; FuenteTitulo = 'Arial Black'; Opacidad = 1.0; Velocidad = 1
+        Ancho = 760; Mezclar = $true; Gif = 'skins\shedletsky\shed.png'; FondoImg = 'skins\shedletsky\fondo.jpg'
+        IntroMapa = 'skins\shedletsky\intro_mapa.jpg'
+        Actores = @(
+            @{ Id = 'S'; Gif = 'skins\shedletsky\shed.png'; Rect = @(418, 64, 214, 244); Respira = $true; Extra = @{ tajo = 'skins\shedletsky\tajo.png'; come = 'skins\shedletsky\come.png' } }
+            @{ Id = 'P'; Gif = 'skins\shedletsky\pollo.png'; Rect = @(704, 98, 48, 44) }
+        )
+        Sonidos = @{
+            espada = @('skins\shedletsky\espada.wav'); tajo = @('skins\shedletsky\tajo.wav'); lunge = @('skins\shedletsky\lunge.wav'); comer = @('skins\shedletsky\comer.wav')
+            curar = @('skins\shedletsky\curar.wav'); romper = @('skins\shedletsky\romper.wav'); boom = @('skins\shedletsky\boom.wav'); aparece = @('skins\shedletsky\aparece.wav')
+            aturde = @('skins\shedletsky\aturde.wav'); ko = @('skins\shedletsky\ko.wav'); dano = @('skins\shedletsky\dano.wav')
+        }
+        Burbuja = @(424, 278, 322, 34); BurFondo = $null; InvFondo = (C 255 255 255); BurTexto = (C 25 25 25); BurFuente = 'Arial'
+    }
     # ================================================================ Kalo (Library of Ruina)
     # Sottocapo del Pulgar en la recepción de Library of Ruina, con sus dos Capos, Boris y Katriel. Ficha en lore\personajes\Kalo.md.
     # Formal, frío y obsesionado con la jerarquía. Combate en dos actos: primero Boris y Katriel, luego él
@@ -1028,12 +1051,6 @@ $Skins = [ordered]@{
 # y eso último sale debajo del nombre, como el canal en YouTube.
 # El orden de aquí es el orden del menú. Una skin que no esté en ningún grupo sale sola en "Otras".
 $GruposSkins = [ordered]@{
-    # EVENTO del Pulgar: también se abre con el botón ★ EVENTO de arriba (ver "EVENTO: EL PULGAR")
-    'Evento' = [ordered]@{
-        'Valencina' = 'Limbus Company'
-        'Lei Heng'  = 'Limbus Company'
-        'Kalo'      = 'Library of Ruina'
-    }
     'YouTube' = [ordered]@{
         'SeaDrive'    = 'YonKaGor'
         'Tetra'       = 'YonKaGor'
@@ -1052,6 +1069,8 @@ $GruposSkins = [ordered]@{
         'Sebastian Solace' = 'Pressure'
         'Painter'          = 'Pressure'
         'Pursuer'          = 'Die of Death'
+        'Evil Scary'       = 'Die of Death'
+        'Shedletsky'       = 'Sword Fights on the Heights'
         'Enfosi'           = 'Tumore'
     }
     'Videojuegos' = [ordered]@{
@@ -1062,9 +1081,11 @@ $GruposSkins = [ordered]@{
         'Dune'                 = 'Gunsaw'
         'Angela'               = 'Lobotomy Corp.'
         'Malkuth'              = 'Library of Ruina'
+        'Kalo'                 = 'Library of Ruina'
+        'Valencina'            = 'Limbus Company'
+        'Lei Heng'             = 'Limbus Company'
         'Cordero y Cabra'      = 'Cult of the Lamb'
         'Roaring Knight'       = 'Deltarune'
-        'Evil Scary'           = 'Die of Death'
         'Dybbuk'               = 'Mewgenics'
     }
     'Anime' = [ordered]@{
@@ -1895,6 +1916,20 @@ function Fondo-Escena($k, $W, $H) {
             $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 40 28 14))), 0, 53, $W, 2)
             $em = Cargar-Img $k.Emblema; if ($em) { $g.DrawImage($em, 474, 3, 48, 47); $em.Dispose() }
         }
+        'sfoth' {
+            # el mapa de Sword Fights on the Heights; detrás de los botones, un panel gris del Roblox clásico
+            $g.Clear((C 40 40 44))
+            Imagen-Cubrir $g $k.FondoImg 0 0 $W $H 0.5 0.5
+            Degradado $g 0 0 420 $H (ARGB 200 24 24 28) (ARGB 150 24 24 28) 0
+            Degradado $g 420 0 90 $H (ARGB 150 24 24 28) (ARGB 0 24 24 28) 0
+            $pan = Ruta-Redonda 8 60 394 ($H - 66) 8
+            $g.FillPath((New-Object System.Drawing.SolidBrush((ARGB 150 0 0 0))), $pan)
+            $g.DrawPath((New-Object System.Drawing.Pen((ARGB 160 255 255 255), 1.5)), $pan); $pan.Dispose()
+            # barra de arriba: la del Roblox de 2008 (azul oscuro con una línea clara)
+            Degradado $g 0 0 $W 52 (C 30 90 170) (C 10 40 90) 90
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 140 200 255))), 0, 50, $W, 2)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 5 20 50))), 0, 52, $W, 3)
+        }
         'capo' {
             # la sala de la recepción del Pulgar, desenfocada y oscurecida a la izquierda para los botones
             $g.Clear((C 30 12 14))
@@ -2228,6 +2263,13 @@ function Pintar-Burbuja($g, $k) {
             $g.DrawPath((New-Object System.Drawing.Pen((C 150 110 50), 1.6)), $r); $r.Dispose()
             $g.DrawLine((New-Object System.Drawing.Pen((ARGB 150 200 60 50), 1)), [float]($x + 4), [float]($y + 4), [float]($x + $w - 30), [float]($y + 4))
             $g.FillPolygon((New-Object System.Drawing.SolidBrush((C 200 50 45))), [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($x + $w - 24), [float]($y - 6))), (New-Object System.Drawing.PointF([float]($x + $w - 14), [float]($y - 6))), (New-Object System.Drawing.PointF([float]($x + $w - 14), [float]($y + 12))), (New-Object System.Drawing.PointF([float]($x + $w - 19), [float]($y + 8))), (New-Object System.Drawing.PointF([float]($x + $w - 24), [float]($y + 12)))))
+        }
+        'sfoth' {
+            # bocadillo de chat del Roblox clásico: blanco, redondeado y con piquito hacia él
+            $r = Ruta-Redonda $x $y $w $h 8
+            $g.FillPath((New-Object System.Drawing.SolidBrush((ARGB 245 255 255 255))), $r)
+            $g.DrawPath((New-Object System.Drawing.Pen((C 150 150 150), 1.2)), $r); $r.Dispose()
+            $g.FillPolygon((New-Object System.Drawing.SolidBrush((ARGB 245 255 255 255))), [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($x + 70), [float]$y)), (New-Object System.Drawing.PointF([float]($x + 92), [float]$y)), (New-Object System.Drawing.PointF([float]($x + 74), [float]($y - 10)))))
         }
         { $_ -in @('ojo', 'tigre', 'capo') } {
             # cuadro de diálogo de Limbus: negro rojizo translúcido, filete dorado y una franja roja a la izquierda
@@ -6485,142 +6527,294 @@ function Proelium-Pintar($g, $W, $H, $ms) {
 }
 function Proelium-Soltar { if ($script:pfImg) { $script:pfImg.Dispose(); $script:pfImg = $null }; $script:pfIdx = -1 }
 
-# ================= EVENTO: EL PULGAR (Valencina, Lei Heng y la recepción de Kalo) =================
-# Botón EVENTO arriba (a la izquierda de Ajustes, igual en todas las skins): abre el menú Skins en el grupo "Evento".
-# La primera vez que se abre el panel tras la actualización sale el anuncio: PROELIUM FATALE, el logo del Pulgar y las
-# tres skins presentadas como rivales a los que hay que derrotar. Al acabar, se abre el grupo Evento.
-# Se guarda en ajustes.txt (EventoPulgar = si) para que solo salga una vez.
-$EventoRivales = @(
-    @{ Skin = 'Valencina'; Img = 'skins\valencina\intro.png'; Rango = 'Nursefather del Pulgar'; Juego = 'Limbus Company' }
-    @{ Skin = 'Lei Heng'; Img = 'skins\leiheng\intro.png'; Rango = 'Capo IIII del Pulgar'; Juego = 'Limbus Company' }
-    @{ Skin = 'Kalo'; Img = 'skins\kalo\kalo_intro.png'; Rango = 'Sottocapo del Pulgar'; Juego = 'Library of Ruina' }
-)
-$EventoIntro = @{ Logo = 4000; Rivales = 6800; Fin = 12600 }
-# página del menú Skins donde empieza el grupo Evento
-function Pagina-Evento {
-    $ps = Paginas-Skins
-    for ($i = 0; $i -lt $ps.Count; $i++) { if ($ps[$i].Grupo -eq 'Evento') { return $i } }
-    return 0
+# ================= SHEDLETSKY (Roblox): SWORD FIGHTS ON THE HEIGHTS =================
+# Ficha en lore\personajes\Shedletsky.md. Su música: "Dueling Winds (Remix)", de la banda sonora de Phighting!.
+# - Cada app que abres es un RETADOR (un noob con espada) que viene corriendo a por él: duelo a lo SFOTH. Casi siempre
+#   gana él (KO, el noob se rompe en piezas); a veces le dan a él (−30 de vida).
+# - Marcador clásico de Roblox arriba a la derecha: KOs y WOs (veces que le han tumbado).
+# - Cada 5 KOs aparece 1x1x1x1, su archienemigo de FORSAKEN, con la Venomshank. Se acerca despacio: haz clic en
+#   Shedletsky para su SLASH (como su habilidad de FORSAKEN): si está cerca lo aturde 3 s. Tres aturdimientos y se va
+#   (logro "Blame John!"). Si llega hasta él, le envenena (−30).
+# - POLLO FRITO (clic en el muslo): +5 al momento y +25 poco a poco; 2 por vida, como en FORSAKEN.
+# - A 0 de vida se rompe en piezas (WO) y reaparece a los 3 s con el campo de fuerza.
+# - Si algo falla: sello gigante de "BLAME JOHN." con un petardazo.
+$ShTiempos = @{ Max = 100; Slash = 5000; Aturde = 3000; Respawn = 3000; Escudo = 3000; Cura = 10000; Retador = 650; Enemigo = 640; CadaKOs = 5 }
+$script:sh = $null; $script:shMusica = $null
+function Sh-Reset {
+    if (-not $script:sh) {
+        $script:sh = @{ HP = 100.0; KOs = 0; WOs = 0; Racha = 0; Noob = $null; Malo = $null; Pollo = 2; Cura = $null; SlashT = 0; Muerto = 0; Escudo = 0
+            Piezas = (New-Object System.Collections.ArrayList); Blame = 0; Logro = 0; Kill = ''; Ult = [Environment]::TickCount; Num = 0; HudClave = '' }
+    }
 }
-function Abrir-Evento {
-    if (Ocupado) { return }
-    $pe = Pagina-Evento
-    if ($script:modoSkins -and $script:pagSkins -eq $pe) { $script:modoSkins = $false } else { $script:modoSkins = $true; $script:pagSkins = $pe }
-    Mostrar-Pagina
+function Sh-Actores {
+    $e = $script:sh; if (-not $e) { return }
+    $a = $script:actores['S']; if ($a) { $a.Visible = ($e.Muerto -eq 0) }
 }
-# el botón EVENTO: rojo y dorado en todas las skins, con una estrellita que brilla
-function Nuevo-Boton-Evento($x, $y) {
-    $b = New-Object System.Windows.Forms.Button
-    $b.Text = 'EVENTO'; $b.Name = 'Evento'
-    $b.Location = New-Object System.Drawing.Point($x, $y); $b.Size = New-Object System.Drawing.Size(78, 28)
-    $b.FlatStyle = 'Flat'; $b.FlatAppearance.BorderSize = 0; $b.BackColor = (C 110 14 20); $b.ForeColor = (C 250 220 150)
-    $b.Font = Fnt('Palatino Linotype', 8, [System.Drawing.FontStyle]::Bold); $b.Cursor = 'Hand'; $b.TabStop = $false
-    $b.Add_Paint({
-        $g = $_.Graphics; $g.SmoothingMode = 'AntiAlias'; $Z = $script:K
-        $hover = $this.ClientRectangle.Contains($this.PointToClient([System.Windows.Forms.Cursor]::Position))
-        $r = New-Object System.Drawing.Rectangle(0, 0, $this.Width, $this.Height)
-        $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush($r, $(if ($hover) { (C 190 40 34) } else { (C 140 20 26) }), (C 50 6 10), 90)
-        $g.FillRectangle($br, $r); $br.Dispose()
-        $g.DrawRectangle((New-Object System.Drawing.Pen((C 236 190 100), [float](1.6 * $Z))), [float](0.8 * $Z), [float](0.8 * $Z), [float]($this.Width - 1.6 * $Z), [float]($this.Height - 1.6 * $Z))
-        $fmt = New-Object System.Drawing.StringFormat; $fmt.Alignment = 'Center'; $fmt.LineAlignment = 'Center'; $fmt.FormatFlags = 'NoWrap'
-        $g.DrawString('★ EVENTO', $this.Font, (New-Object System.Drawing.SolidBrush($(if ($hover) { (C 255 246 210) } else { (C 250 214 140) }))), (New-Object System.Drawing.RectangleF(0, 0, $this.Width, $this.Height)), $fmt)
-    })
-    $b.Add_MouseEnter({ $this.Invalidate() }); $b.Add_MouseLeave({ $this.Invalidate() })
-    $b.Add_Click({ Abrir-Evento })
-    return $b
+function Sh-Volumen { return [Math]::Max(0.0, [Math]::Min(1.0, 0.45 * $script:aj.Volumen / 100.0)) }
+function Sh-Musica-On {
+    if (-not $script:aj.Sonido -or $script:shMusica) { return }
+    try { $mp = New-Object System.Windows.Media.MediaPlayer; $mp.Open([Uri](Ruta 'skins\shedletsky\musica.mp3')); $mp.Volume = (Sh-Volumen); $mp.Play(); $script:shMusica = $mp } catch { $script:shMusica = $null }
 }
-# la insignia del Pulgar: un anillo dorado con una punta de flecha
-function Evento-Insignia($g, $cx, $cy, $rad, $al) {
-    foreach ($p in @(@(14, 30), @(8, 60))) { $pn = New-Object System.Drawing.Pen((ARGB ([int]($p[1] * $al / 255)) 255 150 50), [float]$p[0]); $g.DrawEllipse($pn, [float]($cx - $rad), [float]($cy - $rad), [float](2 * $rad), [float](2 * $rad)); $pn.Dispose() }
-    $g.DrawEllipse((New-Object System.Drawing.Pen((ARGB $al 240 196 110), [float]($rad / 7))), [float]($cx - $rad), [float]($cy - $rad), [float](2 * $rad), [float](2 * $rad))
-    $pts = [System.Drawing.PointF[]]@((New-Object System.Drawing.PointF([float]($cx - $rad * 0.42), [float]($cy - $rad * 0.55))), (New-Object System.Drawing.PointF([float]($cx + $rad * 0.55), [float]$cy)), (New-Object System.Drawing.PointF([float]($cx - $rad * 0.42), [float]($cy + $rad * 0.55))), (New-Object System.Drawing.PointF([float]($cx - $rad * 0.12), [float]$cy)))
-    $g.FillPolygon((New-Object System.Drawing.SolidBrush((ARGB $al 246 206 120))), $pts)
+function Sh-Musica-Off { if ($script:shMusica) { try { $script:shMusica.Stop(); $script:shMusica.Close() } catch {}; $script:shMusica = $null } }
+function Sh-Invalidar {
+    $Z = $script:K
+    $form.Invalidate((New-Object System.Drawing.Rectangle([int](400 * $Z), [int](34 * $Z), [int](($form.ClientSize.Width / $Z - 400) * $Z), [int](290 * $Z))))
+    $form.Invalidate((New-Object System.Drawing.Rectangle(0, [int](264 * $Z), [int](410 * $Z), [int](56 * $Z))))
 }
-# el anuncio del evento (la primera vez)
-function Anuncio-Evento {
-    $script:evImgs = @($EventoRivales | ForEach-Object { Cargar-Img $_.Img })
-    $script:iRecursos = @($script:evImgs | Where-Object { $_ })
-    $script:evT0 = 0; $script:evHechos = @{}; $script:evSinVideo = [bool]$script:aj.Epilepsia
-    $pintar = {
-        param($g, $W, $H, $p)
-        $g.SmoothingMode = 'AntiAlias'; $g.InterpolationMode = 'HighQualityBilinear'; $g.TextRenderingHint = 'AntiAliasGridFit'
-        $ET = $EventoIntro
-        $ms = if ($script:evT0 -gt 0) { [Environment]::TickCount - $script:evT0 } else { 0 }
-        if ($script:evSinVideo) { $ms += $ET.Logo }
-        $g.Clear((C 6 2 3))
-        if ($ms -lt $ProeliumMs) { Proelium-Pintar $g $W $H $ms }
-        elseif ($ms -lt $ET.Rivales) {
-            # el logo del Pulgar y el nombre del evento
-            $q = ($ms - $ET.Logo) / 600.0; $al = [int](255 * [Math]::Max(0.0, [Math]::Min(1.0, $q)))
-            Degradado $g 0 0 $W $H (ARGB 0 90 8 12) (ARGB 120 90 8 12) 90
-            $rad = 46 * (1.25 - 0.25 * [Math]::Min(1.0, [Math]::Max(0.0, $q)))
-            Evento-Insignia $g ($W / 2) 92 $rad $al
-            if ($ms -gt $ET.Logo + 500) {
-                $a2 = [int](255 * [Math]::Min(1.0, ($ms - $ET.Logo - 500) / 500.0))
-                [void](Kc-Neon $g 'EL PULGAR' 50 ($W / 2) 150 $a2)
-                Kc-Adornos $g ($W / 2) 214 300 $a2 $false
-                $fs = FntP('Palatino Linotype', 11, [System.Drawing.FontStyle]::Bold); $tx = 'E V E N T O   ·   Limbus Company  &  Library of Ruina'
-                $g.DrawString($tx, $fs, (New-Object System.Drawing.SolidBrush((ARGB $a2 236 90 70))), [float](($W - $g.MeasureString($tx, $fs).Width) / 2), 240)
+# se rompe en piezas (la muerte clásica de Roblox)
+function Sh-Romper($cx, $base, $alto, $colores) {
+    $e = $script:sh; $ahora = [Environment]::TickCount
+    $partes = @(@(0, -0.89, 0.22, 0.22, 0), @(0, -0.56, 0.38, 0.38, 1), @(-0.28, -0.56, 0.18, 0.38, 0), @(0.28, -0.56, 0.18, 0.38, 0), @(-0.1, -0.19, 0.18, 0.4, 2), @(0.1, -0.19, 0.18, 0.4, 2))
+    foreach ($p in $partes) {
+        [void]$e.Piezas.Add(@{ X = $cx + $p[0] * $alto; Y = $base + $p[1] * $alto; W = $p[2] * $alto; H = $p[3] * $alto; Col = $colores[$p[4]]
+            VX = ($Rnd.NextDouble() - 0.5) * 260; VY = -120 - $Rnd.NextDouble() * 200; Ang = 0.0; VA = ($Rnd.NextDouble() - 0.5) * 600; T0 = $ahora })
+    }
+}
+$ShNoob = @((C 245 205 48), (C 13 105 172), (C 40 127 71))
+# los retadores: nombres de jugador del Roblox de siempre y camisetas variadas
+$ShNombres = @('Noob{0}', 'Guest {0}', 'xXSwordMasterXx{0}', 'Bloxxer{0}', 'BrickBattler{0}', 'Telamonfan{0}', 'SFOTHpro{0}', 'OofLord{0}')
+$ShCamisetas = @((C 13 105 172), (C 196 40 28), (C 40 40 40), (C 75 151 75), (C 160 95 53), (C 107 50 124))
+$ShMalo = @((C 22 26 24), (C 30 34 32), (C 18 20 19))
+# un personaje de Roblox clásico (R6) dibujado a bloques: un noob o 1x1x1x1
+function Sh-Bloxian($g, $cx, $base, $alto, $malo, $swing, $alfa, $paso = 0.0, $camiseta = $null) {
+    $col = if ($malo) { $ShMalo } else { $ShNoob }
+    if ($camiseta) { $col = @($col[0], $camiseta, $col[2]) }
+    $u = $alto
+    $bl = { param($x, $y, $w, $h, $c) $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB $alfa $c.R $c.G $c.B))), [float]$x, [float]$y, [float]$w, [float]$h); $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB $alfa 20 20 20), 1)), [float]$x, [float]$y, [float]$w, [float]$h) }
+    $pz = 0.05 * $u * $paso
+    & $bl ($cx - 0.19 * $u) ($base - 0.4 * $u - $pz) (0.18 * $u) (0.4 * $u) $col[2]
+    & $bl ($cx + 0.01 * $u) ($base - 0.4 * $u + $pz) (0.18 * $u) (0.4 * $u) $col[2]
+    & $bl ($cx - 0.19 * $u) ($base - 0.78 * $u) (0.38 * $u) (0.38 * $u) $col[1]
+    & $bl ($cx + 0.19 * $u) ($base - 0.78 * $u) (0.17 * $u) (0.38 * $u) $col[0]
+    # el brazo de la espada (hacia la izquierda, hacia Shedletsky) se levanta con el golpe
+    $st = $g.Save(); $g.TranslateTransform([float]($cx - 0.28 * $u), [float]($base - 0.76 * $u)); $g.RotateTransform([float](-20 - 80 * $swing))
+    & $bl (-0.085 * $u) 0 (0.17 * $u) (0.38 * $u) $col[0]
+    $hoja = if ($malo) { (ARGB $alfa 70 230 90) } else { (ARGB $alfa 190 196 204) }
+    $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB $alfa 90 60 30))), [float](-0.03 * $u), [float](0.36 * $u), [float](0.06 * $u), [float](0.08 * $u))
+    $g.FillRectangle((New-Object System.Drawing.SolidBrush($hoja)), [float](-0.025 * $u), [float](0.44 * $u), [float](0.05 * $u), [float](0.42 * $u))
+    if ($malo) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]($alfa * 0.25)) 70 255 90))), [float](-0.06 * $u), [float](0.42 * $u), [float](0.12 * $u), [float](0.46 * $u)) }
+    $g.Restore($st)
+    & $bl ($cx - 0.11 * $u) ($base - 1.0 * $u) (0.22 * $u) (0.22 * $u) $col[0]
+    if ($malo) {
+        # 1x1x1x1: ojos verdes que brillan y un borde verde
+        foreach ($ox in @(-0.06, 0.03)) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB $alfa 90 255 110))), [float]($cx + $ox * $u), [float]($base - 0.92 * $u), [float](0.04 * $u), [float](0.03 * $u)) }
+        $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB ([int]($alfa * 0.6)) 70 255 90), 1.5)), [float]($cx - 0.2 * $u), [float]($base - 1.0 * $u), [float](0.4 * $u), [float](1.0 * $u))
+    } else {
+        foreach ($ox in @(-0.05, 0.03)) { $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB $alfa 20 20 20))), [float]($cx + $ox * $u), [float]($base - 0.92 * $u), [float](0.025 * $u), [float](0.04 * $u)) }
+        $g.DrawArc((New-Object System.Drawing.Pen((ARGB $alfa 20 20 20), 1.5)), [float]($cx - 0.05 * $u), [float]($base - 0.9 * $u), [float](0.1 * $u), [float](0.06 * $u), 20, 140)
+    }
+}
+# cada app: llega un retador
+function Sh-App($linea) {
+    Sh-Reset; $e = $script:sh; $e.Ult = [Environment]::TickCount
+    if ($e.Muerto -gt 0 -or $e.Noob) { Decir $linea; return }
+    $e.Num++
+    $e.Noob = @{ X = 790.0; Fase = 'corre'; T0 = [Environment]::TickCount; Gana = ($Rnd.Next(100) -lt 85); Nombre = ((Azar $ShNombres) -f $Rnd.Next(10, 9999)); Camiseta = (Azar $ShCamisetas) }
+    Sonido 'espada'
+    if ($Rnd.Next(100) -lt 45) { Decir $linea }
+    Sh-Invalidar
+}
+function Sh-Aparece-Malo {
+    $e = $script:sh; if ($e.Malo -or $e.Muerto -gt 0) { return }
+    $e.Malo = @{ X = 745.0; Aturdido = 0; Golpes = 0 }
+    Sonido 'aparece'; Decir-Fijo (Azar $script:skin.Enemigo) 'x'
+}
+# SLASH (clic en él) o el pollo (clic en el muslo)
+function Sh-Clic($id) {
+    Sh-Reset; $e = $script:sh; $k = $script:skin; $ahora = [Environment]::TickCount
+    if ($e.Muerto -gt 0) { return }
+    if ($id -eq 'P') {
+        if ($e.HP -ge $ShTiempos.Max) { Decir (Azar $k.Lleno); return }
+        if ($e.Pollo -le 0) { Decir (Azar $k.SinPollo); return }
+        $e.Pollo--; $e.HP = [Math]::Min(100.0, $e.HP + 5); $e.Cura = @{ Hasta = $ahora + $ShTiempos.Cura; Ult = $ahora }
+        Actor-Pose 'S' 'come' 2600; Sonido 'comer'
+        Flotante '+5' 470 120 (C 90 230 90) 18 'Arial Black'
+        Decir (Azar $k.Pollo); Sh-Invalidar; return
+    }
+    if ($id -ne 'S') { return }
+    if ($ahora -lt $e.SlashT) { return }
+    $e.SlashT = $ahora + $ShTiempos.Slash
+    Actor-Pose 'S' 'tajo' 900; Sonido 'tajo'
+    $e.Tajo = $ahora
+    if ($e.Malo -and $e.Malo.X -le 735 -and $e.Malo.Aturdido -eq 0) {
+        $m = $e.Malo; $m.Aturdido = $ahora + $ShTiempos.Aturde; $m.X = [Math]::Min(745.0, $m.X + 40); $m.Golpes++
+        Sonido 'aturde'; Flotante 'ATURDIDO' 640 90 (C 120 255 140) 16 'Arial Black'
+        if ($m.Golpes -ge 3) {
+            Sh-Romper $m.X 274 120 $ShMalo; Sonido 'romper'; $e.Malo = $null; $e.KOs++; $e.Logro = $ahora; $e.Kill = 'Shedletsky KO''d 1x1x1x1'
+            Decir-Fijo (Azar $k.Vence) 'x'
+        } else { Decir (Azar $k.Slash) }
+    } elseif ($Rnd.Next(100) -lt 50) { Decir (Azar $k.SlashFallo) }
+    Sh-Invalidar
+}
+# BLAME JOHN.
+function Sh-Blame {
+    Sh-Reset; $script:sh.Blame = [Environment]::TickCount; Sonido 'boom'
+    Decir (Azar $script:skin.Blame); Sh-Invalidar
+}
+function Sh-Muere {
+    $e = $script:sh; $ahora = [Environment]::TickCount; $a = $script:actores['S']
+    $e.Muerto = $ahora + $ShTiempos.Respawn; $e.WOs++; $e.Racha = 0; $e.HP = 0.0; $e.Cura = $null; $e.Malo = $null; $e.Noob = $null
+    Sh-Romper 525 300 200 @((C 245 205 48), (C 236 236 236), (C 40 110 200))
+    if ($a) { $a.Visible = $false }
+    Sonido 'romper'; Decir-Fijo (Azar $script:skin.Wo) 'x'
+}
+function Sh-Tick {
+    Sh-Reset; $e = $script:sh; $k = $script:skin; $ahora = [Environment]::TickCount
+    $dt = if ($e.UltTick) { [Math]::Min(0.2, ($ahora - $e.UltTick) / 1000.0) } else { 0.05 }; $e.UltTick = $ahora
+    # la música: se repite, sigue el volumen y se calla sin sonido
+    if (-not $script:aj.Sonido) { Sh-Musica-Off }
+    elseif (-not $script:shMusica) { Sh-Musica-On }
+    else { try { $mp = $script:shMusica; if ([Math]::Abs($mp.Volume - (Sh-Volumen)) -gt 0.01) { $mp.Volume = (Sh-Volumen) }; if ($mp.NaturalDuration.HasTimeSpan -and $mp.Position -ge ($mp.NaturalDuration.TimeSpan - [TimeSpan]::FromMilliseconds(120))) { $mp.Position = [TimeSpan]::Zero; $mp.Play() } } catch {} }
+    $anim = $false
+    # el retador: corre hacia él y se baten
+    if ($e.Noob) {
+        $n = $e.Noob; $anim = $true
+        if ($n.Fase -eq 'corre') {
+            $n.X -= 300 * $dt
+            if ($n.X -le $ShTiempos.Retador) { $n.X = $ShTiempos.Retador; $n.Fase = 'duelo'; $n.T0 = $ahora; Actor-Pose 'S' 'tajo' 800; Sonido 'lunge' }
+        } elseif ($n.Fase -eq 'duelo' -and $ahora - $n.T0 -le 380) {
+            $a = $script:actores['S']; if ($a) { $a.OX = [int](40 * [Math]::Sin(($ahora - $n.T0) / 380.0 * [Math]::PI)) }
+        } elseif ($n.Fase -eq 'duelo' -and $ahora - $n.T0 -gt 380) {
+            if ($n.Gana) {
+                Sh-Romper $n.X 274 110 $ShNoob; Sonido 'romper'; Sonido 'ko'
+                $e.KOs++; $e.Racha++; $e.Kill = "Shedletsky KO'd $($n.Nombre)"; $e.Noob = $null
+                $a = $script:actores['S']; if ($a) { $a.OX = 0 }
+                $extra = if ($e.Racha -ge 8) { '¡LEGENDARIO!' } elseif ($e.Racha -ge 5) { '¡IMPARABLE!' } elseif ($e.Racha -ge 3) { "¡RACHA ×$($e.Racha)!" } else { '' }
+                $e.Pwned = @{ T0 = $ahora; X = $n.X; Extra = $extra; Ang = ($Rnd.NextDouble() - 0.5) * 16 }
+                if ($extra -and $e.Racha -in @(3, 5, 8)) { Decir-Fijo (Azar $k.Racha) 'x' } elseif ($Rnd.Next(100) -lt 55) { Decir (Azar $k.Ko) }
+                if ($e.KOs % $ShTiempos.CadaKOs -eq 0) { Sh-Aparece-Malo }
+            } else {
+                $e.HP = [Math]::Max(0.0, $e.HP - 30); Actor-Golpe 'S'; Sonido 'dano'; $e.Kill = "$($n.Nombre) le ha dado a Shedletsky"
+                Flotante '-30' 480 110 (C 255 80 70) 20 'Arial Black'; $n.Fase = 'huye'
+                if ($e.HP -le 0) { Sh-Muere } else { Decir (Azar $k.Golpeado) }
             }
-        } else {
-            # las tres skins, como rivales: cartas que entran una a una con un VS
-            $q = $ms - $ET.Rivales
-            Degradado $g 0 0 $W $H (ARGB 255 40 6 10) (ARGB 255 8 2 3) 90
-            $fs = FntP('Palatino Linotype', 10, [System.Drawing.FontStyle]::Bold); $tx = 'TRES RIVALES DEL PULGAR TE ESPERAN'
-            $g.DrawString($tx, $fs, (New-Object System.Drawing.SolidBrush((C 236 196 116))), [float](($W - $g.MeasureString($tx, $fs).Width) / 2), 10)
-            for ($i = 0; $i -lt 3; $i++) {
-                $ti = $q - $i * 450; if ($ti -lt 0) { continue }
-                $qs = [Math]::Min(1.0, $ti / 450.0); $es = 1 - [Math]::Pow(1 - $qs, 3)
-                $cw = 200; $ch = 248; $cx = 50 + $i * 230; $cy = 34 + (1 - $es) * 60
-                $al = [int](255 * $es)
-                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.9)) 26 8 10))), [float]$cx, [float]$cy, $cw, $ch)
-                $img = $script:evImgs[$i]
-                if ($img) {
-                    $st = $g.Save(); $g.SetClip((New-Object System.Drawing.RectangleF([float]$cx, [float]$cy, $cw, [float]($ch - 54))))
-                    $ih = $ch * 1.35; $iw = $img.Width * $ih / $img.Height
-                    $cm = New-Object System.Drawing.Imaging.ColorMatrix; $cm.Matrix33 = [float]$es; $ia = New-Object System.Drawing.Imaging.ImageAttributes; $ia.SetColorMatrix($cm)
-                    $g.DrawImage($img, (New-Object System.Drawing.Rectangle([int]($cx + $cw / 2 - $iw / 2), [int]($cy + 2), [int]$iw, [int]$ih)), 0, 0, $img.Width, $img.Height, [System.Drawing.GraphicsUnit]::Pixel, $ia); $ia.Dispose()
-                    $g.Restore($st)
-                }
-                Degradado $g $cx ($cy + $ch - 110) $cw 56 (ARGB 0 26 8 10) (ARGB ([int]($al * 0.95)) 26 8 10) 90
-                $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB $al 214 170 90), 2)), [float]$cx, [float]$cy, $cw, $ch)
-                $rv = $EventoRivales[$i]
-                [void](Kc-Neon $g $rv.Skin.ToUpper() 24 ($cx + $cw / 2) ($cy + $ch - 52) $al)
-                $f2 = FntP('Palatino Linotype', 8, [System.Drawing.FontStyle]::Italic)
-                $t2 = "$($rv.Rango)  ·  $($rv.Juego)"; $g.DrawString($t2, $f2, (New-Object System.Drawing.SolidBrush((ARGB $al 236 210 160))), [float]($cx + $cw / 2 - $g.MeasureString($t2, $f2).Width / 2), [float]($cy + $ch - 20))
-                # el sello rojo de "DESAFÍO" que cae sobre la carta
-                if ($ti -gt 500) {
-                    $qd = [Math]::Min(1.0, ($ti - 500) / 200.0); $sc = 1.6 - 0.6 * $qd
-                    $st = $g.Save(); $g.TranslateTransform([float]($cx + $cw - 46), [float]($cy + 34)); $g.RotateTransform(-14); $g.ScaleTransform([float]$sc, [float]$sc)
-                    $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB ([int](230 * $qd)) 220 40 36), 2.5)), -40, -12, 80, 24)
-                    $g.DrawString('DESAFÍO', (FntP('Palatino Linotype', 10, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB ([int](230 * $qd)) 220 40 36))), -35, -10)
-                    $g.Restore($st)
-                }
+        } elseif ($n.Fase -eq 'huye') { $n.X += 260 * $dt; if ($n.X -gt 800) { $e.Noob = $null } }
+    }
+    # 1x1x1x1: avanza despacio; aturdido se queda quieto; si llega, envenena
+    if ($e.Malo) {
+        $m = $e.Malo; $anim = $true
+        if ($m.Aturdido -gt 0) { if ($ahora -ge $m.Aturdido) { $m.Aturdido = 0 } }
+        else {
+            $m.X -= 18 * $dt
+            if ($m.X -le $ShTiempos.Enemigo) {
+                $e.HP = [Math]::Max(0.0, $e.HP - 30); Actor-Golpe 'S'; Sonido 'dano'; $m.X = 745.0
+                Flotante '-30 VENENO' 470 110 (C 110 255 110) 16 'Arial Black'
+                if ($e.HP -le 0) { Sh-Muere } else { Decir (Azar $k.Golpeado) }
             }
-            if ($q -gt 2400) {
-                $a3 = [int](255 * [Math]::Min(1.0, ($q - 2400) / 400.0))
-                $tx = 'Derrótalos en el grupo EVENTO del menú Skins (o con el botón ★ EVENTO de arriba)'
-                $f3 = FntP('Segoe UI', 9.5, [System.Drawing.FontStyle]::Bold)
-                $g.DrawString($tx, $f3, (New-Object System.Drawing.SolidBrush((ARGB $a3 250 236 210))), [float](($W - $g.MeasureString($tx, $f3).Width) / 2), [float]($H - 26))
-            }
-            $qf = ($ms - ($ET.Fin - 500)) / 500.0
-            if ($qf -gt 0) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * [Math]::Min(1.0, $qf))) 0 0 0))), 0, 0, $W, $H) }
         }
     }
-    $alTick = {
-        param($ov, $p)
-        $ET = $EventoIntro
-        if ($p -eq 1) { $script:evT0 = [Environment]::TickCount }
-        $ms = [Environment]::TickCount - $script:evT0; if ($script:evSinVideo) { $ms += $ET.Logo }
-        foreach ($ev in @(@(0, 'Valencina', 'pf'), @($ET.Logo, 'Kalo', 'baston'), @($ET.Rivales, 'Lei Heng', 'explosion'), @(($ET.Rivales + 450), 'Valencina', 'tajo'), @(($ET.Rivales + 900), 'Kalo', 'disparo'))) {
-            $cl = "$($ev[0])"
-            if ($ms -ge $ev[0] -and -not $script:evHechos.ContainsKey($cl)) { $script:evHechos[$cl] = $true; if (-not ($script:evSinVideo -and $ev[2] -eq 'pf')) { Sonido-De $ev[1] $ev[2] } }
-        }
-        if ($ms -gt $ET.Fin -and $script:iPaso -lt $script:iTotal - 2) { $script:iPaso = $script:iTotal - 2 }
-        if ($p -ge $script:iTotal - 2) { Proelium-Soltar }
+    # el pollo cura poco a poco
+    if ($e.Cura) {
+        $e.HP = [Math]::Min(100.0, $e.HP + 25.0 * ($ahora - $e.Cura.Ult) / $ShTiempos.Cura); $e.Cura.Ult = $ahora
+        if ($ahora -ge $e.Cura.Hasta -or $e.HP -ge 100) { $e.Cura = $null; Sonido 'curar' }
+        $anim = $true
     }
-    $script:iDespues = { $script:modoSkins = $true; $script:pagSkins = Pagina-Evento; Mostrar-Pagina }
-    Intro-Overlay 400 $pintar $alTick $null
+    # reaparece con el campo de fuerza
+    if ($e.Muerto -gt 0 -and $ahora -ge $e.Muerto) {
+        $e.Muerto = 0; $e.HP = 100.0; $e.Pollo = 2; $e.Escudo = $ahora + $ShTiempos.Escudo
+        Sh-Actores; Sonido 'espada'; Decir-Fijo (Azar $k.Respawn) 'x'
+    }
+    # piezas que caen
+    for ($i = $e.Piezas.Count - 1; $i -ge 0; $i--) {
+        $p = $e.Piezas[$i]
+        if ($ahora - $p.T0 -gt 1600) { $e.Piezas.RemoveAt($i); continue }
+        $p.VY += 700 * $dt; $p.X += $p.VX * $dt; $p.Y += $p.VY * $dt; $p.Ang += $p.VA * $dt
+        if ($p.Y -gt 290) { $p.Y = 290; $p.VY = -$p.VY * 0.3; $p.VX *= 0.6; $p.VA *= 0.5 }
+    }
+    if (($e.Pwned -and ($ahora - $e.Pwned.T0) -lt 1600) -or $e.Piezas.Count -or $e.Muerto -gt 0 -or $e.Escudo -gt $ahora -or ($ahora - $e.Blame) -lt 1900 -or ($ahora - $e.Logro) -lt 3000 -or ($ahora - $e.Tajo) -lt 400) { $anim = $true }
+    if ($anim) { Sh-Invalidar }
+    $clave = "$([int]$e.HP)|$($e.KOs)|$($e.WOs)|$($e.Pollo)|$([int](($e.SlashT - $ahora) / 500))|$($e.Kill)"
+    if ($clave -ne $e.HudClave) { $e.HudClave = $clave; Sh-Invalidar }
+}
+function Sh-Pintar($g, $k, $W, $H) {
+    $e = $script:sh; if (-not $e) { return }
+    $ahora = [Environment]::TickCount; $g.SmoothingMode = 'AntiAlias'
+    # el retador y 1x1x1x1
+    if ($e.Malo) {
+        $m = $e.Malo; $tiemb = if ($m.Aturdido -gt 0 -and -not $script:aj.Epilepsia) { $Rnd.Next(-2, 3) } else { 0 }
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB 60 70 255 90))), [float]($m.X - 50), 200, 100, 80)
+        Sh-Bloxian $g ($m.X + $tiemb) 274 124 $true $(if ($m.Aturdido -gt 0) { 0.0 } else { 0.4 + 0.3 * [Math]::Sin($ahora / 300.0) }) 255
+        if ($m.Aturdido -gt 0) { for ($i = 0; $i -lt 3; $i++) { $an = $ahora / 250.0 + $i * 2.1; Texto-Contorno $g '★' 'Segoe UI Symbol' 12 ($m.X - 6 + [Math]::Cos($an) * 22) (138 + [Math]::Sin($an) * 6) (C 255 240 120) 3 } }
+        $g.DrawString("1x1x1x1", (FntP('Arial Black', 7)), (New-Object System.Drawing.SolidBrush((C 110 255 130))), [float]($m.X - 26), 134)
+    }
+    if ($e.Noob) {
+        $n = $e.Noob; $sw = if ($n.Fase -eq 'duelo') { [Math]::Min(1.0, ($ahora - $n.T0) / 300.0) } else { 0.2 + 0.2 * [Math]::Sin($ahora / 80.0) }
+        $pasoN = if ($n.Fase -eq 'corre' -or $n.Fase -eq 'huye') { [Math]::Sin($ahora / 60.0) } else { 0.0 }
+        Sh-Bloxian $g $n.X 274 110 $false $sw 255 $pasoN $n.Camiseta
+        $g.DrawString($n.Nombre, (FntP('Arial', 7, [System.Drawing.FontStyle]::Bold)), [System.Drawing.Brushes]::White, [float]($n.X - 22), 150)
+    }
+    # el tajo de su espada
+    if ($ahora - $e.Tajo -lt 400) {
+        $q = ($ahora - $e.Tajo) / 400.0; $al = [int](230 * (1 - $q))
+        $p1 = New-Object System.Drawing.Pen((ARGB $al 220 230 255), [float](10 * (1 - $q) + 2)); $p1.StartCap = 'Round'; $p1.EndCap = 'Triangle'
+        $g.DrawArc($p1, 480, 80, 260, 200, -70, [float](140 * [Math]::Min(1.0, $q * 3))); $p1.Dispose()
+    }
+    # piezas
+    foreach ($p in $e.Piezas) {
+        $al = [int](255 * [Math]::Max(0.0, 1 - ($ahora - $p.T0 - 1000) / 600.0)); if ($al -gt 255) { $al = 255 }
+        $st = $g.Save(); $g.TranslateTransform([float]$p.X, [float]$p.Y); $g.RotateTransform([float]$p.Ang)
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB $al $p.Col.R $p.Col.G $p.Col.B))), [float](-$p.W / 2), [float](-$p.H / 2), [float]$p.W, [float]$p.H)
+        $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB $al 20 20 20), 1)), [float](-$p.W / 2), [float](-$p.H / 2), [float]$p.W, [float]$p.H)
+        $g.Restore($st)
+    }
+    # ¡PWNED!: el cartel grande de cada KO (y la racha debajo)
+    if ($e.Pwned -and ($ahora - $e.Pwned.T0) -lt 1500) {
+        $q = ($ahora - $e.Pwned.T0) / 1500.0; $al = [int](255 * [Math]::Min(1.0, (1 - $q) * 4))
+        $sc = 1.0 + 0.7 * [Math]::Max(0.0, 1 - $q * 7); $sube = 18 * $q
+        $gs = $g.Save(); $g.TranslateTransform([float]([Math]::Min(690, [Math]::Max(560, $e.Pwned.X))), [float](150 - $sube)); $g.RotateTransform([float]$e.Pwned.Ang); $g.ScaleTransform([float]$sc, [float]$sc)
+        Texto-Contorno $g 'PWNED!' 'Arial Black' 30 -78 -22 (C 255 214 40) 7 $al
+        if ($e.Pwned.Extra) { Texto-Contorno $g $e.Pwned.Extra 'Arial Black' 14 -62 14 (C 255 120 60) 4 $al }
+        $g.Restore($gs)
+    }
+    # campo de fuerza al reaparecer
+    if ($e.Escudo -gt $ahora) {
+        $lat = if ($script:aj.Epilepsia) { 0.5 } else { 0.5 + 0.5 * [Math]::Sin($ahora / 90.0) }
+        $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB ([int](40 + 50 * $lat)) 120 170 255))), 420, 60, 210, 250)
+        for ($i = 0; $i -lt 10; $i++) { $an = $ahora / 300.0 + $i * 0.63; $g.FillEllipse([System.Drawing.Brushes]::White, [float](525 + [Math]::Cos($an) * 96), [float](186 + [Math]::Sin($an * 1.3) * 110), 4, 4) }
+    }
+    # curándose con el pollo: crucecitas verdes que suben
+    if ($e.Cura) { for ($i = 0; $i -lt 4; $i++) { $u = (($ahora / 900.0) + $i * 0.25) % 1.0; Texto-Contorno $g '+' 'Arial Black' 14 (470 + $i * 28) (240 - 120 * $u) (C 90 230 90) 3 ([int](255 * (1 - $u))) } }
+    # marcador clásico de Roblox (arriba a la derecha)
+    $lx = 612; $ly = 58
+    $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 150 0 0 0))), $lx, $ly, 140, 34)
+    $fh = FntP('Arial', 7, [System.Drawing.FontStyle]::Bold)
+    $g.DrawString('Player', $fh, (New-Object System.Drawing.SolidBrush((C 200 200 200))), [float]($lx + 4), [float]($ly + 2))
+    $g.DrawString('KOs   WOs', $fh, (New-Object System.Drawing.SolidBrush((C 200 200 200))), [float]($lx + 84), [float]($ly + 2))
+    $g.DrawString('Shedletsky', $fh, [System.Drawing.Brushes]::White, [float]($lx + 4), [float]($ly + 18))
+    $g.DrawString("$($e.KOs)", $fh, [System.Drawing.Brushes]::White, [float]($lx + 88), [float]($ly + 18))
+    $g.DrawString("$($e.WOs)", $fh, [System.Drawing.Brushes]::White, [float]($lx + 118), [float]($ly + 18))
+    # el logro al echar a 1x1x1x1
+    if ($ahora - $e.Logro -lt 3000) {
+        $al = [int](255 * [Math]::Min(1.0, (3000 - ($ahora - $e.Logro)) / 500.0))
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.85)) 20 20 20))), 430, 100, 300, 40)
+        $g.DrawRectangle((New-Object System.Drawing.Pen((ARGB $al 255 200 60), 2)), 430, 100, 300, 40)
+        $g.DrawString('¡LOGRO: BLAME JOHN!', (FntP('Arial Black', 10)), (New-Object System.Drawing.SolidBrush((ARGB $al 255 214 80))), 444, 103)
+        $g.DrawString('Aturde a 1x1x1x1 tres veces', (FntP('Arial', 7.5, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB $al 230 230 230))), 446, 123)
+    }
+    # BLAME JOHN.: el sello rojo gigante
+    $qb = ($ahora - $e.Blame) / 1900.0
+    if ($qb -ge 0 -and $qb -lt 1) {
+        $al = [int](255 * [Math]::Min(1.0, (1 - $qb) * 3)); $sc = 1.0 + 0.6 * [Math]::Max(0.0, 1 - $qb * 8)
+        $st = $g.Save(); $g.TranslateTransform(580, 170); $g.RotateTransform(-12); $g.ScaleTransform([float]$sc, [float]$sc)
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.35)) 255 255 255))), -150, -42, 300, 84)
+        $pr = New-Object System.Drawing.Pen((ARGB $al 210 30 30), 5); $g.DrawRectangle($pr, -150, -42, 300, 84); $g.DrawRectangle($pr, -142, -34, 284, 68); $pr.Dispose()
+        $g.DrawString('BLAME JOHN.', (FntP('Georgia', 26, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB $al 210 30 30))), -138, -26)
+        $g.Restore($st)
+    }
+    # abajo: vida (barra verde de Roblox), SLASH, pollos y el último KO
+    if ($g.IsVisible((New-Object System.Drawing.RectangleF(8, 264, 402, 54)))) {
+        Texto-Contorno $g 'SWORD FIGHTS ON THE HEIGHTS IV' 'Arial Black' 11 14 266 (C 255 255 255) 3
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 190 20 20))), 14, 286, 200, 11)
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 40 200 40))), 14, 286, [float](200 * $e.HP / 100.0), 11)
+        $g.DrawRectangle((New-Object System.Drawing.Pen((C 20 20 20), 1)), 14, 286, 200, 11)
+        $g.DrawString("Health  $([int]$e.HP)", (FntP('Arial', 6.5, [System.Drawing.FontStyle]::Bold)), [System.Drawing.Brushes]::White, 18, 285)
+        $cd = [Math]::Max(0.0, ($e.SlashT - $ahora) / [double]$ShTiempos.Slash)
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 40 40 40))), 224, 284, 70, 15)
+        $g.FillRectangle((New-Object System.Drawing.SolidBrush($(if ($cd -gt 0) { (C 90 90 90) } else { (C 70 140 230) }))), 224, 284, [float](70 * (1 - $cd)), 15)
+        $g.DrawString('SLASH', (FntP('Arial Black', 7)), [System.Drawing.Brushes]::White, 238, 285)
+        $g.DrawString("POLLO ×$($e.Pollo)", (FntP('Arial Black', 7)), (New-Object System.Drawing.SolidBrush((C 255 200 110))), 302, 285)
+        if ($e.Kill) { $g.DrawString($e.Kill, (FntP('Arial', 7, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((C 220 220 220))), 14, 302) }
+    }
 }
 
 # ================= KALO (Library of Ruina): LA RECEPCIÓN DEL PULGAR II =================
@@ -7597,8 +7791,6 @@ $ambTimer.Add_Tick({
     Sin-Destellos
     $k = $script:skin; $Z = $script:K
     if ((Ocupado) -or -not $k) { return }
-    # la primera vez (y después de la guía del panda): el anuncio del evento del Pulgar
-    if (-not $script:aj.EventoPulgar -and $script:aj.Guia -and -not $script:modoSkins) { $script:aj.EventoPulgar = $true; Guardar-Ajustes; Anuncio-Evento; return }
     $script:fase += 0.14
     if ($k.Estilo -eq 'oeste') {
         # planta rodadora cruzando la escena, buitres, polvo, agujeros de bala que se borran, fogonazo y duelo
@@ -7635,6 +7827,7 @@ $ambTimer.Add_Tick({
     if ($k.Estilo -eq 'ojo') { Vl-Tick }
     if ($k.Estilo -eq 'tigre') { Lh-Tick }
     if ($k.Estilo -eq 'capo') { Kc-Tick }
+    if ($k.Estilo -eq 'sfoth') { Sh-Tick }
     if ($k.Estilo -eq 'lobo') { Ag-Tick }
     if ($k.Estilo -eq 'arana') { Vv-Tick }
     if ($k.Estilo -eq 'clima') { Wg-Tick }
@@ -9032,6 +9225,7 @@ function Abrir-Invitado($nombre) {
         'ojo' { Sonido-De $nombre 'choque' }
         'tigre' { Sonido-De $nombre 'explosion' }
         'capo' { Sonido-De $nombre 'baston' }
+        'sfoth' { Sonido-De $nombre 'espada' }
         'lobo' { Sonido-De $nombre 'pebox' }
         'arana' { Sonido-De $nombre 'siseo' }
         'clima' { Sonido-De $nombre 'gota' }
@@ -9083,6 +9277,7 @@ function Pintar-Invitado($g) {
         'clima' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 106 122 168), (C 70 84 128), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 38 48 92) }
         'arana' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 40 14 34), (C 10 4 8), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); Vv-Red $g ($W / 2) 32 150 (ARGB 60 230 225 235) 9 10 170 5; $cab = (C 10 4 8) }
         'historia' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 120 86 40), (C 46 32 16), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $lom = New-Object System.Drawing.SolidBrush((ARGB 50 0 0 0)); for ($x = 6; $x -lt $W; $x += 22) { $g.FillRectangle($lom, $x, 34, 14, 108) }; $lom.Dispose(); $cab = (C 72 50 22) }
+        'sfoth' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 60 120 200), (C 20 40 80), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 10 40 90) }
         'capo' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 74 18 24), (C 20 6 8), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 26 6 8) }
         'tigre' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 74 18 24), (C 20 6 8), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 26 6 8) }
         'ojo' { $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 30, $W, ($H - 30))), (C 74 18 24), (C 20 6 8), 90); $g.FillRectangle($br, 0, 30, $W, ($H - 30)); $br.Dispose(); $cab = (C 26 6 8) }
@@ -9133,6 +9328,7 @@ function Pintar-Invitado($g) {
             'clima' { $pl = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(200, $fx * 14), 235, 240, 255), 1.2); for ($i = 0; $i -lt 16; $i++) { $xx = 8 + $i * 15; $yy = 34 + ((14 - $fx) * 12 + $i * 23) % 120; $g.DrawLine($pl, $xx, $yy, ($xx - 3), ($yy + 12)) }; $pl.Dispose() }
             'arana' { Vv-Red $g 0 32 ((14 - $fx) * 22) ([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 240, 235, 240)) 6 0 90 4 }
             'historia' { $hj = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 250, 242, 222)); for ($i = 0; $i -lt 4; $i++) { $g.FillRectangle($hj, (24 + $i * 50), (34 + (14 - $fx) * 11 + ($i % 2) * 16), 14, 18) }; $hj.Dispose() }
+            'sfoth' { $pt = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 220, 230, 255), 6); $g.DrawArc($pt, 20, 40, ($W - 40), ($H - 60), 220, [float]((14 - $fx) * 8)); $pt.Dispose() }
             'capo' { $pt = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 240, 170, 70), 3); $g.DrawRectangle($pt, 12, 40, ($W - 24), ($H - 56)); $pt.Dispose() }
             'tigre' { $pt = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 230, 40, 30), 5); $g.DrawLine($pt, 10, 40, ($W - 10), ($H - 20)); $pt.Dispose() }
             'ojo' { $pt = New-Object System.Drawing.Pen([System.Drawing.Color]::FromArgb([Math]::Min(220, $fx * 16), 255, 140, 40), 5); $g.DrawArc($pt, 20, 40, ($W - 40), ($H - 60), 200, [float]((14 - $fx) * 9)); $pt.Dispose() }
@@ -9381,6 +9577,11 @@ $idleTimer.Add_Tick({
             elseif ($r -lt 50) { Actor-Pose 'D' 'flip' 800; Sonido 'flip'; Decir (Azar $k.Idle) }
             elseif ($r -lt 60) { Actor-Pose 'D' 'lame' 1840; Sonido 'lame'; Decir (Azar $k.Lame) }
             elseif ($r -lt 66) { Dy-Wisps }
+            else { Decir (Azar $k.Idle) }
+        }
+        'sfoth' {
+            $e = $script:sh
+            if ($e -and ($e.Muerto -gt 0 -or $e.Noob -or $e.Malo)) { }
             else { Decir (Azar $k.Idle) }
         }
         'capo' {
@@ -11986,6 +12187,98 @@ function Transicion-Valencina($final) {
     Intro-Overlay 400 $pintar $alTick $final
 }
 
+# --- intro de Shedletsky: la pantalla de carga del Roblox clásico ("Sword Fights on the Heights IV, por Shedletsky"),
+#     el mapa de SFOTH con su título, su avatar clásico de "I ♥ Fried Chicken" con sus datos de admin y, al final,
+#     él con la espada (FORSAKEN) y un sello gigante de BLAME JOHN. Suena su música desde el principio. ---
+$ShIntro = @{ Mapa = 2600; Clasico = 5800; Blame = 8800; Fin = 11600 }
+function Transicion-Shed($final) {
+    $k = $script:skin
+    $script:siMapa = Cargar-Img $k.IntroMapa; $script:siClasico = Cargar-Img 'skins\shedletsky\clasico.png'; $script:siTajo = Cargar-Img 'skins\shedletsky\tajo.png'
+    $script:iRecursos = @($script:siMapa, $script:siClasico, $script:siTajo)
+    $script:siT0 = 0; $script:siHechos = @{}
+    $pintar = {
+        param($g, $W, $H, $p)
+        $g.SmoothingMode = 'AntiAlias'; $g.InterpolationMode = 'HighQualityBilinear'
+        $ST = $ShIntro
+        $ms = if ($script:siT0 -gt 0) { [Environment]::TickCount - $script:siT0 } else { 0 }
+        if ($ms -lt $ST.Mapa) {
+            # 1) cargando el juego, como en el Roblox de 2008
+            $g.Clear((C 46 46 46))
+            $q = [Math]::Min(1.0, $ms / [double]($ST.Mapa - 300))
+            $cx = $W / 2; $cy = $H / 2 - 20
+            if ($script:siMapa) { $g.DrawImage($script:siMapa, (New-Object System.Drawing.Rectangle([int]($cx - 150), [int]($cy - 98), 132, 74))); $g.DrawRectangle([System.Drawing.Pens]::White, [int]($cx - 150), [int]($cy - 98), 132, 74) }
+            $g.DrawString('Sword Fights on the Heights IV', (FntP('Arial', 12, [System.Drawing.FontStyle]::Bold)), [System.Drawing.Brushes]::White, [float]($cx - 8), [float]($cy - 96))
+            $g.DrawString('por Shedletsky', (FntP('Arial', 9)), (New-Object System.Drawing.SolidBrush((C 200 200 200))), [float]($cx - 8), [float]($cy - 72))
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 30 30 30))), [float]($cx - 150), [float]($cy + 10), 300, 10)
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 70 160 255))), [float]($cx - 150), [float]($cy + 10), [float](300 * $q), 10)
+            $txt = if ($q -lt 0.4) { 'Conectando con el servidor...' } elseif ($q -lt 0.8) { 'Cargando ladrillos...' } else { 'Uniéndose a la partida...' }
+            $g.DrawString($txt, (FntP('Arial', 9, [System.Drawing.FontStyle]::Bold)), [System.Drawing.Brushes]::White, [float]($cx - 150), [float]($cy + 26))
+            for ($i = 0; $i -lt 8; $i++) {
+                $an = $i * [Math]::PI / 4 + $ms / 160.0; $al = 60 + 24 * (($i + [int]($ms / 120)) % 8)
+                $g.FillEllipse((New-Object System.Drawing.SolidBrush((ARGB ([Math]::Min(255, $al)) 255 255 255))), [float]($cx + 132 + [Math]::Cos($an) * 9), [float]($cy + 30 + [Math]::Sin($an) * 9), 4, 4)
+            }
+        } elseif ($ms -lt $ST.Clasico) {
+            # 2) el mapa de SFOTH con su título
+            $q = ($ms - $ST.Mapa) / [double]($ST.Clasico - $ST.Mapa)
+            if ($script:siMapa) { [void](Dibujar-Cubriendo $g $script:siMapa $W $H (1.05 + 0.18 * $q) 0.5 0.4) }
+            if ($ms - $ST.Mapa -lt 200) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * (1 - ($ms - $ST.Mapa) / 200.0))) 0 0 0))), 0, 0, $W, $H) }
+            $al = [int](255 * [Math]::Min(1.0, [Math]::Max(0.0, ($ms - $ST.Mapa - 300) / 400.0)))
+            if ($al -gt 0) {
+                Texto-Contorno $g 'SWORD FIGHTS' 'Arial Black' 44 40 60 (C 255 255 255) 8 $al
+                Texto-Contorno $g 'ON THE HEIGHTS IV' 'Arial Black' 34 44 112 (C 255 214 70) 7 $al
+            }
+        } elseif ($ms -lt $ST.Blame) {
+            # 3) su avatar clásico y sus datos de admin
+            $q = $ms - $ST.Clasico
+            $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 0, $W, $H)), (C 110 170 230), (C 230 240 250), 90); $g.FillRectangle($br, 0, 0, $W, $H); $br.Dispose()
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((C 80 160 70))), 0, ($H - 40), $W, 40)
+            if ($script:siClasico) {
+                $es = 1 - [Math]::Pow(1 - [Math]::Min(1.0, $q / 500.0), 3); $nh = $H * 0.86; $nw = $script:siClasico.Width * $nh / $script:siClasico.Height
+                $g.DrawImage($script:siClasico, [float]($W * 0.26 - $nw / 2), [float]($H - 30 - $nh + (1 - $es) * 200), [float]$nw, [float]$nh)
+            }
+            $lineas = @(@('Shedletsky', 30), @('John James Shedletsky, III', 13), @('Admin y Director Creativo de Roblox (2006-2014)', 12), @('El cuarto ingeniero que contrató Roblox', 12), @('Creador de Sword Fights on the Heights', 12), @('Campeón del concurso anual de comer pollo', 12))
+            $yy = 40
+            for ($i = 0; $i -lt $lineas.Count; $i++) {
+                $ti = $q - 300 - $i * 300; if ($ti -lt 0) { break }
+                $al = [int](255 * [Math]::Min(1.0, $ti / 250.0))
+                if ($i -eq 0) { Texto-Contorno $g $lineas[$i][0] 'Arial Black' 30 ($W * 0.48) $yy (C 255 255 255) 6 $al; $yy += 50 }
+                else { Texto-Contorno $g $lineas[$i][0] 'Arial' 13 ($W * 0.48) $yy (C 255 255 255) 4 $al; $yy += 26 }
+            }
+        } else {
+            # 4) con la espada, y el sello de BLAME JOHN
+            $q = $ms - $ST.Blame
+            if ($script:siMapa) { [void](Dibujar-Cubriendo $g $script:siMapa $W $H 1.3 0.6 0.3) }
+            $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB 120 0 0 0))), 0, 0, $W, $H)
+            if ($q -lt 150) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * (1 - $q / 150.0))) 255 255 255))), 0, 0, $W, $H) }
+            if ($script:siTajo) { $nh = $H * 1.0; $nw = $script:siTajo.Width * $nh / $script:siTajo.Height; $g.DrawImage($script:siTajo, [float]($W * 0.72 - $nw / 2), [float]($H - $nh + 8), [float]$nw, [float]$nh) }
+            if ($q -gt 500) {
+                $qs = [Math]::Min(1.0, ($q - 500) / 160.0); $sc = 2.2 - 1.2 * $qs
+                $gs = $g.Save(); $g.TranslateTransform([float]($W * 0.3), [float]($H * 0.5)); $g.RotateTransform(-12); $g.ScaleTransform([float]$sc, [float]$sc)
+                $al = [int](255 * $qs)
+                $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int]($al * 0.4)) 255 255 255))), -160, -46, 320, 92)
+                $pr = New-Object System.Drawing.Pen((ARGB $al 210 30 30), 6); $g.DrawRectangle($pr, -160, -46, 320, 92); $g.DrawRectangle($pr, -150, -36, 300, 72); $pr.Dispose()
+                $g.DrawString('BLAME JOHN.', (FntP('Georgia', 28, [System.Drawing.FontStyle]::Bold)), (New-Object System.Drawing.SolidBrush((ARGB $al 210 30 30))), -146, -28)
+                $g.Restore($gs)
+            }
+            $qf = ($ms - ($ST.Fin - 400)) / 400.0
+            if ($qf -gt 0) { $g.FillRectangle((New-Object System.Drawing.SolidBrush((ARGB ([int](255 * [Math]::Min(1.0, $qf))) 0 0 0))), 0, 0, $W, $H) }
+        }
+    }
+    $alTick = {
+        param($ov, $p)
+        $ST = $ShIntro
+        if ($p -eq 1) { $script:siT0 = [Environment]::TickCount; Sh-Reset; Sh-Musica-On }
+        $ms = [Environment]::TickCount - $script:siT0
+        foreach ($ev in @(@($ST.Mapa, 'espada'), @($ST.Clasico, 'ko'), @($ST.Blame, 'tajo'), @(($ST.Blame + 600), 'boom'))) {
+            $cl = "$($ev[0])"
+            if ($ms -ge $ev[0] -and -not $script:siHechos.ContainsKey($cl)) { $script:siHechos[$cl] = $true; Sonido $ev[1] }
+        }
+        if ($ms -gt $ST.Fin -and $script:iPaso -lt $script:iTotal - 7) { $script:iPaso = $script:iTotal - 7 }
+        if ($p -gt $script:iTotal - 7) { $ov.Top -= [int]($ov.Height / 5) }
+    }
+    Intro-Overlay 400 $pintar $alTick $final
+}
+
 # --- intro de Kalo: la recepción del Pulgar de Library of Ruina. La sala de la recepción (Kalo sentado, Boris y
 #     Katriel de pie) con "LA RECEPCIÓN DEL PULGAR" en letras doradas, la viñeta de la recepción II con su frase, y los
 #     tres presentándose uno a uno (Boris, Kalo y Katriel) con su rango ---
@@ -12202,6 +12495,7 @@ function Transicion-LeiHeng($final) {
             'knight' { Decir '* Algo se ha roto. * El Knight lo ha cortado. * O igual ya venía roto.' }
             'corrupta' { Decir 'Algo se ha roto. ...vale, igual he sido yo. Un poquito. Es la corrupción, se me escapa.' }
             'silix' { Decir 'Algo se ha roto.' }
+            'sfoth' { Sh-Blame }
             'capo' { Decir 'Algo se ha roto. Katriel, anótelo. Boris, encuentre al responsable.' }
             'tigre' { Decir 'Ea... algo se ha roto. ¡Ja! No he sido yo. Esta vez.' }
             'ojo' { Decir 'Tsk. Algo se ha roto. ¡LUCIO! ...Ah, que no está. Cojonudo.' }
@@ -12519,6 +12813,16 @@ function Pintar-Boton($g, $b) {
             }
             $g.DrawString($b.Text, $b.Font, (New-Object System.Drawing.SolidBrush($(if ($hover) { (C 50 32 14) } else { (C 250 236 200) }))), $rect, $fmt)
         }
+        'sfoth' {
+            # botón gris del Roblox clásico, con degradado; al pasar el ratón, más claro y con borde azul
+            $g.SmoothingMode = 'AntiAlias'
+            $g.Clear($(if ($enBarra) { (C 20 60 120) } else { (C 30 30 34) }))
+            $rr = Ruta-Redonda (1.5 * $Z) (1.5 * $Z) ($W - 4 * $Z) ($H - 4 * $Z) ([Math]::Min($H - 4 * $Z, 4 * $Z))
+            $br = New-Object System.Drawing.Drawing2D.LinearGradientBrush((New-Object System.Drawing.Rectangle(0, 0, [int]$W, [int]$H)), $(if ($hover) { (C 255 255 255) } else { (C 238 238 238) }), $(if ($hover) { (C 214 228 250) } else { (C 186 186 190) }), 90)
+            $g.FillPath($br, $rr); $br.Dispose()
+            $g.DrawPath((New-Object System.Drawing.Pen($(if ($hover) { (C 50 120 220) } else { (C 80 80 84) }), [float](1.4 * $Z))), $rr); $rr.Dispose()
+            $g.DrawString($b.Text, $b.Font, (New-Object System.Drawing.SolidBrush((C 20 20 20))), $rect, $fmt)
+        }
         { $_ -in @('ojo', 'tigre', 'capo') } {
             # botón de su gabardina: rojo vino con ribete dorado y dos botones dorados; al pasar el ratón, oro
             $g.SmoothingMode = 'AntiAlias'
@@ -12685,6 +12989,7 @@ function Lanzar($item) {
             'ojo' { Vl-App $linea $item }
             'tigre' { Lh-App $linea $item }
             'capo' { Kc-App $linea }
+            'sfoth' { Sh-App $linea }
             'boneyard' { Dy-App $linea }
             'zorro' {
                 $script:antojo = [Math]::Min(100, $script:antojo + 5); $form.Invalidate()
@@ -12728,6 +13033,7 @@ function Lanzar($item) {
                 'knight' { Decir "* No tienes $($item.Nombre). * Te abro la web. * La sombra de la Fuente llega igual." }
                 'corrupta' { Decir "No tienes $($item.Nombre). Te abro la web. Saltar entre dimensiones es lo mío." }
                 'silix' { Decir "$($item.Nombre) no está instalado: se abre la versión web." }
+                'sfoth' { Decir "¿No tienes $($item.Nombre)? Te abro la web. ...Blame John." }
                 'capo' { Decir "No dispone de $($item.Nombre). Se le abrirá la versión web. Con su permiso." }
                 'tigre' { Decir "¿No tienes $($item.Nombre)? Ea, pues la web. Pa' algo está." }
                 'ojo' { Decir "¿No tienes $($item.Nombre)? Patético. Te abro la web, y da gracias." }
@@ -12762,6 +13068,7 @@ function Lanzar($item) {
                 'knight' { Actor-Pose 'K' 'risa' 1500; Decir "* $($item.Nombre) no está. * El Knight se lo ha llevado por la Gran Puerta. * Como a Undyne." }
                 'corrupta' { El-Rabia 8; Decir "¿$($item.Nombre)? No existe en este universo. Y eso me pone de MUY mal humor." }
                 'silix' { Sx-Subir 'S' 8; Decir "No se encuentra $($item.Nombre)." }
+                'sfoth' { Sh-Blame }
                 'capo' { Decir "$($item.Nombre) no se encuentra. Alguien no ha cumplido una orden. Katriel, averígüelo." }
                 'tigre' { Decir "¿$($item.Nombre)? Aquí no hay na' de eso, chaval." }
                 'ojo' { Decir "¿$($item.Nombre)? No está. Alguien no ha hecho su trabajo. ¡LUCIO!" }
@@ -12869,6 +13176,7 @@ function Efecto-Entrada($prev) {
         'ojo' { Transicion-Valencina $msg }
         'tigre' { Transicion-LeiHeng $msg }
         'capo' { Transicion-Kalo $msg }
+        'sfoth' { Transicion-Shed $msg }
         'boneyard' { Transicion-Dybbuk $msg }
     }
 }
@@ -13591,7 +13899,7 @@ $form.Add_Paint({
             $g.DrawRectangle((New-Object System.Drawing.Pen((C 0 255 0), 1)), 410, 216, 190, 10)
             $g.DrawString("HITMARKERS: $($script:hitsTotal)    DO THE DEW: $($script:dew)", (FntP('Arial Black', 8)), (New-Object System.Drawing.SolidBrush((C 191 239 255))), 16, 280)
         }
-        { $_ -in @('culto', 'kaiju', 'zorro', 'mew', 'oeste', 'pressure', 'dod', 'teto', 'femta', 'pop', 'pizza', 'punk', 'enfosi', 'gran', 'abismo', 'historia', 'lobo', 'arana', 'clima', 'pintor', 'evil', 'niebla', 'knight', 'boneyard', 'corrupta', 'silix', 'ojo', 'tigre', 'capo') } {
+        { $_ -in @('culto', 'kaiju', 'zorro', 'mew', 'oeste', 'pressure', 'dod', 'teto', 'femta', 'pop', 'pizza', 'punk', 'enfosi', 'gran', 'abismo', 'historia', 'lobo', 'arana', 'clima', 'pintor', 'evil', 'niebla', 'knight', 'boneyard', 'corrupta', 'silix', 'ojo', 'tigre', 'capo', 'sfoth') } {
             # skins nuevas: fondo real + personajes grandes + efectos + bocadillo propio
             $g.SmoothingMode = 'AntiAlias'
             # el fondo se prepara siempre con el tamaño fijo de la skin (no con el de la ventana a medio montar)
@@ -13832,6 +14140,7 @@ $form.Add_Paint({
                 'ojo' { Vl-Pintar $g $k $W $H }
                 'tigre' { Lh-Pintar $g $k $W $H }
                 'capo' { Kc-Pintar $g $k $W $H }
+                'sfoth' { Sh-Pintar $g $k $W $H }
                 'corrupta' {
                     $el2 = $script:el; $ahora = [Environment]::TickCount
                     $rab = if ($el2) { $el2.Rabia } else { 0.0 }; $glt = $el2 -and $el2.Glitch
@@ -14351,6 +14660,7 @@ function Clic-Actor($id) {
         'ojo' { Vl-Clic $id }
         'tigre' { Lh-Clic $id }
         'capo' { Kc-Clic $id }
+        'sfoth' { Sh-Clic $id }
         'boneyard' { Dy-Clic }
     }
 }
@@ -14412,6 +14722,7 @@ function Construir-UI {
     if ($k.Estilo -ne 'gran') { Gran-Musica-Off }
     if ($k.Estilo -ne 'historia') { Mk-Musica-Off }
     if ($k.Estilo -ne 'ojo') { Vl-Musica-Off }
+    if ($k.Estilo -ne 'sfoth') { Sh-Musica-Off }
     if ($k.Estilo -ne 'lobo') { Ag-Musica-Off }
     if ($k.Estilo -ne 'arana') { Vv-Musica-Off }
     if ($k.Estilo -ne 'clima') { Wg-Musica-Off; if ($script:wgPortada) { $script:wgPortada.Dispose(); $script:wgPortada = $null } }
@@ -14460,9 +14771,6 @@ function Construir-UI {
     $form.Controls.AddRange(@($titulo, $sub))
     $xSub = if ($k.TituloImg) { 166 } else { $xTit + [int]($titulo.PreferredWidth / $script:K) + 2 }
     $sub.Location = New-Object System.Drawing.Point($xSub, 26)
-    # si el subtítulo llegaría hasta el botón EVENTO, se corta con puntos suspensivos
-    $maxSub = ($W - 314) - $xSub
-    if ($maxSub -gt 20 -and $sub.PreferredWidth / $script:K -gt $maxSub) { $sub.AutoSize = $false; $sub.AutoEllipsis = $true; $sub.Size = New-Object System.Drawing.Size([int]$maxSub, 18) }
     foreach ($c in @($titulo, $sub)) { $c.Add_MouseDown($mDown); $c.Add_MouseMove($mMove); $c.Add_MouseUp($mUp) }
 
     $script:bi = 0
@@ -14477,9 +14785,6 @@ function Construir-UI {
     $bAjustes = Nuevo-Boton 'Ajustes' ($W - 226) 12 72 28; $bAjustes.ForeColor = $k.BarraBtnTexto
     $bAjustes.Add_Click({ Mostrar-Ajustes })
     $form.Controls.Add($bAjustes)
-    # ★ EVENTO, a la izquierda de Ajustes (igual en todas las skins)
-    $bEvento = Nuevo-Boton-Evento ($W - 310) 12
-    $form.Controls.Add($bEvento)
     if ($k.Estilo -in @('hacker', 'mlg', 'gunsaw')) { Hover-Color $bAjustes }
 
     $script:grid = New-Object System.Windows.Forms.Panel
@@ -14558,6 +14863,8 @@ function Construir-UI {
         # Silix y Pendeja: la rabia sigue mientras sea la skin activa; al irse, todo a cero y fuera las imágenes guardadas
         # Valencina: guarda su ojo, su vaso y su presa mientras sea la skin activa
         # Lei Heng: guarda su vida, su fase y sus balas mientras sea la skin activa
+        # Shedletsky: guarda su vida, sus KOs y sus pollos mientras sea la skin activa
+        if ($k.Estilo -eq 'sfoth') { Sh-Reset; Sh-Actores } else { $script:sh = $null }
         # Kalo: guarda el acto, la vida de los tres y los libros mientras sea la skin activa
         if ($k.Estilo -eq 'capo') { Kc-Reset; Kc-Actores } else { $script:kc = $null }
         if ($k.Estilo -eq 'tigre') { Lh-Reset; Lh-Actores } elseif ($script:lh -or $script:lhIconos.Count) { $script:lh = $null; Lh-Liberar }

@@ -1,6 +1,25 @@
-# c00lgui v7.0 – panel lanzador con skins de asistentes
+# c00lgui v7.1 – panel lanzador con skins de asistentes
 
 Panel para Windows que abre YouTube, las apps de Office y otros programas con un clic.
+
+---
+
+## Notas del parche – v7.1
+
+**Skin nueva: Shedletsky** (Roblox, en el grupo **Roblox**)
+- El antiguo admin y Director Creativo de Roblox, creador de **Sword Fights on the Heights**, con su aspecto y sus habilidades de *FORSAKEN*. Bromista, chulo, obsesionado con el pollo frito y con jerga de Roblox (pwned, noob, GG).
+- **Música:** *Dueling Winds (Remix)*, de la banda sonora de *Phighting!*.
+- **Intro:** la pantalla de carga del Roblox clásico, el mapa de SFOTH con su título, su avatar clásico de «I ♥ Fried Chicken» y un sello gigante de **BLAME JOHN.**
+- **Duelos:** cada app es un retador (Guest, Noob, Bloxxer...) que viene corriendo a por él. Se lanza con un lunge y, con un KO, el retador se rompe en piezas y sale un **PWNED!** gigante. Si encadena KOs: **¡RACHA!**, **¡IMPARABLE!** y **¡LEGENDARIO!**.
+- **Marcador** del Roblox clásico con sus **KOs** y **WOs**.
+- **1x1x1x1:** cada 5 KOs aparece su archienemigo con la Venomshank. **Clic en Shedletsky** para su **SLASH**, que lo aturde. Con tres, se va y sale el logro «¡Blame John!».
+- **Pollo frito:** clic en el muslo para curarle (2 por vida, como en *FORSAKEN*). A 0 de vida se rompe en piezas y reaparece con el campo de fuerza.
+- Cuando algo falla (una app que no está...): sello de **BLAME JOHN.**
+- Todas las skins opinan de él y hay 5 charlas nuevas (con c00lgui, su rival en *FORSAKEN*, Mikaela, Sebastian, Pursuer y Roaring Knight).
+
+**Otros cambios**
+- Se termina el evento del Pulgar: fuera el botón ★ EVENTO y el grupo Evento. **Valencina**, **Lei Heng** y **Kalo** vuelven a **Videojuegos**.
+- **Evil Scary** pasa al grupo **Roblox** (*Die of Death* es de Roblox).
 
 ---
 
@@ -235,7 +254,7 @@ Panel para Windows que abre YouTube, las apps de Office y otros programas con un
 
 ## Las skins
 
-Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code, Build the Larp"). Tiene treinta y cuatro skins, cada una con su propio estilo, animaciones y diálogos. Cinco están **archivadas** (🗃️): no salen en el menú Skins, pero se pueden poner desde **Ajustes → Skins archivadas**.
+Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code, Build the Larp"). Tiene treinta y cinco skins, cada una con su propio estilo, animaciones y diálogos. Cinco están **archivadas** (🗃️): no salen en el menú Skins, pero se pueden poner desde **Ajustes → Skins archivadas**.
 
 | Skin | Estilo | Efecto al entrar |
 |---|---|---|
@@ -272,6 +291,7 @@ Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code,
 | **Valencina** ⚔️ | La Nursefather del Pulgar (*Limbus Company*) en el bar del Pasillo del Pulgar, con su vaso de Old Parr | Proelium Fatale, su primer plano con el puro y su ficha de jefa |
 | **Lei Heng** ⚔️ | El Capo IIII del Pulgar (*Limbus Company*) ante el templo de Tiekan, con barra de vida de jefe y sus skills | El templo de lejos y de cerca, Proelium Fatale y su ficha de jefe |
 | **Kalo** ⚔️ | La recepción del Pulgar de *Library of Ruina*: Boris y Katriel primero, luego Kalo | La sala de la recepción, la viñeta de la recepción II y los tres presentándose |
+| **Shedletsky** | El admin de Roblox y creador de *Sword Fights on the Heights* (con su aspecto de *FORSAKEN*), en el mapa de SFOTH con el marcador de KOs | La pantalla de carga del Roblox clásico, el mapa de SFOTH, su avatar clásico y el sello de BLAME JOHN |
 | **Silix y Pendeja** | OC de Fox Fandubs al estilo de *Forsaken*: dos barras de RABIA, un tanque y la cara de rabia | "⚠ ALERTA DE PROYECTARSE ⚠", un misil, la ardilla que grita, el canal de su creador lleno de flechas rojas y "This round's assistant is..." |
 
 Cada skin opina de las demás (menos **Ellie** y **Silix y Pendeja**: a propósito, ni tienen charlas ni nadie opina de ellas). Pasa el ratón por los botones del menú **Skins** para oír lo que piensa el asistente de cada una. De vez en cuando, además, **discuten entre ellos**: el otro personaje aparece en su propia ventanita pegada al panel, con su estilo y su bocadillo. Lo que dicen tiene efectos: los disparos suenan y hacen temblar las ventanas, las Smokebomb las vuelven transparentes y los mordiscos suenan. **Haz clic derecho sobre el personaje** para empezar una discusión cuando quieras.
@@ -292,7 +312,7 @@ No hace falta instalar nada: funciona con PowerShell, que ya viene con Windows 1
 
 - **Botones:** abren la app. Si una app de Office no está instalada, se abre su versión web. En la página 2 también hay enlaces a **GitHub** y **Wikipedia**.
 - **`<` y `>`:** cambian de página.
-- **Skins:** elige otra skin. Se recuerda para la próxima vez. Las skins están agrupadas según de dónde viene cada personaje (**Evento**, **YouTube**, **Roblox**, **Videojuegos**, **Anime** y **Amigos**); debajo del nombre sale su creador o su juego. Con **`<`** y **`>`** pasas de un grupo a otro. Las skins archivadas (Zodiac, Dune, Kevin, Tetra y Averi) se ponen desde **Ajustes → Skins archivadas**.
+- **Skins:** elige otra skin. Se recuerda para la próxima vez. Las skins están agrupadas según de dónde viene cada personaje (**YouTube**, **Roblox**, **Videojuegos**, **Anime** y **Amigos**); debajo del nombre sale su creador o su juego. Con **`<`** y **`>`** pasas de un grupo a otro. Las skins archivadas (Zodiac, Dune, Kevin, Tetra y Averi) se ponen desde **Ajustes → Skins archivadas**.
 - **Mover la ventana:** arrástrala desde el título.
 - **Asistente:** haz clic en el personaje y te contesta.
   - **Guillotina:** cada clic le quita vida. Con 200 o menos se enfurece, como en el juego (el callejón late en rojo y golpea con la barriga). Cada app que abres es un gato engullido. Si la derrotas, vuelve buscando venganza.
@@ -325,6 +345,7 @@ No hace falta instalar nada: funciona con PowerShell, que ya viene con Windows 1
   - **Valencina:** clic en ella y lo esquiva (gasta una carga del ojo) y te contraataca; a 0 cargas se sobrecalienta y ya puedes pegarle. Cada app es un choque, y a veces marca un botón como presa. Clic en su vaso para que beba.
   - **Lei Heng:** cada app es una de sus skills contra ese botón. Clic en él para pegarle; al 40 % de vida activa el Shin. Si cae, vuelve a los pocos segundos.
   - **Kalo:** clic en Boris o Katriel para chocar dados; las apps les pegan sin choque. Cuando caen los dos, entra Kalo. Al vencerle, vuelta a empezar.
+  - **Shedletsky:** cada app es un retador que viene a por él (PWNED!). Cuando aparezca 1x1x1x1, haz clic en Shedletsky para aturdirlo con su SLASH. Clic en el muslo de pollo para curarle.
   - **Silix y Pendeja:** haz clic en cada una (o abre apps) y su **RABIA** sube; si las dejas en paz, baja sola. Silix al 100 % se sube a su **tanque** y dispara a los botones; la Pendeja al 100 % pone su cara de rabia y grita. Todavía no hablan.
 
 ## Ajustes
@@ -406,6 +427,7 @@ Al principio de la sección `SKINS` de `c00lgui.ps1` hay una guía paso a paso c
 - **Ellie Velázquez:** personaje original de Ale, con sus imágenes. Sonidos hechos para el panel.
 - **Valencina** y **Lei Heng:** personajes de *Limbus Company* (Project Moon). Sprites, iconos de habilidades e ilustraciones de la [Cogitopedia](https://projectmoon.miraheze.org); pantalla Proelium Fatale del juego. Sonidos hechos para el panel.
 - **Kalo, Boris y Katriel:** personajes de *Library of Ruina* (Project Moon). Sprites e ilustraciones de las recepciones del Pulgar de la [Cogitopedia](https://projectmoon.miraheze.org).
+- **Shedletsky:** John Shedletsky, de Roblox; su aspecto y sus habilidades son los de *FORSAKEN* y su juego, *Sword Fights on the Heights*. Datos de las wikis de Roblox y de FORSAKEN (Fandom). Música: *Dueling Winds (Remix)*, de la banda sonora de *Phighting!*. Sonidos hechos para el panel.
 - **Silix y Pendeja:** personajes originales (OC) de **Fox Fandubs** ([FOX FANDUBS] en YouTube), inspirados en *Forsaken* (Roblox). GIF del misil de [Tenor](https://tenor.com); sonidos hechos para el panel.
 
 Proyecto de fans sin ánimo de lucro. Los personajes pertenecen a sus autores.

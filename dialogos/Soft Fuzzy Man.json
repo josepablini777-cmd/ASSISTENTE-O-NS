@@ -103,7 +103,8 @@
     "Painter": "Se ha ido Painter. Me dejó dibujado en su pantalla. Borroso, como siempre. Pero estaba ahí. *(sonríe, un poco borroso)*",
     "Valencina": "Se ha ido Valencina. Ni me miró. ¿Existo? Dime que existo.",
     "Lei Heng": "Se ha ido Lei Heng. Me ha visto. Existo. ¡EXISTO!",
-    "Kalo": "Se fue Kalo. Ahora sí que me hacéis caso, ¿no?"
+    "Kalo": "Se fue Kalo. Ahora sí que me hacéis caso, ¿no?",
+    "Shedletsky": "Se ha ido Shedletsky. Me ha hecho caso. Existo un poco más."
   },
   "Opina": {
     "c00lgui": ["c00lgui tiene un panel de hacker. Yo no tengo ni panel ni cuerpo. Empate.", "Me quiso meter en un virus. Ya soy algo que se cuela por todas partes, gracias."],
@@ -136,6 +137,7 @@
     "Painter": ["Painter me dibujó. Salgo con ojos de círculos y una sonrisa. *(se acerca a la pantalla)* Es la cara más bonita que he tenido.", "Es el único que dibuja a la gente borrosa sin que se enfade. Qué detalle, cariño."],
     "Valencina": ["Valencina... una mujer que lo ve todo. ¿Me ve a mí? Dime que me ve a mí. *Se arregla la niebla.*"],
     "Lei Heng": ["Lei Heng me ha atravesado con la espada... ¡y me ha mirado! ¡Me ha VISTO! ¿Eso cuenta como cita?"],
-    "Kalo": ["Kalo dice que necesitar atención es debilidad. *Se desvanece un poco.* ...Auch."]
+    "Kalo": ["Kalo dice que necesitar atención es debilidad. *Se desvanece un poco.* ...Auch."],
+    "Shedletsky": ["Shedletsky me ha dicho que me entiende. Que también se siente... parte de algo que no controla. *Brilla un poco.*"]
   }
 }

@@ -102,7 +102,8 @@
     "Painter": "* Se ha ido el ordenador. * Su pantalla se ha oscurecido. * No ha sido el Knight. * O sí.",
     "Valencina": "* Valencina se ha ido.\n* El aire todavía huele a pólvora y a whisky.",
     "Lei Heng": "* Lei Heng se ha ido.\n* El aire todavía huele a pólvora.",
-    "Kalo": "* Kalo se ha ido.\n* La sala queda en silencio."
+    "Kalo": "* Kalo se ha ido.\n* La sala queda en silencio.",
+    "Shedletsky": "* Shedletsky se ha ido.\n* El aire huele a pollo frito."
   },
   "Opina": {
     "c00lgui": ["* c00lgui hackea servidores. * El Knight crea mundos enteros.", "* c00lkidd quiso un panel de admin para el Knight. * El Knight ya es el admin de los Mundos Oscuros."],
@@ -135,6 +136,7 @@
     "Painter": ["* El Knight observa al ordenador. * Dibuja caras que sonríen. * El Knight sonríe de vuelta. * Con los dientes.", "* No salió en sus cámaras. * Eso lo hizo el Knight. * El ordenador lo sabe. * Y dibuja otra carita igual."],
     "Valencina": ["* Valencina te mira con un solo ojo.\n* Parece que ya sabe lo que vas a hacer."],
     "Lei Heng": ["* Lei Heng te invita a bailar.\n* El Roaring Knight levanta la espada. Acepta."],
-    "Kalo": ["* Kalo golpea el suelo con el bastón.\n* Boris y Katriel se colocan delante."]
+    "Kalo": ["* Kalo golpea el suelo con el bastón.\n* Boris y Katriel se colocan delante."],
+    "Shedletsky": ["* Shedletsky te reta a un duelo en las Alturas.\n* El Roaring Knight levanta la espada."]
   }
 }

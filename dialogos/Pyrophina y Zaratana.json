@@ -81,7 +81,8 @@
     "Painter": "WMEW 99.9: El ordenador del Blacksite ha dejado la emisión. Sus ventiladores siguen sonando en las calles.",
     "Valencina": "¡La de la espada se ha ido! ¡Volvemos a pelearnos tranquilas!",
     "Lei Heng": "¡Se fue el de los petardos! ¡Ahora volvemos a pelearnos solas!",
-    "Kalo": "¡Se fue el viejo! ¡A pelear sin orden!"
+    "Kalo": "¡Se fue el viejo! ¡A pelear sin orden!",
+    "Shedletsky": "¡Se fue el de la espada! ¡Sin reglas otra vez!"
   },
   "Opina": {
     "c00lgui": ["WMEW 99.9: Pyrophina cree que el panel rojo es un juguete. Lo muerde.", "Zaratana: Grrrr, burp. *Se ha comido un cable de c00lgui.*"],
@@ -114,6 +115,7 @@
     "Painter": ["WMEW 99.9: Un ordenador de los 80 ha dibujado a Pyrophina. Quedó tan bien que ha dejado de rugir un segundo.", "Zaratana: ¡GRAAAAH! (le pide que dibuje a Pyrophina con peluca)"],
     "Valencina": ["¡Valencina nos ha llamado «bestias sin técnica»! ¡GRAAAH! ...¿Qué es técnica?"],
     "Lei Heng": ["¡Lei Heng quiere meterse en medio de nuestra pelea! ¡GRAAAH! ...Bueno, vale, que entre."],
-    "Kalo": ["¡El viejo dice que peleamos sin orden! ¡GRAAAH! ...¿Qué es orden?"]
+    "Kalo": ["¡El viejo dice que peleamos sin orden! ¡GRAAAH! ...¿Qué es orden?"],
+    "Shedletsky": ["¡Shedletsky quiere ponernos reglas de duelo! ¡GRAAAH! ...¿Qué es un duelo?"]
   }
 }

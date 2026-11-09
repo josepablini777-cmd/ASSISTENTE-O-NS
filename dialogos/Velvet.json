@@ -134,7 +134,8 @@
     "Painter": "Se ha ido Painter, cielo. Dejó sus cables enredados en mi telaraña. Qué suave el cable... qué suave...",
     "Valencina": "Valencina se ha ido... y ha cortado mi telaraña al salir. Sin mirar. Grrr.",
     "Lei Heng": "Lei Heng se ha ido. Mi telaraña sigue cortada. Grrr.",
-    "Kalo": "Se fue Kalo. Qué señor tan educado. Me ha dado miedo."
+    "Kalo": "Se fue Kalo. Qué señor tan educado. Me ha dado miedo.",
+    "Shedletsky": "Se fue Shedletsky. El pollo estaba bueno."
   },
   "Opina": {
     "c00lgui": ["c00lkidd es como una mosca: hace ruido y acaba en mi telaraña.", "¿Un hacker? Qué mono. Lo guardaré para la cena."],
@@ -167,6 +168,7 @@
     "Painter": ["Un ordenador con una carita dibujada... qué ternura. Le ofrecí un abracito. Dijo que no tiene brazos. Le envolví igualmente.", "Calienta mucho. Es perfecto para secar la seda, cielo."],
     "Valencina": ["Viene de la Casa de las Arañas y no ha querido ni un abracito. Qué fría. ...Me gusta."],
     "Lei Heng": ["Lei Heng me ha cortado la telaraña sin mirar. Ni un abracito. Qué grosero, cielo."],
-    "Kalo": ["Kalo dice que tengo buenos modales para ser araña. ¿Eso es un cumplido, cielo?"]
+    "Kalo": ["Kalo dice que tengo buenos modales para ser araña. ¿Eso es un cumplido, cielo?"],
+    "Shedletsky": ["Shedletsky me ha cortado la telaraña con su espada. Luego me ha dado pollo. No sé si enfadarme, cielo."]
   }
 }

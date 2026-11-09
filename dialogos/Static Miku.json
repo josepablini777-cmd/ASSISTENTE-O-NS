@@ -95,7 +95,8 @@
     "Painter": "¡Bzzt! ¡Painter se ha ido! ¡Cambio de canal! ¡Me dejó un dibujo en la pantalla! ¡Es un corazón con cables!",
     "Valencina": "¡Valencina se ha ido! ¡Me ha dejado su vaso! ¡Bzzt! ...está vacío.",
     "Lei Heng": "¡Se fue Lei Heng! ¡Bzzt! ¡Ya puedo respirar!",
-    "Kalo": "¡Se fue Kalo! ¡Ya puedo subir el volumen!"
+    "Kalo": "¡Se fue Kalo! ¡Ya puedo subir el volumen!",
+    "Shedletsky": "¡Se fue Shedletsky! ¡Bzzt! ¡Olía a pollo frito!"
   },
   "Opina": {
     "c00lgui": ["¡El hacker rojo me da un poco de miedo! ¡Bzzt!", "¡c00lkidd intentó piratear mi tele! ¡Solo encontró dibujos!"],
@@ -128,6 +129,7 @@
     "Painter": ["¡Bzzt! ¡Painter es un ordenador y yo una tele! ¡Somos parientes! ¡Pantalla contra pantalla!", "¡Me dibujó una carita en la estática! ¡Se ve guapísima! ¡Bzzt!"],
     "Valencina": ["¡Valencina me ha dicho que sonrío demasiado! ¡Bzzt! ¡Pues le he sonreído el doble!"],
     "Lei Heng": ["¡Lei Heng me ha preguntado si me apago si me pone nerviosa! ¡Bzzt! ¡No me apago! ...creo."],
-    "Kalo": ["¡Kalo me ha dicho que tengo volumen pero no rango! ¡Bzzt! ¿Qué es un rango?"]
+    "Kalo": ["¡Kalo me ha dicho que tengo volumen pero no rango! ¡Bzzt! ¿Qué es un rango?"],
+    "Shedletsky": ["¡Shedletsky me ha retado a un duelo de espadas! ¡Bzzt! ¡No tengo espada! ¡Tengo antena!"]
   }
 }

@@ -162,7 +162,8 @@
     "Painter": "Se fue el kid, amigo. Prometí sacarlo del Blacksite. Y yo cumplo... siempre que el precio sea justo. Este lo es.",
     "Valencina": "Valencina se ha ido. Se ha llevado tres botellas sin pagar. ¡LUCIO, VEN AQUÍ!",
     "Lei Heng": "Lei Heng se ha ido. Se ha llevado el cenicero. Era de exposición.",
-    "Kalo": "Kalo se ha ido. Ha dejado el doble. ¡Vuelva pronto, señor!"
+    "Kalo": "Kalo se ha ido. Ha dejado el doble. ¡Vuelva pronto, señor!",
+    "Shedletsky": "Shedletsky se ha ido. Ha pagado en Robux. No sé qué hacer con ellos."
   },
   "Opina": {
     "c00lgui": ["c00lkidd intentó hackear mi tienda. Le cobré la entrada.", "Un hacker aquí abajo... no duraría ni una sala."],
@@ -195,6 +196,7 @@
     "Painter": ["Painter es mi chico, amigo. Mi pequeño ordenador. Le debo un cumpleaños y una huida, por ese orden.", "Se pone nervioso cuando me ve entrar. Le subo la temperatura sin querer. Pero sonríe. Se le nota en la pantalla."],
     "Valencina": ["Valencina. Paga en efectivo, no regatea y amenaza con despiezarme. Clienta ideal."],
     "Lei Heng": ["Lei Heng. Fuma en mi tienda, no compra nada y me quiso enseñar la espada. Le hice una oferta por ella. Se rio mucho."],
-    "Kalo": ["Kalo ha pagado sin regatear y con una reverencia. Nunca había tenido un cliente así. Me da un poco de miedo."]
+    "Kalo": ["Kalo ha pagado sin regatear y con una reverencia. Nunca había tenido un cliente así. Me da un poco de miedo."],
+    "Shedletsky": ["Shedletsky. Un cliente legendario. Tiene más limiteds que yo linternas. Le he subido los precios. Lo ha notado."]
   }
 }

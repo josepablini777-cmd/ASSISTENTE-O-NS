@@ -79,7 +79,8 @@
     "Painter": "> painter.exe closed. he's the only target i couldn't hack. respect. 0 turrets. 1 cute face.",
     "Valencina": "se fue la del sombrero. ni me ha dejado hackearle el ojo. team c00lkidd sigue invicto (más o menos).",
     "Lei Heng": "se fue el de la espada con petardos. por fin. respira, c00lkidd.",
-    "Kalo": "se fue el viejo del bastón. los dientes siguen en su sitio."
+    "Kalo": "se fue el viejo del bastón. los dientes siguen en su sitio.",
+    "Shedletsky": "se fue shedletsky. ya puedo hackear tranquilo. bueno. más tranquilo."
   },
   "Opina": {
     "SeaDrive": ["> SeaDrive? just a cat with a lanyard. easy target.", "> hacked SeaDrive's wifi. password was \"sarcasmo123\""],
@@ -112,6 +113,7 @@
     "Painter": ["> tried to hack painter. he drew a smiley on my screen. i have never felt so humiliated.", "> a computer from the 80s with a tablet?? that's my kind of hardware."],
     "Valencina": ["valencina?? la del sombrero rojo que bebe?? le he hackeado el ojo. bueno, lo he intentado. me ha visto venir. wtf."],
     "Lei Heng": ["lei heng?? el del abrigo rojo que se ríe mucho? me ha dicho que me arranca la lengua. team c00lkidd... se va a portar bien hoy."],
-    "Kalo": ["kalo?? el viejo del bastón me ha dicho que si le hablo sin permiso me quedo sin dientes. ...hola señor kalo. con permiso."]
+    "Kalo": ["kalo?? el viejo del bastón me ha dicho que si le hablo sin permiso me quedo sin dientes. ...hola señor kalo. con permiso."],
+    "Shedletsky": ["SHEDLETSKY. el admin. el de la espada. team c00lkidd vs shedletsky: round 2 en FORSAKEN. esta vez gano yo.", "blame john. lo digo en serio. culpa suya."]
   }
 }
