@@ -193,7 +193,8 @@
     "Valencina": "Valencina se ha ido. Mi lienzo tiene un tajo. ¡Lo enmarco!",
     "Lei Heng": "Lei Heng se ha ido. ¡El retrato sigue entero!",
     "Kalo": "Kalo se ha ido. ¡El dibujo está en orden!",
-    "Shedletsky": "¡Shedletsky se ha ido! ¡Se ha llevado mi dibujo!"
+    "Shedletsky": "¡Shedletsky se ha ido! ¡Se ha llevado mi dibujo!",
+    "Artful": "Artful se ha ido. ¡El cartel sigue sin él!"
   },
   "Opina": {
     "c00lgui": ["c00lgui entró en mi sistema y se puso a buscar mi \"admin\". Le dibujé una carita en la contraseña. Se rindió.", "Dice que es el mejor hacker. Yo me dedico a hackear puertas y mandar a las torretas... somos colegas de oficio."],
@@ -227,6 +228,7 @@
     "Valencina": ["¡Le he dibujado un retrato a Valencina! Dice que el sombrero está torcido. ¡Uy! Me lo ha cortado por la mitad."],
     "Lei Heng": ["¡Le he hecho un retrato a Lei Heng con un sol! ¡Le ha gustado! ¡No me ha cortado! ¡Día histórico!"],
     "Kalo": ["¡He dibujado a Kalo con Boris y Katriel! Me ha dicho que el orden de la fila estaba mal. ¡Lo he corregido!"],
-    "Shedletsky": ["¡He pintado a Shedletsky con su pollo! ¡Le ha gustado! ¡Me ha dicho que lo pondría en el juego!"]
+    "Shedletsky": ["¡He pintado a Shedletsky con su pollo! ¡Le ha gustado! ¡Me ha dicho que lo pondría en el juego!"],
+    "Artful": ["¡Artful me ha pedido el cartel de su espectáculo! ¡Le he pintado un sol! Dice que falta él. ¡Uy!"]
   }
 }

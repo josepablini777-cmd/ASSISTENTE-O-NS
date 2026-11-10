@@ -151,7 +151,8 @@
     "Valencina": "Valencina se ha ido. Le he dejado una vela con forma de patata en la mesa. ¡Seguro que le gusta! ...¿Verdad?",
     "Lei Heng": "Lei Heng se ha ido. ¡Le he dejado una vela con forma de patata! Seguro que la corta en dos. Bueno.",
     "Kalo": "Kalo se ha ido. Le he dejado una vela con forma de patata. ¡Se la ha llevado!",
-    "Shedletsky": "¡Shedletsky se ha ido! Le he dado un libro de historia. ¡Sobre él!"
+    "Shedletsky": "¡Shedletsky se ha ido! Le he dado un libro de historia. ¡Sobre él!",
+    "Artful": "¡Artful se ha ido! ¡Qué espectáculo tan bonito!"
   },
   "Opina": {
     "c00lgui": ["c00lgui grita mucho en rojo. Pero creo que en el fondo solo quiere que alguien le haga caso. Lo entiendo.", "Me ha llamado \"noob de la biblioteca\". ¡Llevo tres vidas trabajando! Noob, dice."],
@@ -185,6 +186,7 @@
     "Valencina": ["Valencina... está muy enfadada con todo el mundo. Creo que en el fondo está enfadada consigo misma. Eso lo conozco. *Respira hondo.*", "Le he enseñado mi ejercicio de respiración. Me ha dicho que ella bebe. ...Cada una tiene su método, supongo."],
     "Lei Heng": ["Lei Heng dice que le pegaría un tajo y seguiría sonriendo. *Respira hondo.* ...Creo que es un cumplido.", "Es muy fuerte, eso sí. Pero pelear por pelear... no lleva a ningún sitio. Lo sé bien."],
     "Kalo": ["¡Kalo es muy educado! Aunque cuando habla de rangos me recuerda a cuando yo exigía demasiado. *Respira.*"],
-    "Shedletsky": ["¡Shedletsky ha hecho muchas cosas de la historia de Roblox! Tengo un libro entero. ¡Y él sale en todas las páginas!"]
+    "Shedletsky": ["¡Shedletsky ha hecho muchas cosas de la historia de Roblox! Tengo un libro entero. ¡Y él sale en todas las páginas!"],
+    "Artful": ["¡Artful hace trucos de magia! ¡Me ha adivinado la carta! ...Bueno, me ha enseñado una y me ha dicho que era la mía. ¡Y lo era!"]
   }
 }

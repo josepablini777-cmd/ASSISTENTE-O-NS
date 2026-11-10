@@ -90,7 +90,8 @@
     "Valencina": "*Beee...* (Se ha ido. El Cordero quería invitarla al culto. Ella ha contestado con un tajo.)",
     "Lei Heng": "*Beee.* (Se ha ido. La Cabra ha recogido las colillas.)",
     "Kalo": "*Beee.* (Se ha ido el Sottocapo. Ha dejado propina.)",
-    "Shedletsky": "*Beee.* (Se ha ido. Ha dejado huesos de pollo en el altar.)"
+    "Shedletsky": "*Beee.* (Se ha ido. Ha dejado huesos de pollo en el altar.)",
+    "Artful": "*Beee.* (Se ha ido el mago. Ha hecho desaparecer una vela.)"
   },
   "Opina": {
     "c00lgui": ["Cabra: c00lkidd tiene su propio culto. \"Team c00lkidd\". Aficionado.", "Cordero: *Bendice el panel rojo. Sigue haciendo glitch. Qué raro.*"],
@@ -124,6 +125,7 @@
     "Valencina": ["*Bee.* (El Cordero dice que Valencina sería una seguidora perfecta. La Cabra opina que acabaría con el culto en tres días. Como su cargo.)"],
     "Lei Heng": ["*Bee.* (El Cordero quería invitar a Lei Heng al culto. Él ha contestado que ya tiene jefe y que es peor que cualquier dios.)"],
     "Kalo": ["*Bee.* (El Cordero ha invitado a Kalo al culto. Kalo ha preguntado qué rango tendría. La Cabra sigue pensando la respuesta.)"],
-    "Shedletsky": ["*Bee.* (El Cordero quiere que Shedletsky se una al culto. La Cabra dice que ya tiene uno: el del pollo frito.)"]
+    "Shedletsky": ["*Bee.* (El Cordero quiere que Shedletsky se una al culto. La Cabra dice que ya tiene uno: el del pollo frito.)"],
+    "Artful": ["*Bee.* (El Cordero quiere contratar a Artful para los rituales. La Cabra dice que cobra demasiado.)"]
   }
 }

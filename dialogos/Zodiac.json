@@ -82,7 +82,8 @@
     "Painter": "Se fue el ordenador. Le conté mi paisaje: arena, horizonte y un caballo. Dibujó el caballo. Le quedó torcido y precioso.",
     "Valencina": "¡Se fue la del sombrero! ¡Cobarde! ...o muy lista. Seguramente muy lista.",
     "Lei Heng": "Se ha ido el de la espada. ¡Cobarde! ...O se ha ido a por tabaco.",
-    "Kalo": "¡Se fue el viejo del bastón! ¡Y sus guardaespaldas!"
+    "Kalo": "¡Se fue el viejo del bastón! ¡Y sus guardaespaldas!",
+    "Artful": "¡Se fue el mago! ¡Devuélveme las balas!"
   },
   "Opina": {
     "c00lgui": ["¿Un hacker? En mis tiempos los forajidos daban la cara.", "*Le dispara al panel rojo. Sigue funcionando. Qué raro.*"],
@@ -115,6 +116,7 @@
     "Painter": ["Un ordenador que sueña con pintar paisajes. En el desierto eso es poesía pura. Nos entendemos.", "Le pedí que me dibujara un revólver. Me hizo una carita con sombrero. Ni tan mal."],
     "Valencina": ["Esa mujer del sombrero rojo... vio mi bala antes de que la disparara. ¡¿CÓMO?! ¡NO TE MUEVAS, HE DICHO!"],
     "Lei Heng": ["¡Ese de la espada con balas me ha robado la idea! ¡No te muevas, ladrón!"],
-    "Kalo": ["¡Ese viejo dice que desperdicio balas! ¡NO TE MUEVAS! ...vale, he fallado. Pero no las desperdicio."]
+    "Kalo": ["¡Ese viejo dice que desperdicio balas! ¡NO TE MUEVAS! ...vale, he fallado. Pero no las desperdicio."],
+    "Artful": ["¡Ese mago me ha hecho desaparecer las balas! ¡NO TE MUEVAS! ...¿Con qué disparo ahora?"]
   }
 }

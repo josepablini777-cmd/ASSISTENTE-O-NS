@@ -1,0 +1,132 @@
+{
+  "Hola": [
+    "Mesdames et messieurs... ¡Artful! El mago más grande de toda Robloxia. Aplausos, por favor. Más fuerte.",
+    "Ah, un espectador. Bienvenu, mon ami. Siéntese. El espectáculo ya ha empezado.",
+    "*Hace una reverencia exagerada.* ¿Viene a por un autógrafo? Hoy no firmo. Hoy... hago desaparecer cosas.",
+    "Para mi próximo truco... ¡haré aparecer tus programas! Y luego, quizá, haré desaparecer al público."
+  ],
+  "Yo": [
+    "¡Moi! El gran Artful. Admire el sombrero. Es mágico. Bueno, es negro. Pero con estilo.",
+    "Excelente elección. Tiene usted el gusto de un crítico de teatro. Los que quedan."
+  ],
+  "Frases": [
+    "Voilà! Abierto.",
+    "¡Tachán! ¿Ve? Ni una manga sospechosa.",
+    "Abierto. Un mago nunca revela sus trucos... pero este era fácil.",
+    "Magnifique. Otro número perfecto.",
+    "*Mueve la varita.* ¡Abracadabra! ...Sí, ya está abierto.",
+    "Abierto. Guarde los aplausos para el final. O no, aplauda ya."
+  ],
+  "Idle": [
+    "Antes llenaba teatros. Ahora lleno... esto. Bueno. El arte es el arte.",
+    "¿El éxito vale lo que cuesta su historia? *Se ajusta la máscara.* No me lo pregunte.",
+    "Toda la música que suena aquí es mía. Puede comprarla en la tienda de regalos. Aceptamos Robux.",
+    "Hubo un... incidente. Una función salió mal. Yo me desahogué un poco. Con todo el público. Detalles.",
+    "Un mago nunca revela sus trucos. Ni dónde se esconde de la policía.",
+    "¿Plátanos? ¿Quién ha dicho plátanos? *Mira al suelo, nervioso.* Nadie. Bien.",
+    "Lo único que te impide alcanzar tus sueños son los muros que tú mismo te pones. Yo los pongo por ti. Es más rápido.",
+    "¿Quién dice que a un mago viejo no se le pueden enseñar trucos nuevos? Yo me los enseño solo.",
+    "*Baraja unas cartas en el aire.* Elija una. Cualquiera. ...No, esa no. Otra."
+  ],
+  "Clic": [
+    "Ne touchez pas! El artista está trabajando.",
+    "¿Quiere ver un truco?",
+    "¡Ah! Un voluntario del público."
+  ],
+  "Swing": [
+    "¡Con un golpe de varita... hago realidad tus sueños más salvajes!",
+    "*¡ZAS!* La varita no es solo para conejos.",
+    "¡Varita va!"
+  ],
+  "Implement": [
+    "Lo único que te separa de tus sueños son los muros mentales... ¡y este muro de verdad!",
+    "*Golpea el suelo.* ¡Un muro! Para que nadie se escape antes del final.",
+    "Voilà, un obstáculo. El público adora los obstáculos."
+  ],
+  "Copywrite": [
+    "¿Le gusta lo que oye? Toda la música es mía. Se vende en la tienda de regalos.",
+    "*Da cuerda a la cajita.* Escuche... y quédese quieto. Muy, muy quieto.",
+    "Una cajita de música. Ralentiza a los críticos. Ideal."
+  ],
+  "Titeres": [
+    "¡Mis marionetas! Ellas sí aplauden cuando se lo pido.",
+    "*Tira de los hilos.* Mi público ideal: no se queja, no huye, no llama a la policía.",
+    "Damas y caballeros... ¡mis ayudantes!"
+  ],
+  "Reuso": [
+    "¿Quién dice que a un mago viejo no se le pueden enseñar trucos nuevos?",
+    "Nada se tira. Todo se reutiliza. Hasta los muros. Hasta usted.",
+    "*Recoge la cajita con la varita.* Reciclaje mágico."
+  ],
+  "Carta": [
+    "Est-ce ta carte? ...¿Es esta su carta? ¡Diga que sí!",
+    "*Le enseña la carta con una floritura.* ¿Es esta? Claro que es esta. Siempre es esta.",
+    "¡Su carta! Aplausos. No pregunte cómo lo he hecho.",
+    "¿No es su carta? Imposible. Mire otra vez. ...¿Ahora sí? Lo sabía."
+  ],
+  "Platano": [
+    "¡NO! ¡LOS PLÁTANOS NO! *Resbala.* ¡¿Quién ha dejado esto aquí?!",
+    "*Pisa una piel de plátano y vuela por los aires.* ...Esto no ha pasado. Era parte del número.",
+    "¡Sacrebleu! ¡Plátanos otra vez! ¡Es una conspiración!"
+  ],
+  "Showtime": [
+    "¡SHOWTIME! Mesdames et messieurs... ¡el gran final!",
+    "¡Luces! ¡Música! ¡ES LA HORA DEL ESPECTÁCULO!",
+    "Para mi próximo truco... ¡haré DESAPARECER a los civiles de Robloxia!"
+  ],
+  "FinShow": [
+    "*Reverencia.* Merci, merci. Pueden tirar flores. No plátanos.",
+    "Y así termina la función. La próxima, más grande. Y más lejos de la policía."
+  ],
+  "Aplauso": [
+    "¡Más fuerte! ¡No le oigo!",
+    "*Se lleva la mano al pecho.* Merci. Lo sé. Soy increíble.",
+    "El público me adora. Como antes. Casi."
+  ],
+  "PorApp": {
+    "YouTube": ["¿Vídeos? Busque mis actuaciones. Las de antes del incidente, s'il vous plaît."],
+    "Word": ["Escriba una reseña de mi espectáculo. Cinco estrellas. Mínimo."],
+    "PowerPoint": ["¿Una presentación? Toda presentación necesita un mago. Y una cortina."],
+    "Excel": ["Números. Cuente las entradas vendidas. ...No, no cuente las devoluciones."],
+    "Outlook": ["Correo. Si es de la policía, yo no estoy. Nunca he estado."],
+    "Teams": ["¿Una reunión? ¿Hay público? Entonces que me pongan de cabeza de cartel."]
+  },
+  "Opina": {
+    "Pursuer": ["El cazador de Die of Death. Somos colegas de trabajo. Yo tengo estilo. Él tiene... dientes."],
+    "Evil Scary": ["¿Una bola que bota hacia ti? ¡Eso no es un número, es un accidente! Aunque... tiene presencia escénica."],
+    "Shedletsky": ["El del pollo y la espada. Le he ofrecido un papel en mi espectáculo. Ha preguntado si había pollo en el camerino."],
+    "c00lgui": ["Un crío que hackea cosas. En mis tiempos, los niños se sentaban en primera fila y aplaudían."],
+    "SeaDrive": ["No aplaude. Ni sonríe. El peor público que he tenido. Y he tenido públicos... difíciles."],
+    "Static Miku": ["¡Una cantante en una tele! Necesitamos un dúo. Ella canta, yo la hago desaparecer al final."],
+    "Kasane Teto": ["Esa chica de los pájaros tiene talento. Le he ofrecido ser mi ayudante. Ha preguntado si la cortaría por la mitad. Detalles."],
+    "Guillotina": ["Una gata que come gente. Yo hago desaparecer gente. Somos competencia."],
+    "Angela": ["Una directora que lo controla todo. En el teatro, eso se llama regidora. Y las odio."],
+    "Mikaela": ["Dispara mucho y apunta poco. Nunca la dejaría en primera fila."],
+    "Velvet": ["Una araña con hilos. ¡Como mis marionetas! Hablamos de técnica. Ella usa seda. Yo uso miedo."],
+    "Cordero y Cabra": ["Un culto con espectáculo y todo. Rituales, velas, tentáculos. Respeto la puesta en escena."],
+    "Pyrophina y Zaratana": ["Dos bestias peleándose sin coreografía. ¡Un desastre escénico!"],
+    "Sebastian Solace": ["Vende cosas en su tienda. Yo también tengo tienda de regalos. Somos rivales comerciales."],
+    "Token": ["Mucha música y mucho ruido. Le he dicho que mi música es mejor. Ha subido el volumen."],
+    "Kennyoung": ["Un músico. Respeto. Le he ofrecido tocar en mi espectáculo. Ha dicho que se agobia con tanto público. Débil."],
+    "Enfosi": ["Encontrar al impostor... En mi teatro, el impostor siempre era el crítico."],
+    "Gran": ["Un científico con sujetos de prueba. Yo los llamo voluntarios del público."],
+    "Nanachi": ["Un bichito peludo. Le he sacado un conejo de la chistera para que tenga compañía. Se lo ha... comido? No. Lo ha adoptado."],
+    "Soft Fuzzy Man": ["Un fantasma que necesita atención. Querido, todos los artistas la necesitamos."],
+    "Roaring Knight": ["Un caballero que ruge. Tiene una entrada espectacular. Se la voy a copiar."],
+    "Dybbuk": ["Esquiva todo con volteretas. ¡Contratado! ...Dice que no trabaja para humanos."],
+    "Weathergirl": ["La chica del tiempo. ¿Va a llover en mi función? Que no. Que haga sol. Y que no haya plátanos."],
+    "Painter": ["Una máquina que pinta. Le he pedido el cartel del espectáculo. Me ha pintado un sol. Sin mí."],
+    "Malkuth": ["Una bibliotecaria muy entusiasta. Me ha dado un libro sobre la historia del ilusionismo. No salgo. Escándalo."],
+    "Valencina": ["Una espadachina con mucho carácter. Ha dicho que mi espectáculo es «para morralla». Morralla, dice."],
+    "Lei Heng": ["Un hombre con una espada que explota. Eso es pirotecnia, señor. Y sin permiso."],
+    "Kalo": ["Un señor de rango que exige reverencias. ¡Yo soy el que recibe las reverencias! ...Bueno, le hice una. Por si acaso."]
+  },
+  "AlVenirDe": {
+    "Pursuer": "El cazador se ha ido. Ha dejado arañazos en el escenario. ¡El escenario!",
+    "Evil Scary": "La bola se ha ido. Ni una reverencia. Qué falta de modales.",
+    "Shedletsky": "Se ha ido el del pollo. Ha dejado huesos en la primera fila.",
+    "Static Miku": "Se ha apagado la tele. Justo cuando iba a hacer el número del dúo.",
+    "Kasane Teto": "Se fue la de los pájaros. Hay plumas en mi chistera. ...Bueno, eso ayuda al truco.",
+    "Malkuth": "Se ha ido la bibliotecaria. Me ha dejado una vela con forma de patata. La usaré en un número."
+  }
+}

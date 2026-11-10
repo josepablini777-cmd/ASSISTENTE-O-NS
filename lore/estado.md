@@ -40,4 +40,6 @@
 | Lei Heng | ✅ Bien | Nuevo (Limbus Company, Canto VIII); ficha, frases, skills del juego, fases y Shin, opiniones cruzadas y 5 charlas escritas desde la ficha |
 | Kalo | ✅ Bien | Nuevo (Library of Ruina, con Boris y Katriel); ficha, frases de los tres, combate en dos actos, opiniones cruzadas y 5 charlas escritas desde la ficha |
 | Shedletsky | ✅ Bien | Nuevo (Roblox, SFOTH y FORSAKEN); ficha, frases, duelos, 1x1x1x1, pollo, opiniones cruzadas y 5 charlas escritas desde la ficha |
+| Artful | ✅ Bien | Nuevo (Die of Death); ficha, frases, trucos con sus GIF oficiales, opiniones cruzadas y 5 charlas escritas desde la ficha |
+| Mathew | ⏳ Sin revisar | Self insert de joselitoo79 (grupo Amigos). Frases genéricas de momento, sin mecánica, sin charlas ni opiniones |
 | Silix y Pendeja | ⏳ Sin revisar | OC de Fox Fandubs (grupo Amigos). Base SIN diálogos a propósito, a la espera de su personalidad: sin frases, sin charlas y nadie opina de ellas |

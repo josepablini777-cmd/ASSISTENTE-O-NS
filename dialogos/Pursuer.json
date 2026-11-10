@@ -81,7 +81,8 @@
     "Valencina": "La cazadora se ha ido. El bosque vuelve a ser mío.",
     "Lei Heng": "Se fue el hombre que ríe. El bosque vuelve a ser mío.",
     "Kalo": "Se fue el viejo. Y sus cachorros.",
-    "Shedletsky": "Se fue el de la espada. Ya no me aturde nadie."
+    "Shedletsky": "Se fue el de la espada. Ya no me aturde nadie.",
+    "Artful": "Se fue el mago. Ya no hay plátanos en el bosque."
   },
   "Opina": {
     "c00lgui": ["*Huele a c00lkidd.* Carne de plástico.", "El hacker se esconde detrás de la pantalla. Lo encontraré."],
@@ -115,6 +116,7 @@
     "Valencina": ["Ella también caza. Marca una presa y no la suelta. Respeto... pero esa presa era MÍA. FRESH MEAT."],
     "Lei Heng": ["Ese hombre caza riendo. La locura se le ve en los ojos. Algún día... FRESH MEAT."],
     "Kalo": ["Ese viejo tiene dos cachorros que le protegen. Primero ellos... luego él. FRESH MEAT."],
-    "Shedletsky": ["Ese de la espada... aturde. Molesta. Huele a pollo. FRESH... no. Pollo. FRESH CHICKEN."]
+    "Shedletsky": ["Ese de la espada... aturde. Molesta. Huele a pollo. FRESH... no. Pollo. FRESH CHICKEN."],
+    "Artful": ["El mago. Huele a teatro y a miedo. Compartimos mapa. No compartimos presas."]
   }
 }

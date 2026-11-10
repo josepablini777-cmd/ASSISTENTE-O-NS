@@ -88,7 +88,8 @@
     "Valencina": "Se ha ido Valencina. Ha dejado marcado a un Glaggle. Y era el falso. Claro que lo era.",
     "Lei Heng": "Se fue Lei Heng. Hay que reponer Glaggles.",
     "Kalo": "Se fue Kalo. Boris ha pisado un Glaggle.",
-    "Shedletsky": "Se fue Shedletsky. Los Glaggles siguen en su sitio."
+    "Shedletsky": "Se fue Shedletsky. Los Glaggles siguen en su sitio.",
+    "Artful": "Se fue el mago. Los Glaggles siguen nerviosos."
   },
   "Opina": {
     "c00lgui": ["c00lgui parpadea en rojo. En Enfosi, un color raro es una imperfección. Golpéalo.", "c00lgui no tiene cara. Le falta la cara. Eso es de manual: es un falso."],
@@ -122,6 +123,7 @@
     "Valencina": ["Valencina distingue a un Enphosian disfrazado a la primera. Dice que en el Pulgar es lo primero que se aprende. ¿Qué es el Pulgar?"],
     "Lei Heng": ["Lei Heng ha cortado a un Glaggle falso... y a dos de verdad. «Por si acaso», ha dicho."],
     "Kalo": ["Kalo dice que en el Pulgar buscan al impostor cada día. Le he enseñado a los Glaggles. No le han impresionado."],
-    "Shedletsky": ["¡Shedletsky! ¡El admin! Le he preguntado si los Glaggles son un exploit. Ha dicho que «técnicamente no»."]
+    "Shedletsky": ["¡Shedletsky! ¡El admin! Le he preguntado si los Glaggles son un exploit. Ha dicho que «técnicamente no»."],
+    "Artful": ["¡Artful ha sacado un Glaggle de la chistera! ...Era un Enphosian disfrazado. Truco fallido."]
   }
 }

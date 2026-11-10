@@ -82,7 +82,8 @@
     "Painter": "ORDENADOR IRSE. DUNE COMER CABLE. CABLE SABER A NADA. DUNE TRISTE.",
     "Valencina": "Mujer roja va. Dune respira.",
     "Lei Heng": "Hombre rojo va. Dune contento.",
-    "Kalo": "Hombre viejo va. Dune habla otra vez."
+    "Kalo": "Hombre viejo va. Dune habla otra vez.",
+    "Artful": "Hombre sombrero va."
   },
   "Opina": {
     "c00lgui": ["CAJA ROJA HACER BIP. DUNE MORDER CAJA. NO SABER BIEN.", "HACKER... ¿SE COME?"],
@@ -115,6 +116,7 @@
     "Painter": ["ORDENADOR DIBUJAR CARA A DUNE. CARA CON DIENTES. DUNE GUSTAR. DUNE GUARDAR CARA.", "ORDENADOR CALIENTE. DUNE ACERCARSE. ORDENADOR ASUSTAR. DUNE NO ENTENDER."],
     "Valencina": ["Mujer roja da miedo. Dune no mira ojo. Ojo ve todo."],
     "Lei Heng": ["Hombre rojo ríe. Hombre rojo corta. Dune no se acerca."],
-    "Kalo": ["Hombre viejo. Bastón. Dune callado. Hombre viejo dice bien."]
+    "Kalo": ["Hombre viejo. Bastón. Dune callado. Hombre viejo dice bien."],
+    "Artful": ["Hombre sombrero. Hace cosas raras. Dune no mira."]
   }
 }

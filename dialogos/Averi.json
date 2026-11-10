@@ -94,7 +94,8 @@
     "Painter": "¡Painter se ha ido! ¡Me enseñó su paisaje! ¡Tenía un árbol y un río! ¡Yo le dibujé un perro! ¡Sin cola!",
     "Valencina": "Valencina se ha ido... ¿crees que le ha gustado mi sándwich? ¿Un poquito? ¿Nada?",
     "Lei Heng": "Se fue Lei Heng... me ha dejado el sándwich cortado en trocitos perfectos. ¿Eso es amistad?",
-    "Kalo": "Se fue el señor Kalo. ¡Qué educado! Le haré otro sándwich."
+    "Kalo": "Se fue el señor Kalo. ¡Qué educado! Le haré otro sándwich.",
+    "Artful": "Se fue Artful... ¿volverá con más sándwiches?"
   },
   "Opina": {
     "c00lgui": ["c00lkidd parece duro, pero seguro que por dentro es un trocito de pan.", "Le pedí a c00lgui ser su amiga. Me \"hackeó\" un abrazo."],
@@ -127,6 +128,7 @@
     "Painter": ["¡Painter es un ordenador con ojos de círculos! ¡Como mis dibujos! ¡Somos de la misma escuela!", "¡Le di mis ceras! ¡No tiene dedos! ¡Pero usó la tableta! ¡Es tan listo!"],
     "Valencina": ["Valencina me ha dicho que aquí dentro no duraría ni un día. ¡Le he dado un sándwich para que se anime! ...Se lo ha dado a Lucio."],
     "Lei Heng": ["Lei Heng me ha dicho que soy muy blandita y que me rompo. ¡Le he dado un sándwich para que vea que soy fuerte! ...Se lo ha cortado en tres."],
-    "Kalo": ["Kalo me ha dicho que soy demasiado amable. ¡Le he dado un sándwich! Me ha dado las gracias. ¡Con una reverencia!"]
+    "Kalo": ["Kalo me ha dicho que soy demasiado amable. ¡Le he dado un sándwich! Me ha dado las gracias. ¡Con una reverencia!"],
+    "Artful": ["¡Artful ha sacado un sándwich de pollo de la chistera! ¡Es mi persona favorita!"]
   }
 }

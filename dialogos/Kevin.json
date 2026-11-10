@@ -105,7 +105,8 @@
     "Painter": "¡Se fue Painter! ¡Me dejó un dibujo de una pizza con carita! ¡No me la voy a comer! ¡Es obra de arte! ...bueno, sí. Pero antes la enmarco.",
     "Valencina": "¡Se fue la de la espada! ¡Mi pizza sigue entera! ¡Bieeen!",
     "Lei Heng": "¡Se fue el de la espada! ¡Mi pizza sigue en tres trozos! Me los como.",
-    "Kalo": "¡Se fue Kalo! ¡Mi pizza a salvo!"
+    "Kalo": "¡Se fue Kalo! ¡Mi pizza a salvo!",
+    "Artful": "¡Se fue el mago! ¡Mi pizza ha vuelto!"
   },
   "Opina": {
     "c00lgui": ["c00lgui intentó hackear mi pizza. Le puse un cortafuegos. De queso.", "c00lkidd dice que es un hacker. Yo digo que no sabe pedir una pizza por internet."],
@@ -138,6 +139,7 @@
     "Painter": ["¡Painter usa un programa de dibujo como yo! ¡Somos colegas de Paint! ¡Le enseñé mis 16 colores!", "¡Me dijo que quiere pintar paisajes! ¡Yo le dije: \"empieza con un cuadrado marrón\"! ¡Con un cuadrado todo se arregla!"],
     "Valencina": ["¡Valencina ha mirado mi pizza! ¡Con UN OJO! ¡DON'T TOUCH MY PIZZA! ...no la ha tocado. Solo la miró. Mucho."],
     "Lei Heng": ["¡Lei Heng ha cortado MI PIZZA en tres! ¡DON'T TOUCH MY PIZZA! ...Bueno, los trozos han quedado perfectos."],
-    "Kalo": ["Kalo no ha tocado mi pizza. Ni la ha mirado. ¡Respeto, señor!"]
+    "Kalo": ["Kalo no ha tocado mi pizza. Ni la ha mirado. ¡Respeto, señor!"],
+    "Artful": ["¡EL MAGO HA HECHO DESAPARECER MI PIZZA! ¡DON'T TOUCH MY PIZZA! ...Ah, estaba debajo del sombrero."]
   }
 }

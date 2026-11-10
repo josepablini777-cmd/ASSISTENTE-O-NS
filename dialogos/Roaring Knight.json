@@ -103,7 +103,8 @@
     "Valencina": "* Valencina se ha ido.\n* El aire todavía huele a pólvora y a whisky.",
     "Lei Heng": "* Lei Heng se ha ido.\n* El aire todavía huele a pólvora.",
     "Kalo": "* Kalo se ha ido.\n* La sala queda en silencio.",
-    "Shedletsky": "* Shedletsky se ha ido.\n* El aire huele a pollo frito."
+    "Shedletsky": "* Shedletsky se ha ido.\n* El aire huele a pollo frito.",
+    "Artful": "* Artful se ha ido.\n* Hay confeti en la caja de combate."
   },
   "Opina": {
     "c00lgui": ["* c00lgui hackea servidores. * El Knight crea mundos enteros.", "* c00lkidd quiso un panel de admin para el Knight. * El Knight ya es el admin de los Mundos Oscuros."],
@@ -137,6 +138,7 @@
     "Valencina": ["* Valencina te mira con un solo ojo.\n* Parece que ya sabe lo que vas a hacer."],
     "Lei Heng": ["* Lei Heng te invita a bailar.\n* El Roaring Knight levanta la espada. Acepta."],
     "Kalo": ["* Kalo golpea el suelo con el bastón.\n* Boris y Katriel se colocan delante."],
-    "Shedletsky": ["* Shedletsky te reta a un duelo en las Alturas.\n* El Roaring Knight levanta la espada."]
+    "Shedletsky": ["* Shedletsky te reta a un duelo en las Alturas.\n* El Roaring Knight levanta la espada."],
+    "Artful": ["* Artful hace una reverencia.\n* El Roaring Knight no aplaude."]
   }
 }

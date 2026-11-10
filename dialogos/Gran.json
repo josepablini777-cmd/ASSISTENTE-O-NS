@@ -86,7 +86,8 @@
     "Valencina": "La portadora del ojo se ha marchado. Mis notas siguen incompletas. Lamentable.",
     "Lei Heng": "El sujeto de la espada se ha marchado. Mis notas siguen incompletas.",
     "Kalo": "El Sottocapo se ha marchado. Mis notas, sin la mano dorada. Lamentable.",
-    "Shedletsky": "El sujeto Shedletsky se ha marchado. Mis datos sobre el pollo, incompletos."
+    "Shedletsky": "El sujeto Shedletsky se ha marchado. Mis datos sobre el pollo, incompletos.",
+    "Artful": "El sujeto Artful se ha marchado. Sin revelar ni un truco."
   },
   "Opina": {
     "c00lgui": ["c00lgui no tiene cuerpo. No hay ADN que reescribir. Inútil.", "Un hacker. Cree que controla los sistemas. El sistema soy yo."],
@@ -120,6 +121,7 @@
     "Valencina": ["Sujeto: Valencina. Reliquia ocular con precognición. Sobrecalentamiento tras uso intensivo. Solicito una muestra. Denegada. Con un tajo."],
     "Lei Heng": ["Sujeto: Lei Heng. Shin y un anillo de Mang. Fascinante. Ha rechazado la toma de muestras. Con una amenaza muy gráfica."],
     "Kalo": ["Sujeto: Kalo. Prótesis dorada en la mano derecha. Solicito examinarla. Me ha mirado. He retirado la solicitud."],
-    "Shedletsky": ["Sujeto: John Shedletsky. Antiguo admin. Consumo de pollo frito: alarmante. Solicito análisis de sangre. Ha dicho «Blame John» y se ha ido."]
+    "Shedletsky": ["Sujeto: John Shedletsky. Antiguo admin. Consumo de pollo frito: alarmante. Solicito análisis de sangre. Ha dicho «Blame John» y se ha ido."],
+    "Artful": ["Sujeto: Artful. Afirma hacer magia. Solicito ver el truco por dentro. Respuesta: «un mago nunca revela sus trucos». Inaceptable."]
   }
 }

@@ -84,7 +84,8 @@
     "Painter": "Se fue Painter. Me mandó un dibujo con una carita. No contesté. Sí lo he guardado.",
     "Valencina": "Se fue Valencina. Y con ella mi cartel de «no molestar». neems dice que da igual.",
     "Lei Heng": "Se fue Lei Heng. neems dice que respire. Respiro.",
-    "Kalo": "Se fue Kalo. Mi cartel sigue puesto. Bien."
+    "Kalo": "Se fue Kalo. Mi cartel sigue puesto. Bien.",
+    "Artful": "Se fue el mago. neems dice que era un truco. Ya."
   },
   "Opina": {
     "c00lgui": ["c00lgui escribe en minúsculas. Yo también. Por pereza.", "c00lgui me hackeó el Discord. Me puso el estado en \"jugando\". Era verdad."],
@@ -117,6 +118,7 @@
     "Painter": ["Painter habla demasiado. Pero me deja en paz cuando quiero. Y dibuja caritas. Eso me gusta.", "Me dijo que le va a dibujar un pez. Aún lo espero. Con ganas."],
     "Valencina": ["Valencina me pidió prestado el «no molestar». No me lo ha devuelto."],
     "Lei Heng": ["Lei Heng ha venido a molestarme a propósito. Ha dicho «pa' ver qué cara pones». Esta. Pongo esta."],
-    "Kalo": ["Kalo es el único que ha respetado mi «no molestar». Le doy las gracias. neems también."]
+    "Kalo": ["Kalo es el único que ha respetado mi «no molestar». Le doy las gracias. neems también."],
+    "Artful": ["Artful me ha hecho un truco de cartas. Era mi carta. Me ha dado un poco de miedo."]
   }
 }

@@ -228,6 +228,19 @@ PowerShell no basta para recortar fondos o editar imágenes. Lo que ha funcionad
 - Intro `Transicion-LeiHeng` (`$LhIntro`, ~13,8 s): CG lejano (`cg_lejos.jpg`, zoom hacia él) → CG cercano (`cg_cerca.jpg`) → Proelium Fatale → ficha de jefe. Idea del usuario.
 - Sin música propia (YouTube pide iniciar sesión).
 
+## Artful (Die of Death, Roblox)
+
+- Estilo `mago`, grupo **Roblox**. Ficha en `lore\personajes\Artful.md`. Actor 'A' con `Llenar` = sus GIF oficiales (reducidos a 336×210: `idle, tajo, muro, caja, titeres, reuso, show, aturdido`) dentro de un escenario con telones dibujados encima (`Ar-Pintar`).
+- Estado en `$script:ar` (`Trucos, Turno, Aplauso, Show, Muros, Cajas, Carta, Platanos, Banner, Confeti`), trucos en `$ArTrucos`. Funciones `Ar-Reset, Ar-Musica-On/Off, Ar-Base, Ar-Aplaudir, Ar-App, Ar-Clic, Ar-Tick, Ar-Efectos-Boton, Ar-Pintar`; intro `Transicion-Artful` (`$ArIntro`, `Ar-Telon`).
+- Mecánica: cada app = un truco (Swing, Implement → muro sobre un botón, Copywrite → caja de música en un botón, Marionetas, Repurpose); aplausómetro → SHOWTIME 30 s (música `showtime.mp3`, focos, confeti). Clic = truco de cartas; 22 % plátano.
+- Música: `tema.mp3` (Est-ce ta Carte V2) y `showtime.mp3`. Recursos bajados de la wiki de Die of Death **con el navegador del usuario** (Claude in Chrome desde Edge): la wiki bloquea curl con Cloudflare. Desde la página de la wiki, `fetch(url + '?format=original')` + enlace de descarga funciona (hay que permitir "descargas automáticas" al sitio).
+
+## Mathew (self insert de joselitoo79)
+
+- Estilo `mathew`, grupo **Amigos**. La fursona del creador del panel (panda rojo). **De momento sin mecánica y con frases genéricas; a propósito sin charlas ni opiniones cruzadas** (como Ellie): su JSON tiene `PorApp`, `AlVenirDe` y `Opina` vacíos.
+- Todo el esfuerzo está en la intro `Transicion-Mathew` (`$MwIntro`, ~30 s): alarma ("⚠ ALERTA DE AUTOINSERT ⚠", sirenas `Sx-Sirena`, cinta de peligro `Mw-Cinta`), su Discord con decenas de flechas (`Sx-Flecha`) y círculos (`Sx-Circulo`), el vídeo "Homelander Meets The Tung" editado y el final con su nombre. Explosiones en `$script:mwBooms` (`Mw-Explosion`).
+- El vídeo editado: el Tung sustituido por Mathew fotograma a fotograma con Python (recorte del fondo blanco por relleno desde los bordes, halo dorado, respeta los fundidos). Está en `skins\mathewideo\` (15 fps) + `video.mp3`; la versión completa se dejó en Descargas como "Homelander Meets Mathew.mp4".
+
 ## Shedletsky (Roblox)
 
 - Estilo `sfoth`, grupo **Roblox**. Ficha en `lore\personajes\Shedletsky.md`. Actores 'S' (él: poses `main` = espada en alto, `tajo`, `come`) y 'P' (el muslo de pollo, clicable). Renders y mapa que pasó el usuario; los GIF de la wiki de FORSAKEN están tras una protección anti-bots y no se usan.

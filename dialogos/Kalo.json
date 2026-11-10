@@ -128,7 +128,8 @@
     "Malkuth": ["La Patrona de la Planta de Historia. Ella sí sabe tratar a un invitado."],
     "Valencina": ["Valencina della Famiglia Bognatelli. Tres días de Sottocapo. Una pena... y una advertencia para todos."],
     "Lei Heng": ["Lei Heng. Un Capo con talento y sin modales. El rango no se demuestra a gritos."],
-    "Shedletsky": ["Shedletsky. Un antiguo administrador. Un rango alto, sin duda. Aunque sus modales... con la boca llena de pollo."]
+    "Shedletsky": ["Shedletsky. Un antiguo administrador. Un rango alto, sin duda. Aunque sus modales... con la boca llena de pollo."],
+    "Artful": ["Artful. Un artista. Sin rango, pero con modales escénicos. Su reverencia fue... aceptable."]
   },
   "AlVenirDe": {
     "c00lgui": "El picciotto del rojo se ha ido. Conserva los dientes. Por ahora.",
@@ -141,6 +142,7 @@
     "Roaring Knight": "El caballero se ha retirado en silencio. Admirable.",
     "Pursuer": "El cazador se ha ido. Bien.",
     "Kennyoung": "El músico se ha ido. Tocaba bien.",
-    "Shedletsky": "El señor Shedletsky se ha retirado. Ha dejado un hueso en la mesa. Boris, retírelo."
+    "Shedletsky": "El señor Shedletsky se ha retirado. Ha dejado un hueso en la mesa. Boris, retírelo.",
+    "Artful": "El mago se ha retirado. Ha dejado una cortina. Katriel, guárdela."
   }
 }

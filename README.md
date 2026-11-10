@@ -1,6 +1,22 @@
-# c00lgui v7.1 – panel lanzador con skins de asistentes
+# c00lgui v7.2 – panel lanzador con skins de asistentes
 
 Panel para Windows que abre YouTube, las apps de Office y otros programas con un clic.
+
+---
+
+## Notas del parche – v7.2
+
+**Skin nueva: Artful** (*Die of Death*, en el grupo **Roblox**)
+- El mago francés de *Die of Death*, con sus **animaciones oficiales del juego** en un escenario de teatro con telones. Su música: *Est-ce ta Carte?* y, en el modo especial, *SHOWTIME*.
+- **Intro:** telón cerrado y redoble, él girando en 3D entre humo, su intro del juego (con la lluvia de plátanos) y una carta gigante con su frase: «¡Para mi próximo truco... haré DESAPARECER a los civiles de Robloxia!».
+- **Cada app es un truco:** Swing, Implement (un **muro** sobre un botón), Copywrite (una **caja de música** en un botón), marionetas y Repurpose.
+- **Aplausómetro:** al llenarse, **SHOWTIME** con focos y confeti. **Clic en él:** truco de cartas («Est-ce ta carte?»)... o un plátano.
+- Todas las skins opinan de él y hay 5 charlas nuevas.
+
+**Skin nueva: Mathew** (self insert de joselitoo79, en el grupo **Amigos**)
+- La fursona del creador del panel: un panda rojo.
+- **Intro exagerada:** alarma, sirenas y **⚠ ALERTA DE AUTOINSERT ⚠**, su Discord con decenas de flechas rojas, el vídeo de *Homelander Meets The Tung* **editado con Mathew en lugar del Tung** y un final lleno de explosiones.
+- De momento con frases genéricas, sin mecánica y sin charlas.
 
 ---
 
@@ -254,7 +270,7 @@ Panel para Windows que abre YouTube, las apps de Office y otros programas con un
 
 ## Las skins
 
-Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code, Build the Larp"). Tiene treinta y cinco skins, cada una con su propio estilo, animaciones y diálogos. Cinco están **archivadas** (🗃️): no salen en el menú Skins, pero se pueden poner desde **Ajustes → Skins archivadas**.
+Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code, Build the Larp"). Tiene treinta y siete skins, cada una con su propio estilo, animaciones y diálogos. Cinco están **archivadas** (🗃️): no salen en el menú Skins, pero se pueden poner desde **Ajustes → Skins archivadas**.
 
 | Skin | Estilo | Efecto al entrar |
 |---|---|---|
@@ -292,6 +308,8 @@ Al abrirlo sale el logo de **JOSEPABLINI CORPORATION** ("Fear the Spaggety Code,
 | **Lei Heng** ⚔️ | El Capo IIII del Pulgar (*Limbus Company*) ante el templo de Tiekan, con barra de vida de jefe y sus skills | El templo de lejos y de cerca, Proelium Fatale y su ficha de jefe |
 | **Kalo** ⚔️ | La recepción del Pulgar de *Library of Ruina*: Boris y Katriel primero, luego Kalo | La sala de la recepción, la viñeta de la recepción II y los tres presentándose |
 | **Shedletsky** | El admin de Roblox y creador de *Sword Fights on the Heights* (con su aspecto de *FORSAKEN*), en el mapa de SFOTH con el marcador de KOs | La pantalla de carga del Roblox clásico, el mapa de SFOTH, su avatar clásico y el sello de BLAME JOHN |
+| **Artful** | El mago de *Die of Death* en un escenario de teatro, con sus animaciones del juego | Telón, él girando en 3D, su intro del juego y una carta gigante |
+| **Mathew** | La fursona del creador del panel (panda rojo), en la luz dorada | Alarma de AUTOINSERT, su Discord con flechas, el vídeo de Homelander editado y explosiones |
 | **Silix y Pendeja** | OC de Fox Fandubs al estilo de *Forsaken*: dos barras de RABIA, un tanque y la cara de rabia | "⚠ ALERTA DE PROYECTARSE ⚠", un misil, la ardilla que grita, el canal de su creador lleno de flechas rojas y "This round's assistant is..." |
 
 Cada skin opina de las demás (menos **Ellie** y **Silix y Pendeja**: a propósito, ni tienen charlas ni nadie opina de ellas). Pasa el ratón por los botones del menú **Skins** para oír lo que piensa el asistente de cada una. De vez en cuando, además, **discuten entre ellos**: el otro personaje aparece en su propia ventanita pegada al panel, con su estilo y su bocadillo. Lo que dicen tiene efectos: los disparos suenan y hacen temblar las ventanas, las Smokebomb las vuelven transparentes y los mordiscos suenan. **Haz clic derecho sobre el personaje** para empezar una discusión cuando quieras.
@@ -346,6 +364,8 @@ No hace falta instalar nada: funciona con PowerShell, que ya viene con Windows 1
   - **Lei Heng:** cada app es una de sus skills contra ese botón. Clic en él para pegarle; al 40 % de vida activa el Shin. Si cae, vuelve a los pocos segundos.
   - **Kalo:** clic en Boris o Katriel para chocar dados; las apps les pegan sin choque. Cuando caen los dos, entra Kalo. Al vencerle, vuelta a empezar.
   - **Shedletsky:** cada app es un retador que viene a por él (PWNED!). Cuando aparezca 1x1x1x1, haz clic en Shedletsky para aturdirlo con su SLASH. Clic en el muslo de pollo para curarle.
+  - **Artful:** cada app es un truco (muros y cajas de música en los botones); llena el aplausómetro para SHOWTIME. Clic en él: truco de cartas.
+  - **Mathew:** de momento solo habla; haz clic en él para saludarle.
   - **Silix y Pendeja:** haz clic en cada una (o abre apps) y su **RABIA** sube; si las dejas en paz, baja sola. Silix al 100 % se sube a su **tanque** y dispara a los botones; la Pendeja al 100 % pone su cara de rabia y grita. Todavía no hablan.
 
 ## Ajustes
@@ -428,6 +448,8 @@ Al principio de la sección `SKINS` de `c00lgui.ps1` hay una guía paso a paso c
 - **Valencina** y **Lei Heng:** personajes de *Limbus Company* (Project Moon). Sprites, iconos de habilidades e ilustraciones de la [Cogitopedia](https://projectmoon.miraheze.org); pantalla Proelium Fatale del juego. Sonidos hechos para el panel.
 - **Kalo, Boris y Katriel:** personajes de *Library of Ruina* (Project Moon). Sprites e ilustraciones de las recepciones del Pulgar de la [Cogitopedia](https://projectmoon.miraheze.org).
 - **Shedletsky:** John Shedletsky, de Roblox; su aspecto y sus habilidades son los de *FORSAKEN* y su juego, *Sword Fights on the Heights*. Datos de las wikis de Roblox y de FORSAKEN (Fandom). Música: *Dueling Winds (Remix)*, de la banda sonora de *Phighting!*. Sonidos hechos para el panel.
+- **Artful:** personaje de *Die of Death* (Roblox). Animaciones, render, intro y música (*Est-ce ta Carte?* de theonlywhitesofa y *SHOWTIME* de AximSC) de la [wiki de Die of Death](https://die-of-death.fandom.com/wiki/Artful). Sonidos hechos para el panel.
+- **Mathew:** fursona de joselitoo79 (dibujo de PiP1415). Vídeo: *Homelander Meets The Tung*, editado para el panel.
 - **Silix y Pendeja:** personajes originales (OC) de **Fox Fandubs** ([FOX FANDUBS] en YouTube), inspirados en *Forsaken* (Roblox). GIF del misil de [Tenor](https://tenor.com); sonidos hechos para el panel.
 
 Proyecto de fans sin ánimo de lucro. Los personajes pertenecen a sus autores.

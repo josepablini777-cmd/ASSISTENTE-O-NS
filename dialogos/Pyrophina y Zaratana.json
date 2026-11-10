@@ -82,7 +82,8 @@
     "Valencina": "¡La de la espada se ha ido! ¡Volvemos a pelearnos tranquilas!",
     "Lei Heng": "¡Se fue el de los petardos! ¡Ahora volvemos a pelearnos solas!",
     "Kalo": "¡Se fue el viejo! ¡A pelear sin orden!",
-    "Shedletsky": "¡Se fue el de la espada! ¡Sin reglas otra vez!"
+    "Shedletsky": "¡Se fue el de la espada! ¡Sin reglas otra vez!",
+    "Artful": "¡Se fue el mago! ¡Pelea libre!"
   },
   "Opina": {
     "c00lgui": ["WMEW 99.9: Pyrophina cree que el panel rojo es un juguete. Lo muerde.", "Zaratana: Grrrr, burp. *Se ha comido un cable de c00lgui.*"],
@@ -116,6 +117,7 @@
     "Valencina": ["¡Valencina nos ha llamado «bestias sin técnica»! ¡GRAAAH! ...¿Qué es técnica?"],
     "Lei Heng": ["¡Lei Heng quiere meterse en medio de nuestra pelea! ¡GRAAAH! ...Bueno, vale, que entre."],
     "Kalo": ["¡El viejo dice que peleamos sin orden! ¡GRAAAH! ...¿Qué es orden?"],
-    "Shedletsky": ["¡Shedletsky quiere ponernos reglas de duelo! ¡GRAAAH! ...¿Qué es un duelo?"]
+    "Shedletsky": ["¡Shedletsky quiere ponernos reglas de duelo! ¡GRAAAH! ...¿Qué es un duelo?"],
+    "Artful": ["¡El mago dice que peleamos sin coreografía! ¡GRAAAH! ¿Qué es coreografía?"]
   }
 }

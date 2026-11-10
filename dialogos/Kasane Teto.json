@@ -84,7 +84,8 @@
     "Valencina": "¡Se fue Valencina! ¡Ya puedo bailar torcida otra vez!",
     "Lei Heng": "¡Se fue Lei Heng! ¡Los pájaros ya pueden volver!",
     "Kalo": "¡Se fue Kalo! ¡Ya puedo ser indisciplinada!",
-    "Shedletsky": "¡Se fue Shedletsky! ¡Voy a practicar el lunge-baile!"
+    "Shedletsky": "¡Se fue Shedletsky! ¡Voy a practicar el lunge-baile!",
+    "Artful": "¡Se fue Artful! ¡Sigo entera!"
   },
   "Opina": {
     "c00lgui": ["c00lgui habla todo en minúsculas. Yo hablo todo en ¡HIII!", "Le pedí a c00lgui que me hackeara más memoria. Me dio un pan. ¡Gracias!"],
@@ -118,6 +119,7 @@
     "Valencina": ["¡Valencina me ha corregido la postura! ¡Diecisiete veces! ¡Hiii~! ...me duelen las piernas."],
     "Lei Heng": ["¡Lei Heng me ha preguntado si sé bailar! ¡Hiii~! ¡Claro que sé! ...Pero no creo que se refiriera a eso."],
     "Kalo": ["¡Kalo me ha dicho que con disciplina podría ser algo! ¡Hiii~! ...¿algo qué?"],
-    "Shedletsky": ["¡Shedletsky me ha enseñado el lunge! ¡Hiii~! Lo he convertido en un paso de baile. Dice que es «técnicamente correcto»."]
+    "Shedletsky": ["¡Shedletsky me ha enseñado el lunge! ¡Hiii~! Lo he convertido en un paso de baile. Dice que es «técnicamente correcto»."],
+    "Artful": ["¡Artful me ha ofrecido ser su ayudante! ¡Hiii~! Pero no quiero que me corte por la mitad."]
   }
 }

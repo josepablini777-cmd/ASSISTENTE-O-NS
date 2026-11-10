@@ -176,7 +176,8 @@
     "Malkuth": ["Esa bibliotecaria sonríe demasiado. Los que sonríen tanto suelen tener algo que esconder.", "Dice que respira hondo cuando se agobia. Yo bebo. Cada uno tiene su método."],
     "Lei Heng": ["Lei Heng. Capo IIII. Un payaso con espada que se ríe de todo. ...Y me supera en rango. Eso es lo que más me jode.", "Le he visto pelear. Es bueno. No se lo digas o te despiezo."],
     "Kalo": ["Kalo. Un Sottocapo de verdad. De los que duran. ...No me mires así.", "Siempre tan correcto. Siempre tan por encima. Lo odio. Lo respeto. Las dos cosas."],
-    "Shedletsky": ["Ese payaso del pollo me ha retado a un duelo. Se cree muy bueno con la espada. ...Lo es. Me jode.", "*Bebe.* Blame John. Por fin una frase con la que estoy de acuerdo."]
+    "Shedletsky": ["Ese payaso del pollo me ha retado a un duelo. Se cree muy bueno con la espada. ...Lo es. Me jode.", "*Bebe.* Blame John. Por fin una frase con la que estoy de acuerdo."],
+    "Artful": ["Un mago que llora porque le salió mal una función. *puff* Morralla con chistera."]
   },
   "AlVenirDe": {
     "c00lgui": "¿Se ha ido el crío del rojo? Por fin. Ya me estaba dando dolor de cabeza.",
@@ -210,6 +211,7 @@
     "Malkuth": "Se ha ido la bibliotecaria. Sonriendo. Siempre sonriendo.",
     "Lei Heng": "Se ha ido el payaso. Por fin. Si vuelve a decir «tres días», le meto la espada por donde le quepa.",
     "Kalo": "Kalo se ha ido. Por fin puedo respirar sin que me mida el rango.",
-    "Shedletsky": "Se ha ido el del pollo. Deja grasa en todo lo que toca. ¡LUCIO, LIMPIA!"
+    "Shedletsky": "Se ha ido el del pollo. Deja grasa en todo lo que toca. ¡LUCIO, LIMPIA!",
+    "Artful": "Se ha ido el payaso de la chistera. ¡LUCIO, BARRE EL CONFETI!"
   }
 }

@@ -135,7 +135,8 @@
     "Valencina": "Valencina se ha ido... y ha cortado mi telaraña al salir. Sin mirar. Grrr.",
     "Lei Heng": "Lei Heng se ha ido. Mi telaraña sigue cortada. Grrr.",
     "Kalo": "Se fue Kalo. Qué señor tan educado. Me ha dado miedo.",
-    "Shedletsky": "Se fue Shedletsky. El pollo estaba bueno."
+    "Shedletsky": "Se fue Shedletsky. El pollo estaba bueno.",
+    "Artful": "Se fue Artful. Se llevó un poco de mi seda. Ladrón."
   },
   "Opina": {
     "c00lgui": ["c00lkidd es como una mosca: hace ruido y acaba en mi telaraña.", "¿Un hacker? Qué mono. Lo guardaré para la cena."],
@@ -169,6 +170,7 @@
     "Valencina": ["Viene de la Casa de las Arañas y no ha querido ni un abracito. Qué fría. ...Me gusta."],
     "Lei Heng": ["Lei Heng me ha cortado la telaraña sin mirar. Ni un abracito. Qué grosero, cielo."],
     "Kalo": ["Kalo dice que tengo buenos modales para ser araña. ¿Eso es un cumplido, cielo?"],
-    "Shedletsky": ["Shedletsky me ha cortado la telaraña con su espada. Luego me ha dado pollo. No sé si enfadarme, cielo."]
+    "Shedletsky": ["Shedletsky me ha cortado la telaraña con su espada. Luego me ha dado pollo. No sé si enfadarme, cielo."],
+    "Artful": ["Ese mago tiene marionetas con hilos. ¡Hilos! Hemos hablado de técnica, cielo. Le he dejado un abracito."]
   }
 }

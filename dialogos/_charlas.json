@@ -1252,6 +1252,38 @@
       ["Roaring Knight", "* El Roaring Knight levanta la espada."],
       ["Shedletsky", "Me lo tomo como un sí. ¡Lunge!"],
       ["Roaring Knight", "* El Roaring Knight esquiva.\n* Parece que se está divirtiendo."]
+    ],
+    [
+      ["Pursuer", "FRESH MEAT."],
+      ["Artful", "¡Colega! Otra vez tú. ¿Compartimos el mapa esta noche?"],
+      ["Pursuer", "...Mío. El bosque es mío."],
+      ["Artful", "Quédate el bosque. Yo me quedo el escenario. Y las ovaciones."]
+    ],
+    [
+      ["Shedletsky", "¡Ey, mago! ¿Me devuelves el pollo?"],
+      ["Artful", "¿Qué pollo? Un mago nunca revela sus trucos."],
+      ["Shedletsky", "BLAME ARTFUL."],
+      ["Artful", "*Saca un muslo de la chistera.* Voilà. Aplausos, por favor."],
+      ["Shedletsky", "...Vale, eso ha sido buenísimo."]
+    ],
+    [
+      ["Evil Scary", "EVIL SCARY SE ACERCA. EVIL SCARY SE ACERCA."],
+      ["Artful", "¡Un muro! *Golpea el suelo con la varita.*"],
+      ["Evil Scary", "EVIL SCARY HA BOTADO POR ENCIMA DEL MURO."],
+      ["Artful", "...Sacrebleu. Necesito un número nuevo."]
+    ],
+    [
+      ["c00lgui", "artful. ¿me haces desaparecer el antivirus?"],
+      ["Artful", "Querido, yo hago desaparecer a públicos enteros. Un antivirus es un juego de niños."],
+      ["c00lgui", "...espera. ¿públicos enteros?"],
+      ["Artful", "Hubo un incidente. No hablemos de eso. ¿Elige una carta?"]
+    ],
+    [
+      ["Kasane Teto", "¡Hiii~! ¿Me enseñas un truco?"],
+      ["Artful", "¡Por supuesto! Elige una carta. Cualquiera."],
+      ["Kasane Teto", "¡El cuatro de corazones!"],
+      ["Artful", "*Saca un pájaro de la chistera.* ¿Es este tu cuatro de corazones?"],
+      ["Kasane Teto", "...¡No! ¡Pero me encanta!"]
     ]
   ]
 }

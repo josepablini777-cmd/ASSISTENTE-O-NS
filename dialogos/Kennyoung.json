@@ -181,7 +181,8 @@
     "Valencina": "Se ha ido Valencina. Voy a tocar algo tranquilo. Lo necesito.",
     "Lei Heng": "Se fue Lei Heng. Voy a tocar algo muy, muy tranquilo.",
     "Kalo": "Se fue Kalo. Le voy a dedicar una canción. Seria.",
-    "Shedletsky": "Se fue Shedletsky. Voy a por pollo."
+    "Shedletsky": "Se fue Shedletsky. Voy a por pollo.",
+    "Artful": "Se fue Artful. Su tema es pegadizo. No me lo saco de la cabeza."
   },
   "Opina": {
     "c00lgui": ["c00lgui escribe en minúsculas. Como mis letras cuando tengo prisa.", "c00lkidd me hackeó el canal y subió un vídeo de 10 horas de glitch. Tuvo más visitas que yo."],
@@ -215,6 +216,7 @@
     "Valencina": ["Valencina me ha dicho que en la guerra no había tiempo para agobiarse. Ahora estoy agobiado por eso."],
     "Lei Heng": ["Lei Heng me quiere dar clases de espada para quitarme el agobio. Ahora estoy más agobiado."],
     "Kalo": ["Kalo dice que tengo oficio. Nadie me había dicho eso así. Me ha gustado."],
-    "Shedletsky": ["Shedletsky me ha dicho que el pollo frito quita el agobio. Lo he probado. ...Funciona un poco."]
+    "Shedletsky": ["Shedletsky me ha dicho que el pollo frito quita el agobio. Lo he probado. ...Funciona un poco."],
+    "Artful": ["Artful me ha ofrecido tocar en su espectáculo. Hay demasiado público. Y demasiados muros."]
   }
 }

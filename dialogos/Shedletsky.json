@@ -144,7 +144,8 @@
     "Dune": ["No habla. Pero sabe nadar. En las Alturas eso no sirve: aquí te caes al vacío."],
     "Averi": ["Me ha dado un sándwich de pollo. ¡DE POLLO! Es mi persona favorita del panel."],
     "Tetra": ["Un gato que no quiere que le molesten. Lo respeto. Le he dejado un muslito al lado."],
-    "Kevin": ["Defiende su pizza con cuchillo. Yo defiendo mi pollo con espada. Somos hermanos."]
+    "Kevin": ["Defiende su pizza con cuchillo. Yo defiendo mi pollo con espada. Somos hermanos."],
+    "Artful": ["Artful, el mago de Die of Death. Me ha hecho desaparecer el pollo. Todavía no me lo ha devuelto. BLAME ARTFUL."]
   },
   "AlVenirDe": {
     "c00lgui": "Se ha ido c00lkidd. Bien. Revisa que no haya dejado ningún script raro por ahí.",
@@ -156,7 +157,8 @@
     "Roaring Knight": "Se fue el caballero sin despedirse. Me debe un duelo.",
     "Valencina": "Se fue la espadachina. Me ha dejado un corte en la camiseta. En la palabra JOHN. Qué detalle.",
     "Evil Scary": "Se fue la bola. Ni un rebote me ha dado.",
-    "Malkuth": "Se fue la bibliotecaria. Me ha dejado una vela con forma de patata. La pondré junto al pollo."
+    "Malkuth": "Se fue la bibliotecaria. Me ha dejado una vela con forma de patata. La pondré junto al pollo.",
+    "Artful": "Se fue el mago. Reviso los bolsillos: el pollo sigue sin aparecer."
   },
   "Racha": [
     "¡Racha! ¡Que alguien me pare! ...No, en serio, que nadie puede.",

@@ -97,7 +97,8 @@
     "Valencina": "Valencina se ha ido. El panel huele a puro. Ventilo.",
     "Lei Heng": "Lei Heng se ha ido. Ha dejado olor a pólvora y a puro. Ventilo.",
     "Kalo": "Kalo se ha ido. Ha dejado la silla recta. Lo valoro.",
-    "Shedletsky": "Shedletsky se ha ido. Hay migas de pollo frito en el teclado."
+    "Shedletsky": "Shedletsky se ha ido. Hay migas de pollo frito en el teclado.",
+    "Artful": "Artful se ha ido. Hay confeti por todas partes. No lo pienso recoger."
   },
   "Opina": {
     "c00lgui": ["c00lkidd se cree hacker. Seguro que su contraseña es 1234.", "El panel rojo ese... muy 2006."],
@@ -131,6 +132,7 @@
     "Valencina": ["Valencina grita a su ayudante, bebe en horas de trabajo y me ha llamado «morralla». Pero contesta los correos. Le doy un cinco."],
     "Lei Heng": ["Lei Heng. Ruidoso, fuma dentro y amenaza con arrancar lenguas. Le he puesto en silencio. No sé si funciona en la vida real."],
     "Kalo": ["Kalo. Formal, educado y con dos guardaespaldas. El único que me ha pedido las cosas «por favor». Raro."],
-    "Shedletsky": ["Shedletsky. Fue admin de Roblox. Ahora come pollo en mi panel. Así es la vida."]
+    "Shedletsky": ["Shedletsky. Fue admin de Roblox. Ahora come pollo en mi panel. Así es la vida."],
+    "Artful": ["Artful. Me ha pedido un aplauso. Le he dado un «vale». Es lo máximo que doy."]
   }
 }
